@@ -128,11 +128,6 @@
         "@typescript-eslint/no-non-null-assertion": "off", // already checked by typescript, no need to duplicate
         "unused-imports/no-unused-imports-ts": 2
       }
-    },
-    {
-      "files": ["*.js", "*.jsx"],
-      "extends": ["plugin:@nrwl/nx/javascript"],
-      "rules": {}
     }
   ]
 }
