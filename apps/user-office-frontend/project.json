@@ -1,0 +1,6 @@
+{
+  "$schema": "..\\..\\node_modules\\nx\\schemas\\project-schema.json",
+  "sourceRoot": "apps/user-office-frontend/src",
+  "projectType": "application",
+  "tags": []
+}
