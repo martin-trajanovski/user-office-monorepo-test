@@ -25,7 +25,7 @@ export class ProposalSubmissionState extends QuestionarySubmissionState {
   }
 
   getInitialStepIndex(): number {
-    if (this.proposal?.status?.shortCode.toString() == 'EDITABLE_SUBMITTED') {
+    if (this.proposal?.status?.shortCode.toString() === 'EDITABLE_SUBMITTED') {
       return 0;
     }
 

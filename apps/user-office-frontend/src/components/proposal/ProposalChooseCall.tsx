@@ -7,7 +7,7 @@ import ListItemText from '@mui/material/ListItemText';
 import Typography from '@mui/material/Typography';
 import makeStyles from '@mui/styles/makeStyles';
 import PropTypes from 'prop-types';
-import React, { Fragment } from 'react';
+import React from 'react';
 import { useHistory } from 'react-router';
 
 import { Call } from 'generated/sdk';
@@ -47,7 +47,7 @@ const ProposalChooseCall: React.FC<ProposalChooseCallProps> = ({
         <List data-cy="call-list">
           {callsData.map((call) => {
             let timeRemainingText = timeRemaining(new Date(call.endCall));
-            if (timeRemainingText != '') {
+            if (timeRemainingText !== '') {
               timeRemainingText = `(${timeRemainingText})`;
             }
 

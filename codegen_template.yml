@@ -1,8 +1,8 @@
 overwrite: true
-schema: "${SCHEMA_URL}"
-documents: "src/graphql/**/*.graphql"
+schema: '${SCHEMA_URL}'
+documents: 'src/graphql/**/*.graphql'
 generates:
-  src/generated/sdk.ts:
+  ./../../libs/user-office-shared-types/src/lib/user-office-shared-types.ts:
     config:
       skipTypename: true
       namingConvention:

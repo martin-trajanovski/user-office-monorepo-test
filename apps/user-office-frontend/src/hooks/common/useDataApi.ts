@@ -38,7 +38,7 @@ class UnauthorizedGraphQLClient extends GraphQLClient {
     super(endpoint);
   }
 
-  async request(query: string, variables?: Variables) {
+  async request(query: any, variables?: Variables) {
     return super.request(query, variables).catch((error) => {
       // if the `notificationWithClientLog` fails
       // and it fails while reporting an error, it can
@@ -83,7 +83,7 @@ class AuthorizedGraphQLClient extends GraphQLClient {
     this.externalToken = this.getExternalToken(token);
   }
 
-  async request(query: string, variables?: Variables) {
+  async request(query: any, variables?: Variables) {
     const nowTimestampSeconds = Date.now() / 1000;
     if (this.renewalDate < nowTimestampSeconds) {
       const data = await getSdk(new GraphQLClient(this.endpoint)).getToken({

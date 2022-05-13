@@ -232,7 +232,7 @@ const ProposalTableOfficer: React.FC<ProposalTableOfficerProps> = ({
   useEffect(() => {
     let isMounted = true;
     let endSlice = rowsPerPage * (currentPage + 1);
-    endSlice = endSlice == 0 ? prefetchSize + 1 : endSlice + 1; // Final page of a loaded section would produce the slice (x, 0) without this
+    endSlice = endSlice === 0 ? prefetchSize + 1 : endSlice + 1; // Final page of a loaded section would produce the slice (x, 0) without this
     if (isMounted) {
       setTableData(
         preselectedProposalsData.slice(
@@ -741,7 +741,7 @@ const ProposalTableOfficer: React.FC<ProposalTableOfficerProps> = ({
         onPageChange={(page, pageSize) => {
           const newOffset =
             Math.floor((pageSize * page) / prefetchSize) * prefetchSize;
-          if (page !== currentPage && newOffset != query.offset) {
+          if (page !== currentPage && newOffset !== query.offset) {
             setQuery({ ...query, offset: newOffset });
           }
           setCurrentPage(page);

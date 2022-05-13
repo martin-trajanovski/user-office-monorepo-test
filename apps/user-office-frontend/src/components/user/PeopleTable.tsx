@@ -123,7 +123,7 @@ const getUsersTableData = (
   query: GetUsersQueryVariables,
   totalCount: number
 ) => {
-  if (query.offset == 0) {
+  if (query.offset === 0) {
     // update users array to remove any invitedUsers. We re-add them so that they appear at the top of the list
     // this helps users find someone in the list even if they are already there
 

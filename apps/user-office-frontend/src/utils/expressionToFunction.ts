@@ -1,5 +1,8 @@
 import { Unit } from './../generated/sdk';
+
 const expressionToFunction = (expression: string) =>
+  // FIXME: Fix this eslint warning
+  // eslint-disable-next-line no-new-func
   new Function('x', `return ${expression}`);
 
 export const convertToSi = (value: number, unit: Unit | null) =>
