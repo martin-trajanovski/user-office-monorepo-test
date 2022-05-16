@@ -1,13 +1,16 @@
 import MaterialTable, { Column } from '@material-table/core';
 import TextField from '@mui/material/TextField';
 import makeStyles from '@mui/styles/makeStyles';
+import {
+  Call,
+  InstrumentWithAvailabilityTime,
+} from '@user-office/shared-types';
 import { useSnackbar } from 'notistack';
 import PropTypes from 'prop-types';
 import React, { ChangeEvent } from 'react';
 
-import { Call, InstrumentWithAvailabilityTime } from 'generated/sdk';
-import { tableIcons } from 'utils/materialIcons';
-import useDataApiWithFeedback from 'utils/useDataApiWithFeedback';
+import { tableIcons } from '../../utils/materialIcons';
+import useDataApiWithFeedback from '../../utils/useDataApiWithFeedback';
 
 // NOTE: Some custom styles for row expand table.
 const useStyles = makeStyles(() => ({

@@ -1,14 +1,17 @@
 import MaterialTable from '@material-table/core';
 import { Typography } from '@mui/material';
 import Button from '@mui/material/Button';
+import {
+  Instrument,
+  InstrumentWithAvailabilityTime,
+} from '@user-office/shared-types';
 import PropTypes from 'prop-types';
 import React, { useState } from 'react';
 
-import { ActionButtonContainer } from 'components/common/ActionButtonContainer';
-import { Instrument, InstrumentWithAvailabilityTime } from 'generated/sdk';
-import { useInstrumentsData } from 'hooks/instrument/useInstrumentsData';
-import { tableIcons } from 'utils/materialIcons';
-import useDataApiWithFeedback from 'utils/useDataApiWithFeedback';
+import { useInstrumentsData } from '../../hooks/instrument/useInstrumentsData';
+import { tableIcons } from '../../utils/materialIcons';
+import useDataApiWithFeedback from '../../utils/useDataApiWithFeedback';
+import { ActionButtonContainer } from '../common/ActionButtonContainer';
 
 type AssignInstrumentsToCallProps = {
   assignInstrumentsToCall: (
