@@ -1,0 +1,39 @@
+{
+  "$schema": "..\\..\\node_modules\\nx\\schemas\\project-schema.json",
+  "sourceRoot": "apps/user-office-backend/src",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/node:webpack",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/apps/user-office-backend",
+        "main": "apps/user-office-backend/src/main.ts",
+        "tsConfig": "apps/user-office-backend/tsconfig.app.json",
+        "assets": ["apps/user-office-backend/src/assets"]
+      },
+      "configurations": {
+        "production": {
+          "optimization": true,
+          "extractLicenses": true,
+          "inspect": false,
+          "fileReplacements": [
+            {
+              "replace": "apps/user-office-backend/src/environments/environment.ts",
+              "with": "apps/user-office-backend/src/environments/environment.prod.ts"
+            }
+          ]
+        }
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/apps/user-office-backend"],
+      "options": {
+        "jestConfig": "apps/user-office-backend/jest.unit.config.js",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}
