@@ -1,8 +1,8 @@
 import makeStyles from '@mui/styles/makeStyles';
+import { Settings, SettingsId } from '@user-office-software/shared-types';
 import React from 'react';
 
-import { Settings, SettingsId } from '@user-office-software/shared-types';
-import { useSettings } from '../../admin/useSettings';
+import { useSettings } from '../hooks/admin/useSettings';
 
 interface SettingsContextData {
   readonly settings: Map<SettingsId, Settings>;

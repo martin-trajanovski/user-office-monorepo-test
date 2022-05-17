@@ -1,6 +1,6 @@
 import React from 'react';
 
-import UOLoader from '../components/common/UOLoader';
+import UOLoader from '../common/UOLoader';
 import { useVisitRegistration } from '../../visit/useVisitRegistration';
 import { VisitRegistrationCore } from '../../models/questionary/visit/VisitRegistrationCore';
 

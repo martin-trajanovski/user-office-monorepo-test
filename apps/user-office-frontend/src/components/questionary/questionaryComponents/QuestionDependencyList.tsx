@@ -11,7 +11,7 @@ import Tooltip from '@mui/material/Tooltip';
 import { Field, FieldArray, FormikProps } from 'formik';
 import React, { useCallback, useEffect, useState } from 'react';
 
-import FormikUICustomDependencySelector from '../components/common/FormikUICustomDependencySelector';
+import FormikUICustomDependencySelector from '../common/FormikUICustomDependencySelector';
 import {
   DataType,
   DependenciesLogicOperator,

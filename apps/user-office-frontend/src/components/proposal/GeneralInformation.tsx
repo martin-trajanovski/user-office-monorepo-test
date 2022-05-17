@@ -2,14 +2,13 @@ import Button from '@mui/material/Button';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Switch from '@mui/material/Switch';
 import makeStyles from '@mui/styles/makeStyles';
+import { UserRole } from '@user-office-software/shared-types';
 import React, { useState } from 'react';
 
-import { useCheckAccess } from '../components/common/Can';
-import ProposalQuestionaryReview from '../review/ProposalQuestionaryReview';
-import { UserRole } from '@user-office-software/shared-types';
-import { useDownloadPDFProposal } from '../proposal/useDownloadPDFProposal';
+import { useDownloadPDFProposal } from '../../hooks/proposal/useDownloadPDFProposal';
 import { ProposalWithQuestionary } from '../../models/questionary/proposal/ProposalWithQuestionary';
-
+import { useCheckAccess } from '../common/Can';
+import ProposalQuestionaryReview from '../review/ProposalQuestionaryReview';
 import ProposalContainer from './ProposalContainer';
 
 const useStyles = makeStyles(() => ({

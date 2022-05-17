@@ -1,14 +1,18 @@
+import {
+  PageName,
+  UserRole,
+  FeatureId,
+} from '@user-office-software/shared-types';
 import parse from 'html-react-parser';
 import React, { useContext } from 'react';
 
+import { FeatureContext } from '../../context/FeatureContextProvider';
+import { useGetPageContent } from '../../hooks/admin/useGetPageContent';
+import { StyledContainer, StyledPaper } from '../../styles/StyledComponents';
 import ProposalTableInstrumentScientist from '../proposal/ProposalTableInstrumentScientist';
 import ProposalTableUser from '../proposal/ProposalTableUser';
 import UserUpcomingExperimentsTable from '../proposalBooking/UserUpcomingExperimentsTable';
 import ProposalTableReviewer from '../review/ProposalTableReviewer';
-import { FeatureContext } from '../../FeatureContextProvider';
-import { PageName, UserRole, FeatureId } from '@user-office-software/shared-types';
-import { useGetPageContent } from '../../admin/useGetPageContent';
-import { StyledContainer, StyledPaper } from 'styles/StyledComponents';
 
 const PaperContainer: React.FC = ({ children }) => (
   <StyledPaper>{children}</StyledPaper>

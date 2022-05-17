@@ -1,20 +1,19 @@
 import Button from '@mui/material/Button';
+import { UserRole } from '@user-office-software/shared-types';
 import React, { useContext, useEffect, useState } from 'react';
 
-import { useCheckAccess } from '../components/common/Can';
-import { NavigButton } from '../components/common/NavigButton';
-import UOLoader from '../components/common/UOLoader';
+import { useDataApi } from '../../hooks/common/useDataApi';
+import { useDownloadPDFProposal } from '../../hooks/proposal/useDownloadPDFProposal';
+import withConfirm, { WithConfirmType } from '../../utils/withConfirm';
+import { useCheckAccess } from '../common/Can';
+import { NavigButton } from '../common/NavigButton';
+import UOLoader from '../common/UOLoader';
 import NavigationFragment from '../questionary/NavigationFragment';
 import {
   createMissingContextErrorMessage,
   QuestionaryContext,
 } from '../questionary/QuestionaryContext';
 import ProposalQuestionaryReview from '../review/ProposalQuestionaryReview';
-import { UserRole } from '@user-office-software/shared-types';
-import { useDataApi } from '../../common/useDataApi';
-import { useDownloadPDFProposal } from '../proposal/useDownloadPDFProposal';
-import withConfirm, { WithConfirmType } from '../../utils/withConfirm';
-
 import { ProposalContextType } from './ProposalContainer';
 
 type ProposalSummaryProps = {

@@ -3,8 +3,8 @@ import { Field } from 'formik';
 import { TextField } from 'formik-mui';
 import React, { ChangeEvent, useContext, useState } from 'react';
 
-import ErrorMessage from '../components/common/ErrorMessage';
-import withPreventSubmit from '../components/common/withPreventSubmit';
+import ErrorMessage from '../common/ErrorMessage';
+import withPreventSubmit from '../common/withPreventSubmit';
 import { BasicComponentProps } from '../proposal/IBasicComponentProps';
 import { ProposalContextType } from '../proposal/ProposalContainer';
 import ProposalParticipant from '../proposal/ProposalParticipant';

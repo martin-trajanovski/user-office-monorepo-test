@@ -1,12 +1,16 @@
 import MaterialTable from '@material-table/core';
 import makeStyles from '@mui/styles/makeStyles';
+import {
+  Instrument,
+  BasicUserDetails,
+  UserRole,
+} from '@user-office-software/shared-types';
 import PropTypes from 'prop-types';
 import React from 'react';
 
-import { useCheckAccess } from '../components/common/Can';
-import { Instrument, BasicUserDetails, UserRole } from '@user-office-software/shared-types';
 import { tableIcons } from '../../utils/materialIcons';
 import useDataApiWithFeedback from '../../utils/useDataApiWithFeedback';
+import { useCheckAccess } from '../common/Can';
 
 // NOTE: Some custom styles for row expand table.
 const useStyles = makeStyles(() => ({

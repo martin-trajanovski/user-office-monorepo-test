@@ -1,12 +1,12 @@
 import { Typography } from '@mui/material';
 import React from 'react';
 
-import { SuperMaterialTable } from '../components/common/SuperMaterialTable';
+import { SuperMaterialTable } from '../common/SuperMaterialTable';
 import { createQuestionForm } from '../questionary/QuestionaryComponentRegistry';
 import ButtonWithDialog from '../../common/ButtonWithDialog';
 import { useCreatableQuestions } from '../../template/useCreatableQuestions';
 import { QuestionWithUsage } from '../../template/useQuestions';
-import { StyledContainer, StyledPaper } from 'styles/StyledComponents';
+import { StyledContainer, StyledPaper } from '../../styles/StyledComponents';
 import { tableIcons } from '../../utils/materialIcons';
 import useDataApiWithFeedback from '../../utils/useDataApiWithFeedback';
 import { FunctionType } from '../../utilTypes';

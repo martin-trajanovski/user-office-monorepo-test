@@ -1,7 +1,0 @@
-query getProposalWorkflows {
-  proposalWorkflows {
-    id
-    name
-    description
-  }
-}

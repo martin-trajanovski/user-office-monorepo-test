@@ -2,7 +2,7 @@ import { Field } from 'formik';
 import { TextField } from 'formik-mui';
 import React, { ChangeEvent, useContext, useState } from 'react';
 
-import withPreventSubmit from '../components/common/withPreventSubmit';
+import withPreventSubmit from '../common/withPreventSubmit';
 import { BasicComponentProps } from '../proposal/IBasicComponentProps';
 import {
   createMissingContextErrorMessage,

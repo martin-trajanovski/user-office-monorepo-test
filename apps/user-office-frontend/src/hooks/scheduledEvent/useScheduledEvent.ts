@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-import { useDataApi } from '../../common/useDataApi';
+import { useDataApi } from '../common/useDataApi';
 
 import { GetScheduledEventCoreQuery } from '@user-office-software/shared-types';
 

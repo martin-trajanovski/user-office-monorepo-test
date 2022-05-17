@@ -2,11 +2,11 @@ import { Typography } from '@mui/material';
 import React from 'react';
 import { useQueryParams } from 'use-query-params';
 
-import { useCheckAccess } from '../components/common/Can';
+import { useCheckAccess } from '../common/Can';
 import SuperMaterialTable, {
   DefaultQueryParams,
   UrlQueryParamsType,
-} from '../components/common/SuperMaterialTable';
+} from '../common/SuperMaterialTable';
 import { UserRole, PermissionsWithAccessToken } from '@user-office-software/shared-types';
 import { useApiAccessTokensData } from '../../admin/useApiAccessTokensData';
 import { tableIcons } from '../../utils/materialIcons';

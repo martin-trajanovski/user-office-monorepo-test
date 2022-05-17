@@ -6,14 +6,14 @@ import ListItemSecondaryAction from '@mui/material/ListItemSecondaryAction';
 import ListItemText from '@mui/material/ListItemText';
 import Typography from '@mui/material/Typography';
 import makeStyles from '@mui/styles/makeStyles';
+import { Call } from '@user-office-software/shared-types';
 import PropTypes from 'prop-types';
 import React from 'react';
 import { useHistory } from 'react-router';
 
-import { Call } from '@user-office-software/shared-types';
-import { useFormattedDateTime } from '../../admin/useFormattedDateTime';
-import { StyledContainer, StyledPaper } from 'styles/StyledComponents';
-import { timeRemaining } from '../../Time';
+import { useFormattedDateTime } from '../../hooks/admin/useFormattedDateTime';
+import { StyledContainer, StyledPaper } from '../../styles/StyledComponents';
+import { timeRemaining } from '../../utils/Time';
 
 const useStyles = makeStyles(() => ({
   date: {

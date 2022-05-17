@@ -8,7 +8,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 import { useDataApi } from '../../common/useDataApi';
-import { StyledFormWrapper } from 'styles/StyledComponents';
+import { StyledFormWrapper } from '../../styles/StyledComponents';
 
 import PhotoInSide from './PhotoInSide';
 

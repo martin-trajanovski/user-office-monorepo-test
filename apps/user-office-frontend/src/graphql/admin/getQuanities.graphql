@@ -1,5 +1,0 @@
-query getQuantities {
-   quantities {
-    id
-  } 
-}

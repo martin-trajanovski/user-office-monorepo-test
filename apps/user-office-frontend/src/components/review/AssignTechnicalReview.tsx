@@ -2,7 +2,7 @@ import { Button, TextField, Autocomplete, Grid } from '@mui/material';
 import makeStyles from '@mui/styles/makeStyles';
 import React, { useState } from 'react';
 
-import { useCheckAccess } from '../components/common/Can';
+import { useCheckAccess } from '../common/Can';
 import { UserRole } from '@user-office-software/shared-types';
 import { ProposalData } from '../proposal/useProposalData';
 import useDataApiWithFeedback from '../../utils/useDataApiWithFeedback';

@@ -1,8 +1,7 @@
 import React from 'react';
 
-import UOLoader from '../components/common/UOLoader';
-import { useFeedback } from '../../feedback/useFeedback';
-
+import { useFeedback } from '../../hooks/feedback/useFeedback';
+import UOLoader from '../common/UOLoader';
 import FeedbackContainer from './FeedbackContainer';
 
 interface UpdateFeedbackProps {

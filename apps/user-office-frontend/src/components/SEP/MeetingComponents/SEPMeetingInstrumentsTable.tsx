@@ -4,7 +4,7 @@ import { Typography } from '@mui/material';
 import { useSnackbar } from 'notistack';
 import React from 'react';
 
-import { useCheckAccess } from '../components/common/Can';
+import { useCheckAccess } from '../common/Can';
 import { Call, InstrumentWithAvailabilityTime, UserRole } from '@user-office-software/shared-types';
 import { useInstrumentsBySEPData } from '../../instrument/useInstrumentsBySEPData';
 import { tableIcons } from '../../utils/materialIcons';

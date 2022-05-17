@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from 'react';
 
-import UOLoader from '../components/common/UOLoader';
+import UOLoader from '../common/UOLoader';
 import { UserContext } from '../../UserContextProvider';
 import { QuestionaryStep, TemplateGroupId } from '@user-office-software/shared-types';
 import { VisitRegistrationCore } from '../../models/questionary/visit/VisitRegistrationCore';

@@ -1,14 +1,8 @@
 /* eslint-disable @typescript-eslint/no-use-before-define */
 import { PaperProps, Typography } from '@mui/material';
+import { TemplateGroupId } from '@user-office-software/shared-types';
 import { default as React, useState } from 'react';
 
-import CopyToClipboard from '../components/common/CopyToClipboard';
-import Questionary from '../questionary/Questionary';
-import {
-  QuestionaryContext,
-  QuestionaryContextType,
-} from '../questionary/QuestionaryContext';
-import { TemplateGroupId } from '@user-office-software/shared-types';
 import createCustomEventHandlers from '../../models/questionary/createCustomEventHandlers';
 import { ProposalSubmissionState } from '../../models/questionary/proposal/ProposalSubmissionState';
 import { ProposalWithQuestionary } from '../../models/questionary/proposal/ProposalWithQuestionary';
@@ -17,7 +11,13 @@ import {
   QuestionarySubmissionModel,
 } from '../../models/questionary/QuestionarySubmissionState';
 import useEventHandlers from '../../models/questionary/useEventHandlers';
-import { StyledContainer, StyledPaper } from 'styles/StyledComponents';
+import { StyledContainer, StyledPaper } from '../../styles/StyledComponents';
+import CopyToClipboard from '../common/CopyToClipboard';
+import Questionary from '../questionary/Questionary';
+import {
+  QuestionaryContext,
+  QuestionaryContextType,
+} from '../questionary/QuestionaryContext';
 
 export interface ProposalContextType extends QuestionaryContextType {
   state: ProposalSubmissionState | null;

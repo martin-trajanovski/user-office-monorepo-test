@@ -1,3 +1,4 @@
+import { DataType } from '@user-office-software/shared-types';
 import React from 'react';
 
 import GenericTemplatesAnswerRenderer from '../questionary/questionaryComponents/GenericTemplate/GenericTemplateAnswerRenderer';
@@ -5,7 +6,6 @@ import SamplesAnswerRenderer from '../questionary/questionaryComponents/SampleDe
 import QuestionaryDetails, {
   QuestionaryDetailsProps,
 } from '../questionary/QuestionaryDetails';
-import { DataType } from '@user-office-software/shared-types';
 
 interface ProposalQuestionaryDetailsProps extends QuestionaryDetailsProps {
   proposalPk: number;

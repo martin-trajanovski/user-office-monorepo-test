@@ -1,6 +1,6 @@
 import React from 'react';
 
-import StyledModal from '../components/common/StyledModal';
+import StyledModal from '../common/StyledModal';
 import { createQuestionForm } from '../questionary/QuestionaryComponentRegistry';
 import { Question, Template } from '@user-office-software/shared-types';
 import { Event, EventType } from '../../models/questionary/QuestionaryEditorModel';

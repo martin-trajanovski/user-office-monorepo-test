@@ -11,7 +11,7 @@ import makeStyles from '@mui/styles/makeStyles';
 import { getIn } from 'formik';
 import React, { useEffect, useState } from 'react';
 
-import MultiMenuItem from '../components/common/MultiMenuItem';
+import MultiMenuItem from '../common/MultiMenuItem';
 import { BasicComponentProps } from '../proposal/IBasicComponentProps';
 import { SelectionFromOptionsConfig } from '@user-office-software/shared-types';
 

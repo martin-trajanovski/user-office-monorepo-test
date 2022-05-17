@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 
 import { GetOrcIdInformationQuery } from '@user-office-software/shared-types';
-import { getUnauthorizedApi } from '../../common/useDataApi';
+import { getUnauthorizedApi } from '../common/useDataApi';
 
 export function useOrcIDInformation(authorizationCode?: string | null) {
   const [orcData, setOrcData] =

@@ -4,8 +4,8 @@ import makeStyles from '@mui/styles/makeStyles';
 import { FormikErrors } from 'formik';
 import React, { useContext, useState } from 'react';
 
-import MultiMenuItem from '../components/common/MultiMenuItem';
-import withPreventSubmit from '../components/common/withPreventSubmit';
+import MultiMenuItem from '../common/MultiMenuItem';
+import withPreventSubmit from '../common/withPreventSubmit';
 import { BasicComponentProps } from '../proposal/IBasicComponentProps';
 import ProposalErrorLabel from '../proposal/ProposalErrorLabel';
 import {

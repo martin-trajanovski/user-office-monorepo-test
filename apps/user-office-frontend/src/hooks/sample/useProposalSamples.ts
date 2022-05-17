@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-import { useDataApi } from '../../common/useDataApi';
+import { useDataApi } from '../common/useDataApi';
 import { SampleCore } from '../../models/questionary/sample/SampleCore';
 
 export function useProposalSamples(proposalPk: number | null) {

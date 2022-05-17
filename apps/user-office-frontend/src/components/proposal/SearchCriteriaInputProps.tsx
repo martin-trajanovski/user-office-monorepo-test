@@ -3,7 +3,7 @@ import {
   QuestionTemplateRelationFragment,
 } from '@user-office-software/shared-types';
 
-import { SearchCriteria } from '../components/common/proposalFilters/QuestionaryFilter';
+import { SearchCriteria } from '../common/proposalFilters/QuestionaryFilter';
 
 export interface SearchCriteriaInputProps {
   searchCriteria: SearchCriteria | null;

@@ -2,7 +2,7 @@ import MaterialTable from '@material-table/core';
 import Link from '@mui/material/Link';
 import React, { useMemo } from 'react';
 
-import CopyToClipboard from '../components/common/CopyToClipboard';
+import CopyToClipboard from '../common/CopyToClipboard';
 import { ProposalFragment, TemplateCategoryId } from '@user-office-software/shared-types';
 import { useProposalsData } from '../proposal/useProposalsData';
 import { useSamplesWithQuestionaryStatus } from '../../sample/useSamplesWithQuestionaryStatus';

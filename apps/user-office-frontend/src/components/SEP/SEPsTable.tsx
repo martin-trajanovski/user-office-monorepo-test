@@ -4,11 +4,11 @@ import React, { useContext, useState } from 'react';
 import { Redirect, useHistory } from 'react-router';
 import { useQueryParams } from 'use-query-params';
 
-import { useCheckAccess } from '../components/common/Can';
+import { useCheckAccess } from '../common/Can';
 import SuperMaterialTable, {
   DefaultQueryParams,
   UrlQueryParamsType,
-} from '../components/common/SuperMaterialTable';
+} from '../common/SuperMaterialTable';
 import { UserContext } from '../../UserContextProvider';
 import { Sep, UserRole } from '@user-office-software/shared-types';
 import { useSEPsData } from '../../SEP/useSEPsData';

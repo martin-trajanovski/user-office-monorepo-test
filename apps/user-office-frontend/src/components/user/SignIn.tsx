@@ -12,13 +12,13 @@ import React, { useContext, useState } from 'react';
 import { useLocation } from 'react-router';
 import { Link, Redirect } from 'react-router-dom';
 
-import UOLoader from '../components/common/UOLoader';
+import UOLoader from '../common/UOLoader';
 import LoginHelpPage from '../pages/LoginHelpPage';
 import { UserContext } from '../../UserContextProvider';
 import ButtonWithDialog from '../../common/ButtonWithDialog';
 import { useUnauthorizedApi } from '../../common/useDataApi';
 import orcid from 'images/orcid.png';
-import { StyledFormWrapper } from 'styles/StyledComponents';
+import { StyledFormWrapper } from '../../styles/StyledComponents';
 
 import PhotoInSide from './PhotoInSide';
 

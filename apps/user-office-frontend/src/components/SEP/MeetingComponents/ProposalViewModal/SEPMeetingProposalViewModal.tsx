@@ -12,8 +12,8 @@ import createStyles from '@mui/styles/createStyles';
 import makeStyles from '@mui/styles/makeStyles';
 import React from 'react';
 
-import { useCheckAccess } from '../components/common/Can';
-import UOLoader from '../components/common/UOLoader';
+import { useCheckAccess } from '../common/Can';
+import UOLoader from '../common/UOLoader';
 import {
   TechnicalReview,
   Review,

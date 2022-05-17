@@ -1,10 +1,9 @@
-import { immerable } from 'immer';
-
 import {
   Questionary,
   SampleFragment,
   TemplateGroupId,
 } from '@user-office-software/shared-types';
+import { immerable } from 'immer';
 
 import { QuestionarySubmissionState } from '../QuestionarySubmissionState';
 import { ShipmentWithQuestionary } from './ShipmentWithQuestionary';

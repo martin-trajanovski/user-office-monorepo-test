@@ -18,8 +18,7 @@ import crossFetch from 'cross-fetch';
 import { useSnackbar } from 'notistack';
 import React, { useState, useContext, useRef } from 'react';
 
-import { downloadBlob } from '../../downloadBlob';
-
+import { downloadBlob } from '../utils/downloadBlob';
 import { UserContext } from './UserContextProvider';
 
 const useStyles = makeStyles((theme) => ({

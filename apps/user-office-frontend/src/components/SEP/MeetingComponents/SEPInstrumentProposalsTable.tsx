@@ -11,7 +11,7 @@ import clsx from 'clsx';
 import React, { useContext, DragEvent, useState, useEffect } from 'react';
 import { NumberParam, useQueryParams } from 'use-query-params';
 
-import { useCheckAccess } from '../components/common/Can';
+import { useCheckAccess } from '../common/Can';
 import { UserContext } from '../../UserContextProvider';
 import {
   SepProposal,

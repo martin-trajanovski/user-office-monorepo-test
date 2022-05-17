@@ -5,7 +5,7 @@ import makeStyles from '@mui/styles/makeStyles';
 import { Form, Formik } from 'formik';
 import React from 'react';
 
-import { ActionButtonContainer } from '../components/common/ActionButtonContainer';
+import { ActionButtonContainer } from '../common/ActionButtonContainer';
 import {
   getQuestionaryComponentDefinition,
   QuestionTemplateRelationFormProps,

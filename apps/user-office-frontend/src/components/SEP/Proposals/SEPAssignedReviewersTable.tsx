@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 import React, { useContext } from 'react';
 import { NumberParam, useQueryParams } from 'use-query-params';
 
-import { useCheckAccess } from '../components/common/Can';
+import { useCheckAccess } from '../common/Can';
 import ProposalReviewContent, {
   PROPOSAL_MODAL_TAB_NAMES,
 } from '../review/ProposalReviewContent';

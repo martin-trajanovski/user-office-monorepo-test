@@ -5,7 +5,7 @@ import List from '@mui/material/List';
 import makeStyles from '@mui/styles/makeStyles';
 import React from 'react';
 
-import { StyledButtonContainer } from 'styles/StyledComponents';
+import { StyledButtonContainer } from '../../styles/StyledComponents';
 
 import { QuestionnairesListItem } from './QuestionnairesListItem';
 

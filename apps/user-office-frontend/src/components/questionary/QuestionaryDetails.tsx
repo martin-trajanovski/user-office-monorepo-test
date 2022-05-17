@@ -3,7 +3,7 @@ import { TableProps } from '@mui/material/Table';
 import Typography from '@mui/material/Typography';
 import React, { FC } from 'react';
 
-import UOLoader from '../components/common/UOLoader';
+import UOLoader from '../common/UOLoader';
 import { Answer, DataType } from '@user-office-software/shared-types';
 import { useQuestionary } from '../../models/questionary/useQuestionary';
 import { areDependenciesSatisfied } from '../../models/questionary/QuestionaryFunctions';

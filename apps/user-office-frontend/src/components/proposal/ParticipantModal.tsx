@@ -1,12 +1,12 @@
 import AddBox from '@mui/icons-material/AddBox';
 import Dialog from '@mui/material/Dialog';
 import DialogContent from '@mui/material/DialogContent';
+import { UserRole, BasicUserDetails } from '@user-office-software/shared-types';
 import React from 'react';
 
-import { useCheckAccess } from '../components/common/Can';
+import { useCheckAccess } from '../common/Can';
 import PeopleTable from '../user/PeopleTable';
 import ProposalPeopleTable from '../user/ProposalsPeopleTable';
-import { UserRole, BasicUserDetails } from '@user-office-software/shared-types';
 
 function ParticipantModal(props: {
   title: string;

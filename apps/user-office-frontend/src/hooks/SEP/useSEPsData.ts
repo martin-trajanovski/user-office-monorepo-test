@@ -1,7 +1,7 @@
 import { useEffect, useState, Dispatch, SetStateAction } from 'react';
 
 import { Sep, UserRole } from '@user-office-software/shared-types';
-import { useDataApi } from '../../common/useDataApi';
+import { useDataApi } from '../common/useDataApi';
 
 export function useSEPsData(
   filter: string,

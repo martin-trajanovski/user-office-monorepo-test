@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 
-import SimpleTabs from '../components/common/TabPanel';
-import { StyledContainer, StyledPaper } from 'styles/StyledComponents';
+import SimpleTabs from '../common/TabPanel';
+import { StyledContainer, StyledPaper } from '../../styles/StyledComponents';
 
 import UpdatePassword from './UpdatePassword';
 import UpdateUserInformation from './UpdateUserInformation';

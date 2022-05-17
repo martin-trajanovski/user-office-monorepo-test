@@ -1,7 +1,7 @@
 import { TableProps } from '@mui/material';
 import React, { FunctionComponent } from 'react';
 
-import UOLoader from '../components/common/UOLoader';
+import UOLoader from '../common/UOLoader';
 import ProposalQuestionaryDetails from '../proposal/ProposalQuestionaryDetails';
 import { TableRowData } from '../questionary/QuestionaryDetails';
 import { BasicUserDetails } from '@user-office-software/shared-types';

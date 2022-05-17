@@ -25,7 +25,7 @@ import {
   getFieldById,
   getQuestionaryStepByTopicId,
 } from '../../models/questionary/QuestionaryFunctions';
-import { StyledContainer, StyledPaper } from 'styles/StyledComponents';
+import { StyledContainer, StyledPaper } from '../../styles/StyledComponents';
 import useDataApiWithFeedback from '../../utils/useDataApiWithFeedback';
 import { MiddlewareInputParams } from '../../utils/useReducerWithMiddleWares';
 import { FunctionType } from '../../utilTypes';

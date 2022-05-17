@@ -1,9 +1,8 @@
+import { CreateEsiMutation } from '@user-office-software/shared-types';
 import React, { useEffect, useState } from 'react';
 
-import UOLoader from '../components/common/UOLoader';
-import { CreateEsiMutation } from '@user-office-software/shared-types';
 import useDataApiWithFeedback from '../../utils/useDataApiWithFeedback';
-
+import UOLoader from '../common/UOLoader';
 import ProposalEsiContainer from './ProposalEsiContainer';
 
 interface CreateProposalEsiProps {

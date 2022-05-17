@@ -4,11 +4,10 @@ import IconButton from '@mui/material/IconButton';
 import TextField from '@mui/material/TextField';
 import Tooltip from '@mui/material/Tooltip';
 import makeStyles from '@mui/styles/makeStyles';
+import { BasicUserDetails, UserRole } from '@user-office-software/shared-types';
 import React, { useState, useEffect } from 'react';
 
-import { BasicUserDetails, UserRole } from '@user-office-software/shared-types';
-import { BasicUserData, useBasicUserData } from '../../user/useUserData';
-
+import { BasicUserData, useBasicUserData } from '../../hooks/user/useUserData';
 import ParticipantModal from './ParticipantModal';
 
 const useStyles = makeStyles((theme) => ({

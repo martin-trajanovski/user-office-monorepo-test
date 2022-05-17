@@ -4,13 +4,13 @@ import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import makeStyles from '@mui/styles/makeStyles';
+import { ProposalStatus } from '@user-office-software/shared-types';
 import { Form, Formik } from 'formik';
 import React from 'react';
 import * as yup from 'yup';
 
-import FormikUIAutocomplete from '../components/common/FormikUIAutocomplete';
-import { ProposalStatus } from '@user-office-software/shared-types';
-import { useProposalStatusesData } from '../../settings/useProposalStatusesData';
+import { useProposalStatusesData } from '../../hooks/settings/useProposalStatusesData';
+import FormikUIAutocomplete from '../common/FormikUIAutocomplete';
 
 const changeProposalStatusValidationSchema = yup.object().shape({
   selectedStatusId: yup.string().required('You must select proposal status'),

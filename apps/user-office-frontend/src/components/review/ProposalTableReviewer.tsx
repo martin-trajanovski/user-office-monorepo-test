@@ -9,9 +9,9 @@ import { proposalGradeValidationSchema } from '@user-office-software/validation'
 import React, { useState, useContext, useEffect } from 'react';
 import { useQueryParams, NumberParam } from 'use-query-params';
 
-import CallFilter from '../components/common/proposalFilters/CallFilter';
-import InstrumentFilter from '../components/common/proposalFilters/InstrumentFilter';
-import { DefaultQueryParams } from '../components/common/SuperMaterialTable';
+import CallFilter from '../common/proposalFilters/CallFilter';
+import InstrumentFilter from '../common/proposalFilters/InstrumentFilter';
+import { DefaultQueryParams } from '../common/SuperMaterialTable';
 import { ReviewAndAssignmentContext } from '../../ReviewAndAssignmentContextProvider';
 import {
   ReviewerFilter,

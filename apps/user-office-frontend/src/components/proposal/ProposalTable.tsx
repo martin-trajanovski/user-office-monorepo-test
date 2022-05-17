@@ -7,20 +7,19 @@ import Visibility from '@mui/icons-material/Visibility';
 import { Typography } from '@mui/material';
 import Dialog from '@mui/material/Dialog';
 import DialogContent from '@mui/material/DialogContent';
+import { Call } from '@user-office-software/shared-types';
 import PropTypes from 'prop-types';
 import React, { useContext, useEffect, useState } from 'react';
 import { Redirect } from 'react-router';
 
-import { UserContext } from '../../UserContextProvider';
-import { Call } from '@user-office-software/shared-types';
-import { useDownloadPDFProposal } from '../proposal/useDownloadPDFProposal';
-import { ProposalData } from '../proposal/useProposalData';
+import { UserContext } from '../../context/UserContextProvider';
+import { useDownloadPDFProposal } from '../../hooks/proposal/useDownloadPDFProposal';
+import { ProposalData } from '../../hooks/proposal/useProposalData';
 import { tableIcons } from '../../utils/materialIcons';
-import { tableLocalization } from '../../materialLocalization';
-import { timeAgo } from '../../Time';
+import { tableLocalization } from '../../utils/materialLocalization';
+import { timeAgo } from '../../utils/Time';
 import useDataApiWithFeedback from '../../utils/useDataApiWithFeedback';
 import withConfirm, { WithConfirmType } from '../../utils/withConfirm';
-
 import CallSelectModalOnProposalsClone from './CallSelectModalOnProposalClone';
 import {
   PartialProposalsDataType,

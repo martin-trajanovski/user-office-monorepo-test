@@ -8,18 +8,21 @@ import List from '@mui/material/List';
 import Typography from '@mui/material/Typography';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import makeStyles from '@mui/styles/makeStyles';
+import {
+  FeatureId,
+  PageName,
+  UserRole,
+} from '@user-office-software/shared-types';
 import clsx from 'clsx';
 import parse from 'html-react-parser';
 import PropTypes from 'prop-types';
 import React, { useContext, useEffect, useState } from 'react';
 import { Route, Switch } from 'react-router-dom';
 
-import { FeatureContext } from '../../FeatureContextProvider';
-import { UserContext } from '../../UserContextProvider';
-import { FeatureId, PageName, UserRole } from '@user-office-software/shared-types';
-import { useGetPageContent } from '../../admin/useGetPageContent';
-import { useCallsData } from '../../call/useCallsData';
-
+import { FeatureContext } from '../context/FeatureContextProvider';
+import { UserContext } from '../context/UserContextProvider';
+import { useGetPageContent } from '../hooks/admin/useGetPageContent';
+import { useCallsData } from '../hooks/call/useCallsData';
 import AppToolbar from './AppToolbar/AppToolbar';
 import CallPage from './call/CallPage';
 import Can, { useCheckAccess } from './common/Can';

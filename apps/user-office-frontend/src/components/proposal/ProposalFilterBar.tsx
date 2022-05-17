@@ -1,14 +1,6 @@
 import ExpandLessIcon from '@mui/icons-material/ExpandLess';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { Button, Collapse } from '@mui/material';
-import PropTypes from 'prop-types';
-import React, { useState } from 'react';
-import { DecodedValueMap } from 'use-query-params';
-
-import CallFilter from '../components/common/proposalFilters/CallFilter';
-import InstrumentFilter from '../components/common/proposalFilters/InstrumentFilter';
-import ProposalStatusFilter from '../components/common/proposalFilters/ProposalStatusFilter';
-import QuestionaryFilter from '../components/common/proposalFilters/QuestionaryFilter';
 import {
   Call,
   DataType,
@@ -18,8 +10,15 @@ import {
   QuestionFilterCompareOperator,
   QuestionFilterInput,
 } from '@user-office-software/shared-types';
-import { useQuestionFilterQueryParams } from '../proposal/useQuestionFilterQueryParams';
+import PropTypes from 'prop-types';
+import React, { useState } from 'react';
+import { DecodedValueMap } from 'use-query-params';
 
+import { useQuestionFilterQueryParams } from '../../hooks/proposal/useQuestionFilterQueryParams';
+import CallFilter from '../common/proposalFilters/CallFilter';
+import InstrumentFilter from '../common/proposalFilters/InstrumentFilter';
+import ProposalStatusFilter from '../common/proposalFilters/ProposalStatusFilter';
+import QuestionaryFilter from '../common/proposalFilters/QuestionaryFilter';
 import { ProposalUrlQueryParamsType } from './ProposalPage';
 
 export const questionaryFilterFromUrlQuery = (

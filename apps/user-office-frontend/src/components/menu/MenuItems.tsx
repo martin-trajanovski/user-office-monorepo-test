@@ -17,22 +17,21 @@ import Collapse from '@mui/material/Collapse';
 import ListItem from '@mui/material/ListItem';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
+import { Call, FeatureId, UserRole } from '@user-office-software/shared-types';
 import React, { useContext, useState } from 'react';
 import { useHistory } from 'react-router';
 import { NavLink } from 'react-router-dom';
 import { encodeDate } from 'use-query-params';
 
-import Tooltip from '../components/common/MenuTooltip';
+import { FeatureContext } from '../../context/FeatureContextProvider';
+import BoxIcon from '../common/icons/BoxIcon';
+import CommentQuestionIcon from '../common/icons/CommentQuestionIcon';
+import ProposalSettingsIcon from '../common/icons/ProposalSettingsIcon';
+import ProposalWorkflowIcon from '../common/icons/ProposalWorkflowIcon';
+import ScienceIcon from '../common/icons/ScienceIcon';
+import Tooltip from '../common/MenuTooltip';
 import { getRelativeDatesFromToday } from '../experiment/DateFilter';
 import { TimeSpan } from '../experiment/PresetDateSelector';
-import { FeatureContext } from '../../FeatureContextProvider';
-import { Call, FeatureId, UserRole } from '@user-office-software/shared-types';
-
-import BoxIcon from '../components/common/icons/BoxIcon';
-import CommentQuestionIcon from '../components/common/icons/CommentQuestionIcon';
-import ProposalSettingsIcon from '../components/common/icons/ProposalSettingsIcon';
-import ProposalWorkflowIcon from '../components/common/icons/ProposalWorkflowIcon';
-import ScienceIcon from '../components/common/icons/ScienceIcon';
 import { TemplateMenuListItem } from './TemplateMenuListItem';
 
 type MenuItemsProps = {

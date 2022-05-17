@@ -11,19 +11,6 @@ import Dialog from '@mui/material/Dialog';
 import DialogContent from '@mui/material/DialogContent';
 import IconButton from '@mui/material/IconButton';
 import Tooltip from '@mui/material/Tooltip';
-import React, { useContext, useEffect, useState } from 'react';
-import isEqual from 'react-fast-compare';
-import { DecodedValueMap, SetQuery } from 'use-query-params';
-
-import ListStatusIcon from '../components/common/icons/ListStatusIcon';
-import ScienceIcon from '../components/common/icons/ScienceIcon';
-import AssignProposalsToInstrument from '../instrument/AssignProposalsToInstrument';
-import ProposalReviewContent, {
-  PROPOSAL_MODAL_TAB_NAMES,
-} from '../review/ProposalReviewContent';
-import ProposalReviewModal from '../review/ProposalReviewModal';
-import AssignProposalsToSEP from '../SEP/Proposals/AssignProposalsToSEP';
-import { FeatureContext } from '../../FeatureContextProvider';
 import {
   Call,
   Proposal,
@@ -34,21 +21,33 @@ import {
   InstrumentFragment,
   FeatureId,
 } from '@user-office-software/shared-types';
-import { useLocalStorage } from '../../common/useLocalStorage';
-import { useDownloadPDFProposal } from '../proposal/useDownloadPDFProposal';
-import { useDownloadXLSXProposal } from '../proposal/useDownloadXLSXProposal';
+import React, { useContext, useEffect, useState } from 'react';
+import isEqual from 'react-fast-compare';
+import { DecodedValueMap, SetQuery } from 'use-query-params';
+
+import { FeatureContext } from '../../context/FeatureContextProvider';
+import { useLocalStorage } from '../../hooks/common/useLocalStorage';
+import { useDownloadPDFProposal } from '../../hooks/proposal/useDownloadPDFProposal';
+import { useDownloadXLSXProposal } from '../../hooks/proposal/useDownloadXLSXProposal';
 import {
   ProposalViewData,
   useProposalsCoreData,
-} from '../proposal/useProposalsCoreData';
+} from '../../hooks/proposal/useProposalsCoreData';
 import {
   fromProposalToProposalView,
   setSortDirectionOnSortColumn,
-} from '../../helperFunctions';
+} from '../../utils/helperFunctions';
 import { tableIcons } from '../../utils/materialIcons';
 import useDataApiWithFeedback from '../../utils/useDataApiWithFeedback';
 import withConfirm, { WithConfirmType } from '../../utils/withConfirm';
-
+import ListStatusIcon from '../common/icons/ListStatusIcon';
+import ScienceIcon from '../common/icons/ScienceIcon';
+import AssignProposalsToInstrument from '../instrument/AssignProposalsToInstrument';
+import ProposalReviewContent, {
+  PROPOSAL_MODAL_TAB_NAMES,
+} from '../review/ProposalReviewContent';
+import ProposalReviewModal from '../review/ProposalReviewModal';
+import AssignProposalsToSEP from '../SEP/Proposals/AssignProposalsToSEP';
 import CallSelectModalOnProposalsClone from './CallSelectModalOnProposalClone';
 import ChangeProposalStatus from './ChangeProposalStatus';
 import { ProposalUrlQueryParamsType } from './ProposalPage';

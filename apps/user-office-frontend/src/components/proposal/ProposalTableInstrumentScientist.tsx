@@ -5,10 +5,14 @@ import GetAppIcon from '@mui/icons-material/GetApp';
 import Visibility from '@mui/icons-material/Visibility';
 import IconButton from '@mui/material/IconButton';
 import Tooltip from '@mui/material/Tooltip';
+import { getTranslation, ResourceId } from '@user-office-software/localization';
 import {
-  getTranslation,
-  ResourceId,
-} from '@user-office-software/localization';
+  FeatureId,
+  Proposal,
+  ProposalsFilter,
+  ReviewerFilter,
+  SubmitTechnicalReviewInput,
+} from '@user-office-software/shared-types';
 import { proposalTechnicalReviewValidationSchema } from '@user-office-software/validation';
 import React, { useContext, useState, useEffect } from 'react';
 import {
@@ -18,7 +22,22 @@ import {
   withDefault,
 } from 'use-query-params';
 
-import { DefaultQueryParams } from '../components/common/SuperMaterialTable';
+import { FeatureContext } from '../../context/FeatureContextProvider';
+import { UserContext } from '../../context/UserContextProvider';
+import { useInstrumentScientistCallsData } from '../../hooks/call/useInstrumentScientistCallsData';
+import { useLocalStorage } from '../../hooks/common/useLocalStorage';
+import { useInstrumentsData } from '../../hooks/instrument/useInstrumentsData';
+import { useDownloadPDFProposal } from '../../hooks/proposal/useDownloadPDFProposal';
+import {
+  ProposalViewData,
+  useProposalsCoreData,
+} from '../../hooks/proposal/useProposalsCoreData';
+import { useProposalStatusesData } from '../../hooks/settings/useProposalStatusesData';
+import { setSortDirectionOnSortColumn } from '../../utils/helperFunctions';
+import { tableIcons } from '../../utils/materialIcons';
+import useDataApiWithFeedback from '../../utils/useDataApiWithFeedback';
+import withConfirm, { WithConfirmType } from '../../utils/withConfirm';
+import { DefaultQueryParams } from '../common/SuperMaterialTable';
 import ProposalReviewContent, {
   PROPOSAL_MODAL_TAB_NAMES,
 } from '../review/ProposalReviewContent';
@@ -26,29 +45,6 @@ import ProposalReviewModal from '../review/ProposalReviewModal';
 import ReviewerFilterComponent, {
   defaultReviewerQueryFilter,
 } from '../review/ReviewerFilter';
-import { FeatureContext } from '../../FeatureContextProvider';
-import { UserContext } from '../../UserContextProvider';
-import {
-  FeatureId,
-  Proposal,
-  ProposalsFilter,
-  ReviewerFilter,
-  SubmitTechnicalReviewInput,
-} from '@user-office-software/shared-types';
-import { useInstrumentScientistCallsData } from '../../call/useInstrumentScientistCallsData';
-import { useLocalStorage } from '../../common/useLocalStorage';
-import { useInstrumentsData } from '../../instrument/useInstrumentsData';
-import { useDownloadPDFProposal } from '../proposal/useDownloadPDFProposal';
-import {
-  ProposalViewData,
-  useProposalsCoreData,
-} from '../proposal/useProposalsCoreData';
-import { useProposalStatusesData } from '../../settings/useProposalStatusesData';
-import { setSortDirectionOnSortColumn } from '../../helperFunctions';
-import { tableIcons } from '../../utils/materialIcons';
-import useDataApiWithFeedback from '../../utils/useDataApiWithFeedback';
-import withConfirm, { WithConfirmType } from '../../utils/withConfirm';
-
 import ProposalFilterBar, {
   questionaryFilterFromUrlQuery,
 } from './ProposalFilterBar';

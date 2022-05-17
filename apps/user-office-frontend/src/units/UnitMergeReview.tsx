@@ -4,8 +4,8 @@ import produce from 'immer';
 import React, { useCallback, useState } from 'react';
 import { useHistory } from 'react-router';
 
-import { ActionButtonContainer } from '../components/common/ActionButtonContainer';
-import { ConflictResolver, DiffInfo } from '../components/common/ConflictResolver';
+import { ActionButtonContainer } from '../common/ActionButtonContainer';
+import { ConflictResolver, DiffInfo } from '../common/ConflictResolver';
 import {
   ConflictResolutionStrategy,
   SettingsId,

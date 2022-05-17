@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 
 import { GetFeedbackQuery } from '@user-office-software/shared-types';
-import { useDataApi } from '../../common/useDataApi';
+import { useDataApi } from '../common/useDataApi';
 
 export function useFeedback(feedbackId: number) {
   const [feedback, setFeedback] = useState<GetFeedbackQuery['feedback'] | null>(

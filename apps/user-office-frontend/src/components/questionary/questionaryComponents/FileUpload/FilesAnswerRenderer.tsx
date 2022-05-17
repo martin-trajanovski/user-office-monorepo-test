@@ -2,7 +2,7 @@ import Link from '@mui/material/Link';
 import makeStyles from '@mui/styles/makeStyles';
 import React from 'react';
 
-import { FileIdWithCaptionAndFigure } from '../components/common/FileUploadComponent';
+import { FileIdWithCaptionAndFigure } from '../common/FileUploadComponent';
 import { AnswerRenderer } from '../questionary/QuestionaryComponentRegistry';
 import { useFileMetadata } from '../../file/useFileMetadata';
 import { FileMetaData } from '../../models/questionary/FileUpload';

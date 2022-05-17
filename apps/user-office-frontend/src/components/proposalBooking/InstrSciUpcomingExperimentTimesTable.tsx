@@ -1,11 +1,10 @@
 import React, { useState } from 'react';
 import { useQueryParams, NumberParam } from 'use-query-params';
 
-import InstrumentFilter from '../components/common/proposalFilters/InstrumentFilter';
-import { useInstrumentsData } from '../../instrument/useInstrumentsData';
-import { useProposalBookingsScheduledEvents } from '../proposalBooking/useProposalBookingsScheduledEvents';
-import { StyledContainer, StyledPaper } from 'styles/StyledComponents';
-
+import { useInstrumentsData } from '../../hooks/instrument/useInstrumentsData';
+import { useProposalBookingsScheduledEvents } from '../../hooks/proposalBooking/useProposalBookingsScheduledEvents';
+import { StyledContainer, StyledPaper } from '../../styles/StyledComponents';
+import InstrumentFilter from '../common/proposalFilters/InstrumentFilter';
 import ExperimentsTable from './ExperimentTimesTable';
 
 export default function InstrSciUpcomingExperimentTimesTable() {

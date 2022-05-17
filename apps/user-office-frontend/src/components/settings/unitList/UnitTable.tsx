@@ -6,11 +6,11 @@ import React from 'react';
 import { useHistory } from 'react-router';
 import { useQueryParams } from 'use-query-params';
 
-import { useCheckAccess } from '../components/common/Can';
+import { useCheckAccess } from '../common/Can';
 import SuperMaterialTable, {
   DefaultQueryParams,
   UrlQueryParamsType,
-} from '../components/common/SuperMaterialTable';
+} from '../common/SuperMaterialTable';
 import { UserRole, Unit, SettingsId } from '@user-office-software/shared-types';
 import { useFormattedDateTime } from '../../admin/useFormattedDateTime';
 import { useUnitsData } from '../../settings/useUnitData';

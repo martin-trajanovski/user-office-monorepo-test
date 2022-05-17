@@ -10,9 +10,9 @@ import Tooltip from '@mui/material/Tooltip';
 import Typography from '@mui/material/Typography';
 import React, { useState, useContext } from 'react';
 
-import { ActionButtonContainer } from '../components/common/ActionButtonContainer';
-import { useCheckAccess } from '../components/common/Can';
-import UOLoader from '../components/common/UOLoader';
+import { ActionButtonContainer } from '../common/ActionButtonContainer';
+import { useCheckAccess } from '../common/Can';
+import UOLoader from '../common/UOLoader';
 import ParticipantModal from '../proposal/ParticipantModal';
 import { UserContext } from '../../UserContextProvider';
 import { BasicUserDetails, UserRole, Sep } from '@user-office-software/shared-types';

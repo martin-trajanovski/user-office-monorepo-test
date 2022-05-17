@@ -1,7 +1,7 @@
 import { SetStateAction, useEffect, useState } from 'react';
 
 import { ShipmentsFilter } from '@user-office-software/shared-types';
-import { useDataApi } from '../../common/useDataApi';
+import { useDataApi } from '../common/useDataApi';
 import { ShipmentCore } from '../../models/questionary/shipment/ShipmentCore';
 
 export function useShipments(filter?: ShipmentsFilter) {

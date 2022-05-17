@@ -5,8 +5,8 @@ import { CheckboxWithLabel, TextField } from 'formik-mui';
 import React, { FC } from 'react';
 import * as Yup from 'yup';
 
-import FormikUICustomEditor from '../components/common/FormikUICustomEditor';
-import TitledContainer from '../components/common/TitledContainer';
+import FormikUICustomEditor from '../common/FormikUICustomEditor';
+import TitledContainer from '../common/TitledContainer';
 import { QuestionTemplateRelationFormProps } from '../questionary/QuestionaryComponentRegistry';
 import { TextInputConfig } from '@user-office-software/shared-types';
 

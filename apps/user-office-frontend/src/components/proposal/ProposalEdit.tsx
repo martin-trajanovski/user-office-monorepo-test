@@ -1,15 +1,11 @@
-import {
-  getTranslation,
-  ResourceId,
-} from '@user-office-software/localization';
+import { getTranslation, ResourceId } from '@user-office-software/localization';
 import React from 'react';
 import { useParams } from 'react-router';
 
-import SimpleTabs from '../components/common/TabPanel';
-import UOLoader from '../components/common/UOLoader';
-import { useProposalData } from '../proposal/useProposalData';
-import { StyledContainer, StyledPaper } from 'styles/StyledComponents';
-
+import { useProposalData } from '../../hooks/proposal/useProposalData';
+import { StyledContainer, StyledPaper } from '../../styles/StyledComponents';
+import SimpleTabs from '../common/TabPanel';
+import UOLoader from '../common/UOLoader';
 import ProposalContainer from './ProposalContainer';
 
 export default function ProposalEdit() {

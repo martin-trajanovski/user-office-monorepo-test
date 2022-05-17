@@ -15,7 +15,7 @@ import {
 } from '@user-office-software/shared-types';
 import { usePersistProposalWorkflowEditorModel } from '../../settings/usePersistProposalWorkflowEditorModel';
 import { useProposalStatusesData } from '../../settings/useProposalStatusesData';
-import { StyledContainer, StyledPaper } from 'styles/StyledComponents';
+import { StyledContainer, StyledPaper } from '../../styles/StyledComponents';
 import { FunctionType } from '../../utilTypes';
 
 import ProposalStatusPicker from './ProposalStatusPicker';

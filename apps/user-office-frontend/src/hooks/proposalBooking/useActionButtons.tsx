@@ -7,8 +7,8 @@ import { DateTime } from 'luxon';
 import React, { ReactNode, useContext } from 'react';
 import { useHistory } from 'react-router';
 
-import BoxIcon from '../components/common/icons/BoxIcon';
-import EsiIcon from '../components/common/icons/EsiIcon';
+import BoxIcon from '../common/icons/BoxIcon';
+import EsiIcon from '../common/icons/EsiIcon';
 import ActionButton, {
   ActionButtonState,
 } from '../proposalBooking/ActionButton';

@@ -8,7 +8,7 @@ import {
 
 import { UserContext } from '../../UserContextProvider';
 import { InstrumentFragment, UserRole } from '@user-office-software/shared-types';
-import { useDataApi } from '../../common/useDataApi';
+import { useDataApi } from '../common/useDataApi';
 
 export function useInstrumentsData(callIds?: number[]): {
   loadingInstruments: boolean;

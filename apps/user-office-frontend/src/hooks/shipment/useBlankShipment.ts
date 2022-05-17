@@ -8,7 +8,7 @@ import {
   TemplateGroupId,
   User,
 } from '@user-office-software/shared-types';
-import { useDataApi } from '../../common/useDataApi';
+import { useDataApi } from '../common/useDataApi';
 import { ShipmentWithQuestionary } from '../../models/questionary/shipment/ShipmentWithQuestionary';
 
 function createShipmentStub(

@@ -3,7 +3,7 @@ import { Typography } from '@mui/material';
 import Button from '@mui/material/Button';
 import React, { useContext, useState } from 'react';
 
-import { ActionButtonContainer } from '../components/common/ActionButtonContainer';
+import { ActionButtonContainer } from '../common/ActionButtonContainer';
 import { UserContext } from '../../UserContextProvider';
 import { Role } from '@user-office-software/shared-types';
 import { useRenewToken } from '../../common/useRenewToken';

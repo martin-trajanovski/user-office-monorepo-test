@@ -12,11 +12,11 @@ import { CheckboxWithLabel, Select, TextField } from 'formik-mui';
 import React, { useContext, useEffect, useState } from 'react';
 import { Prompt } from 'react-router';
 
-import { useCheckAccess } from '../components/common/Can';
+import { useCheckAccess } from '../common/Can';
 import {
   FileIdWithCaptionAndFigure,
   FileUploadComponent,
-} from '../components/common/FileUploadComponent';
+} from '../common/FileUploadComponent';
 import { UserContext } from '../../UserContextProvider';
 import {
   TechnicalReviewStatus,
@@ -24,7 +24,7 @@ import {
   UserRole,
   Proposal,
 } from '@user-office-software/shared-types';
-import { StyledButtonContainer } from 'styles/StyledComponents';
+import { StyledButtonContainer } from '../../styles/StyledComponents';
 import useDataApiWithFeedback from '../../utils/useDataApiWithFeedback';
 import { getFullUserName } from '../../user';
 import { Option } from '../../utilTypes';

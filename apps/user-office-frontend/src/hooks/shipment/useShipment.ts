@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 
 import { GetShipmentQuery } from '@user-office-software/shared-types';
-import { useDataApi } from '../../common/useDataApi';
+import { useDataApi } from '../common/useDataApi';
 
 export function useShipment(shipmentId: number) {
   const [shipment, setShipment] = useState<GetShipmentQuery['shipment'] | null>(

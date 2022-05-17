@@ -4,9 +4,9 @@ import React, { useContext, useEffect, useState } from 'react';
 import { Prompt } from 'react-router';
 import * as Yup from 'yup';
 
-import { ErrorFocus } from '../components/common/ErrorFocus';
-import { NavigButton } from '../components/common/NavigButton';
-import UOLoader from '../components/common/UOLoader';
+import { ErrorFocus } from '../common/ErrorFocus';
+import { NavigButton } from '../common/NavigButton';
+import UOLoader from '../common/UOLoader';
 import { Answer, QuestionaryStep, Sdk } from '@user-office-software/shared-types';
 import { usePreSubmitActions } from '../../models/questionary/useSubmitActions';
 import {

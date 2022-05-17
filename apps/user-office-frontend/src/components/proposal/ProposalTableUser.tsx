@@ -1,14 +1,13 @@
-import React, { useCallback, useState } from 'react';
-
 import {
   Call,
   Maybe,
   ProposalPublicStatus,
   ProposalStatus,
 } from '@user-office-software/shared-types';
-import { useDataApi } from '../../common/useDataApi';
-import { timeAgo } from '../../Time';
+import React, { useCallback, useState } from 'react';
 
+import { useDataApi } from '../../hooks/common/useDataApi';
+import { timeAgo } from '../../utils/Time';
 import ProposalTable from './ProposalTable';
 
 export type PartialProposalsDataType = {

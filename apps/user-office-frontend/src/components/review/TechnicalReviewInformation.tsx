@@ -7,7 +7,7 @@ import makeStyles from '@mui/styles/makeStyles';
 import { getTranslation } from '@user-office-software/localization';
 import React, { Fragment } from 'react';
 
-import { useCheckAccess } from '../components/common/Can';
+import { useCheckAccess } from '../common/Can';
 import { TechnicalReview, UserRole } from '@user-office-software/shared-types';
 import { getFullUserName } from '../../user';
 

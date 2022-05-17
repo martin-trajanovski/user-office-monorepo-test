@@ -1,7 +1,7 @@
 import { useEffect, useState, SetStateAction } from 'react';
 
 import { Call, CallsFilter } from '@user-office-software/shared-types';
-import { useDataApi } from '../../common/useDataApi';
+import { useDataApi } from '../common/useDataApi';
 
 export function useCallsData(filter?: CallsFilter) {
   const [callsFilter, setCallsFilter] = useState(filter);

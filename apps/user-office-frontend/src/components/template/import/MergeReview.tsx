@@ -3,7 +3,7 @@ import produce from 'immer';
 import React, { useCallback, useState } from 'react';
 import { useHistory } from 'react-router';
 
-import { ActionButtonContainer } from '../components/common/ActionButtonContainer';
+import { ActionButtonContainer } from '../common/ActionButtonContainer';
 import {
   ConflictResolutionStrategy,
   QuestionComparison,

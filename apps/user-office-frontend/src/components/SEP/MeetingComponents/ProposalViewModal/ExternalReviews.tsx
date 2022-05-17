@@ -9,7 +9,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 
 import { Review } from '@user-office-software/shared-types';
-import { StyledPaper } from 'styles/StyledComponents';
+import { StyledPaper } from '../../styles/StyledComponents';
 import { getFullUserName } from '../../user';
 
 const useStyles = makeStyles((theme) => ({

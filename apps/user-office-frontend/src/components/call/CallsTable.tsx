@@ -12,13 +12,13 @@ import { useCallsData } from '../../hooks/call/useCallsData';
 import { tableIcons } from '../../utils/materialIcons';
 import useDataApiWithFeedback from '../../utils/useDataApiWithFeedback';
 import { FunctionType } from '../../utils/utilTypes';
-import { useCheckAccess } from '../components/common/Can';
-import ScienceIcon from '../components/common/icons/ScienceIcon';
-import InputDialog from '../components/common/InputDialog';
+import { useCheckAccess } from '../common/Can';
+import ScienceIcon from '../common/icons/ScienceIcon';
+import InputDialog from '../common/InputDialog';
 import SuperMaterialTable, {
   DefaultQueryParams,
   UrlQueryParamsType,
-} from '../components/common/SuperMaterialTable';
+} from '../common/SuperMaterialTable';
 import AssignedInstrumentsTable from './AssignedInstrumentsTable';
 import AssignInstrumentsToCall from './AssignInstrumentsToCall';
 import CallStatusFilter, {

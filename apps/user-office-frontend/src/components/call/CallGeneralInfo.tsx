@@ -36,7 +36,7 @@ import React, { useContext } from 'react';
 
 import { FeatureContext } from '../../context/FeatureContextProvider';
 import { useFormattedDateTime } from '../../hooks/admin/useFormattedDateTime';
-import FormikUIAutocomplete from '../components/common/FormikUIAutocomplete';
+import FormikUIAutocomplete from '../common/FormikUIAutocomplete';
 
 const CallGeneralInfo: React.FC<{
   templates: GetTemplatesQuery['templates'];

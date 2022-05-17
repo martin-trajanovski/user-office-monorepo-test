@@ -2,20 +2,23 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import makeStyles from '@mui/styles/makeStyles';
 import {
+  InstrumentFragment,
+  UserRole,
+} from '@user-office-software/shared-types';
+import {
   createInstrumentValidationSchema,
   updateInstrumentValidationSchema,
-} from '@user-office-software/validation/lib/Instrument';
+} from '@user-office-software/validation';
 import { Field, Form, Formik } from 'formik';
 import { TextField } from 'formik-mui';
 import PropTypes from 'prop-types';
 import React from 'react';
 
-import FormikUIAutocomplete from '../components/common/FormikUIAutocomplete';
-import UOLoader from '../components/common/UOLoader';
-import { InstrumentFragment, UserRole } from '@user-office-software/shared-types';
-import { useUsersData } from '../../user/useUsersData';
+import { useUsersData } from '../../hooks/user/useUsersData';
 import useDataApiWithFeedback from '../../utils/useDataApiWithFeedback';
-import { getFullUserName } from '../../user';
+import { getFullUserName } from '../../utils/user';
+import FormikUIAutocomplete from '../common/FormikUIAutocomplete';
+import UOLoader from '../common/UOLoader';
 
 const useStyles = makeStyles((theme) => ({
   submit: {

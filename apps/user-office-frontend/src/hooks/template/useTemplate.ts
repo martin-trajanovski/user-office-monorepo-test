@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 
 import { GetTemplateQuery } from '@user-office-software/shared-types';
-import { useDataApi } from '../../common/useDataApi';
+import { useDataApi } from '../common/useDataApi';
 
 export function useTemplate(templateId: number) {
   const api = useDataApi();

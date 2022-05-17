@@ -1,8 +1,7 @@
 import React from 'react';
 import { useParams } from 'react-router';
 
-import { StyledContainer, StyledPaper } from 'styles/StyledComponents';
-
+import { StyledContainer, StyledPaper } from '../../styles/StyledComponents';
 import UpdateFeedback from './UpdateFeedback';
 
 export default function UpdateFeedbackPage() {

@@ -1,6 +1,7 @@
 import Close from '@mui/icons-material/Close';
 import IconButton from '@mui/material/IconButton';
 import { StyledEngineProvider } from '@mui/material/styles';
+import { FeatureId, SettingsId } from '@user-office-software/shared-types';
 import { SnackbarProvider } from 'notistack';
 import React, { ErrorInfo, useContext } from 'react';
 import { CookiesProvider } from 'react-cookie';
@@ -13,16 +14,17 @@ import {
 } from 'react-router-dom';
 import { QueryParamProvider } from 'use-query-params';
 
-import { DownloadContextProvider } from '../../DownloadContextProvider';
-import { FeatureContextProvider } from '../../FeatureContextProvider';
-import { FeatureContext } from '../../FeatureContextProvider';
-import { ReviewAndAssignmentContextProvider } from '../../ReviewAndAssignmentContextProvider';
-import { SettingsContextProvider } from '../../SettingsContextProvider';
-import { SettingsContext } from '../../SettingsContextProvider';
-import { UserContext, UserContextProvider } from '../../UserContextProvider';
-import { FeatureId, SettingsId } from '@user-office-software/shared-types';
-import { getUnauthorizedApi } from '../../common/useDataApi';
-
+import { DownloadContextProvider } from '../context/DownloadContextProvider';
+import { FeatureContextProvider } from '../context/FeatureContextProvider';
+import { FeatureContext } from '../context/FeatureContextProvider';
+import { ReviewAndAssignmentContextProvider } from '../context/ReviewAndAssignmentContextProvider';
+import { SettingsContextProvider } from '../context/SettingsContextProvider';
+import { SettingsContext } from '../context/SettingsContextProvider';
+import {
+  UserContext,
+  UserContextProvider,
+} from '../context/UserContextProvider';
+import { getUnauthorizedApi } from '../hooks/common/useDataApi';
 import DashBoard from './DashBoard';
 import Theme from './theme/theme';
 import EmailVerification from './user/EmailVerification';

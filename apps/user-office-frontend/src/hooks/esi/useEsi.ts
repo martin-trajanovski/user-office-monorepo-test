@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-import { useDataApi } from '../../common/useDataApi';
+import { useDataApi } from '../common/useDataApi';
 import { ProposalEsiWithQuestionary } from '../../models/questionary/proposalEsi/ProposalEsiWithQuestionary';
 
 export function useEsi(esiId: number) {

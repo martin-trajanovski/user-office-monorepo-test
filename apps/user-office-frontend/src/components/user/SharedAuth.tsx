@@ -2,7 +2,7 @@ import makeStyles from '@mui/styles/makeStyles';
 import React, { useContext, useEffect } from 'react';
 import { Redirect, useLocation } from 'react-router';
 
-import UOLoader from '../components/common/UOLoader';
+import UOLoader from '../common/UOLoader';
 import { UserContext } from '../../UserContextProvider';
 import { useUnauthorizedApi } from '../../common/useDataApi';
 

@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 
-import { NavigButton } from '../components/common/NavigButton';
+import { NavigButton } from '../common/NavigButton';
 import NavigationFragment from '../questionary/NavigationFragment';
 import {
   createMissingContextErrorMessage,

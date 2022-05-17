@@ -5,19 +5,19 @@ import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import Typography from '@mui/material/Typography';
 import { Editor } from '@tinymce/tinymce-react';
-import { administrationProposalValidationSchema } from '@user-office-software/validation/lib/Proposal';
+import { UserRole } from '@user-office-software/shared-types';
+import { ProposalEndStatus } from '@user-office-software/shared-types';
+import { administrationProposalValidationSchema } from '@user-office-software/validation';
 import { Formik, Form, Field, useFormikContext } from 'formik';
 import { CheckboxWithLabel, Select, TextField } from 'formik-mui';
 import React from 'react';
 import { Prompt } from 'react-router';
 
-import { useCheckAccess } from '../components/common/Can';
-import { UserRole } from '@user-office-software/shared-types';
-import { ProposalEndStatus } from '@user-office-software/shared-types';
-import { ProposalData } from '../proposal/useProposalData';
-import { StyledButtonContainer } from 'styles/StyledComponents';
+import { ProposalData } from '../../hooks/proposal/useProposalData';
+import { StyledButtonContainer } from '../../styles/StyledComponents';
 import useDataApiWithFeedback from '../../utils/useDataApiWithFeedback';
-import { Option } from '../../utilTypes';
+import { Option } from '../../utils/utilTypes';
+import { useCheckAccess } from '../common/Can';
 
 export type AdministrationFormData = {
   proposalPk: number;

@@ -27,9 +27,9 @@ import queryString from 'query-string';
 import React, { useContext, useState } from 'react';
 import { Link, useHistory } from 'react-router-dom';
 
-import { ErrorFocus } from '../components/common/ErrorFocus';
-import FormikUIAutocomplete from '../components/common/FormikUIAutocomplete';
-import UOLoader from '../components/common/UOLoader';
+import { ErrorFocus } from '../common/ErrorFocus';
+import FormikUIAutocomplete from '../common/FormikUIAutocomplete';
+import UOLoader from '../common/UOLoader';
 import InformationModal from '../pages/InformationModal';
 import { UserContext } from '../../UserContextProvider';
 import {

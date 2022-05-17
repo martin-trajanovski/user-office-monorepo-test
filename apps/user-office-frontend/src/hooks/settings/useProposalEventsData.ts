@@ -1,7 +1,7 @@
 import { useEffect, useState, SetStateAction, Dispatch } from 'react';
 
 import { ProposalEvent } from '@user-office-software/shared-types';
-import { useDataApi } from '../../common/useDataApi';
+import { useDataApi } from '../common/useDataApi';
 
 export function useProposalEventsData(): {
   loadingProposalEvents: boolean;

@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-import { useDataApi } from '../../common/useDataApi';
+import { useDataApi } from '../common/useDataApi';
 
 import {
   GetScheduledEventsCoreQuery,

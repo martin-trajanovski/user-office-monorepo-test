@@ -3,8 +3,8 @@ import { Link } from '@mui/material';
 import makeStyles from '@mui/styles/makeStyles';
 import React, { useContext } from 'react';
 
-import { NavigButton } from '../components/common/NavigButton';
-import UOLoader from '../components/common/UOLoader';
+import { NavigButton } from '../common/NavigButton';
+import UOLoader from '../common/UOLoader';
 import NavigationFragment from '../questionary/NavigationFragment';
 import {
   createMissingContextErrorMessage,

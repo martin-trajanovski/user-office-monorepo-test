@@ -4,7 +4,7 @@ import {
   BasicUserDetailsFragment,
   GetUsersQueryVariables,
 } from '@user-office-software/shared-types';
-import { useDataApi } from '../../common/useDataApi';
+import { useDataApi } from '../common/useDataApi';
 
 import { getCurrentUser } from '../../context/UserContextProvider';
 

@@ -22,9 +22,9 @@ import { TextField } from 'formik-mui';
 import PropTypes from 'prop-types';
 import React, { useState } from 'react';
 
-import UOLoader from '../components/common/UOLoader';
+import UOLoader from '../common/UOLoader';
 import { Proposal, TechnicalReview } from '@user-office-software/shared-types';
-import { StyledPaper } from 'styles/StyledComponents';
+import { StyledPaper } from '../../styles/StyledComponents';
 import useDataApiWithFeedback from '../../utils/useDataApiWithFeedback';
 import { getFullUserName } from '../../user';
 

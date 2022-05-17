@@ -1,7 +1,7 @@
 import { useEffect, useState, Dispatch, SetStateAction } from 'react';
 
 import { GetSepProposalsQuery } from '@user-office-software/shared-types';
-import { useDataApi } from '../../common/useDataApi';
+import { useDataApi } from '../common/useDataApi';
 import { Unpacked } from '../../utilTypes';
 
 export type SEPProposalType = Unpacked<

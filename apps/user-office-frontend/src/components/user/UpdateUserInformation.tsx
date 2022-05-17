@@ -21,8 +21,8 @@ import { DatePicker } from 'formik-mui-lab';
 import { DateTime } from 'luxon';
 import React, { useState, useContext } from 'react';
 
-import FormikUIAutocomplete from '../components/common/FormikUIAutocomplete';
-import UOLoader from '../components/common/UOLoader';
+import FormikUIAutocomplete from '../common/FormikUIAutocomplete';
+import UOLoader from '../common/UOLoader';
 import { UserContext } from '../../UserContextProvider';
 import {
   SettingsId,
@@ -34,7 +34,7 @@ import { useInstitutionsData } from '../../admin/useInstitutionData';
 import { useGetFields } from '../../user/useGetFields';
 import { useUserData } from '../../user/useUserData';
 import orcid from 'images/orcid.png';
-import { StyledButtonContainer } from 'styles/StyledComponents';
+import { StyledButtonContainer } from '../../styles/StyledComponents';
 import useDataApiWithFeedback from '../../utils/useDataApiWithFeedback';
 import { Option } from '../../utilTypes';
 

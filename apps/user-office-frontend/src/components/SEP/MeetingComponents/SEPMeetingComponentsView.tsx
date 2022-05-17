@@ -8,7 +8,7 @@ import PropTypes from 'prop-types';
 import React, { useEffect } from 'react';
 import { NumberParam, useQueryParams, withDefault } from 'use-query-params';
 
-import CallFilter from '../components/common/proposalFilters/CallFilter';
+import CallFilter from '../common/proposalFilters/CallFilter';
 import { useCallsData } from '../../call/useCallsData';
 import { useDownloadXLSXSEP } from '../../SEP/useDownloadXLSXSEP';
 

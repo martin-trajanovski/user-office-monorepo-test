@@ -13,8 +13,8 @@ import makeStyles from '@mui/styles/makeStyles';
 import { Formik } from 'formik';
 import React, { useState, useEffect, useContext } from 'react';
 
-import { ActionButtonContainer } from '../components/common/ActionButtonContainer';
-import EmailSearchBar from '../components/common/EmailSearchBar';
+import { ActionButtonContainer } from '../common/ActionButtonContainer';
+import EmailSearchBar from '../common/EmailSearchBar';
 import { FeatureContext } from '../../FeatureContextProvider';
 import {
   BasicUserDetails,

@@ -11,7 +11,7 @@ import React, { useState } from 'react';
 import { useInstrumentsData } from '../../hooks/instrument/useInstrumentsData';
 import { tableIcons } from '../../utils/materialIcons';
 import useDataApiWithFeedback from '../../utils/useDataApiWithFeedback';
-import { ActionButtonContainer } from '../components/common/ActionButtonContainer';
+import { ActionButtonContainer } from '../common/ActionButtonContainer';
 
 type AssignInstrumentsToCallProps = {
   assignInstrumentsToCall: (

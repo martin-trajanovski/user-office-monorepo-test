@@ -10,7 +10,7 @@ import { TextField } from 'formik-mui';
 import PropTypes from 'prop-types';
 import React from 'react';
 
-import UOLoader from '../components/common/UOLoader';
+import UOLoader from '../common/UOLoader';
 import { ProposalStatus } from '@user-office-software/shared-types';
 import useDataApiWithFeedback from '../../utils/useDataApiWithFeedback';
 

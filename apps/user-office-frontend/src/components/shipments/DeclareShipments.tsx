@@ -2,7 +2,7 @@ import { Dialog, DialogContent, Typography, Alert, Stack } from '@mui/material';
 import { makeStyles } from '@mui/styles';
 import React, { useState } from 'react';
 
-import UOLoader from '../components/common/UOLoader';
+import UOLoader from '../common/UOLoader';
 import {
   QuestionnairesList,
   QuestionnairesListRow,

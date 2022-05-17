@@ -4,11 +4,11 @@ import React from 'react';
 import { useHistory } from 'react-router';
 import { useQueryParams } from 'use-query-params';
 
-import { useCheckAccess } from '../components/common/Can';
+import { useCheckAccess } from '../common/Can';
 import SuperMaterialTable, {
   DefaultQueryParams,
   UrlQueryParamsType,
-} from '../components/common/SuperMaterialTable';
+} from '../common/SuperMaterialTable';
 import { UserRole, ProposalWorkflow } from '@user-office-software/shared-types';
 import { useProposalWorkflowsData } from '../../settings/useProposalWorkflowsData';
 import { tableIcons } from '../../utils/materialIcons';

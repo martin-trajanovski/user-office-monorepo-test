@@ -2,7 +2,7 @@ import { FormControlLabel } from '@mui/material';
 import Checkbox from '@mui/material/Checkbox';
 import React, { ChangeEvent, useContext, useState } from 'react';
 
-import { NavigButton } from '../components/common/NavigButton';
+import { NavigButton } from '../common/NavigButton';
 import NavigationFragment from '../questionary/NavigationFragment';
 import {
   createMissingContextErrorMessage,

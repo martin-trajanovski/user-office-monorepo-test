@@ -1,8 +1,0 @@
-mutation verifyEmail($token: String!) {
-  emailVerification(token: $token) {
-    rejection {
-      ...rejection
-    }
-    success
-  }
-}

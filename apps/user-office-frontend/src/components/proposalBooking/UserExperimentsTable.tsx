@@ -1,8 +1,7 @@
 import React from 'react';
 
-import { useProposalBookingsScheduledEvents } from '../proposalBooking/useProposalBookingsScheduledEvents';
-import { StyledContainer, StyledPaper } from 'styles/StyledComponents';
-
+import { useProposalBookingsScheduledEvents } from '../../hooks/proposalBooking/useProposalBookingsScheduledEvents';
+import { StyledContainer, StyledPaper } from '../../styles/StyledComponents';
 import ExperimentsTable from './ExperimentTimesTable';
 
 export default function UserExperimentTimesTable() {

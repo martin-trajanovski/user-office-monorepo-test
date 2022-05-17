@@ -3,7 +3,7 @@ import Container from '@mui/material/Container';
 import React from 'react';
 
 import { TemplateImportWithValidation } from '@user-office-software/shared-types';
-import { StyledPaper } from 'styles/StyledComponents';
+import { StyledPaper } from '../../styles/StyledComponents';
 import useDataApiWithFeedback from '../../utils/useDataApiWithFeedback';
 
 import { SelectImportFile } from '../../common/SelectImportFile';

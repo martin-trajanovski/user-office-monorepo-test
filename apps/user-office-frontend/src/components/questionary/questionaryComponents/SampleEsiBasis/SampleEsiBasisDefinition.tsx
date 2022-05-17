@@ -1,6 +1,6 @@
 import React from 'react';
 
-import EsiIcon from '../components/common/icons/EsiIcon';
+import EsiIcon from '../common/icons/EsiIcon';
 import { DataType } from '@user-office-software/shared-types';
 import { SampleEsiSubmissionState } from '../../models/questionary/sampleEsi/SampleEsiSubmissionState';
 
