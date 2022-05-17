@@ -1,7 +1,7 @@
 import React from 'react';
 
-import ProposalEsiDetails from 'components/proposalEsi/ProposalEsiDetails';
-import ButtonWithDialog from 'hooks/common/ButtonWithDialog';
+import ProposalEsiDetails from '../proposalEsi/ProposalEsiDetails';
+import ButtonWithDialog from '../../common/ButtonWithDialog';
 
 interface ProposalEsiDetailsButtonProps {
   esiId: number;

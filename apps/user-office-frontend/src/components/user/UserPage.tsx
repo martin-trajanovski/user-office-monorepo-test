@@ -3,8 +3,8 @@ import makeStyles from '@mui/styles/makeStyles';
 import React from 'react';
 import { withRouter } from 'react-router-dom';
 
-import SimpleTabs from 'components/common/TabPanel';
-import EventLogList from 'components/eventLog/EventLogList';
+import SimpleTabs from '../common/TabPanel';
+import EventLogList from '../eventLog/EventLogList';
 import { StyledContainer, StyledPaper } from 'styles/StyledComponents';
 
 import { Impersonate } from './Impersonate';

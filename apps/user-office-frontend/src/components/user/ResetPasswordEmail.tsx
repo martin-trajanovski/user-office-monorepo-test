@@ -11,7 +11,7 @@ import { TextField } from 'formik-mui';
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-import { useUnauthorizedApi } from 'hooks/common/useDataApi';
+import { useUnauthorizedApi } from '../../common/useDataApi';
 import { StyledFormWrapper } from 'styles/StyledComponents';
 
 import PhotoInSide from './PhotoInSide';

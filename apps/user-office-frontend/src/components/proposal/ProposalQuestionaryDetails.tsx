@@ -1,11 +1,11 @@
 import React from 'react';
 
-import GenericTemplatesAnswerRenderer from 'components/questionary/questionaryComponents/GenericTemplate/GenericTemplateAnswerRenderer';
-import SamplesAnswerRenderer from 'components/questionary/questionaryComponents/SampleDeclaration/SamplesAnswerRenderer';
+import GenericTemplatesAnswerRenderer from '../questionary/questionaryComponents/GenericTemplate/GenericTemplateAnswerRenderer';
+import SamplesAnswerRenderer from '../questionary/questionaryComponents/SampleDeclaration/SamplesAnswerRenderer';
 import QuestionaryDetails, {
   QuestionaryDetailsProps,
-} from 'components/questionary/QuestionaryDetails';
-import { DataType } from 'generated/sdk';
+} from '../questionary/QuestionaryDetails';
+import { DataType } from '@user-office-software/shared-types';
 
 interface ProposalQuestionaryDetailsProps extends QuestionaryDetailsProps {
   proposalPk: number;

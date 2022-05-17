@@ -9,11 +9,11 @@ import { updateSEPValidationSchema } from '@user-office-software/validation/lib/
 import { Formik, Form, Field } from 'formik';
 import React from 'react';
 
-import { useCheckAccess } from 'components/common/Can';
-import UOLoader from 'components/common/UOLoader';
-import { Sep, UserRole } from 'generated/sdk';
+import { useCheckAccess } from '../common/Can';
+import UOLoader from '../common/UOLoader';
+import { Sep, UserRole } from '@user-office-software/shared-types';
 import { StyledButtonContainer } from 'styles/StyledComponents';
-import useDataApiWithFeedback from 'utils/useDataApiWithFeedback';
+import useDataApiWithFeedback from '../../useDataApiWithFeedback';
 
 type SEPPageProps = {
   /** SEP data to be shown */

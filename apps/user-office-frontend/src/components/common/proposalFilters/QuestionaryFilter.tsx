@@ -1,20 +1,19 @@
 import SearchIcon from '@mui/icons-material/Search';
 import { Button, Collapse, Grid, TextField, Autocomplete } from '@mui/material';
 import makeStyles from '@mui/styles/makeStyles';
-import React, { FC, useEffect, useState } from 'react';
-
-import { getQuestionaryComponentDefinition } from 'components/questionary/QuestionaryComponentRegistry';
 import {
   GetTemplateQuery,
   QuestionFilterCompareOperator,
   QuestionFilterInput,
   QuestionTemplateRelation,
   QuestionTemplateRelationFragment,
-} from 'generated/sdk';
-import { useTemplate } from 'hooks/template/useTemplate';
+} from '@user-office-software/shared-types';
+import React, { FC, useEffect, useState } from 'react';
 
 import { useQuestionFilterQueryParams } from '../../../hooks/proposal/useQuestionFilterQueryParams';
+import { useTemplate } from '../../../hooks/template/useTemplate';
 import { SearchCriteriaInputProps } from '../../proposal/SearchCriteriaInputProps';
+import { getQuestionaryComponentDefinition } from '../../questionary/QuestionaryComponentRegistry';
 import UnknownSearchCriteriaInput from '../../questionary/questionaryComponents/UnknownSearchCriteriaInput';
 import UOLoader from '../UOLoader';
 

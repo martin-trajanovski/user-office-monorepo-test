@@ -3,10 +3,10 @@ import queryString from 'query-string';
 import React, { useContext, useEffect, useRef } from 'react';
 import { useLocation } from 'react-router-dom';
 
-import { SettingsContext } from 'context/SettingsContextProvider';
-import { UserContext } from 'context/UserContextProvider';
-import { SettingsId } from 'generated/sdk';
-import { useUnauthorizedApi } from 'hooks/common/useDataApi';
+import { SettingsContext } from '../../SettingsContextProvider';
+import { UserContext } from '../../UserContextProvider';
+import { SettingsId } from '@user-office-software/shared-types';
+import { useUnauthorizedApi } from '../../common/useDataApi';
 
 const ExternalAuthPropTypes = {
   match: PropTypes.shape({

@@ -21,8 +21,8 @@ import {
 import {
   ProposalWorkflowConnection,
   ProposalWorkflowConnectionGroup,
-} from 'generated/sdk';
-import { Event as ProposalEvent } from 'generated/sdk';
+} from '@user-office-software/shared-types';
+import { Event as ProposalEvent } from '@user-office-software/shared-types';
 
 import AddNewWorkflowConnectionsRow from './AddNewWorkflowConnectionsRow';
 import AddStatusChangingEventsToConnection from './AddStatusChangingEventsToConnection';

@@ -15,20 +15,20 @@ import {
   QuestionaryStep,
   QuestionTemplateRelation,
   Template,
-} from 'generated/sdk';
-import { usePersistQuestionaryEditorModel } from 'hooks/questionary/usePersistQuestionaryEditorModel';
+} from '@user-office-software/shared-types';
+import { usePersistQuestionaryEditorModel } from '../../questionary/usePersistQuestionaryEditorModel';
 import QuestionaryEditorModel, {
   Event,
   EventType,
-} from 'models/questionary/QuestionaryEditorModel';
+} from '../../questionary/QuestionaryEditorModel';
 import {
   getFieldById,
   getQuestionaryStepByTopicId,
-} from 'models/questionary/QuestionaryFunctions';
+} from '../../questionary/QuestionaryFunctions';
 import { StyledContainer, StyledPaper } from 'styles/StyledComponents';
-import useDataApiWithFeedback from 'utils/useDataApiWithFeedback';
-import { MiddlewareInputParams } from 'utils/useReducerWithMiddleWares';
-import { FunctionType } from 'utils/utilTypes';
+import useDataApiWithFeedback from '../../useDataApiWithFeedback';
+import { MiddlewareInputParams } from '../../useReducerWithMiddleWares';
+import { FunctionType } from '../../utilTypes';
 
 import QuestionEditor from './QuestionEditor';
 import { QuestionPicker } from './QuestionPicker';

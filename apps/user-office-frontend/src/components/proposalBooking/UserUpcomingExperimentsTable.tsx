@@ -4,15 +4,15 @@ import Grid from '@mui/material/Grid';
 import React, { useState } from 'react';
 import { ReactNode } from 'react';
 
-import { useFormattedDateTime } from 'hooks/admin/useFormattedDateTime';
-import { useActionButtons } from 'hooks/proposalBooking/useActionButtons';
+import { useFormattedDateTime } from '../../admin/useFormattedDateTime';
+import { useActionButtons } from '../../proposalBooking/useActionButtons';
 import {
   ProposalScheduledEvent,
   useProposalBookingsScheduledEvents,
-} from 'hooks/proposalBooking/useProposalBookingsScheduledEvents';
+} from '../../proposalBooking/useProposalBookingsScheduledEvents';
 import { StyledPaper } from 'styles/StyledComponents';
-import { tableIcons } from 'utils/materialIcons';
-import { getFullUserName } from 'utils/user';
+import { tableIcons } from '../../materialIcons';
+import { getFullUserName } from '../../user';
 
 const columns: Column<ProposalScheduledEvent>[] = [
   { title: 'Proposal title', field: 'proposal.title' },

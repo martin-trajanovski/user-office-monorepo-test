@@ -12,15 +12,15 @@ import createStyles from '@mui/styles/createStyles';
 import makeStyles from '@mui/styles/makeStyles';
 import React from 'react';
 
-import { useCheckAccess } from 'components/common/Can';
-import UOLoader from 'components/common/UOLoader';
+import { useCheckAccess } from '../common/Can';
+import UOLoader from '../common/UOLoader';
 import {
   TechnicalReview,
   Review,
   UserRole,
   SepMeetingDecision,
-} from 'generated/sdk';
-import { useSEPProposalData } from 'hooks/SEP/useSEPProposalData';
+} from '@user-office-software/shared-types';
+import { useSEPProposalData } from '../../SEP/useSEPProposalData';
 
 import ExternalReviews from './ExternalReviews';
 import FinalRankingForm from './FinalRankingForm';

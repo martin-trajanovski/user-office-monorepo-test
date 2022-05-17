@@ -1,9 +1,9 @@
-import { DefaultReviewWizardStep } from 'components/questionary/DefaultReviewWizardStep';
-import { DefaultStepDisplayElementFactory } from 'components/questionary/DefaultStepDisplayElementFactory';
-import { DefaultWizardStepFactory } from 'components/questionary/DefaultWizardStepFactory';
-import SampleEsiReview from 'components/sampleEsi/SampleEsiReview';
-import { Sdk, TemplateGroupId } from 'generated/sdk';
-import { ItemWithQuestionary } from 'models/questionary/QuestionarySubmissionState';
+import { DefaultReviewWizardStep } from '../questionary/DefaultReviewWizardStep';
+import { DefaultStepDisplayElementFactory } from '../questionary/DefaultStepDisplayElementFactory';
+import { DefaultWizardStepFactory } from '../questionary/DefaultWizardStepFactory';
+import SampleEsiReview from '../sampleEsi/SampleEsiReview';
+import { Sdk, TemplateGroupId } from '@user-office-software/shared-types';
+import { ItemWithQuestionary } from '../../questionary/QuestionarySubmissionState';
 
 import { QuestionaryDefinition } from '../../QuestionaryRegistry';
 import { SampleEsiWizardStep } from './SampleEsiWizardStep';

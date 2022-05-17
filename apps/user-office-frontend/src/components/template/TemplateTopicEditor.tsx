@@ -27,13 +27,13 @@ import {
 } from 'react-beautiful-dnd';
 import * as Yup from 'yup';
 
-import { getQuestionaryComponentDefinition } from 'components/questionary/QuestionaryComponentRegistry';
+import { getQuestionaryComponentDefinition } from '../questionary/QuestionaryComponentRegistry';
 import {
   DependenciesLogicOperator,
   QuestionTemplateRelation,
   TemplateStep,
-} from 'generated/sdk';
-import { Event, EventType } from 'models/questionary/QuestionaryEditorModel';
+} from '@user-office-software/shared-types';
+import { Event, EventType } from '../../questionary/QuestionaryEditorModel';
 
 import TemplateQuestionEditor, {
   TemplateTopicEditorData,

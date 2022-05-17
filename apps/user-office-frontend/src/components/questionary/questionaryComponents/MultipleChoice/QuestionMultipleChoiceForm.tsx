@@ -8,11 +8,11 @@ import { Checkbox, Select, TextField } from 'formik-mui';
 import React, { FC, useState } from 'react';
 import * as Yup from 'yup';
 
-import FormikUICustomTable from 'components/common/FormikUICustomTable';
-import TitledContainer from 'components/common/TitledContainer';
-import { QuestionFormProps } from 'components/questionary/QuestionaryComponentRegistry';
-import { SelectionFromOptionsConfig } from 'generated/sdk';
-import { useNaturalKeySchema } from 'utils/userFieldValidationSchema';
+import FormikUICustomTable from '../common/FormikUICustomTable';
+import TitledContainer from '../common/TitledContainer';
+import { QuestionFormProps } from '../questionary/QuestionaryComponentRegistry';
+import { SelectionFromOptionsConfig } from '@user-office-software/shared-types';
+import { useNaturalKeySchema } from '../../userFieldValidationSchema';
 
 import { QuestionFormShell } from '../QuestionFormShell';
 

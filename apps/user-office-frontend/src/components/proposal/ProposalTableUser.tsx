@@ -5,9 +5,9 @@ import {
   Maybe,
   ProposalPublicStatus,
   ProposalStatus,
-} from 'generated/sdk';
-import { useDataApi } from 'hooks/common/useDataApi';
-import { timeAgo } from 'utils/Time';
+} from '@user-office-software/shared-types';
+import { useDataApi } from '../../common/useDataApi';
+import { timeAgo } from '../../Time';
 
 import ProposalTable from './ProposalTable';
 

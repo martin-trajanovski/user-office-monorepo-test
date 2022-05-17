@@ -8,9 +8,9 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import * as yup from 'yup';
 
-import FormikUIAutocomplete from 'components/common/FormikUIAutocomplete';
-import { Call } from 'generated/sdk';
-import { useCallsData } from 'hooks/call/useCallsData';
+import FormikUIAutocomplete from '../common/FormikUIAutocomplete';
+import { Call } from '@user-office-software/shared-types';
+import { useCallsData } from '../../call/useCallsData';
 
 const callSelectModalOnProposalsCloneValidationSchema = yup.object().shape({
   selectedCallId: yup.number().required('You must select active call'),

@@ -27,25 +27,25 @@ import queryString from 'query-string';
 import React, { useContext, useState } from 'react';
 import { Link, useHistory } from 'react-router-dom';
 
-import { ErrorFocus } from 'components/common/ErrorFocus';
-import FormikUIAutocomplete from 'components/common/FormikUIAutocomplete';
-import UOLoader from 'components/common/UOLoader';
-import InformationModal from 'components/pages/InformationModal';
-import { UserContext } from 'context/UserContextProvider';
+import { ErrorFocus } from '../common/ErrorFocus';
+import FormikUIAutocomplete from '../common/FormikUIAutocomplete';
+import UOLoader from '../common/UOLoader';
+import InformationModal from '../pages/InformationModal';
+import { UserContext } from '../../UserContextProvider';
 import {
   PageName,
   CreateUserMutationVariables,
   SettingsId,
   Maybe,
-} from 'generated/sdk';
-import { useFormattedDateTime } from 'hooks/admin/useFormattedDateTime';
-import { useGetPageContent } from 'hooks/admin/useGetPageContent';
-import { useInstitutionsData } from 'hooks/admin/useInstitutionData';
-import { useUnauthorizedApi } from 'hooks/common/useDataApi';
-import { useGetFields } from 'hooks/user/useGetFields';
-import { useOrcIDInformation } from 'hooks/user/useOrcIDInformation';
+} from '@user-office-software/shared-types';
+import { useFormattedDateTime } from '../../admin/useFormattedDateTime';
+import { useGetPageContent } from '../../admin/useGetPageContent';
+import { useInstitutionsData } from '../../admin/useInstitutionData';
+import { useUnauthorizedApi } from '../../common/useDataApi';
+import { useGetFields } from '../../user/useGetFields';
+import { useOrcIDInformation } from '../../user/useOrcIDInformation';
 import orcid from 'images/orcid.png';
-import { Option } from 'utils/utilTypes';
+import { Option } from '../../utilTypes';
 
 const useStyles = makeStyles((theme) => ({
   '@global': {

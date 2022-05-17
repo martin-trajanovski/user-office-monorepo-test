@@ -1,8 +1,8 @@
 import { useEffect, useState, Dispatch, SetStateAction } from 'react';
 
-import { GetSepProposalsQuery } from 'generated/sdk';
-import { useDataApi } from 'hooks/common/useDataApi';
-import { Unpacked } from 'utils/utilTypes';
+import { GetSepProposalsQuery } from '@user-office-software/shared-types';
+import { useDataApi } from '../../common/useDataApi';
+import { Unpacked } from '../../utilTypes';
 
 export type SEPProposalType = Unpacked<
   NonNullable<GetSepProposalsQuery['sepProposals']>

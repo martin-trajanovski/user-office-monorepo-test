@@ -1,13 +1,13 @@
 import React, { useContext } from 'react';
 
-import { StepDisplayElementFactory } from 'components/questionary/DefaultStepDisplayElementFactory';
-import { SampleContextType } from 'components/questionary/questionaryComponents/SampleDeclaration/SampleDeclarationContainer';
+import { StepDisplayElementFactory } from '../questionary/DefaultStepDisplayElementFactory';
+import { SampleContextType } from '../questionary/questionaryComponents/SampleDeclaration/SampleDeclarationContainer';
 import {
   createMissingContextErrorMessage,
   QuestionaryContext,
-} from 'components/questionary/QuestionaryContext';
-import QuestionaryStepView from 'components/questionary/QuestionaryStepView';
-import { WizardStep } from 'models/questionary/QuestionarySubmissionState';
+} from '../questionary/QuestionaryContext';
+import QuestionaryStepView from '../questionary/QuestionaryStepView';
+import { WizardStep } from '../../questionary/QuestionarySubmissionState';
 
 const SampleQuestionaryStepView = ({
   topicId,

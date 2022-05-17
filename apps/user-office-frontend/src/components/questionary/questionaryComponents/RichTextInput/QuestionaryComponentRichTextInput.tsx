@@ -7,8 +7,8 @@ import { getIn } from 'formik';
 import React, { useState } from 'react';
 import { Editor as TinyMCEEditor } from 'tinymce';
 
-import { BasicComponentProps } from 'components/proposal/IBasicComponentProps';
-import { RichTextInputConfig } from 'generated/sdk';
+import { BasicComponentProps } from '../proposal/IBasicComponentProps';
+import { RichTextInputConfig } from '@user-office-software/shared-types';
 
 const useStyles = makeStyles((theme) => ({
   label: {

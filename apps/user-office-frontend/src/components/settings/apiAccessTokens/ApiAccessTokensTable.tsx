@@ -2,16 +2,16 @@ import { Typography } from '@mui/material';
 import React from 'react';
 import { useQueryParams } from 'use-query-params';
 
-import { useCheckAccess } from 'components/common/Can';
+import { useCheckAccess } from '../common/Can';
 import SuperMaterialTable, {
   DefaultQueryParams,
   UrlQueryParamsType,
-} from 'components/common/SuperMaterialTable';
-import { UserRole, PermissionsWithAccessToken } from 'generated/sdk';
-import { useApiAccessTokensData } from 'hooks/admin/useApiAccessTokensData';
-import { tableIcons } from 'utils/materialIcons';
-import useDataApiWithFeedback from 'utils/useDataApiWithFeedback';
-import { FunctionType } from 'utils/utilTypes';
+} from '../common/SuperMaterialTable';
+import { UserRole, PermissionsWithAccessToken } from '@user-office-software/shared-types';
+import { useApiAccessTokensData } from '../../admin/useApiAccessTokensData';
+import { tableIcons } from '../../materialIcons';
+import useDataApiWithFeedback from '../../useDataApiWithFeedback';
+import { FunctionType } from '../../utilTypes';
 
 import CreateUpdateApiAccessToken from './CreateUpdateApiAccessToken';
 

@@ -5,12 +5,12 @@ import { CheckboxWithLabel, TextField } from 'formik-mui';
 import React, { FC, useState } from 'react';
 import * as Yup from 'yup';
 
-import TitledContainer from 'components/common/TitledContainer';
-import { QuestionFormProps } from 'components/questionary/QuestionaryComponentRegistry';
-import { QuestionFormShell } from 'components/questionary/questionaryComponents/QuestionFormShell';
-import { IntervalConfig } from 'generated/sdk';
-import { useUnitsData } from 'hooks/settings/useUnitData';
-import { useNaturalKeySchema } from 'utils/userFieldValidationSchema';
+import TitledContainer from '../common/TitledContainer';
+import { QuestionFormProps } from '../questionary/QuestionaryComponentRegistry';
+import { QuestionFormShell } from '../questionary/questionaryComponents/QuestionFormShell';
+import { IntervalConfig } from '@user-office-software/shared-types';
+import { useUnitsData } from '../../settings/useUnitData';
+import { useNaturalKeySchema } from '../../userFieldValidationSchema';
 
 export const QuestionIntervalForm: FC<QuestionFormProps> = (props) => {
   const field = props.question;

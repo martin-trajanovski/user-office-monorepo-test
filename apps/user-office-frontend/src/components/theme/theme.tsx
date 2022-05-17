@@ -8,8 +8,8 @@ import {
 import React, { useCallback, useContext } from 'react';
 import { useEffect } from 'react';
 
-import { SettingsContext } from 'context/SettingsContextProvider';
-import { SettingsId } from 'generated/sdk';
+import { SettingsContext } from '../../SettingsContextProvider';
+import { SettingsId } from '@user-office-software/shared-types';
 
 // NOTE: This comes from: https://mui.com/guides/migration-v4/#types-property-quot-palette-quot-quot-spacing-quot-does-not-exist-on-type-defaulttheme
 declare module '@mui/styles/defaultTheme' {

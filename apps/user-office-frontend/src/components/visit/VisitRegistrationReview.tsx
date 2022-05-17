@@ -1,18 +1,18 @@
 import React, { useContext } from 'react';
 
-import { NavigButton } from 'components/common/NavigButton';
-import NavigationFragment from 'components/questionary/NavigationFragment';
+import { NavigButton } from '../common/NavigButton';
+import NavigationFragment from '../questionary/NavigationFragment';
 import {
   createMissingContextErrorMessage,
   QuestionaryContext,
-} from 'components/questionary/QuestionaryContext';
+} from '../questionary/QuestionaryContext';
 import QuestionaryDetails, {
   TableRowData,
-} from 'components/questionary/QuestionaryDetails';
-import { useFormattedDateTime } from 'hooks/admin/useFormattedDateTime';
-import useDataApiWithFeedback from 'utils/useDataApiWithFeedback';
-import { FunctionType } from 'utils/utilTypes';
-import withConfirm, { WithConfirmType } from 'utils/withConfirm';
+} from '../questionary/QuestionaryDetails';
+import { useFormattedDateTime } from '../../admin/useFormattedDateTime';
+import useDataApiWithFeedback from '../../useDataApiWithFeedback';
+import { FunctionType } from '../../utilTypes';
+import withConfirm, { WithConfirmType } from '../../withConfirm';
 
 import { VisitRegistrationContextType } from './VisitRegistrationContainer';
 

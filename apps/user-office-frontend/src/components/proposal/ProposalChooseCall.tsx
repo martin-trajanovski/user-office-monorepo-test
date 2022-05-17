@@ -10,10 +10,10 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import { useHistory } from 'react-router';
 
-import { Call } from 'generated/sdk';
-import { useFormattedDateTime } from 'hooks/admin/useFormattedDateTime';
+import { Call } from '@user-office-software/shared-types';
+import { useFormattedDateTime } from '../../admin/useFormattedDateTime';
 import { StyledContainer, StyledPaper } from 'styles/StyledComponents';
-import { timeRemaining } from 'utils/Time';
+import { timeRemaining } from '../../Time';
 
 const useStyles = makeStyles(() => ({
   date: {

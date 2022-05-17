@@ -1,7 +1,7 @@
 import { useEffect, useState, SetStateAction, Dispatch } from 'react';
 
-import { SepProposal } from 'generated/sdk';
-import { useDataApi } from 'hooks/common/useDataApi';
+import { SepProposal } from '@user-office-software/shared-types';
+import { useDataApi } from '../../common/useDataApi';
 
 export function useSEPProposalsByInstrument(
   instrumentId: number,

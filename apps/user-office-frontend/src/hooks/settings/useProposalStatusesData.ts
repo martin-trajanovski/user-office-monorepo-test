@@ -1,7 +1,7 @@
 import { useEffect, useState, SetStateAction, Dispatch } from 'react';
 
-import { ProposalStatus } from 'generated/sdk';
-import { useDataApi } from 'hooks/common/useDataApi';
+import { ProposalStatus } from '@user-office-software/shared-types';
+import { useDataApi } from '../../common/useDataApi';
 
 export function useProposalStatusesData(): {
   loadingProposalStatuses: boolean;

@@ -1,0 +1,14 @@
+{
+  "name": "@user-office-software/localization",
+  "description": "Contains resources for localising UO project NB. Currently only British English is supported",
+  "version": "1.2.0",
+  "type": "commonjs",
+  "author": "SWAP",
+  "license": "ISC",
+  "keywords": [
+    "duo",
+    "swap",
+    "user-office",
+    "localisation"
+  ]
+}

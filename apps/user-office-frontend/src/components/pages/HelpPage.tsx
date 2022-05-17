@@ -1,8 +1,8 @@
 import parse from 'html-react-parser';
 import React from 'react';
 
-import { PageName } from 'generated/sdk';
-import { useGetPageContent } from 'hooks/admin/useGetPageContent';
+import { PageName } from '@user-office-software/shared-types';
+import { useGetPageContent } from '../../admin/useGetPageContent';
 import { StyledContainer, StyledPaper } from 'styles/StyledComponents';
 
 const HelpPage: React.FC = () => {

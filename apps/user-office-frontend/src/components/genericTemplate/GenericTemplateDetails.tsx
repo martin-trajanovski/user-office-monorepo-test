@@ -2,8 +2,8 @@ import React from 'react';
 
 import QuestionaryDetails, {
   TableRowData,
-} from 'components/questionary/QuestionaryDetails';
-import { useGenericTemplate } from 'hooks/genericTemplate/useGenericTemplate';
+} from '../questionary/QuestionaryDetails';
+import { useGenericTemplate } from '../../genericTemplate/useGenericTemplate';
 
 interface GenericTemplateDetailsProps {
   genericTemplateId: number;

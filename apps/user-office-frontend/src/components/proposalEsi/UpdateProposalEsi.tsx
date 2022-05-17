@@ -1,7 +1,7 @@
 import React from 'react';
 
-import UOLoader from 'components/common/UOLoader';
-import { useEsi } from 'hooks/esi/useEsi';
+import UOLoader from '../common/UOLoader';
+import { useEsi } from '../../esi/useEsi';
 
 import ProposalEsiContainer from './ProposalEsiContainer';
 

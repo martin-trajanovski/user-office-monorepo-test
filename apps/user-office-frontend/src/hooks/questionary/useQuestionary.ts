@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 
-import { GetQuestionaryQuery } from 'generated/sdk';
-import { useDataApi } from 'hooks/common/useDataApi';
+import { GetQuestionaryQuery } from '@user-office-software/shared-types';
+import { useDataApi } from '../../common/useDataApi';
 
 export function useQuestionary(questionaryId: number) {
   const [loadingQuestionary, setLoadingQuestionary] = useState<boolean>(true);

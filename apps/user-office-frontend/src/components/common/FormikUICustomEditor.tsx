@@ -3,7 +3,7 @@ import { Editor } from '@tinymce/tinymce-react';
 import { FormikHelpers, FormikValues } from 'formik';
 import React, { useState } from 'react';
 
-import { FunctionType } from 'utils/utilTypes';
+import { FunctionType } from '../../utils/utilTypes';
 
 const useStyles = makeStyles((theme) => ({
   label: {

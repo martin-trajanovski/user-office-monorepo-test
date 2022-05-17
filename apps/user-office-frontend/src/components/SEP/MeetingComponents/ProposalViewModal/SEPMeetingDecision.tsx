@@ -6,7 +6,7 @@ import Typography from '@mui/material/Typography';
 import makeStyles from '@mui/styles/makeStyles';
 import React from 'react';
 
-import { Maybe, Sep, SepMeetingDecision } from 'generated/sdk';
+import { Maybe, Sep, SepMeetingDecision } from '@user-office-software/shared-types';
 import { StyledPaper } from 'styles/StyledComponents';
 
 const useStyles = makeStyles((theme) => ({

@@ -1,8 +1,8 @@
 import DescriptionIcon from '@mui/icons-material/Description';
 import React from 'react';
 
-import { DataType } from 'generated/sdk';
-import { ProposalSubmissionState } from 'models/questionary/proposal/ProposalSubmissionState';
+import { DataType } from '@user-office-software/shared-types';
+import { ProposalSubmissionState } from '../../questionary/proposal/ProposalSubmissionState';
 
 import { QuestionaryComponentDefinition } from '../../QuestionaryComponentRegistry';
 import { createProposalBasisValidationSchema } from './createProposalBasisValidationSchema';

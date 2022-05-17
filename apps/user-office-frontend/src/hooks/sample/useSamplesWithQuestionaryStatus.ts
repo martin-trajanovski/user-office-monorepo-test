@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 
-import { SamplesFilter } from 'generated/sdk';
-import { useDataApi } from 'hooks/common/useDataApi';
+import { SamplesFilter } from '@user-office-software/shared-types';
+import { useDataApi } from '../../common/useDataApi';
 
 import { SampleCore } from '../../models/questionary/sample/SampleCore';
 

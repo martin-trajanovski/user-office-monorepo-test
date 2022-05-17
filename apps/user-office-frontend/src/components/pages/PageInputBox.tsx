@@ -20,9 +20,9 @@ import makeStyles from '@mui/styles/makeStyles';
 import { Editor } from '@tinymce/tinymce-react';
 import React, { useState, useEffect } from 'react';
 
-import { PageName } from 'generated/sdk';
-import { useGetPageContent } from 'hooks/admin/useGetPageContent';
-import useDataApiWithFeedback from 'utils/useDataApiWithFeedback';
+import { PageName } from '@user-office-software/shared-types';
+import { useGetPageContent } from '../../admin/useGetPageContent';
+import useDataApiWithFeedback from '../../useDataApiWithFeedback';
 
 const useStyles = makeStyles(() => ({
   buttons: {

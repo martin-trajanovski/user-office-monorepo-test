@@ -8,12 +8,12 @@ import {
   ProposalWorkflow,
   ProposalWorkflowConnection,
   ProposalWorkflowConnectionGroup,
-} from 'generated/sdk';
-import { useDataApi } from 'hooks/common/useDataApi';
+} from '@user-office-software/shared-types';
+import { useDataApi } from '../../common/useDataApi';
 import {
   useReducerWithMiddleWares,
   ReducerMiddleware,
-} from 'utils/useReducerWithMiddleWares';
+} from '../../useReducerWithMiddleWares';
 
 export enum EventType {
   READY,

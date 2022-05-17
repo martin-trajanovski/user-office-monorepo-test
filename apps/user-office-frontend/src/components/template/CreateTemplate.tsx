@@ -6,8 +6,8 @@ import { TextField } from 'formik-mui';
 import { useSnackbar } from 'notistack';
 import React from 'react';
 
-import { TemplateGroupId, TemplateMetadataFragment } from 'generated/sdk';
-import useDataApiWithFeedback from 'utils/useDataApiWithFeedback';
+import { TemplateGroupId, TemplateMetadataFragment } from '@user-office-software/shared-types';
+import useDataApiWithFeedback from '../../useDataApiWithFeedback';
 
 const CreateTemplate = (props: {
   onComplete: (template: TemplateMetadataFragment) => void;

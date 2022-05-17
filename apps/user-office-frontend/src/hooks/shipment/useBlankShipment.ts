@@ -1,15 +1,15 @@
 import { useContext, useEffect, useState } from 'react';
 
-import { UserContext } from 'context/UserContextProvider';
+import { UserContext } from '../../UserContextProvider';
 import {
   GetShipmentQuery,
   QuestionaryStep,
   ShipmentStatus,
   TemplateGroupId,
   User,
-} from 'generated/sdk';
-import { useDataApi } from 'hooks/common/useDataApi';
-import { ShipmentWithQuestionary } from 'models/questionary/shipment/ShipmentWithQuestionary';
+} from '@user-office-software/shared-types';
+import { useDataApi } from '../../common/useDataApi';
+import { ShipmentWithQuestionary } from '../../questionary/shipment/ShipmentWithQuestionary';
 
 function createShipmentStub(
   creator: Pick<User, 'id'>,

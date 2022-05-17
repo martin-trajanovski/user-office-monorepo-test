@@ -3,13 +3,13 @@ import { Form, Formik } from 'formik';
 import React from 'react';
 import * as Yup from 'yup';
 
-import { ActionButtonContainer } from 'components/common/ActionButtonContainer';
-import ErrorMessage from 'components/common/ErrorMessage';
-import FormikUIAutocomplete from 'components/common/FormikUIAutocomplete';
-import Participants from 'components/proposal/ProposalParticipants';
-import { BasicUserDetails } from 'generated/sdk';
-import useDataApiWithFeedback from 'utils/useDataApiWithFeedback';
-import { getFullUserName } from 'utils/user';
+import { ActionButtonContainer } from '../common/ActionButtonContainer';
+import ErrorMessage from '../common/ErrorMessage';
+import FormikUIAutocomplete from '../common/FormikUIAutocomplete';
+import Participants from '../proposal/ProposalParticipants';
+import { BasicUserDetails } from '@user-office-software/shared-types';
+import useDataApiWithFeedback from '../../useDataApiWithFeedback';
+import { getFullUserName } from '../../user';
 
 import { ProposalScheduledEvent } from '../../hooks/proposalBooking/useProposalBookingsScheduledEvents';
 

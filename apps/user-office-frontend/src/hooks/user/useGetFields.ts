@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 
-import { GetFieldsQuery } from 'generated/sdk';
-import { useDataApi } from 'hooks/common/useDataApi';
+import { GetFieldsQuery } from '@user-office-software/shared-types';
+import { useDataApi } from '../../common/useDataApi';
 
 export function useGetFields() {
   const [fieldContent, setFieldContent] = useState<

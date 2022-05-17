@@ -9,11 +9,11 @@ import {
 import {
   DefaultQueryParams,
   UrlQueryParamsType,
-} from 'components/common/SuperMaterialTable';
-import { ProposalsFilter } from 'generated/sdk';
-import { useCallsData } from 'hooks/call/useCallsData';
-import { useInstrumentsData } from 'hooks/instrument/useInstrumentsData';
-import { useProposalStatusesData } from 'hooks/settings/useProposalStatusesData';
+} from '../common/SuperMaterialTable';
+import { ProposalsFilter } from '@user-office-software/shared-types';
+import { useCallsData } from '../../call/useCallsData';
+import { useInstrumentsData } from '../../instrument/useInstrumentsData';
+import { useProposalStatusesData } from '../../settings/useProposalStatusesData';
 import { StyledContainer, StyledPaper } from 'styles/StyledComponents';
 
 import ProposalFilterBar, {

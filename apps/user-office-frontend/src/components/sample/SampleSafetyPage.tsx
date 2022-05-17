@@ -12,15 +12,15 @@ import { TextField } from 'formik-mui';
 import React, { useEffect, useState } from 'react';
 import { NumberParam, StringParam, useQueryParams } from 'use-query-params';
 
-import { ActionButtonContainer } from 'components/common/ActionButtonContainer';
-import InputDialog from 'components/common/InputDialog';
-import CallFilter from 'components/common/proposalFilters/CallFilter';
-import { Maybe, SampleStatus } from 'generated/sdk';
-import { useCallsData } from 'hooks/call/useCallsData';
-import { useDownloadPDFSample } from 'hooks/sample/useDownloadPDFSample';
-import { SampleWithProposalData } from 'models/questionary/sample/SampleWithProposalData';
+import { ActionButtonContainer } from '../common/ActionButtonContainer';
+import InputDialog from '../common/InputDialog';
+import CallFilter from '../common/proposalFilters/CallFilter';
+import { Maybe, SampleStatus } from '@user-office-software/shared-types';
+import { useCallsData } from '../../call/useCallsData';
+import { useDownloadPDFSample } from '../../sample/useDownloadPDFSample';
+import { SampleWithProposalData } from '../../questionary/sample/SampleWithProposalData';
 import { StyledContainer, StyledPaper } from 'styles/StyledComponents';
-import useDataApiWithFeedback from 'utils/useDataApiWithFeedback';
+import useDataApiWithFeedback from '../../useDataApiWithFeedback';
 
 import SampleDetails from './SampleDetails';
 import SamplesTable from './SamplesTable';

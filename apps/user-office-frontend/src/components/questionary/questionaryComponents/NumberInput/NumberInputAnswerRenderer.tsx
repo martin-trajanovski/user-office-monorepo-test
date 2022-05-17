@@ -1,7 +1,7 @@
 import React from 'react';
 
-import { AnswerRenderer } from 'components/questionary/QuestionaryComponentRegistry';
-import { Unit } from 'generated/sdk';
+import { AnswerRenderer } from '../questionary/QuestionaryComponentRegistry';
+import { Unit } from '@user-office-software/shared-types';
 
 const NumberInputAnswerRenderer: AnswerRenderer = (answer) => {
   if (!answer.value.value) {

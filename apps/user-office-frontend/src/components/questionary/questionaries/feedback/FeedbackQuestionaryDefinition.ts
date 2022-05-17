@@ -1,10 +1,10 @@
-import FeedbackReview from 'components/feedback/FeedbackReview';
-import { DefaultReviewWizardStep } from 'components/questionary/DefaultReviewWizardStep';
-import { DefaultStepDisplayElementFactory } from 'components/questionary/DefaultStepDisplayElementFactory';
-import { DefaultWizardStepFactory } from 'components/questionary/DefaultWizardStepFactory';
-import { FeedbackStatus, Sdk, TemplateGroupId } from 'generated/sdk';
-import { FeedbackSubmissionState } from 'models/questionary/feedback/FeedbackSubmissionState';
-import { ItemWithQuestionary } from 'models/questionary/QuestionarySubmissionState';
+import FeedbackReview from '../feedback/FeedbackReview';
+import { DefaultReviewWizardStep } from '../questionary/DefaultReviewWizardStep';
+import { DefaultStepDisplayElementFactory } from '../questionary/DefaultStepDisplayElementFactory';
+import { DefaultWizardStepFactory } from '../questionary/DefaultWizardStepFactory';
+import { FeedbackStatus, Sdk, TemplateGroupId } from '@user-office-software/shared-types';
+import { FeedbackSubmissionState } from '../../questionary/feedback/FeedbackSubmissionState';
+import { ItemWithQuestionary } from '../../questionary/QuestionarySubmissionState';
 
 import { QuestionaryDefinition } from '../../QuestionaryRegistry';
 import { FeedbackWizardStep } from './FeedbackWizardStep';

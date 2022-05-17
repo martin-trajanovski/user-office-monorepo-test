@@ -7,11 +7,11 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import * as Yup from 'yup';
 
-import FormikUIAutocomplete from 'components/common/FormikUIAutocomplete';
-import UOLoader from 'components/common/UOLoader';
-import { Unit } from 'generated/sdk';
-import { useQuantities } from 'hooks/admin/useQuantities';
-import useDataApiWithFeedback from 'utils/useDataApiWithFeedback';
+import FormikUIAutocomplete from '../common/FormikUIAutocomplete';
+import UOLoader from '../common/UOLoader';
+import { Unit } from '@user-office-software/shared-types';
+import { useQuantities } from '../../admin/useQuantities';
+import useDataApiWithFeedback from '../../useDataApiWithFeedback';
 
 const useStyles = makeStyles((theme) => ({
   submit: {

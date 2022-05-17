@@ -1,12 +1,12 @@
 import { useContext } from 'react';
 
-import { FeedbackContextType } from 'components/feedback/FeedbackContainer';
+import { FeedbackContextType } from '../feedback/FeedbackContainer';
 import {
   createMissingContextErrorMessage,
   QuestionaryContext,
-} from 'components/questionary/QuestionaryContext';
-import { SubmitActionDependencyContainer } from 'hooks/questionary/useSubmitActions';
-import { FeedbackSubmissionState } from 'models/questionary/feedback/FeedbackSubmissionState';
+} from '../questionary/QuestionaryContext';
+import { SubmitActionDependencyContainer } from '../../questionary/useSubmitActions';
+import { FeedbackSubmissionState } from '../../questionary/feedback/FeedbackSubmissionState';
 
 function QuestionaryComponentFeedbackBasis() {
   const { dispatch, state } = useContext(

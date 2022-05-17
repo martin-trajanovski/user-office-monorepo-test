@@ -15,13 +15,13 @@ import { Field, FieldArray, FieldArrayRenderProps, Form, Formik } from 'formik';
 import { TextField } from 'formik-mui';
 import React from 'react';
 
-import ErrorMessage from 'components/common/ErrorMessage';
-import SimpleTabs from 'components/common/TabPanel';
-import UOLoader from 'components/common/UOLoader';
-import { PermissionsWithAccessToken } from 'generated/sdk';
-import { useQueriesAndMutationsData } from 'hooks/admin/useQueriesAndMutationsData';
+import ErrorMessage from '../common/ErrorMessage';
+import SimpleTabs from '../common/TabPanel';
+import UOLoader from '../common/UOLoader';
+import { PermissionsWithAccessToken } from '@user-office-software/shared-types';
+import { useQueriesAndMutationsData } from '../../admin/useQueriesAndMutationsData';
 import { StyledPaper } from 'styles/StyledComponents';
-import useDataApiWithFeedback from 'utils/useDataApiWithFeedback';
+import useDataApiWithFeedback from '../../useDataApiWithFeedback';
 
 const useStyles = makeStyles((theme) => ({
   container: {

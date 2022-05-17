@@ -8,9 +8,9 @@ import {
 import makeStyles from '@mui/styles/makeStyles';
 import React, { useState } from 'react';
 
-import { creatableQuestions } from 'components/questionary/QuestionaryComponentRegistry';
-import { DataType, QuestionsFilter, TemplateCategoryId } from 'generated/sdk';
-import { useTemplateCategories } from 'hooks/template/useTemplateCategories';
+import { creatableQuestions } from '../questionary/QuestionaryComponentRegistry';
+import { DataType, QuestionsFilter, TemplateCategoryId } from '@user-office-software/shared-types';
+import { useTemplateCategories } from '../../template/useTemplateCategories';
 
 interface QuestionsTableFilterProps {
   onChange?: (filter: QuestionsFilter) => unknown;

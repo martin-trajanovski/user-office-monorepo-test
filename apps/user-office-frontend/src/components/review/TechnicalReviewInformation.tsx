@@ -4,12 +4,12 @@ import TableCell from '@mui/material/TableCell';
 import TableRow from '@mui/material/TableRow';
 import Typography from '@mui/material/Typography';
 import makeStyles from '@mui/styles/makeStyles';
-import { getTranslation } from '@user-office-software/duo-localisation';
+import { getTranslation } from '@user-office-software/localization';
 import React, { Fragment } from 'react';
 
-import { useCheckAccess } from 'components/common/Can';
-import { TechnicalReview, UserRole } from 'generated/sdk';
-import { getFullUserName } from 'utils/user';
+import { useCheckAccess } from '../common/Can';
+import { TechnicalReview, UserRole } from '@user-office-software/shared-types';
+import { getFullUserName } from '../../user';
 
 type TechnicalReviewInformationProps = {
   data: TechnicalReview | null | undefined;

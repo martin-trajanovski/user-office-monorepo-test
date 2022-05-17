@@ -2,10 +2,10 @@ import MaterialTable from '@material-table/core';
 import { Link } from '@mui/material';
 import React, { useMemo } from 'react';
 
-import { GetTemplatesQuery } from 'generated/sdk';
-import { QuestionWithUsage } from 'hooks/template/useQuestions';
-import { useTemplates } from 'hooks/template/useTemplates';
-import { tableIcons } from 'utils/materialIcons';
+import { GetTemplatesQuery } from '@user-office-software/shared-types';
+import { QuestionWithUsage } from '../../template/useQuestions';
+import { useTemplates } from '../../template/useTemplates';
+import { tableIcons } from '../../materialIcons';
 
 type TemplateTableRowType = NonNullable<GetTemplatesQuery['templates']>[0];
 interface TemplateCountDetailsProps {

@@ -6,9 +6,9 @@ import React, { useEffect, useState } from 'react';
 import {
   FileIdWithCaptionAndFigure,
   FileUploadComponent,
-} from 'components/common/FileUploadComponent';
-import { BasicComponentProps } from 'components/proposal/IBasicComponentProps';
-import { FileUploadConfig } from 'generated/sdk';
+} from '../common/FileUploadComponent';
+import { BasicComponentProps } from '../proposal/IBasicComponentProps';
+import { FileUploadConfig } from '@user-office-software/shared-types';
 
 export function QuestionaryComponentFileUpload(
   props: BasicComponentProps & { files?: string[] }

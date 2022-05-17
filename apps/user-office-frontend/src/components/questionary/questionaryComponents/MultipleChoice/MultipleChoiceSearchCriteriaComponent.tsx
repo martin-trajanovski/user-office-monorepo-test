@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import {
   QuestionFilterCompareOperator,
   SelectionFromOptionsConfig,
-} from 'generated/sdk';
+} from '@user-office-software/shared-types';
 
 import { SearchCriteriaInputProps } from '../../../proposal/SearchCriteriaInputProps';
 

@@ -1,7 +1,7 @@
 import makeStyles from '@mui/styles/makeStyles';
 import React, { PropsWithChildren } from 'react';
 
-import { StyledButtonContainer } from 'styles/StyledComponents';
+import { StyledButtonContainer } from '../../styles/StyledComponents';
 
 const useStyles = makeStyles((theme) => ({
   StyledButtonContainer: {

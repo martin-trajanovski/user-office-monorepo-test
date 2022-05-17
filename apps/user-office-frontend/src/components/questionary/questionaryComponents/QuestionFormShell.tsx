@@ -4,14 +4,14 @@ import makeStyles from '@mui/styles/makeStyles';
 import { Form, Formik } from 'formik';
 import React from 'react';
 
-import { ActionButtonContainer } from 'components/common/ActionButtonContainer';
+import { ActionButtonContainer } from '../common/ActionButtonContainer';
 import {
   getQuestionaryComponentDefinition,
   QuestionFormProps,
-} from 'components/questionary/QuestionaryComponentRegistry';
-import { Question } from 'generated/sdk';
-import useDataApiWithFeedback from 'utils/useDataApiWithFeedback';
-import withConfirm, { WithConfirmType } from 'utils/withConfirm';
+} from '../questionary/QuestionaryComponentRegistry';
+import { Question } from '@user-office-software/shared-types';
+import useDataApiWithFeedback from '../../useDataApiWithFeedback';
+import withConfirm, { WithConfirmType } from '../../withConfirm';
 
 const useStyles = makeStyles((theme) => ({
   container: {

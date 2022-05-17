@@ -12,23 +12,23 @@ import { CheckboxWithLabel, Select, TextField } from 'formik-mui';
 import React, { useContext, useEffect, useState } from 'react';
 import { Prompt } from 'react-router';
 
-import { useCheckAccess } from 'components/common/Can';
+import { useCheckAccess } from '../common/Can';
 import {
   FileIdWithCaptionAndFigure,
   FileUploadComponent,
-} from 'components/common/FileUploadComponent';
-import { UserContext } from 'context/UserContextProvider';
+} from '../common/FileUploadComponent';
+import { UserContext } from '../../UserContextProvider';
 import {
   TechnicalReviewStatus,
   CoreTechnicalReviewFragment,
   UserRole,
   Proposal,
-} from 'generated/sdk';
+} from '@user-office-software/shared-types';
 import { StyledButtonContainer } from 'styles/StyledComponents';
-import useDataApiWithFeedback from 'utils/useDataApiWithFeedback';
-import { getFullUserName } from 'utils/user';
-import { Option } from 'utils/utilTypes';
-import withConfirm, { WithConfirmType } from 'utils/withConfirm';
+import useDataApiWithFeedback from '../../useDataApiWithFeedback';
+import { getFullUserName } from '../../user';
+import { Option } from '../../utilTypes';
+import withConfirm, { WithConfirmType } from '../../withConfirm';
 
 const useStyles = makeStyles((theme) => ({
   submitButton: {

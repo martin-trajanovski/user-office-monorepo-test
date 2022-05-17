@@ -1,8 +1,8 @@
 import { useContext, useEffect, useState } from 'react';
 
-import { UserContext } from 'context/UserContextProvider';
-import { Proposal, ProposalsFilter } from 'generated/sdk';
-import { useDataApi } from 'hooks/common/useDataApi';
+import { UserContext } from '../../UserContextProvider';
+import { Proposal, ProposalsFilter } from '@user-office-software/shared-types';
+import { useDataApi } from '../../common/useDataApi';
 
 export function useProposalsData(filter: ProposalsFilter) {
   const api = useDataApi();

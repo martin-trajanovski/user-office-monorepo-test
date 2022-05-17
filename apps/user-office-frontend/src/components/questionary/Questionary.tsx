@@ -3,8 +3,8 @@ import useMediaQuery from '@mui/material/useMediaQuery';
 import makeStyles from '@mui/styles/makeStyles';
 import React, { useContext, useRef, useEffect } from 'react';
 
-import { useCheckAccess } from 'components/common/Can';
-import { UserRole } from 'generated/sdk';
+import { useCheckAccess } from '../common/Can';
+import { UserRole } from '@user-office-software/shared-types';
 
 import {
   createMissingContextErrorMessage,

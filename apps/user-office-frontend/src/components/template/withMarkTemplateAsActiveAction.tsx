@@ -3,10 +3,10 @@ import DoneIcon from '@mui/icons-material/Done';
 import makeStyles from '@mui/styles/makeStyles';
 import React from 'react';
 
-import UOLoader from 'components/common/UOLoader';
-import { Template, TemplateGroupId } from 'generated/sdk';
-import { useActiveTemplateId } from 'hooks/template/useActiveTemplateId';
-import useDataApiWithFeedback from 'utils/useDataApiWithFeedback';
+import UOLoader from '../common/UOLoader';
+import { Template, TemplateGroupId } from '@user-office-software/shared-types';
+import { useActiveTemplateId } from '../../template/useActiveTemplateId';
+import useDataApiWithFeedback from '../../useDataApiWithFeedback';
 
 import { TemplateRowDataType } from './TemplatesTable';
 

@@ -3,21 +3,21 @@ import { Link } from '@mui/material';
 import makeStyles from '@mui/styles/makeStyles';
 import React, { useContext } from 'react';
 
-import { NavigButton } from 'components/common/NavigButton';
-import UOLoader from 'components/common/UOLoader';
-import NavigationFragment from 'components/questionary/NavigationFragment';
+import { NavigButton } from '../common/NavigButton';
+import UOLoader from '../common/UOLoader';
+import NavigationFragment from '../questionary/NavigationFragment';
 import {
   createMissingContextErrorMessage,
   QuestionaryContext,
-} from 'components/questionary/QuestionaryContext';
+} from '../questionary/QuestionaryContext';
 import QuestionaryDetails, {
   TableRowData,
-} from 'components/questionary/QuestionaryDetails';
-import { ShipmentStatus } from 'generated/sdk';
-import { useDownloadPDFShipmentLabel } from 'hooks/proposal/useDownloadPDFShipmentLabel';
-import { useProposalData } from 'hooks/proposal/useProposalData';
-import useDataApiWithFeedback from 'utils/useDataApiWithFeedback';
-import withConfirm, { WithConfirmType } from 'utils/withConfirm';
+} from '../questionary/QuestionaryDetails';
+import { ShipmentStatus } from '@user-office-software/shared-types';
+import { useDownloadPDFShipmentLabel } from '../../proposal/useDownloadPDFShipmentLabel';
+import { useProposalData } from '../../proposal/useProposalData';
+import useDataApiWithFeedback from '../../useDataApiWithFeedback';
+import withConfirm, { WithConfirmType } from '../../withConfirm';
 
 import { ShipmentContextType } from './ShipmentContainer';
 

@@ -7,19 +7,19 @@ import { DateTime } from 'luxon';
 import React, { ReactNode, useContext } from 'react';
 import { useHistory } from 'react-router';
 
-import BoxIcon from 'components/common/icons/BoxIcon';
-import EsiIcon from 'components/common/icons/EsiIcon';
+import BoxIcon from '../common/icons/BoxIcon';
+import EsiIcon from '../common/icons/EsiIcon';
 import ActionButton, {
   ActionButtonState,
-} from 'components/proposalBooking/ActionButton';
-import CreateUpdateVisit from 'components/proposalBooking/CreateUpdateVisit';
-import CreateUpdateVisitRegistration from 'components/visit/CreateUpdateVisitRegistration';
-import { UserContext, BasicUser } from 'context/UserContextProvider';
+} from '../proposalBooking/ActionButton';
+import CreateUpdateVisit from '../proposalBooking/CreateUpdateVisit';
+import CreateUpdateVisitRegistration from '../visit/CreateUpdateVisitRegistration';
+import { UserContext, BasicUser } from '../../UserContextProvider';
 import {
   FeedbackStatus,
   ProposalBookingStatusCore,
   ProposalEndStatus,
-} from 'generated/sdk';
+} from '@user-office-software/shared-types';
 
 import { ProposalScheduledEvent } from './useProposalBookingsScheduledEvents';
 

@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 
-import { GenericTemplatesFilter } from 'generated/sdk';
-import { useDataApi } from 'hooks/common/useDataApi';
+import { GenericTemplatesFilter } from '@user-office-software/shared-types';
+import { useDataApi } from '../../common/useDataApi';
 
 import { GenericTemplateCore } from '../../models/questionary/genericTemplate/GenericTemplateCore';
 

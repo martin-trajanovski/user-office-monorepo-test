@@ -1,10 +1,10 @@
-import { DefaultReviewWizardStep } from 'components/questionary/DefaultReviewWizardStep';
-import { DefaultStepDisplayElementFactory } from 'components/questionary/DefaultStepDisplayElementFactory';
-import { DefaultWizardStepFactory } from 'components/questionary/DefaultWizardStepFactory';
-import VisitRegistrationReview from 'components/visit/VisitRegistrationReview';
-import { Sdk, TemplateGroupId } from 'generated/sdk';
-import { ItemWithQuestionary } from 'models/questionary/QuestionarySubmissionState';
-import { VisitRegistrationSubmissionState } from 'models/questionary/visit/VisitRegistrationSubmissionState';
+import { DefaultReviewWizardStep } from '../questionary/DefaultReviewWizardStep';
+import { DefaultStepDisplayElementFactory } from '../questionary/DefaultStepDisplayElementFactory';
+import { DefaultWizardStepFactory } from '../questionary/DefaultWizardStepFactory';
+import VisitRegistrationReview from '../visit/VisitRegistrationReview';
+import { Sdk, TemplateGroupId } from '@user-office-software/shared-types';
+import { ItemWithQuestionary } from '../../questionary/QuestionarySubmissionState';
+import { VisitRegistrationSubmissionState } from '../../questionary/visit/VisitRegistrationSubmissionState';
 
 import { QuestionaryDefinition } from '../../QuestionaryRegistry';
 import { VisitRegistrationWizardStep } from './VisitRegistrationWizardStep';

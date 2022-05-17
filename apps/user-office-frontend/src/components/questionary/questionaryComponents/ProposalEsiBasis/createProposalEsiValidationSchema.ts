@@ -1,6 +1,6 @@
 import * as Yup from 'yup';
 
-import { CreateYupValidation } from 'components/questionary/QuestionaryComponentRegistry';
+import { CreateYupValidation } from '../questionary/QuestionaryComponentRegistry';
 
 import { SampleEsiWithQuestionary } from './../../../../models/questionary/sampleEsi/SampleEsiWithQuestionary';
 

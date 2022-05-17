@@ -9,11 +9,11 @@ import makeStyles from '@mui/styles/makeStyles';
 import PropTypes from 'prop-types';
 import React from 'react';
 
-import { Proposal } from 'generated/sdk';
-import { useDownloadPDFProposal } from 'hooks/proposal/useDownloadPDFProposal';
+import { Proposal } from '@user-office-software/shared-types';
+import { useDownloadPDFProposal } from '../../proposal/useDownloadPDFProposal';
 import { StyledPaper } from 'styles/StyledComponents';
-import { average, getGradesFromReviews } from 'utils/mathFunctions';
-import { getFullUserName } from 'utils/user';
+import { average, getGradesFromReviews } from '../../mathFunctions';
+import { getFullUserName } from '../../user';
 
 type ProposalDetailsProps = {
   proposal: Proposal;

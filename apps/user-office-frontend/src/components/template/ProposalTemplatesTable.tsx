@@ -3,12 +3,12 @@ import Button from '@mui/material/Button';
 import Link from '@mui/material/Link';
 import React, { useCallback, useState } from 'react';
 
-import { ActionButtonContainer } from 'components/common/ActionButtonContainer';
-import InputDialog from 'components/common/InputDialog';
-import { ProposalTemplate, TemplateGroupId } from 'generated/sdk';
-import { useFormattedDateTime } from 'hooks/admin/useFormattedDateTime';
-import { useCallsData } from 'hooks/call/useCallsData';
-import { tableIcons } from 'utils/materialIcons';
+import { ActionButtonContainer } from '../common/ActionButtonContainer';
+import InputDialog from '../common/InputDialog';
+import { ProposalTemplate, TemplateGroupId } from '@user-office-software/shared-types';
+import { useFormattedDateTime } from '../../admin/useFormattedDateTime';
+import { useCallsData } from '../../call/useCallsData';
+import { tableIcons } from '../../materialIcons';
 
 import TemplatesTable, { TemplateRowDataType } from './TemplatesTable';
 

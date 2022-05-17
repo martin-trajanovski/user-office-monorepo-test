@@ -21,22 +21,22 @@ import { DatePicker } from 'formik-mui-lab';
 import { DateTime } from 'luxon';
 import React, { useState, useContext } from 'react';
 
-import FormikUIAutocomplete from 'components/common/FormikUIAutocomplete';
-import UOLoader from 'components/common/UOLoader';
-import { UserContext } from 'context/UserContextProvider';
+import FormikUIAutocomplete from '../common/FormikUIAutocomplete';
+import UOLoader from '../common/UOLoader';
+import { UserContext } from '../../UserContextProvider';
 import {
   SettingsId,
   UpdateUserMutationVariables,
   UserRole,
-} from 'generated/sdk';
-import { useFormattedDateTime } from 'hooks/admin/useFormattedDateTime';
-import { useInstitutionsData } from 'hooks/admin/useInstitutionData';
-import { useGetFields } from 'hooks/user/useGetFields';
-import { useUserData } from 'hooks/user/useUserData';
+} from '@user-office-software/shared-types';
+import { useFormattedDateTime } from '../../admin/useFormattedDateTime';
+import { useInstitutionsData } from '../../admin/useInstitutionData';
+import { useGetFields } from '../../user/useGetFields';
+import { useUserData } from '../../user/useUserData';
 import orcid from 'images/orcid.png';
 import { StyledButtonContainer } from 'styles/StyledComponents';
-import useDataApiWithFeedback from 'utils/useDataApiWithFeedback';
-import { Option } from 'utils/utilTypes';
+import useDataApiWithFeedback from '../../useDataApiWithFeedback';
+import { Option } from '../../utilTypes';
 
 const useStyles = makeStyles((theme) => ({
   button: {

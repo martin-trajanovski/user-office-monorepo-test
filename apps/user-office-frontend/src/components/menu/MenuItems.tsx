@@ -22,11 +22,11 @@ import { useHistory } from 'react-router';
 import { NavLink } from 'react-router-dom';
 import { encodeDate } from 'use-query-params';
 
-import Tooltip from 'components/common/MenuTooltip';
-import { getRelativeDatesFromToday } from 'components/experiment/DateFilter';
-import { TimeSpan } from 'components/experiment/PresetDateSelector';
-import { FeatureContext } from 'context/FeatureContextProvider';
-import { Call, FeatureId, UserRole } from 'generated/sdk';
+import Tooltip from '../common/MenuTooltip';
+import { getRelativeDatesFromToday } from '../experiment/DateFilter';
+import { TimeSpan } from '../experiment/PresetDateSelector';
+import { FeatureContext } from '../../FeatureContextProvider';
+import { Call, FeatureId, UserRole } from '@user-office-software/shared-types';
 
 import BoxIcon from '../common/icons/BoxIcon';
 import CommentQuestionIcon from '../common/icons/CommentQuestionIcon';

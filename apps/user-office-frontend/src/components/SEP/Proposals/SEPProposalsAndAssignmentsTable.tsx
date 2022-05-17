@@ -11,11 +11,11 @@ import { DateTime } from 'luxon';
 import React, { useState } from 'react';
 import { NumberParam, useQueryParams } from 'use-query-params';
 
-import { useCheckAccess } from 'components/common/Can';
+import { useCheckAccess } from '../common/Can';
 import ProposalReviewContent, {
   PROPOSAL_MODAL_TAB_NAMES,
-} from 'components/review/ProposalReviewContent';
-import ProposalReviewModal from 'components/review/ProposalReviewModal';
+} from '../review/ProposalReviewContent';
+import ProposalReviewModal from '../review/ProposalReviewModal';
 import {
   SepAssignment,
   UserRole,
@@ -23,22 +23,22 @@ import {
   ProposalStatus,
   Review,
   SettingsId,
-} from 'generated/sdk';
-import { useFormattedDateTime } from 'hooks/admin/useFormattedDateTime';
-import { useDownloadPDFProposal } from 'hooks/proposal/useDownloadPDFProposal';
+} from '@user-office-software/shared-types';
+import { useFormattedDateTime } from '../../admin/useFormattedDateTime';
+import { useDownloadPDFProposal } from '../../proposal/useDownloadPDFProposal';
 import {
   useSEPProposalsData,
   SEPProposalType,
   SEPProposalAssignmentType,
-} from 'hooks/SEP/useSEPProposalsData';
-import { tableIcons } from 'utils/materialIcons';
+} from '../../SEP/useSEPProposalsData';
+import { tableIcons } from '../../materialIcons';
 import {
   average,
   getGradesFromReviews,
   standardDeviation,
-} from 'utils/mathFunctions';
-import useDataApiWithFeedback from 'utils/useDataApiWithFeedback';
-import withConfirm, { WithConfirmType } from 'utils/withConfirm';
+} from '../../mathFunctions';
+import useDataApiWithFeedback from '../../useDataApiWithFeedback';
+import withConfirm, { WithConfirmType } from '../../withConfirm';
 
 import AssignSEPMemberToProposal, {
   SepAssignedMember,

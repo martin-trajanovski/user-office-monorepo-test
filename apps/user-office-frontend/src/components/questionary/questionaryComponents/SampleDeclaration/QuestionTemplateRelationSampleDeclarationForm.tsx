@@ -5,16 +5,16 @@ import { TextField } from 'formik-mui';
 import { ChangeEvent, default as React, FC, useContext } from 'react';
 import * as Yup from 'yup';
 
-import FormikUIAutocomplete from 'components/common/FormikUIAutocomplete';
-import TitledContainer from 'components/common/TitledContainer';
-import { QuestionTemplateRelationFormProps } from 'components/questionary/QuestionaryComponentRegistry';
-import { FeatureContext } from 'context/FeatureContextProvider';
+import FormikUIAutocomplete from '../common/FormikUIAutocomplete';
+import TitledContainer from '../common/TitledContainer';
+import { QuestionTemplateRelationFormProps } from '../questionary/QuestionaryComponentRegistry';
+import { FeatureContext } from '../../FeatureContextProvider';
 import {
   FeatureId,
   SampleDeclarationConfig,
   TemplateGroupId,
-} from 'generated/sdk';
-import { useActiveTemplates } from 'hooks/call/useCallTemplates';
+} from '@user-office-software/shared-types';
+import { useActiveTemplates } from '../../call/useCallTemplates';
 
 import QuestionDependencyList from '../QuestionDependencyList';
 import { QuestionExcerpt } from '../QuestionExcerpt';

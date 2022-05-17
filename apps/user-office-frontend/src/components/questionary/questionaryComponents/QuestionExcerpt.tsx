@@ -1,7 +1,7 @@
 import React from 'react';
 
-import TitledContainer from 'components/common/TitledContainer';
-import { Question } from 'generated/sdk';
+import TitledContainer from '../common/TitledContainer';
+import { Question } from '@user-office-software/shared-types';
 
 export function QuestionExcerpt({ question }: { question: Question }) {
   return (

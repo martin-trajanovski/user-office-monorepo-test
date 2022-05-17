@@ -2,12 +2,12 @@ import { Button, TextField, Autocomplete, Grid } from '@mui/material';
 import makeStyles from '@mui/styles/makeStyles';
 import React, { useState } from 'react';
 
-import { useCheckAccess } from 'components/common/Can';
-import { UserRole } from 'generated/sdk';
-import { ProposalData } from 'hooks/proposal/useProposalData';
-import useDataApiWithFeedback from 'utils/useDataApiWithFeedback';
-import { getFullUserName } from 'utils/user';
-import withConfirm, { WithConfirmType } from 'utils/withConfirm';
+import { useCheckAccess } from '../common/Can';
+import { UserRole } from '@user-office-software/shared-types';
+import { ProposalData } from '../../proposal/useProposalData';
+import useDataApiWithFeedback from '../../useDataApiWithFeedback';
+import { getFullUserName } from '../../user';
+import withConfirm, { WithConfirmType } from '../../withConfirm';
 
 type AssignTechnicalReviewProps = {
   proposal: ProposalData;

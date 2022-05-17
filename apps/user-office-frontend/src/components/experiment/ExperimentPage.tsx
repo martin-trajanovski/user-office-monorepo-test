@@ -1,7 +1,6 @@
 import React from 'react';
 
-import { StyledContainer, StyledPaper } from 'styles/StyledComponents';
-
+import { StyledContainer, StyledPaper } from '../../styles/StyledComponents';
 import ExperimentFilterBar from './ExperimentFilterBar';
 import ExperimentTable from './ExperimentTable';
 

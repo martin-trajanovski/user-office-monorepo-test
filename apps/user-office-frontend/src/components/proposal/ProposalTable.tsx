@@ -11,15 +11,15 @@ import PropTypes from 'prop-types';
 import React, { useContext, useEffect, useState } from 'react';
 import { Redirect } from 'react-router';
 
-import { UserContext } from 'context/UserContextProvider';
-import { Call } from 'generated/sdk';
-import { useDownloadPDFProposal } from 'hooks/proposal/useDownloadPDFProposal';
-import { ProposalData } from 'hooks/proposal/useProposalData';
-import { tableIcons } from 'utils/materialIcons';
-import { tableLocalization } from 'utils/materialLocalization';
-import { timeAgo } from 'utils/Time';
-import useDataApiWithFeedback from 'utils/useDataApiWithFeedback';
-import withConfirm, { WithConfirmType } from 'utils/withConfirm';
+import { UserContext } from '../../UserContextProvider';
+import { Call } from '@user-office-software/shared-types';
+import { useDownloadPDFProposal } from '../../proposal/useDownloadPDFProposal';
+import { ProposalData } from '../../proposal/useProposalData';
+import { tableIcons } from '../../materialIcons';
+import { tableLocalization } from '../../materialLocalization';
+import { timeAgo } from '../../Time';
+import useDataApiWithFeedback from '../../useDataApiWithFeedback';
+import withConfirm, { WithConfirmType } from '../../withConfirm';
 
 import CallSelectModalOnProposalsClone from './CallSelectModalOnProposalClone';
 import {

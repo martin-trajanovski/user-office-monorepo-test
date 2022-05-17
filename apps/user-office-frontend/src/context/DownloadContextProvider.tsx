@@ -18,7 +18,7 @@ import crossFetch from 'cross-fetch';
 import { useSnackbar } from 'notistack';
 import React, { useState, useContext, useRef } from 'react';
 
-import { downloadBlob } from 'utils/downloadBlob';
+import { downloadBlob } from '../../downloadBlob';
 
 import { UserContext } from './UserContextProvider';
 

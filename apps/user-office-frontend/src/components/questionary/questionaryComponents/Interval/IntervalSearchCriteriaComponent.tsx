@@ -8,13 +8,13 @@ import {
 } from '@mui/material';
 import React, { useState } from 'react';
 
-import { SearchCriteriaInputProps } from 'components/proposal/SearchCriteriaInputProps';
+import { SearchCriteriaInputProps } from '../proposal/SearchCriteriaInputProps';
 import {
   IntervalConfig,
   QuestionFilterCompareOperator,
   Unit,
-} from 'generated/sdk';
-import { convertToSi } from 'utils/expressionToFunction';
+} from '@user-office-software/shared-types';
+import { convertToSi } from '../../expressionToFunction';
 
 function IntervalSearchCriteriaComponent({
   onChange,

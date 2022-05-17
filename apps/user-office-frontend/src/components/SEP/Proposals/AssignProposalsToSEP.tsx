@@ -8,10 +8,10 @@ import { Form, Formik } from 'formik';
 import PropTypes from 'prop-types';
 import React, { useContext } from 'react';
 
-import FormikUIAutocomplete from 'components/common/FormikUIAutocomplete';
-import { UserContext } from 'context/UserContextProvider';
-import { UserRole, Sep } from 'generated/sdk';
-import { useSEPsData } from 'hooks/SEP/useSEPsData';
+import FormikUIAutocomplete from '../common/FormikUIAutocomplete';
+import { UserContext } from '../../UserContextProvider';
+import { UserRole, Sep } from '@user-office-software/shared-types';
+import { useSEPsData } from '../../SEP/useSEPsData';
 
 const useStyles = makeStyles((theme) => ({
   cardHeader: {

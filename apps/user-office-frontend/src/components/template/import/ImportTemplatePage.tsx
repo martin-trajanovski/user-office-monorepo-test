@@ -2,9 +2,9 @@ import { Typography } from '@mui/material';
 import Container from '@mui/material/Container';
 import React from 'react';
 
-import { TemplateImportWithValidation } from 'generated/sdk';
+import { TemplateImportWithValidation } from '@user-office-software/shared-types';
 import { StyledPaper } from 'styles/StyledComponents';
-import useDataApiWithFeedback from 'utils/useDataApiWithFeedback';
+import useDataApiWithFeedback from '../../useDataApiWithFeedback';
 
 import { SelectImportFile } from '../../common/SelectImportFile';
 import { MergeReview } from './MergeReview';

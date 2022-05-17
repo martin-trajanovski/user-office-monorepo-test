@@ -11,9 +11,9 @@ import makeStyles from '@mui/styles/makeStyles';
 import { getIn } from 'formik';
 import React, { useEffect, useState } from 'react';
 
-import MultiMenuItem from 'components/common/MultiMenuItem';
-import { BasicComponentProps } from 'components/proposal/IBasicComponentProps';
-import { SelectionFromOptionsConfig } from 'generated/sdk';
+import MultiMenuItem from '../common/MultiMenuItem';
+import { BasicComponentProps } from '../proposal/IBasicComponentProps';
+import { SelectionFromOptionsConfig } from '@user-office-software/shared-types';
 
 const toArray = (input: string | string[]): string[] => {
   if (typeof input === 'string') {

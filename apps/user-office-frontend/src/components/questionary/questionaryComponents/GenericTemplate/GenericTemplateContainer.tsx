@@ -1,20 +1,20 @@
 /* eslint-disable @typescript-eslint/no-use-before-define */
 import { default as React, useState } from 'react';
 
-import Questionary from 'components/questionary/Questionary';
+import Questionary from '../questionary/Questionary';
 import {
   QuestionaryContext,
   QuestionaryContextType,
-} from 'components/questionary/QuestionaryContext';
-import { TemplateGroupId } from 'generated/sdk';
-import createCustomEventHandlers from 'models/questionary/createCustomEventHandlers';
-import { GenericTemplateSubmissionState } from 'models/questionary/genericTemplate/GenericTemplateSubmissionState';
-import { GenericTemplateWithQuestionary } from 'models/questionary/genericTemplate/GenericTemplateWithQuestionary';
+} from '../questionary/QuestionaryContext';
+import { TemplateGroupId } from '@user-office-software/shared-types';
+import createCustomEventHandlers from '../../questionary/createCustomEventHandlers';
+import { GenericTemplateSubmissionState } from '../../questionary/genericTemplate/GenericTemplateSubmissionState';
+import { GenericTemplateWithQuestionary } from '../../questionary/genericTemplate/GenericTemplateWithQuestionary';
 import {
   Event,
   QuestionarySubmissionModel,
-} from 'models/questionary/QuestionarySubmissionState';
-import useEventHandlers from 'models/questionary/useEventHandlers';
+} from '../../questionary/QuestionarySubmissionState';
+import useEventHandlers from '../../questionary/useEventHandlers';
 
 export interface GenericTemplateContextType extends QuestionaryContextType {
   state: GenericTemplateSubmissionState | null;

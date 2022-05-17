@@ -1,12 +1,12 @@
 import {
   getTranslation,
   ResourceId,
-} from '@user-office-software/duo-localisation';
+} from '@user-office-software/localization';
 import { useContext, useEffect, useState } from 'react';
 
-import { UserContext } from 'context/UserContextProvider';
-import { ProposalsFilter, ProposalView, UserRole } from 'generated/sdk';
-import { useDataApi } from 'hooks/common/useDataApi';
+import { UserContext } from '../../UserContextProvider';
+import { ProposalsFilter, ProposalView, UserRole } from '@user-office-software/shared-types';
+import { useDataApi } from '../../common/useDataApi';
 
 import { QueryParameters } from '../../components/proposal/ProposalTableOfficer';
 

@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 
-import { Proposal, ProposalPublicStatus, UserRole } from 'generated/sdk';
-import { useDataApi } from 'hooks/common/useDataApi';
+import { Proposal, ProposalPublicStatus, UserRole } from '@user-office-software/shared-types';
+import { useDataApi } from '../../common/useDataApi';
 
 export function useUserProposals(role = UserRole.USER) {
   const [proposals, setProposals] = useState<

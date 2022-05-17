@@ -2,11 +2,11 @@ import { Column } from '@material-table/core';
 import {
   getTranslation,
   ResourceId,
-} from '@user-office-software/duo-localisation';
+} from '@user-office-software/localization';
 
-import { SortDirectionType } from 'components/common/SuperMaterialTable';
-import { Proposal, ProposalEndStatus, ProposalStatus } from 'generated/sdk';
-import { ProposalViewData } from 'hooks/proposal/useProposalsCoreData';
+import { SortDirectionType } from '../common/SuperMaterialTable';
+import { Proposal, ProposalEndStatus, ProposalStatus } from '@user-office-software/shared-types';
+import { ProposalViewData } from '../../proposal/useProposalsCoreData';
 
 import {
   average,

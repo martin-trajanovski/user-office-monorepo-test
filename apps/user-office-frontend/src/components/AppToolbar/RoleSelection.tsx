@@ -1,14 +1,14 @@
 import MaterialTable from '@material-table/core';
 import Button from '@mui/material/Button';
+import { Role } from '@user-office-software/shared-types';
 import React, { useContext, useState, useEffect } from 'react';
 import { Redirect, useHistory } from 'react-router';
 
-import { UserContext } from 'context/UserContextProvider';
-import { Role } from 'generated/sdk';
-import { getUniqueArrayBy } from 'utils/helperFunctions';
-import { tableIcons } from 'utils/materialIcons';
-import useDataApiWithFeedback from 'utils/useDataApiWithFeedback';
-import { FunctionType } from 'utils/utilTypes';
+import { UserContext } from '../../context/UserContextProvider';
+import { getUniqueArrayBy } from '../../utils/helperFunctions';
+import { tableIcons } from '../../utils/materialIcons';
+import useDataApiWithFeedback from '../../utils/useDataApiWithFeedback';
+import { FunctionType } from '../../utils/utilTypes';
 
 const columns = [
   {

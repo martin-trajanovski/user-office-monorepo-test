@@ -4,8 +4,8 @@ import PropTypes from 'prop-types';
 import React, { useCallback, useEffect } from 'react';
 import { useCookies } from 'react-cookie';
 
-import { Role, UserRole, User } from 'generated/sdk';
-import { useUnauthorizedApi } from 'hooks/common/useDataApi';
+import { Role, UserRole, User } from '@user-office-software/shared-types';
+import { useUnauthorizedApi } from '../../common/useDataApi';
 
 export type BasicUser = Pick<User, 'id' | 'email'>;
 

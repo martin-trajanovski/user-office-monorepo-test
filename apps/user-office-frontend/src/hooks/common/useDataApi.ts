@@ -5,9 +5,9 @@ import jwtDecode from 'jwt-decode';
 import { useSnackbar, WithSnackbarProps } from 'notistack';
 import { useCallback, useContext } from 'react';
 
-import { SettingsContext } from 'context/SettingsContextProvider';
-import { UserContext } from 'context/UserContextProvider';
-import { getSdk, SettingsId } from 'generated/sdk';
+import { SettingsContext } from '../../SettingsContextProvider';
+import { UserContext } from '../../UserContextProvider';
+import { getSdk, SettingsId } from '@user-office-software/shared-types';
 
 const endpoint = '/graphql';
 

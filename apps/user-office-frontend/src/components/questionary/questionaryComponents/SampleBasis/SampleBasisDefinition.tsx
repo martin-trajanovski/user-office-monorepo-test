@@ -1,8 +1,8 @@
 import InboxIcon from '@mui/icons-material/Inbox';
 import React from 'react';
 
-import { DataType } from 'generated/sdk';
-import { SampleSubmissionState } from 'models/questionary/sample/SampleSubmissionState';
+import { DataType } from '@user-office-software/shared-types';
+import { SampleSubmissionState } from '../../questionary/sample/SampleSubmissionState';
 
 import { QuestionaryComponentDefinition } from '../../QuestionaryComponentRegistry';
 import { createSampleBasisValidationSchema } from './createSampleBasisValidationSchema';

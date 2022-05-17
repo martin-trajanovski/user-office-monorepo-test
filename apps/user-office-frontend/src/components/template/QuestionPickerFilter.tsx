@@ -9,8 +9,8 @@ import {
 import makeStyles from '@mui/styles/makeStyles';
 import React, { ChangeEvent, useEffect, useState } from 'react';
 
-import { getQuestionaryComponentDefinitions } from 'components/questionary/QuestionaryComponentRegistry';
-import { DataType } from 'generated/sdk';
+import { getQuestionaryComponentDefinitions } from '../questionary/QuestionaryComponentRegistry';
+import { DataType } from '@user-office-software/shared-types';
 
 import { QuestionFilter } from './QuestionPicker';
 
