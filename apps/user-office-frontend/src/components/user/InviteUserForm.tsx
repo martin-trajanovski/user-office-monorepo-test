@@ -6,9 +6,9 @@ import { Field, Form, Formik } from 'formik';
 import { TextField } from 'formik-mui';
 import React from 'react';
 
-import { BasicUserDetails, UserRole } from 'generated/sdk';
-import useDataApiWithFeedback from 'utils/useDataApiWithFeedback';
-import { FunctionType } from 'utils/utilTypes';
+import { BasicUserDetails, UserRole } from '@user-office-software/shared-types';
+import useDataApiWithFeedback from '../../useDataApiWithFeedback';
+import { FunctionType } from '../../utilTypes';
 
 type InviteUserFormProps = {
   action: FunctionType<void, [BasicUserDetails]>;

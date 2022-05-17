@@ -10,9 +10,9 @@ import makeStyles from '@mui/styles/makeStyles';
 import { Field, getIn } from 'formik';
 import React, { useState } from 'react';
 
-import { BasicComponentProps } from 'components/proposal/IBasicComponentProps';
-import { IntervalConfig, Unit } from 'generated/sdk';
-import expressionToFunction from 'utils/expressionToFunction';
+import { BasicComponentProps } from '../proposal/IBasicComponentProps';
+import { IntervalConfig, Unit } from '@user-office-software/shared-types';
+import expressionToFunction from '../../expressionToFunction';
 
 const useStyles = makeStyles((theme) => ({
   unitField: {

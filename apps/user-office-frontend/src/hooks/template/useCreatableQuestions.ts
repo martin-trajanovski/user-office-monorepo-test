@@ -1,5 +1,5 @@
-import { nonCreatableQuestions } from 'components/questionary/QuestionaryComponentRegistry';
-import { QuestionsFilter } from 'generated/sdk';
+import { nonCreatableQuestions } from '../questionary/QuestionaryComponentRegistry';
+import { QuestionsFilter } from '@user-office-software/shared-types';
 
 import { useQuestions } from './useQuestions';
 

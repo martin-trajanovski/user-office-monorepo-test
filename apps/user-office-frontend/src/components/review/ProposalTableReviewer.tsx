@@ -9,27 +9,27 @@ import { proposalGradeValidationSchema } from '@user-office-software/validation'
 import React, { useState, useContext, useEffect } from 'react';
 import { useQueryParams, NumberParam } from 'use-query-params';
 
-import CallFilter from 'components/common/proposalFilters/CallFilter';
-import InstrumentFilter from 'components/common/proposalFilters/InstrumentFilter';
-import { DefaultQueryParams } from 'components/common/SuperMaterialTable';
-import { ReviewAndAssignmentContext } from 'context/ReviewAndAssignmentContextProvider';
+import CallFilter from '../common/proposalFilters/CallFilter';
+import InstrumentFilter from '../common/proposalFilters/InstrumentFilter';
+import { DefaultQueryParams } from '../common/SuperMaterialTable';
+import { ReviewAndAssignmentContext } from '../../ReviewAndAssignmentContextProvider';
 import {
   ReviewerFilter,
   ReviewStatus,
   SepAssignment,
   UserWithReviewsQuery,
-} from 'generated/sdk';
-import { useCallsData } from 'hooks/call/useCallsData';
-import { useInstrumentsData } from 'hooks/instrument/useInstrumentsData';
-import { useDownloadPDFProposal } from 'hooks/proposal/useDownloadPDFProposal';
-import { useUserWithReviewsData } from 'hooks/user/useUserData';
+} from '@user-office-software/shared-types';
+import { useCallsData } from '../../call/useCallsData';
+import { useInstrumentsData } from '../../instrument/useInstrumentsData';
+import { useDownloadPDFProposal } from '../../proposal/useDownloadPDFProposal';
+import { useUserWithReviewsData } from '../../user/useUserData';
 import {
   capitalize,
   setSortDirectionOnSortColumn,
-} from 'utils/helperFunctions';
-import { tableIcons } from 'utils/materialIcons';
-import useDataApiWithFeedback from 'utils/useDataApiWithFeedback';
-import withConfirm, { WithConfirmType } from 'utils/withConfirm';
+} from '../../helperFunctions';
+import { tableIcons } from '../../materialIcons';
+import useDataApiWithFeedback from '../../useDataApiWithFeedback';
+import withConfirm, { WithConfirmType } from '../../withConfirm';
 
 import ProposalReviewContent, {
   PROPOSAL_MODAL_TAB_NAMES,

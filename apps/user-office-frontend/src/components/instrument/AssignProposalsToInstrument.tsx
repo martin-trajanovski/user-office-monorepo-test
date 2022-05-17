@@ -8,9 +8,9 @@ import { Form, Formik } from 'formik';
 import PropTypes from 'prop-types';
 import React from 'react';
 
-import FormikUIAutocomplete from 'components/common/FormikUIAutocomplete';
-import { InstrumentFragment } from 'generated/sdk';
-import { useInstrumentsData } from 'hooks/instrument/useInstrumentsData';
+import FormikUIAutocomplete from '../common/FormikUIAutocomplete';
+import { InstrumentFragment } from '@user-office-software/shared-types';
+import { useInstrumentsData } from '../../instrument/useInstrumentsData';
 
 const useStyles = makeStyles((theme) => ({
   cardHeader: {

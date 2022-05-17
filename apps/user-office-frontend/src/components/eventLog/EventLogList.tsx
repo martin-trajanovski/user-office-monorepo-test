@@ -1,12 +1,12 @@
 import MaterialTable from '@material-table/core';
 import { Typography } from '@mui/material';
+import { EventLog } from '@user-office-software/shared-types';
 import PropTypes from 'prop-types';
 import React from 'react';
 
-import { EventLog } from 'generated/sdk';
-import { useFormattedDateTime } from 'hooks/admin/useFormattedDateTime';
-import { useEventLogsData } from 'hooks/eventLog/useEventLogsData';
-import { tableIcons } from 'utils/materialIcons';
+import { useFormattedDateTime } from '../../hooks/admin/useFormattedDateTime';
+import { useEventLogsData } from '../../hooks/eventLog/useEventLogsData';
+import { tableIcons } from '../../utils/materialIcons';
 
 type EventLogListProps = {
   /** Id of the changed object that we want to list event logs for. */

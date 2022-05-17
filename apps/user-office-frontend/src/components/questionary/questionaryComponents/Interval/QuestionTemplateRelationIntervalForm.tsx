@@ -5,11 +5,11 @@ import { CheckboxWithLabel, TextField } from 'formik-mui';
 import React, { FC, useState } from 'react';
 import * as Yup from 'yup';
 
-import TitledContainer from 'components/common/TitledContainer';
-import { QuestionTemplateRelationFormProps } from 'components/questionary/QuestionaryComponentRegistry';
-import { QuestionExcerpt } from 'components/questionary/questionaryComponents/QuestionExcerpt';
-import { IntervalConfig } from 'generated/sdk';
-import { useUnitsData } from 'hooks/settings/useUnitData';
+import TitledContainer from '../common/TitledContainer';
+import { QuestionTemplateRelationFormProps } from '../questionary/QuestionaryComponentRegistry';
+import { QuestionExcerpt } from '../questionary/questionaryComponents/QuestionExcerpt';
+import { IntervalConfig } from '@user-office-software/shared-types';
+import { useUnitsData } from '../../settings/useUnitData';
 
 import QuestionDependencyList from '../QuestionDependencyList';
 import { QuestionTemplateRelationFormShell } from '../QuestionTemplateRelationFormShell';

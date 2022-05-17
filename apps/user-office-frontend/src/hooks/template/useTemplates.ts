@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 
-import { GetTemplatesQuery } from 'generated/sdk';
-import { useDataApi } from 'hooks/common/useDataApi';
+import { GetTemplatesQuery } from '@user-office-software/shared-types';
+import { useDataApi } from '../../common/useDataApi';
 
 import { TemplatesFilter } from './../../generated/sdk';
 

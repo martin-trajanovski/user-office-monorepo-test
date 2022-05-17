@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 
-import { GetFileMetadataQuery } from 'generated/sdk';
-import { useDataApi } from 'hooks/common/useDataApi';
+import { GetFileMetadataQuery } from '@user-office-software/shared-types';
+import { useDataApi } from '../../common/useDataApi';
 
 export function useFileMetadata(ids: string[]) {
   const [files, setFiles] = useState<

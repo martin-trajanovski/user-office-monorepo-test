@@ -1,6 +1,6 @@
 import * as Yup from 'yup';
 
-import { useDataApi } from 'hooks/common/useDataApi';
+import { useDataApi } from '../../common/useDataApi';
 
 export function useNaturalKeySchema(initialValue: string) {
   const api = useDataApi();

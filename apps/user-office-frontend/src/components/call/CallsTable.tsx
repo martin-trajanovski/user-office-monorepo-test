@@ -1,21 +1,24 @@
 import { Typography } from '@mui/material';
+import {
+  Call,
+  InstrumentWithAvailabilityTime,
+  UserRole,
+} from '@user-office-software/shared-types';
 import React, { useState } from 'react';
 import { useQueryParams } from 'use-query-params';
 
-import { useCheckAccess } from 'components/common/Can';
-import ScienceIcon from 'components/common/icons/ScienceIcon';
-import InputDialog from 'components/common/InputDialog';
+import { useFormattedDateTime } from '../../hooks/admin/useFormattedDateTime';
+import { useCallsData } from '../../hooks/call/useCallsData';
+import { tableIcons } from '../../utils/materialIcons';
+import useDataApiWithFeedback from '../../utils/useDataApiWithFeedback';
+import { FunctionType } from '../../utils/utilTypes';
+import { useCheckAccess } from '../common/Can';
+import ScienceIcon from '../common/icons/ScienceIcon';
+import InputDialog from '../common/InputDialog';
 import SuperMaterialTable, {
   DefaultQueryParams,
   UrlQueryParamsType,
-} from 'components/common/SuperMaterialTable';
-import { Call, InstrumentWithAvailabilityTime, UserRole } from 'generated/sdk';
-import { useFormattedDateTime } from 'hooks/admin/useFormattedDateTime';
-import { useCallsData } from 'hooks/call/useCallsData';
-import { tableIcons } from 'utils/materialIcons';
-import useDataApiWithFeedback from 'utils/useDataApiWithFeedback';
-import { FunctionType } from 'utils/utilTypes';
-
+} from '../common/SuperMaterialTable';
 import AssignedInstrumentsTable from './AssignedInstrumentsTable';
 import AssignInstrumentsToCall from './AssignInstrumentsToCall';
 import CallStatusFilter, {

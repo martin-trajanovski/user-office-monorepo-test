@@ -3,17 +3,17 @@ import { Typography } from '@mui/material';
 import React from 'react';
 import { useQueryParams } from 'use-query-params';
 
-import { useCheckAccess } from 'components/common/Can';
+import { useCheckAccess } from '../common/Can';
 import SuperMaterialTable, {
   DefaultQueryParams,
   UrlQueryParamsType,
-} from 'components/common/SuperMaterialTable';
-import { UserRole, ProposalStatus } from 'generated/sdk';
-import { useProposalStatusesData } from 'hooks/settings/useProposalStatusesData';
-import { tableIcons } from 'utils/materialIcons';
-import useDataApiWithFeedback from 'utils/useDataApiWithFeedback';
-import { FunctionType } from 'utils/utilTypes';
-import withConfirm, { WithConfirmType } from 'utils/withConfirm';
+} from '../common/SuperMaterialTable';
+import { UserRole, ProposalStatus } from '@user-office-software/shared-types';
+import { useProposalStatusesData } from '../../settings/useProposalStatusesData';
+import { tableIcons } from '../../materialIcons';
+import useDataApiWithFeedback from '../../useDataApiWithFeedback';
+import { FunctionType } from '../../utilTypes';
+import withConfirm, { WithConfirmType } from '../../withConfirm';
 
 import CreateUpdateProposalStatus from './CreateUpdateProposalStatus';
 

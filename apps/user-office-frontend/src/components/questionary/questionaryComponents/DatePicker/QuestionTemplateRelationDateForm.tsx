@@ -7,11 +7,11 @@ import { DatePicker, DateTimePicker } from 'formik-mui-lab';
 import React, { FC, useContext } from 'react';
 import * as Yup from 'yup';
 
-import TitledContainer from 'components/common/TitledContainer';
-import { QuestionTemplateRelationFormProps } from 'components/questionary/QuestionaryComponentRegistry';
-import { SettingsContext } from 'context/SettingsContextProvider';
-import { DateConfig, SettingsId } from 'generated/sdk';
-import { minMaxDateTimeCalculations } from 'utils/Time';
+import TitledContainer from '../common/TitledContainer';
+import { QuestionTemplateRelationFormProps } from '../questionary/QuestionaryComponentRegistry';
+import { SettingsContext } from '../../SettingsContextProvider';
+import { DateConfig, SettingsId } from '@user-office-software/shared-types';
+import { minMaxDateTimeCalculations } from '../../Time';
 
 import QuestionDependencyList from '../QuestionDependencyList';
 import { QuestionExcerpt } from '../QuestionExcerpt';

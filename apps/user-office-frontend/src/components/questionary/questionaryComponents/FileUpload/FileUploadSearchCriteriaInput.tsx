@@ -1,8 +1,8 @@
 import { FormControl, Grid, InputLabel, MenuItem, Select } from '@mui/material';
 import React, { useState } from 'react';
 
-import { SearchCriteriaInputProps } from 'components/proposal/SearchCriteriaInputProps';
-import { QuestionFilterCompareOperator } from 'generated/sdk';
+import { SearchCriteriaInputProps } from '../proposal/SearchCriteriaInputProps';
+import { QuestionFilterCompareOperator } from '@user-office-software/shared-types';
 
 function FileUploadSearchCriteriaInput({
   onChange,

@@ -10,12 +10,12 @@ import { TextField } from 'formik-mui';
 import PropTypes from 'prop-types';
 import React from 'react';
 
-import FormikUIAutocomplete from 'components/common/FormikUIAutocomplete';
-import UOLoader from 'components/common/UOLoader';
-import { InstrumentFragment, UserRole } from 'generated/sdk';
-import { useUsersData } from 'hooks/user/useUsersData';
-import useDataApiWithFeedback from 'utils/useDataApiWithFeedback';
-import { getFullUserName } from 'utils/user';
+import FormikUIAutocomplete from '../common/FormikUIAutocomplete';
+import UOLoader from '../common/UOLoader';
+import { InstrumentFragment, UserRole } from '@user-office-software/shared-types';
+import { useUsersData } from '../../user/useUsersData';
+import useDataApiWithFeedback from '../../useDataApiWithFeedback';
+import { getFullUserName } from '../../user';
 
 const useStyles = makeStyles((theme) => ({
   submit: {

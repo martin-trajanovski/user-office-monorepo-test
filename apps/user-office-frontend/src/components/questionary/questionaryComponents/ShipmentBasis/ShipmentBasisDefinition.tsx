@@ -1,11 +1,11 @@
 import LocalShippingIcon from '@mui/icons-material/LocalShipping';
 import React from 'react';
 
-import { DataType } from 'generated/sdk';
+import { DataType } from '@user-office-software/shared-types';
 import {
   ShipmentBasisFormikData,
   ShipmentSubmissionState,
-} from 'models/questionary/shipment/ShipmentSubmissionState';
+} from '../../questionary/shipment/ShipmentSubmissionState';
 
 import { QuestionaryComponentDefinition } from '../../QuestionaryComponentRegistry';
 import { createShipmentBasisValidationSchema } from './createShipmentBasisValidationSchema';

@@ -4,16 +4,16 @@ import produce from 'immer';
 import React, { useCallback, useState } from 'react';
 import { useHistory } from 'react-router';
 
-import { ActionButtonContainer } from 'components/common/ActionButtonContainer';
-import { ConflictResolver, DiffInfo } from 'components/common/ConflictResolver';
+import { ActionButtonContainer } from '../common/ActionButtonContainer';
+import { ConflictResolver, DiffInfo } from '../common/ConflictResolver';
 import {
   ConflictResolutionStrategy,
   SettingsId,
   UnitComparison,
   UnitsImportWithValidation,
-} from 'generated/sdk';
-import { useFormattedDateTime } from 'hooks/admin/useFormattedDateTime';
-import useDataApiWithFeedback from 'utils/useDataApiWithFeedback';
+} from '@user-office-software/shared-types';
+import { useFormattedDateTime } from '../../admin/useFormattedDateTime';
+import useDataApiWithFeedback from '../../useDataApiWithFeedback';
 
 interface UnitMergeReviewProps {
   data: UnitsImportWithValidation;

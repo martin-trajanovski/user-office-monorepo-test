@@ -22,11 +22,11 @@ import { TextField } from 'formik-mui';
 import PropTypes from 'prop-types';
 import React, { useState } from 'react';
 
-import UOLoader from 'components/common/UOLoader';
-import { Proposal, TechnicalReview } from 'generated/sdk';
+import UOLoader from '../common/UOLoader';
+import { Proposal, TechnicalReview } from '@user-office-software/shared-types';
 import { StyledPaper } from 'styles/StyledComponents';
-import useDataApiWithFeedback from 'utils/useDataApiWithFeedback';
-import { getFullUserName } from 'utils/user';
+import useDataApiWithFeedback from '../../useDataApiWithFeedback';
+import { getFullUserName } from '../../user';
 
 type SEPProposalProps = {
   sepId: number;

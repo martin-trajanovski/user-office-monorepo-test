@@ -4,16 +4,16 @@ import React from 'react';
 import { useHistory } from 'react-router';
 import { useQueryParams } from 'use-query-params';
 
-import { useCheckAccess } from 'components/common/Can';
+import { useCheckAccess } from '../common/Can';
 import SuperMaterialTable, {
   DefaultQueryParams,
   UrlQueryParamsType,
-} from 'components/common/SuperMaterialTable';
-import { UserRole, ProposalWorkflow } from 'generated/sdk';
-import { useProposalWorkflowsData } from 'hooks/settings/useProposalWorkflowsData';
-import { tableIcons } from 'utils/materialIcons';
-import useDataApiWithFeedback from 'utils/useDataApiWithFeedback';
-import { FunctionType } from 'utils/utilTypes';
+} from '../common/SuperMaterialTable';
+import { UserRole, ProposalWorkflow } from '@user-office-software/shared-types';
+import { useProposalWorkflowsData } from '../../settings/useProposalWorkflowsData';
+import { tableIcons } from '../../materialIcons';
+import useDataApiWithFeedback from '../../useDataApiWithFeedback';
+import { FunctionType } from '../../utilTypes';
 
 import CreateProposalWorkflow from './CreateProposalWorkflow';
 

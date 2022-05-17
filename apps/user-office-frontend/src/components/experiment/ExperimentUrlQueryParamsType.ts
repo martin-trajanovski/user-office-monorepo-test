@@ -1,6 +1,6 @@
 import { QueryParamConfig } from 'use-query-params';
 
-import { UrlQueryParamsType } from 'components/common/SuperMaterialTable';
+import { UrlQueryParamsType } from '../common/SuperMaterialTable';
 
 export type ExperimentUrlQueryParamsType = {
   call: QueryParamConfig<number | null | undefined>;

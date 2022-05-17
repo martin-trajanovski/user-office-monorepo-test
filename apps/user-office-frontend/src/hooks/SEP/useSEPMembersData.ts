@@ -1,7 +1,7 @@
 import { useEffect, useState, Dispatch, SetStateAction } from 'react';
 
-import { SepReviewer, Role, BasicUserDetails } from 'generated/sdk';
-import { useDataApi } from 'hooks/common/useDataApi';
+import { SepReviewer, Role, BasicUserDetails } from '@user-office-software/shared-types';
+import { useDataApi } from '../../common/useDataApi';
 
 export type SepMember = Pick<SepReviewer, 'userId' | 'sepId'> & {
   role?: Pick<Role, 'id' | 'shortCode' | 'title'> | null;

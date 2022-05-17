@@ -11,9 +11,8 @@ import makeStyles from '@mui/styles/makeStyles';
 import { FormikHelpers, FormikValues } from 'formik';
 import React, { useRef } from 'react';
 
-import { clamp } from 'utils/Math';
-import { FunctionType } from 'utils/utilTypes';
-
+import { clamp } from '../../utils/Math';
+import { FunctionType } from '../../utils/utilTypes';
 import { ActionButtonContainer } from './ActionButtonContainer';
 
 function move(

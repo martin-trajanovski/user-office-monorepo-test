@@ -6,20 +6,20 @@ import { DatePicker } from 'formik-mui-lab';
 import { useContext } from 'react';
 import React from 'react';
 
-import { BasicComponentProps } from 'components/proposal/IBasicComponentProps';
+import { BasicComponentProps } from '../proposal/IBasicComponentProps';
 import {
   createMissingContextErrorMessage,
   QuestionaryContext,
-} from 'components/questionary/QuestionaryContext';
-import { VisitRegistrationContextType } from 'components/visit/VisitRegistrationContainer';
+} from '../questionary/QuestionaryContext';
+import { VisitRegistrationContextType } from '../visit/VisitRegistrationContainer';
 import {
   Sdk,
   SettingsId,
   UpdateVisitRegistrationMutationVariables,
-} from 'generated/sdk';
-import { useFormattedDateTime } from 'hooks/admin/useFormattedDateTime';
-import { SubmitActionDependencyContainer } from 'hooks/questionary/useSubmitActions';
-import { VisitRegistrationSubmissionState } from 'models/questionary/visit/VisitRegistrationSubmissionState';
+} from '@user-office-software/shared-types';
+import { useFormattedDateTime } from '../../admin/useFormattedDateTime';
+import { SubmitActionDependencyContainer } from '../../questionary/useSubmitActions';
+import { VisitRegistrationSubmissionState } from '../../questionary/visit/VisitRegistrationSubmissionState';
 
 function QuestionaryComponentVisitBasis({ answer }: BasicComponentProps) {
   const theme = useTheme();

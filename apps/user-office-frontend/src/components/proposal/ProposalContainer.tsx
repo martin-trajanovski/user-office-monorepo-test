@@ -2,21 +2,21 @@
 import { PaperProps, Typography } from '@mui/material';
 import { default as React, useState } from 'react';
 
-import CopyToClipboard from 'components/common/CopyToClipboard';
-import Questionary from 'components/questionary/Questionary';
+import CopyToClipboard from '../common/CopyToClipboard';
+import Questionary from '../questionary/Questionary';
 import {
   QuestionaryContext,
   QuestionaryContextType,
-} from 'components/questionary/QuestionaryContext';
-import { TemplateGroupId } from 'generated/sdk';
-import createCustomEventHandlers from 'models/questionary/createCustomEventHandlers';
-import { ProposalSubmissionState } from 'models/questionary/proposal/ProposalSubmissionState';
-import { ProposalWithQuestionary } from 'models/questionary/proposal/ProposalWithQuestionary';
+} from '../questionary/QuestionaryContext';
+import { TemplateGroupId } from '@user-office-software/shared-types';
+import createCustomEventHandlers from '../../questionary/createCustomEventHandlers';
+import { ProposalSubmissionState } from '../../questionary/proposal/ProposalSubmissionState';
+import { ProposalWithQuestionary } from '../../questionary/proposal/ProposalWithQuestionary';
 import {
   Event,
   QuestionarySubmissionModel,
-} from 'models/questionary/QuestionarySubmissionState';
-import useEventHandlers from 'models/questionary/useEventHandlers';
+} from '../../questionary/QuestionarySubmissionState';
+import useEventHandlers from '../../questionary/useEventHandlers';
 import { StyledContainer, StyledPaper } from 'styles/StyledComponents';
 
 export interface ProposalContextType extends QuestionaryContextType {

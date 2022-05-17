@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 
-import { GetRolesQuery } from 'generated/sdk';
-import { useDataApi } from 'hooks/common/useDataApi';
+import { GetRolesQuery } from '@user-office-software/shared-types';
+import { useDataApi } from '../../common/useDataApi';
 
 export function useRolesData() {
   const api = useDataApi();

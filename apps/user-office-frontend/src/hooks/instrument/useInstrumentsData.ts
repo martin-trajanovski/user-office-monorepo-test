@@ -6,9 +6,9 @@ import {
   useContext,
 } from 'react';
 
-import { UserContext } from 'context/UserContextProvider';
-import { InstrumentFragment, UserRole } from 'generated/sdk';
-import { useDataApi } from 'hooks/common/useDataApi';
+import { UserContext } from '../../UserContextProvider';
+import { InstrumentFragment, UserRole } from '@user-office-software/shared-types';
+import { useDataApi } from '../../common/useDataApi';
 
 export function useInstrumentsData(callIds?: number[]): {
   loadingInstruments: boolean;

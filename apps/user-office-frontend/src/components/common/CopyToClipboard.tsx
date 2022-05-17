@@ -4,7 +4,8 @@ import clsx from 'clsx';
 import { useSnackbar } from 'notistack';
 import React, { useState } from 'react';
 
-import { truncateString } from 'utils/truncateString';
+import { truncateString } from '../../utils/truncateString';
+
 const useStyles = makeStyles(() => ({
   container: {
     position: 'relative',

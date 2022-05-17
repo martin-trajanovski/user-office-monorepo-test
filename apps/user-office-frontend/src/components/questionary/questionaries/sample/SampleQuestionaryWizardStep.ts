@@ -1,4 +1,4 @@
-import { QuestionaryWizardStep } from 'components/questionary/DefaultWizardStepFactory';
+import { QuestionaryWizardStep } from '../questionary/DefaultWizardStepFactory';
 
 export class SampleQuestionaryWizardStep extends QuestionaryWizardStep {
   isItemWithQuestionaryEditable(): boolean {

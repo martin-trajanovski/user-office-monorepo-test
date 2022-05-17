@@ -1,7 +1,7 @@
-import { QuestionaryWizardStep } from 'components/questionary/DefaultWizardStepFactory';
-import { ShipmentStatus } from 'generated/sdk';
-import { QuestionarySubmissionState } from 'models/questionary/QuestionarySubmissionState';
-import { ShipmentSubmissionState } from 'models/questionary/shipment/ShipmentSubmissionState';
+import { QuestionaryWizardStep } from '../questionary/DefaultWizardStepFactory';
+import { ShipmentStatus } from '@user-office-software/shared-types';
+import { QuestionarySubmissionState } from '../../questionary/QuestionarySubmissionState';
+import { ShipmentSubmissionState } from '../../questionary/shipment/ShipmentSubmissionState';
 
 export class ShipmentQuestionaryWizardStep extends QuestionaryWizardStep {
   isItemWithQuestionaryEditable(state: QuestionarySubmissionState): boolean {

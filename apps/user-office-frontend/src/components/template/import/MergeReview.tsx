@@ -3,16 +3,16 @@ import produce from 'immer';
 import React, { useCallback, useState } from 'react';
 import { useHistory } from 'react-router';
 
-import { ActionButtonContainer } from 'components/common/ActionButtonContainer';
+import { ActionButtonContainer } from '../common/ActionButtonContainer';
 import {
   ConflictResolutionStrategy,
   QuestionComparison,
   SettingsId,
   TemplateImportWithValidation,
-} from 'generated/sdk';
-import { useFormattedDateTime } from 'hooks/admin/useFormattedDateTime';
-import { deepEqual } from 'utils/json';
-import useDataApiWithFeedback from 'utils/useDataApiWithFeedback';
+} from '@user-office-software/shared-types';
+import { useFormattedDateTime } from '../../admin/useFormattedDateTime';
+import { deepEqual } from '../../json';
+import useDataApiWithFeedback from '../../useDataApiWithFeedback';
 
 import { ConflictResolver } from '../../common/ConflictResolver';
 

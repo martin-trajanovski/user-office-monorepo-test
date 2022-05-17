@@ -5,9 +5,9 @@ import Typography from '@mui/material/Typography';
 import parse from 'html-react-parser';
 import React from 'react';
 
-import UOLoader from 'components/common/UOLoader';
-import { PageName } from 'generated/sdk';
-import { useGetPageContent } from 'hooks/admin/useGetPageContent';
+import UOLoader from '../common/UOLoader';
+import { PageName } from '@user-office-software/shared-types';
+import { useGetPageContent } from '../../admin/useGetPageContent';
 import { StyledContainer } from 'styles/StyledComponents';
 
 const GradeGuidePage: React.FC = () => {

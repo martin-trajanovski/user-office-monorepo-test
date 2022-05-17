@@ -6,7 +6,7 @@ import { Field } from 'formik';
 import { Autocomplete } from 'formik-mui';
 import React from 'react';
 
-import { Option } from 'utils/utilTypes';
+import { Option } from '../../utils/utilTypes';
 
 type FormikUIAutocompleteProps = {
   items: Option[];

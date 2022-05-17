@@ -3,10 +3,10 @@ import makeStyles from '@mui/styles/makeStyles';
 import PropTypes from 'prop-types';
 import React from 'react';
 
-import { useCheckAccess } from 'components/common/Can';
-import { Instrument, BasicUserDetails, UserRole } from 'generated/sdk';
-import { tableIcons } from 'utils/materialIcons';
-import useDataApiWithFeedback from 'utils/useDataApiWithFeedback';
+import { useCheckAccess } from '../common/Can';
+import { Instrument, BasicUserDetails, UserRole } from '@user-office-software/shared-types';
+import { tableIcons } from '../../materialIcons';
+import useDataApiWithFeedback from '../../useDataApiWithFeedback';
 
 // NOTE: Some custom styles for row expand table.
 const useStyles = makeStyles(() => ({

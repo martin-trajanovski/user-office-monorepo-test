@@ -1,24 +1,23 @@
 import Typography from '@mui/material/Typography';
 import {
-  createCallValidationSchemas,
-  updateCallValidationSchemas,
-} from '@user-office-software/validation/lib/Call';
-import { DateTime } from 'luxon';
-import PropTypes from 'prop-types';
-import React from 'react';
-
-import { Wizard, WizardStep } from 'components/common/MultistepWizard';
-import {
   Call,
   AllocationTimeUnits,
   UpdateCallInput,
   TemplateGroupId,
-} from 'generated/sdk';
-import { useFormattedDateTime } from 'hooks/admin/useFormattedDateTime';
-import { useActiveTemplates } from 'hooks/call/useCallTemplates';
-import { useProposalWorkflowsData } from 'hooks/settings/useProposalWorkflowsData';
-import useDataApiWithFeedback from 'utils/useDataApiWithFeedback';
+} from '@user-office-software/shared-types';
+import {
+  createCallValidationSchemas,
+  updateCallValidationSchemas,
+} from '@user-office-software/validation';
+import { DateTime } from 'luxon';
+import PropTypes from 'prop-types';
+import React from 'react';
 
+import { useFormattedDateTime } from '../../hooks/admin/useFormattedDateTime';
+import { useActiveTemplates } from '../../hooks/call/useCallTemplates';
+import { useProposalWorkflowsData } from '../../hooks/settings/useProposalWorkflowsData';
+import useDataApiWithFeedback from '../../utils/useDataApiWithFeedback';
+import { Wizard, WizardStep } from '../common/MultistepWizard';
 import CallGeneralInfo from './CallGeneralInfo';
 import CallNotificationAndCycleInfo from './CallNotificationAndCycleInfo';
 import CallReviewsInfo from './CallReviewsInfo';

@@ -1,12 +1,11 @@
 import React from 'react';
 import { DateParam, NumberParam, useQueryParams } from 'use-query-params';
 
-import CallFilter from 'components/common/proposalFilters/CallFilter';
-import InstrumentFilter from 'components/common/proposalFilters/InstrumentFilter';
-import { DefaultQueryParams } from 'components/common/SuperMaterialTable';
-import { useCallsData } from 'hooks/call/useCallsData';
-import { useInstrumentsData } from 'hooks/instrument/useInstrumentsData';
-
+import { useCallsData } from '../../hooks/call/useCallsData';
+import { useInstrumentsData } from '../../hooks/instrument/useInstrumentsData';
+import CallFilter from '../common/proposalFilters/CallFilter';
+import InstrumentFilter from '../common/proposalFilters/InstrumentFilter';
+import { DefaultQueryParams } from '../common/SuperMaterialTable';
 import DateFilter from './DateFilter';
 import { ExperimentUrlQueryParamsType } from './ExperimentUrlQueryParamsType';
 

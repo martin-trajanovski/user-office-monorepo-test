@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 
-import { QuestionaryStep } from 'generated/sdk';
-import { useDataApi } from 'hooks/common/useDataApi';
+import { QuestionaryStep } from '@user-office-software/shared-types';
+import { useDataApi } from '../../common/useDataApi';
 
 export function useBlankQuestionaryStepsData(
   templateId: number | undefined | null

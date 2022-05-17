@@ -2,14 +2,14 @@ import { FormControlLabel } from '@mui/material';
 import Checkbox from '@mui/material/Checkbox';
 import React, { ChangeEvent, useContext, useState } from 'react';
 
-import { NavigButton } from 'components/common/NavigButton';
-import NavigationFragment from 'components/questionary/NavigationFragment';
+import { NavigButton } from '../common/NavigButton';
+import NavigationFragment from '../questionary/NavigationFragment';
 import {
   createMissingContextErrorMessage,
   QuestionaryContext,
-} from 'components/questionary/QuestionaryContext';
-import QuestionaryDetails from 'components/questionary/QuestionaryDetails';
-import useDataApiWithFeedback from 'utils/useDataApiWithFeedback';
+} from '../questionary/QuestionaryContext';
+import QuestionaryDetails from '../questionary/QuestionaryDetails';
+import useDataApiWithFeedback from '../../useDataApiWithFeedback';
 
 import { SampleEsiContextType } from './SampleEsiContainer';
 

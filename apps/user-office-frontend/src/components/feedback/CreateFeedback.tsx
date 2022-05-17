@@ -1,14 +1,14 @@
 import React, { useContext, useEffect, useState } from 'react';
 
-import UOLoader from 'components/common/UOLoader';
-import { UserContext } from 'context/UserContextProvider';
+import UOLoader from '../common/UOLoader';
+import { UserContext } from '../../UserContextProvider';
 import {
   FeedbackStatus,
   QuestionaryStep,
   TemplateGroupId,
-} from 'generated/sdk';
-import { FeedbackWithQuestionary } from 'models/questionary/feedback/FeedbackWithQuestionary';
-import useDataApiWithFeedback from 'utils/useDataApiWithFeedback';
+} from '@user-office-software/shared-types';
+import { FeedbackWithQuestionary } from '../../questionary/feedback/FeedbackWithQuestionary';
+import useDataApiWithFeedback from '../../useDataApiWithFeedback';
 
 import FeedbackContainer from './FeedbackContainer';
 

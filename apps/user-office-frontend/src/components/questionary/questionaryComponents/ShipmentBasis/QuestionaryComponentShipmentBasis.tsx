@@ -4,24 +4,24 @@ import makeStyles from '@mui/styles/makeStyles';
 import { FormikErrors } from 'formik';
 import React, { useContext, useState } from 'react';
 
-import MultiMenuItem from 'components/common/MultiMenuItem';
-import withPreventSubmit from 'components/common/withPreventSubmit';
-import { BasicComponentProps } from 'components/proposal/IBasicComponentProps';
-import ProposalErrorLabel from 'components/proposal/ProposalErrorLabel';
+import MultiMenuItem from '../common/MultiMenuItem';
+import withPreventSubmit from '../common/withPreventSubmit';
+import { BasicComponentProps } from '../proposal/IBasicComponentProps';
+import ProposalErrorLabel from '../proposal/ProposalErrorLabel';
 import {
   createMissingContextErrorMessage,
   QuestionaryContext,
-} from 'components/questionary/QuestionaryContext';
-import { ShipmentContextType } from 'components/shipments/ShipmentContainer';
-import { UserContext } from 'context/UserContextProvider';
-import { Sample, UserRole } from 'generated/sdk';
-import { useUserProposals } from 'hooks/proposal/useUserProposals';
-import { SubmitActionDependencyContainer } from 'hooks/questionary/useSubmitActions';
-import { useProposalSamples } from 'hooks/sample/useProposalSamples';
+} from '../questionary/QuestionaryContext';
+import { ShipmentContextType } from '../shipments/ShipmentContainer';
+import { UserContext } from '../../UserContextProvider';
+import { Sample, UserRole } from '@user-office-software/shared-types';
+import { useUserProposals } from '../../proposal/useUserProposals';
+import { SubmitActionDependencyContainer } from '../../questionary/useSubmitActions';
+import { useProposalSamples } from '../../sample/useProposalSamples';
 import {
   ShipmentBasisFormikData,
   ShipmentSubmissionState,
-} from 'models/questionary/shipment/ShipmentSubmissionState';
+} from '../../questionary/shipment/ShipmentSubmissionState';
 
 const useStyles = makeStyles((theme) => ({
   formControl: {

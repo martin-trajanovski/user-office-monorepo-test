@@ -7,9 +7,9 @@ import { DatePicker, DateTimePicker } from 'formik-mui-lab';
 import { DateTime } from 'luxon';
 import React from 'react';
 
-import { BasicComponentProps } from 'components/proposal/IBasicComponentProps';
-import { DateConfig, SettingsId } from 'generated/sdk';
-import { useFormattedDateTime } from 'hooks/admin/useFormattedDateTime';
+import { BasicComponentProps } from '../proposal/IBasicComponentProps';
+import { DateConfig, SettingsId } from '@user-office-software/shared-types';
+import { useFormattedDateTime } from '../../admin/useFormattedDateTime';
 
 import Hint from '../Hint';
 

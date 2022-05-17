@@ -5,12 +5,12 @@ import { useQueryParams } from 'use-query-params';
 import SuperMaterialTable, {
   DefaultQueryParams,
   UrlQueryParamsType,
-} from 'components/common/SuperMaterialTable';
-import { Institution } from 'generated/sdk';
-import { useInstitutionsData } from 'hooks/admin/useInstitutionData';
-import { tableIcons } from 'utils/materialIcons';
-import useDataApiWithFeedback from 'utils/useDataApiWithFeedback';
-import { FunctionType } from 'utils/utilTypes';
+} from '../common/SuperMaterialTable';
+import { Institution } from '@user-office-software/shared-types';
+import { useInstitutionsData } from '../../admin/useInstitutionData';
+import { tableIcons } from '../../materialIcons';
+import useDataApiWithFeedback from '../../useDataApiWithFeedback';
+import { FunctionType } from '../../utilTypes';
 
 import CreateUpdateInstitution from './CreateUpdateInstitution';
 

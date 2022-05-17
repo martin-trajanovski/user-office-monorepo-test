@@ -4,8 +4,8 @@ import makeStyles from '@mui/styles/makeStyles';
 import React, { useContext } from 'react';
 import { useHistory } from 'react-router';
 
-import { UserContext } from 'context/UserContextProvider';
-import useDataApiWithFeedback from 'utils/useDataApiWithFeedback';
+import { UserContext } from '../../UserContextProvider';
+import useDataApiWithFeedback from '../../useDataApiWithFeedback';
 
 const useStyles = makeStyles({
   buttons: {

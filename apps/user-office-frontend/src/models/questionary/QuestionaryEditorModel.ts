@@ -9,17 +9,17 @@ import {
   TemplateCategoryId,
   TemplateGroupId,
   TemplateStep,
-} from 'generated/sdk';
-import { useDataApi } from 'hooks/common/useDataApi';
+} from '@user-office-software/shared-types';
+import { useDataApi } from '../../common/useDataApi';
 import {
   getFieldById,
   getQuestionaryStepByTopicId,
   getTopicById,
-} from 'models/questionary/QuestionaryFunctions';
+} from '../../questionary/QuestionaryFunctions';
 import {
   ReducerMiddleware,
   useReducerWithMiddleWares,
-} from 'utils/useReducerWithMiddleWares';
+} from '../../useReducerWithMiddleWares';
 
 export enum EventType {
   READY,

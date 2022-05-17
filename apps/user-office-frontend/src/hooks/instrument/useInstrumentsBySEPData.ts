@@ -1,7 +1,7 @@
 import { useEffect, useState, SetStateAction, Dispatch } from 'react';
 
-import { InstrumentWithAvailabilityTime } from 'generated/sdk';
-import { useDataApi } from 'hooks/common/useDataApi';
+import { InstrumentWithAvailabilityTime } from '@user-office-software/shared-types';
+import { useDataApi } from '../../common/useDataApi';
 
 export function useInstrumentsBySEPData(
   sepId: number,

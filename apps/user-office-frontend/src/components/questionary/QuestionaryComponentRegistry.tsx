@@ -3,8 +3,8 @@ import { FormikProps } from 'formik';
 import React, { FC, ReactNode } from 'react';
 import * as Yup from 'yup';
 
-import { BasicComponentProps } from 'components/proposal/IBasicComponentProps';
-import { SearchCriteriaInputProps } from 'components/proposal/SearchCriteriaInputProps';
+import { BasicComponentProps } from '../proposal/IBasicComponentProps';
+import { SearchCriteriaInputProps } from '../proposal/SearchCriteriaInputProps';
 import {
   Answer,
   DataType,
@@ -13,8 +13,8 @@ import {
   Sdk,
   Template,
   TemplateFragment,
-} from 'generated/sdk';
-import { QuestionarySubmissionState } from 'models/questionary/QuestionarySubmissionState';
+} from '@user-office-software/shared-types';
+import { QuestionarySubmissionState } from '../../questionary/QuestionarySubmissionState';
 
 import { booleanDefinition } from './questionaryComponents/Boolean/BooleanDefinition';
 import { dateDefinition } from './questionaryComponents/DatePicker/DatePickerDefinition';

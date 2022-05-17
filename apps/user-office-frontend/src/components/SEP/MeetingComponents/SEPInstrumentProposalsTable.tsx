@@ -11,23 +11,23 @@ import clsx from 'clsx';
 import React, { useContext, DragEvent, useState, useEffect } from 'react';
 import { NumberParam, useQueryParams } from 'use-query-params';
 
-import { useCheckAccess } from 'components/common/Can';
-import { UserContext } from 'context/UserContextProvider';
+import { useCheckAccess } from '../common/Can';
+import { UserContext } from '../../UserContextProvider';
 import {
   SepProposal,
   InstrumentWithAvailabilityTime,
   UserRole,
   SepMeetingDecision,
   Call,
-} from 'generated/sdk';
-import { useSEPProposalsByInstrument } from 'hooks/SEP/useSEPProposalsByInstrument';
-import { tableIcons } from 'utils/materialIcons';
+} from '@user-office-software/shared-types';
+import { useSEPProposalsByInstrument } from '../../SEP/useSEPProposalsByInstrument';
+import { tableIcons } from '../../materialIcons';
 import {
   getGradesFromReviews,
   average,
   standardDeviation,
-} from 'utils/mathFunctions';
-import useDataApiWithFeedback from 'utils/useDataApiWithFeedback';
+} from '../../mathFunctions';
+import useDataApiWithFeedback from '../../useDataApiWithFeedback';
 
 import SEPMeetingProposalViewModal from './ProposalViewModal/SEPMeetingProposalViewModal';
 

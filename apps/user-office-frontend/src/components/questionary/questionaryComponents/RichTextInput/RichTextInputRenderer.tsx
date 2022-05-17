@@ -9,8 +9,8 @@ import React, { useState } from 'react';
 import {
   AnswerRenderer,
   QuestionRenderer,
-} from 'components/questionary/QuestionaryComponentRegistry';
-import stripHtml from 'utils/stripHtml';
+} from '../questionary/QuestionaryComponentRegistry';
+import stripHtml from '../../stripHtml';
 
 import { truncateString } from '../../../../utils/truncateString';
 

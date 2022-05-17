@@ -10,10 +10,10 @@ import makeStyles from '@mui/styles/makeStyles';
 import { getIn } from 'formik';
 import React, { useState } from 'react';
 
-import { BasicComponentProps } from 'components/proposal/IBasicComponentProps';
-import { NumberInputConfig, Unit } from 'generated/sdk';
-import expressionToFunction from 'utils/expressionToFunction';
-import isEventFromAutoComplete from 'utils/isEventFromAutoComplete';
+import { BasicComponentProps } from '../proposal/IBasicComponentProps';
+import { NumberInputConfig, Unit } from '@user-office-software/shared-types';
+import expressionToFunction from '../../expressionToFunction';
+import isEventFromAutoComplete from '../../isEventFromAutoComplete';
 
 const useStyles = makeStyles((theme) => ({
   unitField: {

@@ -8,9 +8,9 @@ import makeStyles from '@mui/styles/makeStyles';
 import PropTypes from 'prop-types';
 import React from 'react';
 
-import { Review } from 'generated/sdk';
+import { Review } from '@user-office-software/shared-types';
 import { StyledPaper } from 'styles/StyledComponents';
-import { getFullUserName } from 'utils/user';
+import { getFullUserName } from '../../user';
 
 const useStyles = makeStyles((theme) => ({
   heading: {

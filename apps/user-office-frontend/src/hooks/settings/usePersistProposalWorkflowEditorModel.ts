@@ -3,11 +3,11 @@ import { useState } from 'react';
 import {
   Event,
   EventType,
-} from 'components/settings/proposalWorkflow/ProposalWorkflowEditorModel';
-import { IndexWithGroupId, ProposalWorkflow, Rejection } from 'generated/sdk';
-import useDataApiWithFeedback from 'utils/useDataApiWithFeedback';
-import { MiddlewareInputParams } from 'utils/useReducerWithMiddleWares';
-import { FunctionType } from 'utils/utilTypes';
+} from '../settings/proposalWorkflow/ProposalWorkflowEditorModel';
+import { IndexWithGroupId, ProposalWorkflow, Rejection } from '@user-office-software/shared-types';
+import useDataApiWithFeedback from '../../useDataApiWithFeedback';
+import { MiddlewareInputParams } from '../../useReducerWithMiddleWares';
+import { FunctionType } from '../../utilTypes';
 
 export function usePersistProposalWorkflowEditorModel() {
   const [isLoading, setIsLoading] = useState<boolean>(false);

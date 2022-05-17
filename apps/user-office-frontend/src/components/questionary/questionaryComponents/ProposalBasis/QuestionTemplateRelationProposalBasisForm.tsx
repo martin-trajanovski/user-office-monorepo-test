@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 
-import { QuestionTemplateRelationFormProps } from 'components/questionary/QuestionaryComponentRegistry';
+import { QuestionTemplateRelationFormProps } from '../questionary/QuestionaryComponentRegistry';
 
 import { QuestionExcerpt } from '../QuestionExcerpt';
 import { QuestionTemplateRelationFormShell } from '../QuestionTemplateRelationFormShell';

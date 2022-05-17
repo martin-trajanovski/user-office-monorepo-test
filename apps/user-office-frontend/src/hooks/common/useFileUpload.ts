@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
-import { FileMetaData } from 'models/questionary/FileUpload';
-import { FunctionType } from 'utils/utilTypes';
+import { FileMetaData } from '../../questionary/FileUpload';
+import { FunctionType } from '../../utilTypes';
 
 export enum UPLOAD_STATE {
   PRISTINE,

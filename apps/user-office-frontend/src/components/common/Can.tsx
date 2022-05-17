@@ -1,7 +1,7 @@
+import { UserRole } from '@user-office-software/shared-types';
 import { useContext } from 'react';
 
-import { UserContext } from 'context/UserContextProvider';
-import { UserRole } from 'generated/sdk';
+import { UserContext } from '../../context/UserContextProvider';
 
 export const useCheckAccess = (allowedRoles: UserRole[]) => {
   const { currentRole } = useContext(UserContext);
@@ -24,9 +24,9 @@ type CanProps = {
 };
 
 const Can: React.FC<CanProps> = ({ allowedRoles, yes, no }) => {
-  const hasAccessRithgs = useCheckAccess(allowedRoles);
+  const hasAccessRights = useCheckAccess(allowedRoles);
 
-  return hasAccessRithgs ? (yes ? yes() : null) : no ? no() : null;
+  return hasAccessRights ? (yes ? yes() : null) : no ? no() : null;
 };
 
 Can.defaultProps = {

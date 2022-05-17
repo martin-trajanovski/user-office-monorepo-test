@@ -1,9 +1,9 @@
 import React from 'react';
 
-import UOLoader from 'components/common/UOLoader';
-import { useScheduledEvent } from 'hooks/scheduledEvent/useScheduledEvent';
-import { useBlankShipment } from 'hooks/shipment/useBlankShipment';
-import { ShipmentCore } from 'models/questionary/shipment/ShipmentCore';
+import UOLoader from '../common/UOLoader';
+import { useScheduledEvent } from '../../scheduledEvent/useScheduledEvent';
+import { useBlankShipment } from '../../shipment/useBlankShipment';
+import { ShipmentCore } from '../../questionary/shipment/ShipmentCore';
 
 import ShipmentContainer from './ShipmentContainer';
 

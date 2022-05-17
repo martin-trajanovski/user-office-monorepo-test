@@ -2,12 +2,12 @@ import NumberOneIcon from '@mui/icons-material/LooksOneOutlined';
 import { numberInputQuestionValidationSchema } from '@user-office-software/validation';
 import React from 'react';
 
-import defaultRenderer from 'components/questionary/DefaultQuestionRenderer';
+import defaultRenderer from '../questionary/DefaultQuestionRenderer';
 import {
   DataType,
   NumberInputConfig,
   NumberValueConstraint,
-} from 'generated/sdk';
+} from '@user-office-software/shared-types';
 
 import { QuestionaryComponentDefinition } from '../../QuestionaryComponentRegistry';
 import NumberInputAnswerRenderer from './NumberInputAnswerRenderer';

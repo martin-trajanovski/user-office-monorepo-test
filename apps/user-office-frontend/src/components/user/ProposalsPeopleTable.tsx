@@ -13,20 +13,20 @@ import makeStyles from '@mui/styles/makeStyles';
 import { Formik } from 'formik';
 import React, { useState, useEffect, useContext } from 'react';
 
-import { ActionButtonContainer } from 'components/common/ActionButtonContainer';
-import EmailSearchBar from 'components/common/EmailSearchBar';
-import { FeatureContext } from 'context/FeatureContextProvider';
+import { ActionButtonContainer } from '../common/ActionButtonContainer';
+import EmailSearchBar from '../common/EmailSearchBar';
+import { FeatureContext } from '../../FeatureContextProvider';
 import {
   BasicUserDetails,
   UserRole,
   GetBasicUserDetailsByEmailQuery,
   GetUsersQueryVariables,
   FeatureId,
-} from 'generated/sdk';
-import { useDataApi } from 'hooks/common/useDataApi';
-import { usePrevColabs } from 'hooks/user/usePrevColabs';
-import { tableIcons } from 'utils/materialIcons';
-import { FunctionType } from 'utils/utilTypes';
+} from '@user-office-software/shared-types';
+import { useDataApi } from '../../common/useDataApi';
+import { usePrevColabs } from '../../user/usePrevColabs';
+import { tableIcons } from '../../materialIcons';
+import { FunctionType } from '../../utilTypes';
 
 import InviteUserForm from './InviteUserForm';
 

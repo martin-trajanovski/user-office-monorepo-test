@@ -7,12 +7,12 @@ import { DatePicker, DateTimePicker } from 'formik-mui-lab';
 import React, { FC, useContext } from 'react';
 import * as Yup from 'yup';
 
-import TitledContainer from 'components/common/TitledContainer';
-import { QuestionFormProps } from 'components/questionary/QuestionaryComponentRegistry';
-import { SettingsContext } from 'context/SettingsContextProvider';
-import { DateConfig, SettingsId } from 'generated/sdk';
-import { minMaxDateTimeCalculations } from 'utils/Time';
-import { useNaturalKeySchema } from 'utils/userFieldValidationSchema';
+import TitledContainer from '../common/TitledContainer';
+import { QuestionFormProps } from '../questionary/QuestionaryComponentRegistry';
+import { SettingsContext } from '../../SettingsContextProvider';
+import { DateConfig, SettingsId } from '@user-office-software/shared-types';
+import { minMaxDateTimeCalculations } from '../../Time';
+import { useNaturalKeySchema } from '../../userFieldValidationSchema';
 
 import { QuestionFormShell } from '../QuestionFormShell';
 

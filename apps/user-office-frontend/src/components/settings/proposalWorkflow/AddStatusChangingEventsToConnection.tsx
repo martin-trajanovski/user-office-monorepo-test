@@ -10,10 +10,10 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import * as yup from 'yup';
 
-import ErrorMessage from 'components/common/ErrorMessage';
-import UOLoader from 'components/common/UOLoader';
-import { Event } from 'generated/sdk';
-import { useProposalEventsData } from 'hooks/settings/useProposalEventsData';
+import ErrorMessage from '../common/ErrorMessage';
+import UOLoader from '../common/UOLoader';
+import { Event } from '@user-office-software/shared-types';
+import { useProposalEventsData } from '../../settings/useProposalEventsData';
 
 const addStatusChangingEventsToConnectionValidationSchema = yup.object().shape({
   selectedStatusChangingEvents: yup

@@ -1,7 +1,7 @@
-import { getQuestionaryDefinition } from 'components/questionary/QuestionaryRegistry';
-import { useDataApi } from 'hooks/common/useDataApi';
-import { MiddlewareInputParams } from 'utils/useReducerWithMiddleWares';
-import { FunctionType } from 'utils/utilTypes';
+import { getQuestionaryDefinition } from '../questionary/QuestionaryRegistry';
+import { useDataApi } from '../../common/useDataApi';
+import { MiddlewareInputParams } from '../../useReducerWithMiddleWares';
+import { FunctionType } from '../../utilTypes';
 
 import { TemplateGroupId } from './../../generated/sdk';
 import {

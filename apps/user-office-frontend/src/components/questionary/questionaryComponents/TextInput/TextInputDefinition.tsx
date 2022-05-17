@@ -2,9 +2,9 @@ import ShortTextIcon from '@mui/icons-material/ShortText';
 import { textInputQuestionValidationSchema } from '@user-office-software/validation';
 import React from 'react';
 
-import defaultRenderer from 'components/questionary/DefaultQuestionRenderer';
-import { QuestionaryComponentDefinition } from 'components/questionary/QuestionaryComponentRegistry';
-import { DataType } from 'generated/sdk';
+import defaultRenderer from '../questionary/DefaultQuestionRenderer';
+import { QuestionaryComponentDefinition } from '../questionary/QuestionaryComponentRegistry';
+import { DataType } from '@user-office-software/shared-types';
 
 import { QuestionaryComponentTextInput } from './QuestionaryComponentTextInput';
 import { QuestionTemplateRelationTextInputForm } from './QuestionTemplateRelationTextInputForm';

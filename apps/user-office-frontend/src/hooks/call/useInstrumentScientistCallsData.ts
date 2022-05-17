@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 
-import { Call } from 'generated/sdk';
-import { useDataApi } from 'hooks/common/useDataApi';
+import { Call } from '@user-office-software/shared-types';
+import { useDataApi } from '../../common/useDataApi';
 
 export function useInstrumentScientistCallsData(scientistId: number) {
   const [calls, setCalls] = useState<Call[]>([]);

@@ -11,8 +11,8 @@ import createStyles from '@mui/styles/createStyles';
 import makeStyles from '@mui/styles/makeStyles';
 import React from 'react';
 
-import { Proposal } from 'generated/sdk';
-import useDataApiWithFeedback from 'utils/useDataApiWithFeedback';
+import { Proposal } from '@user-office-software/shared-types';
+import useDataApiWithFeedback from '../../useDataApiWithFeedback';
 
 const useStyles = makeStyles((theme) =>
   createStyles({

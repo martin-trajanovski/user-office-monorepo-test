@@ -6,8 +6,8 @@ import Tooltip from '@mui/material/Tooltip';
 import makeStyles from '@mui/styles/makeStyles';
 import React, { useState, useEffect } from 'react';
 
-import { BasicUserDetails, UserRole } from 'generated/sdk';
-import { BasicUserData, useBasicUserData } from 'hooks/user/useUserData';
+import { BasicUserDetails, UserRole } from '@user-office-software/shared-types';
+import { BasicUserData, useBasicUserData } from '../../user/useUserData';
 
 import ParticipantModal from './ParticipantModal';
 

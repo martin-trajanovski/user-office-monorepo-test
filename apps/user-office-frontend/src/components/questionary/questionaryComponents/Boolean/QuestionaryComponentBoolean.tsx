@@ -6,8 +6,8 @@ import makeStyles from '@mui/styles/makeStyles';
 import { getIn } from 'formik';
 import React, { ChangeEvent, useEffect, useState } from 'react';
 
-import { BasicComponentProps } from 'components/proposal/IBasicComponentProps';
-import { BooleanConfig } from 'generated/sdk';
+import { BasicComponentProps } from '../proposal/IBasicComponentProps';
+import { BooleanConfig } from '@user-office-software/shared-types';
 
 const useStyles = makeStyles({
   checkboxPadding: {

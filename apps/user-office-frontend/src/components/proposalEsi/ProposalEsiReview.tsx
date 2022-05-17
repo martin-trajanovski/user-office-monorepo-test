@@ -1,14 +1,14 @@
 import React, { useContext } from 'react';
 
-import { NavigButton } from 'components/common/NavigButton';
-import NavigationFragment from 'components/questionary/NavigationFragment';
+import { NavigButton } from '../common/NavigButton';
+import NavigationFragment from '../questionary/NavigationFragment';
 import {
   createMissingContextErrorMessage,
   QuestionaryContext,
-} from 'components/questionary/QuestionaryContext';
-import useDataApiWithFeedback from 'utils/useDataApiWithFeedback';
-import { FunctionType } from 'utils/utilTypes';
-import withConfirm, { WithConfirmType } from 'utils/withConfirm';
+} from '../questionary/QuestionaryContext';
+import useDataApiWithFeedback from '../../useDataApiWithFeedback';
+import { FunctionType } from '../../utilTypes';
+import withConfirm, { WithConfirmType } from '../../withConfirm';
 
 import { ProposalEsiContextType } from './ProposalEsiContainer';
 import ProposalEsiDetails from './ProposalEsiDetails';

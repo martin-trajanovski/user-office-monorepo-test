@@ -15,10 +15,10 @@ import React, { useContext, useState } from 'react';
 import { useHistory } from 'react-router';
 import { NavLink } from 'react-router-dom';
 
-import EsiIcon from 'components/common/icons/EsiIcon';
-import Tooltip from 'components/common/MenuTooltip';
-import { FeatureContext } from 'context/FeatureContextProvider';
-import { FeatureId } from 'generated/sdk';
+import EsiIcon from '../common/icons/EsiIcon';
+import Tooltip from '../common/MenuTooltip';
+import { FeatureContext } from '../../FeatureContextProvider';
+import { FeatureId } from '@user-office-software/shared-types';
 
 function EsiTemplatesMenuListItem() {
   const [isExpanded, setIsExpanded] = useState(true);

@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 
-import { GetTemplatesQuery, TemplateGroupId } from 'generated/sdk';
-import { useDataApi } from 'hooks/common/useDataApi';
+import { GetTemplatesQuery, TemplateGroupId } from '@user-office-software/shared-types';
+import { useDataApi } from '../../common/useDataApi';
 
 /**
  * Gets all active templates based on given parameters

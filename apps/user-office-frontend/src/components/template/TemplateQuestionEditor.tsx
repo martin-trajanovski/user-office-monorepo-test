@@ -9,19 +9,19 @@ import {
   NotDraggingStyle,
 } from 'react-beautiful-dnd';
 
-import defaultRenderer from 'components/questionary/DefaultQuestionRenderer';
+import defaultRenderer from '../questionary/DefaultQuestionRenderer';
 import {
   getQuestionaryComponentDefinition,
   getTemplateFieldIcon,
-} from 'components/questionary/QuestionaryComponentRegistry';
+} from '../questionary/QuestionaryComponentRegistry';
 import {
   DataType,
   DependenciesLogicOperator,
   FieldConfig,
   FieldDependency,
   TemplateCategoryId,
-} from 'generated/sdk';
-import { Event, EventType } from 'models/questionary/QuestionaryEditorModel';
+} from '@user-office-software/shared-types';
+import { Event, EventType } from '../../questionary/QuestionaryEditorModel';
 
 const useStyles = makeStyles((theme) => ({
   icon: {

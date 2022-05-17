@@ -5,7 +5,7 @@ import {
   Questionary,
   SampleFragment,
   GenericTemplateFragment,
-} from 'generated/sdk';
+} from '@user-office-software/shared-types';
 
 export type ProposalWithQuestionary = Pick<
   Proposal,

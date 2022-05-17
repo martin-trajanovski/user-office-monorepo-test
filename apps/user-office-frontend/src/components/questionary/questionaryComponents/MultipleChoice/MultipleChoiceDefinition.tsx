@@ -2,9 +2,9 @@ import RadioButtonCheckedIcon from '@mui/icons-material/RadioButtonChecked';
 import { multipleChoiceValidationSchema } from '@user-office-software/validation';
 import React from 'react';
 
-import defaultRenderer from 'components/questionary/DefaultQuestionRenderer';
-import MultipleChoiceSearchCriteriaComponent from 'components/questionary/questionaryComponents/MultipleChoice/MultipleChoiceSearchCriteriaComponent';
-import { DataType } from 'generated/sdk';
+import defaultRenderer from '../questionary/DefaultQuestionRenderer';
+import MultipleChoiceSearchCriteriaComponent from '../questionary/questionaryComponents/MultipleChoice/MultipleChoiceSearchCriteriaComponent';
+import { DataType } from '@user-office-software/shared-types';
 
 import { QuestionaryComponentDefinition } from '../../QuestionaryComponentRegistry';
 import MultipleChoiceAnswerRenderer from './MultipleChoiceAnswerRenderer';

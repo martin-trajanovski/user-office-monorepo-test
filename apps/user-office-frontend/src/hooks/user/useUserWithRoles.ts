@@ -3,8 +3,8 @@ import { useEffect, useState } from 'react';
 import {
   GetUserWithRolesQuery,
   GetUserWithRolesQueryVariables,
-} from 'generated/sdk';
-import { useDataApi } from 'hooks/common/useDataApi';
+} from '@user-office-software/shared-types';
+import { useDataApi } from '../../common/useDataApi';
 
 export function useUserWithRolesData({ id }: GetUserWithRolesQueryVariables) {
   const api = useDataApi();

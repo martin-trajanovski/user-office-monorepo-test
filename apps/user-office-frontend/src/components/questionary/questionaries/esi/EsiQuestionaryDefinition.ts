@@ -1,10 +1,10 @@
-import ProposalEsiReview from 'components/proposalEsi/ProposalEsiReview';
-import { DefaultReviewWizardStep } from 'components/questionary/DefaultReviewWizardStep';
-import { DefaultStepDisplayElementFactory } from 'components/questionary/DefaultStepDisplayElementFactory';
-import { DefaultWizardStepFactory } from 'components/questionary/DefaultWizardStepFactory';
-import { Sdk, TemplateGroupId } from 'generated/sdk';
-import { ProposalEsiSubmissionState } from 'models/questionary/proposalEsi/ProposalEsiSubmissionState';
-import { ItemWithQuestionary } from 'models/questionary/QuestionarySubmissionState';
+import ProposalEsiReview from '../proposalEsi/ProposalEsiReview';
+import { DefaultReviewWizardStep } from '../questionary/DefaultReviewWizardStep';
+import { DefaultStepDisplayElementFactory } from '../questionary/DefaultStepDisplayElementFactory';
+import { DefaultWizardStepFactory } from '../questionary/DefaultWizardStepFactory';
+import { Sdk, TemplateGroupId } from '@user-office-software/shared-types';
+import { ProposalEsiSubmissionState } from '../../questionary/proposalEsi/ProposalEsiSubmissionState';
+import { ItemWithQuestionary } from '../../questionary/QuestionarySubmissionState';
 
 import { QuestionaryDefinition } from '../../QuestionaryRegistry';
 import { EsiWizardStep } from './EsiWizardStep';

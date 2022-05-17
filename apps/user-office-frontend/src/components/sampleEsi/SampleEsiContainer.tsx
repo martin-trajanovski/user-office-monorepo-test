@@ -1,20 +1,20 @@
 /* eslint-disable @typescript-eslint/no-use-before-define */
 import { default as React, useState } from 'react';
 
-import Questionary from 'components/questionary/Questionary';
+import Questionary from '../questionary/Questionary';
 import {
   QuestionaryContext,
   QuestionaryContextType,
-} from 'components/questionary/QuestionaryContext';
-import { TemplateGroupId } from 'generated/sdk';
-import createCustomEventHandlers from 'models/questionary/createCustomEventHandlers';
+} from '../questionary/QuestionaryContext';
+import { TemplateGroupId } from '@user-office-software/shared-types';
+import createCustomEventHandlers from '../../questionary/createCustomEventHandlers';
 import {
   Event,
   QuestionarySubmissionModel,
-} from 'models/questionary/QuestionarySubmissionState';
-import { SampleEsiSubmissionState } from 'models/questionary/sampleEsi/SampleEsiSubmissionState';
-import { SampleEsiWithQuestionary } from 'models/questionary/sampleEsi/SampleEsiWithQuestionary';
-import useEventHandlers from 'models/questionary/useEventHandlers';
+} from '../../questionary/QuestionarySubmissionState';
+import { SampleEsiSubmissionState } from '../../questionary/sampleEsi/SampleEsiSubmissionState';
+import { SampleEsiWithQuestionary } from '../../questionary/sampleEsi/SampleEsiWithQuestionary';
+import useEventHandlers from '../../questionary/useEventHandlers';
 
 export interface SampleEsiContextType extends QuestionaryContextType {
   state: SampleEsiSubmissionState | null;

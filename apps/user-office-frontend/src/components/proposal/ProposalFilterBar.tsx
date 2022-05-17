@@ -5,10 +5,10 @@ import PropTypes from 'prop-types';
 import React, { useState } from 'react';
 import { DecodedValueMap } from 'use-query-params';
 
-import CallFilter from 'components/common/proposalFilters/CallFilter';
-import InstrumentFilter from 'components/common/proposalFilters/InstrumentFilter';
-import ProposalStatusFilter from 'components/common/proposalFilters/ProposalStatusFilter';
-import QuestionaryFilter from 'components/common/proposalFilters/QuestionaryFilter';
+import CallFilter from '../common/proposalFilters/CallFilter';
+import InstrumentFilter from '../common/proposalFilters/InstrumentFilter';
+import ProposalStatusFilter from '../common/proposalFilters/ProposalStatusFilter';
+import QuestionaryFilter from '../common/proposalFilters/QuestionaryFilter';
 import {
   Call,
   DataType,
@@ -17,8 +17,8 @@ import {
   ProposalStatus,
   QuestionFilterCompareOperator,
   QuestionFilterInput,
-} from 'generated/sdk';
-import { useQuestionFilterQueryParams } from 'hooks/proposal/useQuestionFilterQueryParams';
+} from '@user-office-software/shared-types';
+import { useQuestionFilterQueryParams } from '../../proposal/useQuestionFilterQueryParams';
 
 import { ProposalUrlQueryParamsType } from './ProposalPage';
 

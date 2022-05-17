@@ -1,8 +1,8 @@
 import makeStyles from '@mui/styles/makeStyles';
 import React from 'react';
 
-import { Feature, FeatureId } from 'generated/sdk';
-import { useFeatures } from 'hooks/admin/useFeatures';
+import { Feature, FeatureId } from '@user-office-software/shared-types';
+import { useFeatures } from '../../admin/useFeatures';
 
 interface FeatureContextData {
   readonly features: Map<FeatureId, Feature>;

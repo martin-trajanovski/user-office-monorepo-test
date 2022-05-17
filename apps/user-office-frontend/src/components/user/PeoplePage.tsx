@@ -2,9 +2,9 @@ import Edit from '@mui/icons-material/Edit';
 import React, { useState } from 'react';
 import { useHistory } from 'react-router';
 
-import { BasicUserDetails } from 'generated/sdk';
+import { BasicUserDetails } from '@user-office-software/shared-types';
 import { StyledContainer, StyledPaper } from 'styles/StyledComponents';
-import useDataApiWithFeedback from 'utils/useDataApiWithFeedback';
+import useDataApiWithFeedback from '../../useDataApiWithFeedback';
 
 import PeopleTable from './PeopleTable';
 

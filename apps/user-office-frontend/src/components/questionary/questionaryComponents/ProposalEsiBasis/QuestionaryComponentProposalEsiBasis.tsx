@@ -16,29 +16,29 @@ import ListItemIcon from '@mui/material/ListItemIcon';
 import { Field, FieldProps } from 'formik';
 import React, { MouseEvent, useContext, useState } from 'react';
 
-import ErrorMessage from 'components/common/ErrorMessage';
-import BoxIcon from 'components/common/icons/BoxIcon';
-import StyledModal from 'components/common/StyledModal';
-import UOLoader from 'components/common/UOLoader';
-import { BasicComponentProps } from 'components/proposal/IBasicComponentProps';
-import { ProposalEsiContextType } from 'components/proposalEsi/ProposalEsiContainer';
+import ErrorMessage from '../common/ErrorMessage';
+import BoxIcon from '../common/icons/BoxIcon';
+import StyledModal from '../common/StyledModal';
+import UOLoader from '../common/UOLoader';
+import { BasicComponentProps } from '../proposal/IBasicComponentProps';
+import { ProposalEsiContextType } from '../proposalEsi/ProposalEsiContainer';
 import {
   createMissingContextErrorMessage,
   QuestionaryContext,
-} from 'components/questionary/QuestionaryContext';
-import SampleEsiContainer from 'components/sampleEsi/SampleEsiContainer';
+} from '../questionary/QuestionaryContext';
+import SampleEsiContainer from '../sampleEsi/SampleEsiContainer';
 import {
   DataType,
   GetSampleEsiQuery,
   SampleDeclarationConfig,
   SampleFragment,
-} from 'generated/sdk';
-import { getQuestionsByType } from 'models/questionary/QuestionaryFunctions';
-import { SampleEsiWithQuestionary } from 'models/questionary/sampleEsi/SampleEsiWithQuestionary';
+} from '@user-office-software/shared-types';
+import { getQuestionsByType } from '../../questionary/QuestionaryFunctions';
+import { SampleEsiWithQuestionary } from '../../questionary/sampleEsi/SampleEsiWithQuestionary';
 import { StyledButtonContainer } from 'styles/StyledComponents';
-import useDataApiWithFeedback from 'utils/useDataApiWithFeedback';
-import withConfirm, { WithConfirmType } from 'utils/withConfirm';
-import withPrompt, { WithPromptType } from 'utils/withPrompt';
+import useDataApiWithFeedback from '../../useDataApiWithFeedback';
+import withConfirm, { WithConfirmType } from '../../withConfirm';
+import withPrompt, { WithPromptType } from '../../withPrompt';
 
 function QuestionaryComponentProposalEsiBasis(
   props: BasicComponentProps & { prompt: WithPromptType } & {

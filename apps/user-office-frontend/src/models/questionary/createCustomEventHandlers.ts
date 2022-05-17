@@ -1,5 +1,5 @@
-import { MiddlewareInputParams } from 'utils/useReducerWithMiddleWares';
-import { FunctionType } from 'utils/utilTypes';
+import { MiddlewareInputParams } from '../../useReducerWithMiddleWares';
+import { FunctionType } from '../../utilTypes';
 
 import {
   Event,

@@ -3,14 +3,14 @@ import { Typography } from '@mui/material';
 import React, { useState } from 'react';
 import { useQueryParams } from 'use-query-params';
 
-import { useCheckAccess } from 'components/common/Can';
+import { useCheckAccess } from '../common/Can';
 import SuperMaterialTable, {
   DefaultQueryParams,
   UrlQueryParamsType,
-} from 'components/common/SuperMaterialTable';
-import { useInstrumentsData } from 'hooks/instrument/useInstrumentsData';
-import useDataApiWithFeedback from 'utils/useDataApiWithFeedback';
-import { FunctionType } from 'utils/utilTypes';
+} from '../common/SuperMaterialTable';
+import { useInstrumentsData } from '../../instrument/useInstrumentsData';
+import useDataApiWithFeedback from '../../useDataApiWithFeedback';
+import { FunctionType } from '../../utilTypes';
 
 import {
   BasicUserDetails,

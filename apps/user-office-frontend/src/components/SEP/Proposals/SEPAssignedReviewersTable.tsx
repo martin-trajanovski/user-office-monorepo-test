@@ -6,21 +6,21 @@ import PropTypes from 'prop-types';
 import React, { useContext } from 'react';
 import { NumberParam, useQueryParams } from 'use-query-params';
 
-import { useCheckAccess } from 'components/common/Can';
+import { useCheckAccess } from '../common/Can';
 import ProposalReviewContent, {
   PROPOSAL_MODAL_TAB_NAMES,
-} from 'components/review/ProposalReviewContent';
-import ProposalReviewModal from 'components/review/ProposalReviewModal';
-import { ReviewAndAssignmentContext } from 'context/ReviewAndAssignmentContextProvider';
+} from '../review/ProposalReviewContent';
+import ProposalReviewModal from '../review/ProposalReviewModal';
+import { ReviewAndAssignmentContext } from '../../ReviewAndAssignmentContextProvider';
 import {
   SepAssignment,
   ReviewStatus,
   UserRole,
   SettingsId,
-} from 'generated/sdk';
-import { useFormattedDateTime } from 'hooks/admin/useFormattedDateTime';
-import { SEPProposalType } from 'hooks/SEP/useSEPProposalsData';
-import { tableIcons } from 'utils/materialIcons';
+} from '@user-office-software/shared-types';
+import { useFormattedDateTime } from '../../admin/useFormattedDateTime';
+import { SEPProposalType } from '../../SEP/useSEPProposalsData';
+import { tableIcons } from '../../materialIcons';
 
 // NOTE: Some custom styles for row expand table.
 const useStyles = makeStyles(() => ({

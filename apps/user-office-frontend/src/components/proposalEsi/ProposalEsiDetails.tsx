@@ -1,11 +1,11 @@
 import makeStyles from '@mui/styles/makeStyles';
 import React from 'react';
 
-import UOLoader from 'components/common/UOLoader';
+import UOLoader from '../common/UOLoader';
 import QuestionaryDetails, {
   TableRowData,
-} from 'components/questionary/QuestionaryDetails';
-import { useEsi } from 'hooks/esi/useEsi';
+} from '../questionary/QuestionaryDetails';
+import { useEsi } from '../../esi/useEsi';
 
 interface ProposalEsiDetailsProps {
   esiId: number;

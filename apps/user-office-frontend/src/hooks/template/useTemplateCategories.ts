@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 
-import { GetTemplateCategoriesQuery } from 'generated/sdk';
-import { useDataApi } from 'hooks/common/useDataApi';
+import { GetTemplateCategoriesQuery } from '@user-office-software/shared-types';
+import { useDataApi } from '../../common/useDataApi';
 
 export function useTemplateCategories(isArchived = false) {
   const api = useDataApi();

@@ -1,9 +1,9 @@
+import { Rejection, getSdk } from '@user-office-software/shared-types';
 import { SnackbarAction, useSnackbar, VariantType } from 'notistack';
 import { useCallback, useContext, useState } from 'react';
 
-import { UserContext } from 'context/UserContextProvider';
-import { Rejection, getSdk } from 'generated/sdk';
-import { useDataApi } from 'hooks/common/useDataApi';
+import { UserContext } from '../context/UserContextProvider';
+import { useDataApi } from '../hooks/common/useDataApi';
 
 type KeyOfSdk = keyof ReturnType<typeof getSdk>;
 

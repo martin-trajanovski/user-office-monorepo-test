@@ -7,10 +7,10 @@ import { Select, TextField } from 'formik-mui';
 import { default as React, FC } from 'react';
 import * as Yup from 'yup';
 
-import TitledContainer from 'components/common/TitledContainer';
-import { QuestionTemplateRelationFormProps } from 'components/questionary/QuestionaryComponentRegistry';
-import { SubTemplateConfig, TemplateGroupId } from 'generated/sdk';
-import { useTemplates } from 'hooks/template/useTemplates';
+import TitledContainer from '../common/TitledContainer';
+import { QuestionTemplateRelationFormProps } from '../questionary/QuestionaryComponentRegistry';
+import { SubTemplateConfig, TemplateGroupId } from '@user-office-software/shared-types';
+import { useTemplates } from '../../template/useTemplates';
 
 import QuestionDependencyList from '../QuestionDependencyList';
 import { QuestionExcerpt } from '../QuestionExcerpt';

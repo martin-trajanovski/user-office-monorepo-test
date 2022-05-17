@@ -6,7 +6,7 @@ import makeStyles from '@mui/styles/makeStyles';
 import React from 'react';
 import { StringParam, useQueryParams, withDefault } from 'use-query-params';
 
-import { ReviewerFilter } from 'generated/sdk';
+import { ReviewerFilter } from '@user-office-software/shared-types';
 
 const useStyles = makeStyles((theme) => ({
   formControl: {

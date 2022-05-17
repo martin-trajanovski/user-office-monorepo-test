@@ -4,18 +4,18 @@ import React, { useContext, useEffect, useState } from 'react';
 import { Prompt } from 'react-router';
 import * as Yup from 'yup';
 
-import { ErrorFocus } from 'components/common/ErrorFocus';
-import { NavigButton } from 'components/common/NavigButton';
-import UOLoader from 'components/common/UOLoader';
-import { Answer, QuestionaryStep, Sdk } from 'generated/sdk';
-import { usePreSubmitActions } from 'hooks/questionary/useSubmitActions';
+import { ErrorFocus } from '../common/ErrorFocus';
+import { NavigButton } from '../common/NavigButton';
+import UOLoader from '../common/UOLoader';
+import { Answer, QuestionaryStep, Sdk } from '@user-office-software/shared-types';
+import { usePreSubmitActions } from '../../questionary/useSubmitActions';
 import {
   areDependenciesSatisfied,
   getQuestionaryStepByTopicId as getStepByTopicId,
   prepareAnswers,
-} from 'models/questionary/QuestionaryFunctions';
-import { QuestionarySubmissionState } from 'models/questionary/QuestionarySubmissionState';
-import useDataApiWithFeedback from 'utils/useDataApiWithFeedback';
+} from '../../questionary/QuestionaryFunctions';
+import { QuestionarySubmissionState } from '../../questionary/QuestionarySubmissionState';
+import useDataApiWithFeedback from '../../useDataApiWithFeedback';
 
 import NavigationFragment from './NavigationFragment';
 import {

@@ -11,7 +11,7 @@ import {
   NotDraggingStyle,
 } from 'react-beautiful-dnd';
 
-import { ProposalStatus } from 'generated/sdk';
+import { ProposalStatus } from '@user-office-software/shared-types';
 
 const ProposalStatusPicker: React.FC<{
   proposalStatuses: ProposalStatus[];

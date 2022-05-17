@@ -1,5 +1,5 @@
-import { QuestionaryStep } from 'generated/sdk';
-import { WizardStep } from 'models/questionary/QuestionarySubmissionState';
+import { QuestionaryStep } from '@user-office-software/shared-types';
+import { WizardStep } from '../../questionary/QuestionarySubmissionState';
 
 import { SampleQuestionaryWizardStep } from './SampleQuestionaryWizardStep';
 

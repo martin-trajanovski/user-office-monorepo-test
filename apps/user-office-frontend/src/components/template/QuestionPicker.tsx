@@ -23,7 +23,7 @@ import {
   getQuestionaryComponentDefinition,
   getQuestionaryComponentDefinitions,
   getTemplateFieldIcon,
-} from 'components/questionary/QuestionaryComponentRegistry';
+} from '../questionary/QuestionaryComponentRegistry';
 import {
   DataType,
   DependenciesLogicOperator,
@@ -31,8 +31,8 @@ import {
   Template,
   TemplateGroupId,
   Topic,
-} from 'generated/sdk';
-import { Event, EventType } from 'models/questionary/QuestionaryEditorModel';
+} from '@user-office-software/shared-types';
+import { Event, EventType } from '../../questionary/QuestionaryEditorModel';
 
 import QuestionPickerFilter from './QuestionPickerFilter';
 import TemplateQuestionEditor, {

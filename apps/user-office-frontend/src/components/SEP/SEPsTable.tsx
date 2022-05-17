@@ -4,17 +4,17 @@ import React, { useContext, useState } from 'react';
 import { Redirect, useHistory } from 'react-router';
 import { useQueryParams } from 'use-query-params';
 
-import { useCheckAccess } from 'components/common/Can';
+import { useCheckAccess } from '../common/Can';
 import SuperMaterialTable, {
   DefaultQueryParams,
   UrlQueryParamsType,
-} from 'components/common/SuperMaterialTable';
-import { UserContext } from 'context/UserContextProvider';
-import { Sep, UserRole } from 'generated/sdk';
-import { useSEPsData } from 'hooks/SEP/useSEPsData';
-import { tableIcons } from 'utils/materialIcons';
-import useDataApiWithFeedback from 'utils/useDataApiWithFeedback';
-import { FunctionType } from 'utils/utilTypes';
+} from '../common/SuperMaterialTable';
+import { UserContext } from '../../UserContextProvider';
+import { Sep, UserRole } from '@user-office-software/shared-types';
+import { useSEPsData } from '../../SEP/useSEPsData';
+import { tableIcons } from '../../materialIcons';
+import useDataApiWithFeedback from '../../useDataApiWithFeedback';
+import { FunctionType } from '../../utilTypes';
 
 import AddSEP from './General/AddSEP';
 import SEPStatusFilter, {

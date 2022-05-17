@@ -10,13 +10,13 @@ import React, { useState } from 'react';
 import { useHistory } from 'react-router';
 import * as Yup from 'yup';
 
-import { ActionButtonContainer } from 'components/common/ActionButtonContainer';
-import FormikUIAutocomplete from 'components/common/FormikUIAutocomplete';
-import UOLoader from 'components/common/UOLoader';
-import { Institution } from 'generated/sdk';
-import { useGetFields } from 'hooks/user/useGetFields';
-import useDataApiWithFeedback from 'utils/useDataApiWithFeedback';
-import { Option } from 'utils/utilTypes';
+import { ActionButtonContainer } from '../common/ActionButtonContainer';
+import FormikUIAutocomplete from '../common/FormikUIAutocomplete';
+import UOLoader from '../common/UOLoader';
+import { Institution } from '@user-office-software/shared-types';
+import { useGetFields } from '../../user/useGetFields';
+import useDataApiWithFeedback from '../../useDataApiWithFeedback';
+import { Option } from '../../utilTypes';
 
 type CreateUpdateInstitutionProps = {
   close: (institution: Institution | null) => void;

@@ -1,8 +1,8 @@
 import { SetStateAction, useEffect, useState } from 'react';
 
-import { ShipmentsFilter } from 'generated/sdk';
-import { useDataApi } from 'hooks/common/useDataApi';
-import { ShipmentCore } from 'models/questionary/shipment/ShipmentCore';
+import { ShipmentsFilter } from '@user-office-software/shared-types';
+import { useDataApi } from '../../common/useDataApi';
+import { ShipmentCore } from '../../questionary/shipment/ShipmentCore';
 
 export function useShipments(filter?: ShipmentsFilter) {
   const api = useDataApi();

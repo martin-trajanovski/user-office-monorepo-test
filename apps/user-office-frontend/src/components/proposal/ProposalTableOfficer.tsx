@@ -15,15 +15,15 @@ import React, { useContext, useEffect, useState } from 'react';
 import isEqual from 'react-fast-compare';
 import { DecodedValueMap, SetQuery } from 'use-query-params';
 
-import ListStatusIcon from 'components/common/icons/ListStatusIcon';
-import ScienceIcon from 'components/common/icons/ScienceIcon';
-import AssignProposalsToInstrument from 'components/instrument/AssignProposalsToInstrument';
+import ListStatusIcon from '../common/icons/ListStatusIcon';
+import ScienceIcon from '../common/icons/ScienceIcon';
+import AssignProposalsToInstrument from '../instrument/AssignProposalsToInstrument';
 import ProposalReviewContent, {
   PROPOSAL_MODAL_TAB_NAMES,
-} from 'components/review/ProposalReviewContent';
-import ProposalReviewModal from 'components/review/ProposalReviewModal';
-import AssignProposalsToSEP from 'components/SEP/Proposals/AssignProposalsToSEP';
-import { FeatureContext } from 'context/FeatureContextProvider';
+} from '../review/ProposalReviewContent';
+import ProposalReviewModal from '../review/ProposalReviewModal';
+import AssignProposalsToSEP from '../SEP/Proposals/AssignProposalsToSEP';
+import { FeatureContext } from '../../FeatureContextProvider';
 import {
   Call,
   Proposal,
@@ -33,21 +33,21 @@ import {
   Sep,
   InstrumentFragment,
   FeatureId,
-} from 'generated/sdk';
-import { useLocalStorage } from 'hooks/common/useLocalStorage';
-import { useDownloadPDFProposal } from 'hooks/proposal/useDownloadPDFProposal';
-import { useDownloadXLSXProposal } from 'hooks/proposal/useDownloadXLSXProposal';
+} from '@user-office-software/shared-types';
+import { useLocalStorage } from '../../common/useLocalStorage';
+import { useDownloadPDFProposal } from '../../proposal/useDownloadPDFProposal';
+import { useDownloadXLSXProposal } from '../../proposal/useDownloadXLSXProposal';
 import {
   ProposalViewData,
   useProposalsCoreData,
-} from 'hooks/proposal/useProposalsCoreData';
+} from '../../proposal/useProposalsCoreData';
 import {
   fromProposalToProposalView,
   setSortDirectionOnSortColumn,
-} from 'utils/helperFunctions';
-import { tableIcons } from 'utils/materialIcons';
-import useDataApiWithFeedback from 'utils/useDataApiWithFeedback';
-import withConfirm, { WithConfirmType } from 'utils/withConfirm';
+} from '../../helperFunctions';
+import { tableIcons } from '../../materialIcons';
+import useDataApiWithFeedback from '../../useDataApiWithFeedback';
+import withConfirm, { WithConfirmType } from '../../withConfirm';
 
 import CallSelectModalOnProposalsClone from './CallSelectModalOnProposalClone';
 import ChangeProposalStatus from './ChangeProposalStatus';

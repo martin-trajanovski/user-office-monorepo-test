@@ -12,9 +12,8 @@ import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import React, { useContext, useState } from 'react';
 
-import { UserContext } from 'context/UserContextProvider';
-import { getUniqueArrayBy } from 'utils/helperFunctions';
-
+import { UserContext } from '../../context/UserContextProvider';
+import { getUniqueArrayBy } from '../../utils/helperFunctions';
 import RoleSelection from './RoleSelection';
 
 const AccountActionButton: React.FC = () => {

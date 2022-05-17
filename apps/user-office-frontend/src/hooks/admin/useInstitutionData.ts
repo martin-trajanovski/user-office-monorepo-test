@@ -1,7 +1,7 @@
 import { useEffect, useState, SetStateAction } from 'react';
 
-import { Institution } from 'generated/sdk';
-import { useDataApi } from 'hooks/common/useDataApi';
+import { Institution } from '@user-office-software/shared-types';
+import { useDataApi } from '../../common/useDataApi';
 
 export function useInstitutionsData(
   { country } = {

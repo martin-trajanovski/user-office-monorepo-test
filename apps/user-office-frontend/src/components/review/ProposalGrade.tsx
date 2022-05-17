@@ -12,22 +12,22 @@ import { Select, CheckboxWithLabel } from 'formik-mui';
 import React, { useState, useContext } from 'react';
 import { Prompt } from 'react-router';
 
-import { useCheckAccess } from 'components/common/Can';
-import ErrorMessage from 'components/common/ErrorMessage';
-import UOLoader from 'components/common/UOLoader';
-import GradeGuidePage from 'components/pages/GradeGuidePage';
-import NavigationFragment from 'components/questionary/NavigationFragment';
-import { ReviewAndAssignmentContext } from 'context/ReviewAndAssignmentContextProvider';
+import { useCheckAccess } from '../common/Can';
+import ErrorMessage from '../common/ErrorMessage';
+import UOLoader from '../common/UOLoader';
+import GradeGuidePage from '../pages/GradeGuidePage';
+import NavigationFragment from '../questionary/NavigationFragment';
+import { ReviewAndAssignmentContext } from '../../ReviewAndAssignmentContextProvider';
 import {
   ReviewStatus,
   ReviewWithNextProposalStatus,
   Review,
   UserRole,
-} from 'generated/sdk';
-import ButtonWithDialog from 'hooks/common/ButtonWithDialog';
-import useDataApiWithFeedback from 'utils/useDataApiWithFeedback';
-import { FunctionType } from 'utils/utilTypes';
-import withConfirm, { WithConfirmType } from 'utils/withConfirm';
+} from '@user-office-software/shared-types';
+import ButtonWithDialog from '../../common/ButtonWithDialog';
+import useDataApiWithFeedback from '../../useDataApiWithFeedback';
+import { FunctionType } from '../../utilTypes';
+import withConfirm, { WithConfirmType } from '../../withConfirm';
 
 type ProposalGradeProps = {
   review: Review | null;

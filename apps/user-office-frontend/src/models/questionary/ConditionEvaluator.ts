@@ -1,4 +1,4 @@
-import { EvaluatorOperator, Answer, DataType } from 'generated/sdk';
+import { EvaluatorOperator, Answer, DataType } from '@user-office-software/shared-types';
 
 export class EqualityValidator implements FieldConditionEvaluator {
   isSatisfied(field: Answer, params: string): boolean {
