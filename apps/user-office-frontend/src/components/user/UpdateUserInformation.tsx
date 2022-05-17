@@ -14,7 +14,7 @@ import MenuItem from '@mui/material/MenuItem';
 import useTheme from '@mui/material/styles/useTheme';
 import Typography from '@mui/material/Typography';
 import makeStyles from '@mui/styles/makeStyles';
-import { updateUserValidationSchema } from '@user-office-software/duo-validation';
+import { updateUserValidationSchema } from '@user-office-software/validation';
 import { Field, Form, Formik } from 'formik';
 import { Select, TextField } from 'formik-mui';
 import { DatePicker } from 'formik-mui-lab';

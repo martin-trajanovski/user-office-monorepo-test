@@ -9,7 +9,7 @@ import {
   getTranslation,
   ResourceId,
 } from '@user-office-software/duo-localisation';
-import { proposalTechnicalReviewValidationSchema } from '@user-office-software/duo-validation';
+import { proposalTechnicalReviewValidationSchema } from '@user-office-software/validation';
 import React, { useContext, useState, useEffect } from 'react';
 import {
   NumberParam,

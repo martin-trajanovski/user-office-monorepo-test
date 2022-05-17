@@ -5,7 +5,7 @@ import {
   DependenciesLogicOperator,
   EvaluatorOperator,
   TemplateCategoryId,
-} from '@user-office/shared-types';
+} from '@user-office-software/shared-types';
 import faker, { lorem } from 'faker';
 import { DateTime } from 'luxon';
 

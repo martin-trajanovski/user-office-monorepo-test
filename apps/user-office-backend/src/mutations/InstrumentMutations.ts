@@ -7,7 +7,7 @@ import {
   removeScientistFromInstrumentValidationSchema,
   setAvailabilityTimeOnInstrumentValidationSchema,
   submitInstrumentValidationSchema,
-} from '@user-office-software/duo-validation';
+} from '@user-office-software/validation';
 import { inject, injectable } from 'tsyringe';
 
 import { UserAuthorization } from '../auth/UserAuthorization';

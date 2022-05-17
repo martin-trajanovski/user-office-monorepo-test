@@ -1,5 +1,5 @@
 import AttachFileIcon from '@mui/icons-material/AttachFile';
-import { fileUploadQuestionValidationSchema } from '@user-office-software/duo-validation';
+import { fileUploadQuestionValidationSchema } from '@user-office-software/validation';
 import React from 'react';
 
 import defaultRenderer from 'components/questionary/DefaultQuestionRenderer';

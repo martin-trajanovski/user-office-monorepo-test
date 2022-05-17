@@ -3,7 +3,7 @@ import {
   DataType,
   Settings,
   SettingsId,
-} from '@user-office/shared-types';
+} from '@user-office-software/shared-types';
 
 // NOTE: Instruments, proposal and scheduled events are seeded only if resetDB(true).
 export default {

@@ -1,4 +1,4 @@
-import { DataType, TemplateCategoryId } from '@user-office/shared-types';
+import { DataType, TemplateCategoryId } from '@user-office-software/shared-types';
 import faker from 'faker';
 
 import initialDBData from '../support/initialDBData';

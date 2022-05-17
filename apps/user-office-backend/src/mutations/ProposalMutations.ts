@@ -1,4 +1,4 @@
-import { logger } from '@user-office-software/duo-logger';
+import { logger } from '@user-office-software/logger';
 import {
   administrationProposalValidationSchema,
   createProposalValidationSchema,
@@ -6,7 +6,7 @@ import {
   proposalNotifyValidationSchema,
   submitProposalValidationSchema,
   updateProposalValidationSchema,
-} from '@user-office-software/duo-validation';
+} from '@user-office-software/validation';
 import { container, inject, injectable } from 'tsyringe';
 
 import { UserAuthorization } from '../auth/UserAuthorization';

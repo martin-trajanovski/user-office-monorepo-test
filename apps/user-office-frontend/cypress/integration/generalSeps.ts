@@ -1,4 +1,4 @@
-import { UserRole } from '@user-office/shared-types';
+import { UserRole } from '@user-office-software/shared-types';
 import faker from 'faker';
 
 // NOTE: This should be fixed after bringing the backend in the apps and we should find a way how to share types.

@@ -5,7 +5,7 @@ import Grid from '@mui/material/Grid';
 import TextField from '@mui/material/TextField';
 import Typography from '@mui/material/Typography';
 import makeStyles from '@mui/styles/makeStyles';
-import { updateSEPValidationSchema } from '@user-office-software/duo-validation/lib/SEP';
+import { updateSEPValidationSchema } from '@user-office-software/validation/lib/SEP';
 import { Formik, Form, Field } from 'formik';
 import React from 'react';
 

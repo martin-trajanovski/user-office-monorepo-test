@@ -1,5 +1,5 @@
 import CheckBoxOutlineBlankIcon from '@mui/icons-material/CheckBoxOutlineBlank';
-import { booleanQuestionValidationSchema } from '@user-office-software/duo-validation';
+import { booleanQuestionValidationSchema } from '@user-office-software/validation';
 import React from 'react';
 
 import defaultRenderer from 'components/questionary/DefaultQuestionRenderer';

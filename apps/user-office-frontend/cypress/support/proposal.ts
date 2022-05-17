@@ -15,7 +15,7 @@ import {
   UpdateEsiMutationVariables,
   UpdateProposalMutation,
   UpdateProposalMutationVariables,
-} from '@user-office/shared-types';
+} from '@user-office-software/shared-types';
 
 import { getE2EApi } from './utils';
 

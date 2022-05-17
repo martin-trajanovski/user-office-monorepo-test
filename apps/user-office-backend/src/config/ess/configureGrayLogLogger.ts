@@ -2,7 +2,7 @@ import {
   ConsoleLogger,
   GrayLogLogger,
   setLogger,
-} from '@user-office-software/duo-logger';
+} from '@user-office-software/logger';
 export function configureGraylogLogger() {
   const server = process.env.GRAYLOG_SERVER;
   const port = process.env.GRAYLOG_PORT;

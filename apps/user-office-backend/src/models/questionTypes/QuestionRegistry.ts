@@ -1,4 +1,4 @@
-import { logger } from '@user-office-software/duo-logger';
+import { logger } from '@user-office-software/logger';
 import { Knex } from 'knex';
 
 import { QuestionFilterInput } from '../../resolvers/queries/ProposalsQuery';

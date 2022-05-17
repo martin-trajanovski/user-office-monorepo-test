@@ -2,7 +2,7 @@ import {
   AllocationTimeUnits,
   TechnicalReviewStatus,
   TemplateGroupId,
-} from '@user-office/shared-types';
+} from '@user-office-software/shared-types';
 import faker from 'faker';
 import { DateTime } from 'luxon';
 

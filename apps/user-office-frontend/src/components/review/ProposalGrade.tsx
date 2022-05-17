@@ -6,7 +6,7 @@ import CssBaseline from '@mui/material/CssBaseline';
 import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import { Editor } from '@tinymce/tinymce-react';
-import { proposalGradeValidationSchema } from '@user-office-software/duo-validation/lib/Review';
+import { proposalGradeValidationSchema } from '@user-office-software/validation/lib/Review';
 import { Field, Form, Formik, useFormikContext } from 'formik';
 import { Select, CheckboxWithLabel } from 'formik-mui';
 import React, { useState, useContext } from 'react';

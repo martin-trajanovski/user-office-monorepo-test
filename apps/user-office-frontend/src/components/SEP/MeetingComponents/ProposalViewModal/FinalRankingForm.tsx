@@ -7,7 +7,7 @@ import MenuItem from '@mui/material/MenuItem';
 import Typography from '@mui/material/Typography';
 import makeStyles from '@mui/styles/makeStyles';
 import { Editor } from '@tinymce/tinymce-react';
-import { saveSepMeetingDecisionValidationSchema } from '@user-office-software/duo-validation';
+import { saveSepMeetingDecisionValidationSchema } from '@user-office-software/validation';
 import { Formik, Form, Field, useFormikContext } from 'formik';
 import { CheckboxWithLabel, Select } from 'formik-mui';
 import PropTypes from 'prop-types';

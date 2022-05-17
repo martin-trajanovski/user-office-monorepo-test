@@ -1,4 +1,4 @@
-import { UpdateUserMutationVariables, User } from '@user-office/shared-types';
+import { UpdateUserMutationVariables, User } from '@user-office-software/shared-types';
 import faker from 'faker';
 import { DateTime } from 'luxon';
 

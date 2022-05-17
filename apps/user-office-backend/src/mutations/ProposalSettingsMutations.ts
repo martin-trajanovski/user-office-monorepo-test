@@ -9,7 +9,7 @@ import {
   moveProposalWorkflowStatusValidationSchema,
   deleteProposalWorkflowStatusValidationSchema,
   // addNextStatusEventsValidationSchema,
-} from '@user-office-software/duo-validation';
+} from '@user-office-software/validation';
 import { inject, injectable } from 'tsyringe';
 
 import { Tokens } from '../config/Tokens';

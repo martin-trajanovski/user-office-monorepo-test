@@ -4,7 +4,7 @@ import Button from '@mui/material/Button';
 import {
   Instrument,
   InstrumentWithAvailabilityTime,
-} from '@user-office/shared-types';
+} from '@user-office-software/shared-types';
 import PropTypes from 'prop-types';
 import React, { useState } from 'react';
 

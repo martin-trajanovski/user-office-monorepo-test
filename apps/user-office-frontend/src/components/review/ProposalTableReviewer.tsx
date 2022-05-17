@@ -5,7 +5,7 @@ import RateReviewIcon from '@mui/icons-material/RateReview';
 import Visibility from '@mui/icons-material/Visibility';
 import IconButton from '@mui/material/IconButton';
 import Tooltip from '@mui/material/Tooltip';
-import { proposalGradeValidationSchema } from '@user-office-software/duo-validation';
+import { proposalGradeValidationSchema } from '@user-office-software/validation';
 import React, { useState, useContext, useEffect } from 'react';
 import { useQueryParams, NumberParam } from 'use-query-params';
 

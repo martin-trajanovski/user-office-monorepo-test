@@ -1,5 +1,5 @@
 import ShortTextIcon from '@mui/icons-material/ShortText';
-import { textInputQuestionValidationSchema } from '@user-office-software/duo-validation';
+import { textInputQuestionValidationSchema } from '@user-office-software/validation';
 import React from 'react';
 
 import defaultRenderer from 'components/questionary/DefaultQuestionRenderer';

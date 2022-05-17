@@ -1,5 +1,5 @@
 import NumberOneIcon from '@mui/icons-material/LooksOneOutlined';
-import { numberInputQuestionValidationSchema } from '@user-office-software/duo-validation';
+import { numberInputQuestionValidationSchema } from '@user-office-software/validation';
 import React from 'react';
 
 import defaultRenderer from 'components/questionary/DefaultQuestionRenderer';

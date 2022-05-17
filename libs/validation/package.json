@@ -1,0 +1,13 @@
+{
+  "name": "@user-office-software/validation",
+  "version": "3.1.9",
+  "description": "Duo frontend and backend validation in one place.",
+  "type": "commonjs",
+  "author": "SWAP",
+  "license": "ISC",
+  "keywords": [
+    "duo",
+    "validation",
+    "yup"
+  ]
+}

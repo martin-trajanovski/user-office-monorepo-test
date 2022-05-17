@@ -1,5 +1,5 @@
 import TodayIcon from '@mui/icons-material/Today';
-import { dateQuestionValidationSchema } from '@user-office-software/duo-validation';
+import { dateQuestionValidationSchema } from '@user-office-software/validation';
 import React from 'react';
 
 import defaultRenderer from 'components/questionary/DefaultQuestionRenderer';

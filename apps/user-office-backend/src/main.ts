@@ -3,7 +3,7 @@
  * This is only a minimal backend to get started.
  */
 
-import { logger } from '@user-office-software/duo-logger';
+import { logger } from '@user-office-software/logger';
 import * as express from 'express';
 
 const app = express();

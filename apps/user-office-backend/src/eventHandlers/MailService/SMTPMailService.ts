@@ -1,6 +1,6 @@
 import path from 'path';
 
-import { logger } from '@user-office-software/duo-logger';
+import { logger } from '@user-office-software/logger';
 import EmailTemplates from 'email-templates';
 import * as nodemailer from 'nodemailer';
 

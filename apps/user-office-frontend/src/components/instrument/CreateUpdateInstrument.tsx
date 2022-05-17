@@ -4,7 +4,7 @@ import makeStyles from '@mui/styles/makeStyles';
 import {
   createInstrumentValidationSchema,
   updateInstrumentValidationSchema,
-} from '@user-office-software/duo-validation/lib/Instrument';
+} from '@user-office-software/validation/lib/Instrument';
 import { Field, Form, Formik } from 'formik';
 import { TextField } from 'formik-mui';
 import PropTypes from 'prop-types';

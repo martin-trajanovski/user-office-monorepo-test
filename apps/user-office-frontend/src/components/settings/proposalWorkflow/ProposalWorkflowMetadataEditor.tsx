@@ -3,7 +3,7 @@ import Button from '@mui/material/Button';
 import Paper from '@mui/material/Paper';
 import TextField from '@mui/material/TextField';
 import makeStyles from '@mui/styles/makeStyles';
-import { updateProposalWorkflowValidationSchema } from '@user-office-software/duo-validation/lib/ProposalWorkflow';
+import { updateProposalWorkflowValidationSchema } from '@user-office-software/validation/lib/ProposalWorkflow';
 import { Field, Form, Formik } from 'formik';
 import React, { useState } from 'react';
 

@@ -1,5 +1,5 @@
 import TextFormatIcon from '@mui/icons-material/TextFormat';
-import { richTextInputQuestionValidationSchema } from '@user-office-software/duo-validation';
+import { richTextInputQuestionValidationSchema } from '@user-office-software/validation';
 import React from 'react';
 
 import { QuestionaryComponentDefinition } from 'components/questionary/QuestionaryComponentRegistry';

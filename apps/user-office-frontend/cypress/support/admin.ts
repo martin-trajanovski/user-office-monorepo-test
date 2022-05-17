@@ -1,4 +1,4 @@
-import { GetSettingsQuery, PrepareDbMutation } from '@user-office/shared-types';
+import { GetSettingsQuery, PrepareDbMutation } from '@user-office-software/shared-types';
 
 import { getE2EApi } from './utils';
 

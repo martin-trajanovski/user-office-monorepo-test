@@ -2,7 +2,7 @@ import Typography from '@mui/material/Typography';
 import {
   createCallValidationSchemas,
   updateCallValidationSchemas,
-} from '@user-office-software/duo-validation/lib/Call';
+} from '@user-office-software/validation/lib/Call';
 import { DateTime } from 'luxon';
 import PropTypes from 'prop-types';
 import React from 'react';

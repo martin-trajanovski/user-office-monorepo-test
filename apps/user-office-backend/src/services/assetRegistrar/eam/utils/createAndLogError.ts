@@ -1,4 +1,4 @@
-import { logger } from '@user-office-software/duo-logger';
+import { logger } from '@user-office-software/logger';
 export function createAndLogError(
   message: string,
   context: Record<string, unknown>

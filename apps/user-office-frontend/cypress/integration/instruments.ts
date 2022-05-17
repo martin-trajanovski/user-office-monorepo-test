@@ -1,7 +1,7 @@
 import {
   ReviewerFilter,
   TechnicalReviewStatus,
-} from '@user-office/shared-types';
+} from '@user-office-software/shared-types';
 import faker from 'faker';
 
 import initialDBData from '../support/initialDBData';

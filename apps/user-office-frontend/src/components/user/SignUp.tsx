@@ -15,7 +15,7 @@ import MenuItem from '@mui/material/MenuItem';
 import useTheme from '@mui/material/styles/useTheme';
 import Typography from '@mui/material/Typography';
 import makeStyles from '@mui/styles/makeStyles';
-import { createUserValidationSchema } from '@user-office-software/duo-validation';
+import { createUserValidationSchema } from '@user-office-software/validation';
 import clsx from 'clsx';
 import { Field, Form, Formik } from 'formik';
 import { CheckboxWithLabel, Select, TextField } from 'formik-mui';

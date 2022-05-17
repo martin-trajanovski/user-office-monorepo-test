@@ -1,4 +1,4 @@
-import { logger } from '@user-office-software/duo-logger';
+import { logger } from '@user-office-software/logger';
 import cookieParser from 'cookie-parser';
 import express from 'express';
 import 'reflect-metadata';

@@ -16,7 +16,7 @@ import {
   SetInstrumentAvailabilityTimeMutation,
   SubmitInstrumentMutationVariables,
   SubmitInstrumentMutation,
-} from '@user-office/shared-types';
+} from '@user-office-software/shared-types';
 
 declare global {
   namespace Cypress {

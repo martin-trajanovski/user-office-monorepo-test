@@ -1,4 +1,4 @@
-import { CreateVisitMutationVariables } from '@user-office/shared-types';
+import { CreateVisitMutationVariables } from '@user-office-software/shared-types';
 
 import { getE2EApi } from './utils';
 

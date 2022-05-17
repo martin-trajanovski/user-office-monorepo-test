@@ -1,6 +1,6 @@
 
     import * as soap from 'soap';
-    import { logger } from '@user-office-software/duo-logger';
+    import { logger } from '@user-office-software/logger';
 
     export default class UOWSSoapClient {
       private wsdlUrl: string;

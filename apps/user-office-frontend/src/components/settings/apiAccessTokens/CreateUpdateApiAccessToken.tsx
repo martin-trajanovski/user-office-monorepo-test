@@ -10,7 +10,7 @@ import makeStyles from '@mui/styles/makeStyles';
 import {
   createApiAccessTokenValidationSchema,
   updateApiAccessTokenValidationSchema,
-} from '@user-office-software/duo-validation/lib/Admin';
+} from '@user-office-software/validation/lib/Admin';
 import { Field, FieldArray, FieldArrayRenderProps, Form, Formik } from 'formik';
 import { TextField } from 'formik-mui';
 import React from 'react';

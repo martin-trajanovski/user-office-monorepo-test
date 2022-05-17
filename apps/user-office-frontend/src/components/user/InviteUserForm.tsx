@@ -1,7 +1,7 @@
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import makeStyles from '@mui/styles/makeStyles';
-import { createUserByEmailInviteValidationSchema } from '@user-office-software/duo-validation/lib/User';
+import { createUserByEmailInviteValidationSchema } from '@user-office-software/validation/lib/User';
 import { Field, Form, Formik } from 'formik';
 import { TextField } from 'formik-mui';
 import React from 'react';

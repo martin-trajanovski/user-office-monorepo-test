@@ -6,7 +6,7 @@ import MenuItem from '@mui/material/MenuItem';
 import Typography from '@mui/material/Typography';
 import makeStyles from '@mui/styles/makeStyles';
 import { Editor } from '@tinymce/tinymce-react';
-import { proposalTechnicalReviewValidationSchema } from '@user-office-software/duo-validation/lib/Review';
+import { proposalTechnicalReviewValidationSchema } from '@user-office-software/validation/lib/Review';
 import { Formik, Form, Field, useFormikContext } from 'formik';
 import { CheckboxWithLabel, Select, TextField } from 'formik-mui';
 import React, { useContext, useEffect, useState } from 'react';

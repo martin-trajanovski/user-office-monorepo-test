@@ -1,4 +1,4 @@
-import { setLogger, ConsoleLogger } from '@user-office-software/duo-logger';
+import { setLogger, ConsoleLogger } from '@user-office-software/logger';
 import 'reflect-metadata';
 
 import { StfcUserAuthorization } from '../auth/StfcUserAuthorization';

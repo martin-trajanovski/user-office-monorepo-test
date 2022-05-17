@@ -1,4 +1,4 @@
-import { logger } from '@user-office-software/duo-logger';
+import { logger } from '@user-office-software/logger';
 import BluePromise from 'bluebird';
 
 import { Call } from '../../models/Call';
