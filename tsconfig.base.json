@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@user-office-software/localization": ["libs/localization/src/index.ts"],
       "@user-office-software/logger": ["libs/logger/src/index.ts"],
       "@user-office-software/message-broker": [
         "libs/message-broker/src/index.ts"

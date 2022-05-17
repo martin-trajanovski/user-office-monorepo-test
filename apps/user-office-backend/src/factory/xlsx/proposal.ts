@@ -1,7 +1,4 @@
-import {
-  getTranslation,
-  ResourceId,
-} from '@user-office-software/duo-localisation';
+import { getTranslation, ResourceId } from '@user-office-software/localization';
 
 import baseContext from '../../buildContext';
 import { ProposalEndStatus } from '../../models/Proposal';
