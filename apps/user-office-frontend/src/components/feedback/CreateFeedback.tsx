@@ -1,15 +1,14 @@
-import React, { useContext, useEffect, useState } from 'react';
-
-import UOLoader from '../common/UOLoader';
-import { UserContext } from '../../UserContextProvider';
 import {
   FeedbackStatus,
   QuestionaryStep,
   TemplateGroupId,
 } from '@user-office-software/shared-types';
-import { FeedbackWithQuestionary } from '../../questionary/feedback/FeedbackWithQuestionary';
-import useDataApiWithFeedback from '../../useDataApiWithFeedback';
+import React, { useContext, useEffect, useState } from 'react';
 
+import { UserContext } from '../../context/UserContextProvider';
+import { FeedbackWithQuestionary } from '../../models/questionary/feedback/FeedbackWithQuestionary';
+import useDataApiWithFeedback from '../../utils/useDataApiWithFeedback';
+import UOLoader from '../common/UOLoader';
 import FeedbackContainer from './FeedbackContainer';
 
 function createFeedbackStub(
