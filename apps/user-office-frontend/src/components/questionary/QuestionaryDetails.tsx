@@ -1,13 +1,12 @@
 import Box from '@mui/material/Box';
 import { TableProps } from '@mui/material/Table';
 import Typography from '@mui/material/Typography';
+import { Answer, DataType } from '@user-office-software/shared-types';
 import React, { FC } from 'react';
 
-import UOLoader from '../common/UOLoader';
-import { Answer, DataType } from '@user-office-software/shared-types';
-import { useQuestionary } from '../../models/questionary/useQuestionary';
+import { useQuestionary } from '../../hooks/questionary/useQuestionary';
 import { areDependenciesSatisfied } from '../../models/questionary/QuestionaryFunctions';
-
+import UOLoader from '../common/UOLoader';
 import { AnswersTable } from './AnswersTable';
 import { getQuestionaryComponentDefinition } from './QuestionaryComponentRegistry';
 import { StepView } from './StepView';

@@ -1,14 +1,15 @@
 import makeStyles from '@mui/styles/makeStyles';
+import {
+  Answer,
+  QuestionaryStep,
+  Sdk,
+} from '@user-office-software/shared-types';
 import { Formik, useFormikContext } from 'formik';
 import React, { useContext, useEffect, useState } from 'react';
 import { Prompt } from 'react-router';
 import * as Yup from 'yup';
 
-import { ErrorFocus } from '../common/ErrorFocus';
-import { NavigButton } from '../common/NavigButton';
-import UOLoader from '../common/UOLoader';
-import { Answer, QuestionaryStep, Sdk } from '@user-office-software/shared-types';
-import { usePreSubmitActions } from '../../models/questionary/useSubmitActions';
+import { usePreSubmitActions } from '../../hooks/questionary/useSubmitActions';
 import {
   areDependenciesSatisfied,
   getQuestionaryStepByTopicId as getStepByTopicId,
@@ -16,7 +17,9 @@ import {
 } from '../../models/questionary/QuestionaryFunctions';
 import { QuestionarySubmissionState } from '../../models/questionary/QuestionarySubmissionState';
 import useDataApiWithFeedback from '../../utils/useDataApiWithFeedback';
-
+import { ErrorFocus } from '../common/ErrorFocus';
+import { NavigButton } from '../common/NavigButton';
+import UOLoader from '../common/UOLoader';
 import NavigationFragment from './NavigationFragment';
 import {
   createQuestionaryComponent,
