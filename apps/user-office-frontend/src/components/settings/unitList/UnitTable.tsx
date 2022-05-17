@@ -6,17 +6,17 @@ import React from 'react';
 import { useHistory } from 'react-router';
 import { useQueryParams } from 'use-query-params';
 
-import { useCheckAccess } from '../common/Can';
+import { useCheckAccess } from '../components/common/Can';
 import SuperMaterialTable, {
   DefaultQueryParams,
   UrlQueryParamsType,
-} from '../common/SuperMaterialTable';
+} from '../components/common/SuperMaterialTable';
 import { UserRole, Unit, SettingsId } from '@user-office-software/shared-types';
 import { useFormattedDateTime } from '../../admin/useFormattedDateTime';
 import { useUnitsData } from '../../settings/useUnitData';
 import { downloadBlob } from '../../downloadBlob';
-import { tableIcons } from '../../materialIcons';
-import useDataApiWithFeedback from '../../useDataApiWithFeedback';
+import { tableIcons } from '../../utils/materialIcons';
+import useDataApiWithFeedback from '../../utils/useDataApiWithFeedback';
 import { FunctionType } from '../../utilTypes';
 
 import CreateUnit from './CreateUnit';

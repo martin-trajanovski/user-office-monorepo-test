@@ -11,12 +11,12 @@ import { CheckboxWithLabel, Select, TextField } from 'formik-mui';
 import React from 'react';
 import { Prompt } from 'react-router';
 
-import { useCheckAccess } from '../common/Can';
+import { useCheckAccess } from '../components/common/Can';
 import { UserRole } from '@user-office-software/shared-types';
 import { ProposalEndStatus } from '@user-office-software/shared-types';
-import { ProposalData } from '../../proposal/useProposalData';
+import { ProposalData } from '../proposal/useProposalData';
 import { StyledButtonContainer } from 'styles/StyledComponents';
-import useDataApiWithFeedback from '../../useDataApiWithFeedback';
+import useDataApiWithFeedback from '../../utils/useDataApiWithFeedback';
 import { Option } from '../../utilTypes';
 
 export type AdministrationFormData = {

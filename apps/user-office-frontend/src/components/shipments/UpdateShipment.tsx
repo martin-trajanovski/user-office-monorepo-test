@@ -1,8 +1,8 @@
 import React from 'react';
 
-import UOLoader from '../common/UOLoader';
+import UOLoader from '../components/common/UOLoader';
 import { useShipment } from '../../shipment/useShipment';
-import { ShipmentCore } from '../../questionary/shipment/ShipmentCore';
+import { ShipmentCore } from '../../models/questionary/shipment/ShipmentCore';
 
 import ShipmentContainer from './ShipmentContainer';
 

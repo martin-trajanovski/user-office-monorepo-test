@@ -15,7 +15,7 @@ import {
   VisitFragment,
 } from '@user-office-software/shared-types';
 import { useDataApi } from '../../common/useDataApi';
-import { VisitRegistrationCore } from '../../questionary/visit/VisitRegistrationCore';
+import { VisitRegistrationCore } from '../../models/questionary/visit/VisitRegistrationCore';
 
 export type ProposalScheduledEvent = Pick<
   ScheduledEventCore,

@@ -1,17 +1,16 @@
 import { Typography } from '@mui/material';
+import { Institution } from '@user-office-software/shared-types';
 import React from 'react';
 import { useQueryParams } from 'use-query-params';
 
+import { useInstitutionsData } from '../../hooks/admin/useInstitutionData';
+import { tableIcons } from '../../utils/materialIcons';
+import useDataApiWithFeedback from '../../utils/useDataApiWithFeedback';
+import { FunctionType } from '../../utils/utilTypes';
 import SuperMaterialTable, {
   DefaultQueryParams,
   UrlQueryParamsType,
 } from '../common/SuperMaterialTable';
-import { Institution } from '@user-office-software/shared-types';
-import { useInstitutionsData } from '../../admin/useInstitutionData';
-import { tableIcons } from '../../materialIcons';
-import useDataApiWithFeedback from '../../useDataApiWithFeedback';
-import { FunctionType } from '../../utilTypes';
-
 import CreateUpdateInstitution from './CreateUpdateInstitution';
 
 const InstitutionPage: React.FC = () => {

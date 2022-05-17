@@ -9,7 +9,7 @@ import {
   User,
 } from '@user-office-software/shared-types';
 import { useDataApi } from '../../common/useDataApi';
-import { ShipmentWithQuestionary } from '../../questionary/shipment/ShipmentWithQuestionary';
+import { ShipmentWithQuestionary } from '../../models/questionary/shipment/ShipmentWithQuestionary';
 
 function createShipmentStub(
   creator: Pick<User, 'id'>,

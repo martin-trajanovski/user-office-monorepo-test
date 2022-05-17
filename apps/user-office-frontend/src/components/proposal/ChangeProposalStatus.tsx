@@ -8,7 +8,7 @@ import { Form, Formik } from 'formik';
 import React from 'react';
 import * as yup from 'yup';
 
-import FormikUIAutocomplete from '../common/FormikUIAutocomplete';
+import FormikUIAutocomplete from '../components/common/FormikUIAutocomplete';
 import { ProposalStatus } from '@user-office-software/shared-types';
 import { useProposalStatusesData } from '../../settings/useProposalStatusesData';
 

@@ -5,7 +5,7 @@ import React from 'react';
 import defaultRenderer from '../questionary/DefaultQuestionRenderer';
 import { DataType } from '@user-office-software/shared-types';
 
-import { QuestionaryComponentDefinition } from '../../QuestionaryComponentRegistry';
+import { QuestionaryComponentDefinition } from '../../models/questionaryComponentRegistry';
 import BooleanAnswerRenderer from './BooleanAnswerRenderer';
 import BooleanSearchCriteriaInput from './BooleanSearchCriteriaInput';
 import { QuestionaryComponentBoolean } from './QuestionaryComponentBoolean';

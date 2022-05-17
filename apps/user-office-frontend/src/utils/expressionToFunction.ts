@@ -1,4 +1,4 @@
-import { Unit } from './../generated/sdk';
+import { Unit } from '@user-office-software/shared-types';
 
 const expressionToFunction = (expression: string) =>
   // FIXME: Fix this eslint warning

@@ -2,7 +2,7 @@ import { Dialog, DialogContent, Typography, Alert, Stack } from '@mui/material';
 import { makeStyles } from '@mui/styles';
 import React, { useState } from 'react';
 
-import UOLoader from '../common/UOLoader';
+import UOLoader from '../components/common/UOLoader';
 import {
   QuestionnairesList,
   QuestionnairesListRow,
@@ -10,8 +10,8 @@ import {
 import { ShipmentFragment, ShipmentStatus } from '@user-office-software/shared-types';
 import { useScheduledEvent } from '../../scheduledEvent/useScheduledEvent';
 import { useShipments } from '../../shipment/useShipments';
-import useDataApiWithFeedback from '../../useDataApiWithFeedback';
-import withConfirm, { WithConfirmProps } from '../../withConfirm';
+import useDataApiWithFeedback from '../../utils/useDataApiWithFeedback';
+import withConfirm, { WithConfirmProps } from '../../utils/withConfirm';
 
 import CreateUpdateShipment from './CreateUpdateShipment';
 

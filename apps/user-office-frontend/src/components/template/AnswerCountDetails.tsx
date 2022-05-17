@@ -2,13 +2,13 @@ import MaterialTable from '@material-table/core';
 import Link from '@mui/material/Link';
 import React, { useMemo } from 'react';
 
-import CopyToClipboard from '../common/CopyToClipboard';
+import CopyToClipboard from '../components/common/CopyToClipboard';
 import { ProposalFragment, TemplateCategoryId } from '@user-office-software/shared-types';
-import { useProposalsData } from '../../proposal/useProposalsData';
+import { useProposalsData } from '../proposal/useProposalsData';
 import { useSamplesWithQuestionaryStatus } from '../../sample/useSamplesWithQuestionaryStatus';
 import { useShipments } from '../../shipment/useShipments';
 import { QuestionWithUsage } from '../../template/useQuestions';
-import { tableIcons } from '../../materialIcons';
+import { tableIcons } from '../../utils/materialIcons';
 
 const proposalListColumns = [
   {

@@ -3,6 +3,7 @@ import { Tooltip } from '@mui/material';
 import Button from '@mui/material/Button';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Typography from '@mui/material/Typography';
+import { Institution } from '@user-office-software/shared-types';
 import { Field, Form, Formik } from 'formik';
 import { Checkbox, TextField } from 'formik-mui';
 import PropTypes from 'prop-types';
@@ -10,13 +11,12 @@ import React, { useState } from 'react';
 import { useHistory } from 'react-router';
 import * as Yup from 'yup';
 
+import { useGetFields } from '../../hooks/user/useGetFields';
+import useDataApiWithFeedback from '../../utils/useDataApiWithFeedback';
+import { Option } from '../../utils/utilTypes';
 import { ActionButtonContainer } from '../common/ActionButtonContainer';
 import FormikUIAutocomplete from '../common/FormikUIAutocomplete';
 import UOLoader from '../common/UOLoader';
-import { Institution } from '@user-office-software/shared-types';
-import { useGetFields } from '../../user/useGetFields';
-import useDataApiWithFeedback from '../../useDataApiWithFeedback';
-import { Option } from '../../utilTypes';
 
 type CreateUpdateInstitutionProps = {
   close: (institution: Institution | null) => void;

@@ -5,8 +5,8 @@ import {
   EventType,
 } from '../settings/proposalWorkflow/ProposalWorkflowEditorModel';
 import { IndexWithGroupId, ProposalWorkflow, Rejection } from '@user-office-software/shared-types';
-import useDataApiWithFeedback from '../../useDataApiWithFeedback';
-import { MiddlewareInputParams } from '../../useReducerWithMiddleWares';
+import useDataApiWithFeedback from '../../utils/useDataApiWithFeedback';
+import { MiddlewareInputParams } from '../../utils/useReducerWithMiddleWares';
 import { FunctionType } from '../../utilTypes';
 
 export function usePersistProposalWorkflowEditorModel() {

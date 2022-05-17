@@ -10,18 +10,18 @@ import Tooltip from '@mui/material/Tooltip';
 import Typography from '@mui/material/Typography';
 import React, { useState, useContext } from 'react';
 
-import { ActionButtonContainer } from '../common/ActionButtonContainer';
-import { useCheckAccess } from '../common/Can';
-import UOLoader from '../common/UOLoader';
+import { ActionButtonContainer } from '../components/common/ActionButtonContainer';
+import { useCheckAccess } from '../components/common/Can';
+import UOLoader from '../components/common/UOLoader';
 import ParticipantModal from '../proposal/ParticipantModal';
 import { UserContext } from '../../UserContextProvider';
 import { BasicUserDetails, UserRole, Sep } from '@user-office-software/shared-types';
 import { useRenewToken } from '../../common/useRenewToken';
 import { useSEPReviewersData } from '../../SEP/useSEPReviewersData';
-import { tableIcons } from '../../materialIcons';
-import useDataApiWithFeedback from '../../useDataApiWithFeedback';
+import { tableIcons } from '../../utils/materialIcons';
+import useDataApiWithFeedback from '../../utils/useDataApiWithFeedback';
 import { getFullUserName } from '../../user';
-import withConfirm, { WithConfirmType } from '../../withConfirm';
+import withConfirm, { WithConfirmType } from '../../utils/withConfirm';
 
 type BasicUserDetailsWithRole = BasicUserDetails & { roleId: UserRole };
 

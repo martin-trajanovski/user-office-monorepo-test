@@ -3,17 +3,16 @@ import Button from '@mui/material/Button';
 import Grid from '@mui/material/Grid';
 import TextField from '@mui/material/TextField';
 import makeStyles from '@mui/styles/makeStyles';
+import { Institution } from '@user-office-software/shared-types';
 import React, { useEffect } from 'react';
 import { useParams } from 'react-router';
 
+import { useInstitutionsData } from '../../hooks/admin/useInstitutionData';
+import { StyledContainer, StyledPaper } from '../../styles/StyledComponents';
+import useDataApiWithFeedback from '../../utils/useDataApiWithFeedback';
+import withConfirm, { WithConfirmType } from '../../utils/withConfirm';
 import { ActionButtonContainer } from '../common/ActionButtonContainer';
 import UOLoader from '../common/UOLoader';
-import { Institution } from '@user-office-software/shared-types';
-import { useInstitutionsData } from '../../admin/useInstitutionData';
-import { StyledContainer, StyledPaper } from 'styles/StyledComponents';
-import useDataApiWithFeedback from '../../useDataApiWithFeedback';
-import withConfirm, { WithConfirmType } from '../../withConfirm';
-
 import InstitutionSelect from './InstitutionSelect';
 
 type MergeInstitutionPageProps = {

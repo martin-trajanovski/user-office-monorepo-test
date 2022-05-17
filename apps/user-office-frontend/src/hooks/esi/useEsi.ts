@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 
 import { useDataApi } from '../../common/useDataApi';
-import { ProposalEsiWithQuestionary } from '../../questionary/proposalEsi/ProposalEsiWithQuestionary';
+import { ProposalEsiWithQuestionary } from '../../models/questionary/proposalEsi/ProposalEsiWithQuestionary';
 
 export function useEsi(esiId: number) {
   const [esi, setEsi] = useState<ProposalEsiWithQuestionary | null>(null);

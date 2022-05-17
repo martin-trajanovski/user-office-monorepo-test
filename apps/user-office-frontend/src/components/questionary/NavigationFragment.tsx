@@ -1,7 +1,7 @@
 import { Stack } from '@mui/material';
 import React from 'react';
 
-import UOLoader from '../common/UOLoader';
+import UOLoader from '../components/common/UOLoader';
 
 const NavigationFragment = (props: {
   isLoading?: boolean;

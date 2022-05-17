@@ -1,9 +1,12 @@
 import { immerable } from 'immer';
 
-import { Questionary, SampleFragment } from '@user-office-software/shared-types';
+import {
+  Questionary,
+  SampleFragment,
+  TemplateGroupId,
+} from '@user-office-software/shared-types';
 
 import { QuestionarySubmissionState } from '../QuestionarySubmissionState';
-import { TemplateGroupId } from './../../../generated/sdk';
 import { ShipmentWithQuestionary } from './ShipmentWithQuestionary';
 
 export class ShipmentSubmissionState extends QuestionarySubmissionState {

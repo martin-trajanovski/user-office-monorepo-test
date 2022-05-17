@@ -3,10 +3,10 @@ import { DefaultReviewWizardStep } from '../questionary/DefaultReviewWizardStep'
 import { DefaultStepDisplayElementFactory } from '../questionary/DefaultStepDisplayElementFactory';
 import { DefaultWizardStepFactory } from '../questionary/DefaultWizardStepFactory';
 import { Sdk, TemplateGroupId } from '@user-office-software/shared-types';
-import { ProposalEsiSubmissionState } from '../../questionary/proposalEsi/ProposalEsiSubmissionState';
-import { ItemWithQuestionary } from '../../questionary/QuestionarySubmissionState';
+import { ProposalEsiSubmissionState } from '../../models/questionary/proposalEsi/ProposalEsiSubmissionState';
+import { ItemWithQuestionary } from '../../models/questionary/QuestionarySubmissionState';
 
-import { QuestionaryDefinition } from '../../QuestionaryRegistry';
+import { QuestionaryDefinition } from '../../models/questionaryRegistry';
 import { EsiWizardStep } from './EsiWizardStep';
 
 export const esiQuestionaryDefinition: QuestionaryDefinition = {

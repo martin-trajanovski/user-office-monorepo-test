@@ -12,9 +12,9 @@ import React, { FC, useEffect, useState } from 'react';
 
 import { useQuestionFilterQueryParams } from '../../../hooks/proposal/useQuestionFilterQueryParams';
 import { useTemplate } from '../../../hooks/template/useTemplate';
-import { SearchCriteriaInputProps } from '../../proposal/SearchCriteriaInputProps';
-import { getQuestionaryComponentDefinition } from '../../questionary/QuestionaryComponentRegistry';
-import UnknownSearchCriteriaInput from '../../questionary/questionaryComponents/UnknownSearchCriteriaInput';
+import { SearchCriteriaInputProps } from '../proposal/SearchCriteriaInputProps';
+import { getQuestionaryComponentDefinition } from '../../models/questionary/QuestionaryComponentRegistry';
+import UnknownSearchCriteriaInput from '../../models/questionary/questionaryComponents/UnknownSearchCriteriaInput';
 import UOLoader from '../UOLoader';
 
 export interface SearchCriteria {

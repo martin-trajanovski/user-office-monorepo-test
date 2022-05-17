@@ -7,9 +7,9 @@ import {
   Template,
   TemplateCategoryId,
 } from '@user-office-software/shared-types';
-import { Event, EventType } from '../../questionary/QuestionaryEditorModel';
-import useDataApiWithFeedback from '../../useDataApiWithFeedback';
-import { MiddlewareInputParams } from '../../useReducerWithMiddleWares';
+import { Event, EventType } from '../../models/questionary/QuestionaryEditorModel';
+import useDataApiWithFeedback from '../../utils/useDataApiWithFeedback';
+import { MiddlewareInputParams } from '../../utils/useReducerWithMiddleWares';
 import { FunctionType } from '../../utilTypes';
 
 export function usePersistQuestionaryEditorModel() {

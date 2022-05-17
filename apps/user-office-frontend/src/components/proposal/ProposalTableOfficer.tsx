@@ -15,8 +15,8 @@ import React, { useContext, useEffect, useState } from 'react';
 import isEqual from 'react-fast-compare';
 import { DecodedValueMap, SetQuery } from 'use-query-params';
 
-import ListStatusIcon from '../common/icons/ListStatusIcon';
-import ScienceIcon from '../common/icons/ScienceIcon';
+import ListStatusIcon from '../components/common/icons/ListStatusIcon';
+import ScienceIcon from '../components/common/icons/ScienceIcon';
 import AssignProposalsToInstrument from '../instrument/AssignProposalsToInstrument';
 import ProposalReviewContent, {
   PROPOSAL_MODAL_TAB_NAMES,
@@ -35,19 +35,19 @@ import {
   FeatureId,
 } from '@user-office-software/shared-types';
 import { useLocalStorage } from '../../common/useLocalStorage';
-import { useDownloadPDFProposal } from '../../proposal/useDownloadPDFProposal';
-import { useDownloadXLSXProposal } from '../../proposal/useDownloadXLSXProposal';
+import { useDownloadPDFProposal } from '../proposal/useDownloadPDFProposal';
+import { useDownloadXLSXProposal } from '../proposal/useDownloadXLSXProposal';
 import {
   ProposalViewData,
   useProposalsCoreData,
-} from '../../proposal/useProposalsCoreData';
+} from '../proposal/useProposalsCoreData';
 import {
   fromProposalToProposalView,
   setSortDirectionOnSortColumn,
 } from '../../helperFunctions';
-import { tableIcons } from '../../materialIcons';
-import useDataApiWithFeedback from '../../useDataApiWithFeedback';
-import withConfirm, { WithConfirmType } from '../../withConfirm';
+import { tableIcons } from '../../utils/materialIcons';
+import useDataApiWithFeedback from '../../utils/useDataApiWithFeedback';
+import withConfirm, { WithConfirmType } from '../../utils/withConfirm';
 
 import CallSelectModalOnProposalsClone from './CallSelectModalOnProposalClone';
 import ChangeProposalStatus from './ChangeProposalStatus';

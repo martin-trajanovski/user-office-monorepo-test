@@ -16,18 +16,18 @@ import {
   QuestionTemplateRelation,
   Template,
 } from '@user-office-software/shared-types';
-import { usePersistQuestionaryEditorModel } from '../../questionary/usePersistQuestionaryEditorModel';
+import { usePersistQuestionaryEditorModel } from '../../models/questionary/usePersistQuestionaryEditorModel';
 import QuestionaryEditorModel, {
   Event,
   EventType,
-} from '../../questionary/QuestionaryEditorModel';
+} from '../../models/questionary/QuestionaryEditorModel';
 import {
   getFieldById,
   getQuestionaryStepByTopicId,
-} from '../../questionary/QuestionaryFunctions';
+} from '../../models/questionary/QuestionaryFunctions';
 import { StyledContainer, StyledPaper } from 'styles/StyledComponents';
-import useDataApiWithFeedback from '../../useDataApiWithFeedback';
-import { MiddlewareInputParams } from '../../useReducerWithMiddleWares';
+import useDataApiWithFeedback from '../../utils/useDataApiWithFeedback';
+import { MiddlewareInputParams } from '../../utils/useReducerWithMiddleWares';
 import { FunctionType } from '../../utilTypes';
 
 import QuestionEditor from './QuestionEditor';

@@ -13,7 +13,7 @@ import { useDataApi } from '../../common/useDataApi';
 import {
   useReducerWithMiddleWares,
   ReducerMiddleware,
-} from '../../useReducerWithMiddleWares';
+} from '../../utils/useReducerWithMiddleWares';
 
 export enum EventType {
   READY,

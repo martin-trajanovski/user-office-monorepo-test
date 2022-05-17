@@ -10,11 +10,11 @@ import { TextField } from 'formik-mui';
 import PropTypes from 'prop-types';
 import React from 'react';
 
-import FormikUIAutocomplete from '../common/FormikUIAutocomplete';
-import UOLoader from '../common/UOLoader';
+import FormikUIAutocomplete from '../components/common/FormikUIAutocomplete';
+import UOLoader from '../components/common/UOLoader';
 import { InstrumentFragment, UserRole } from '@user-office-software/shared-types';
 import { useUsersData } from '../../user/useUsersData';
-import useDataApiWithFeedback from '../../useDataApiWithFeedback';
+import useDataApiWithFeedback from '../../utils/useDataApiWithFeedback';
 import { getFullUserName } from '../../user';
 
 const useStyles = makeStyles((theme) => ({

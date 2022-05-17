@@ -4,8 +4,8 @@ import produce from 'immer';
 import React, { useCallback, useState } from 'react';
 import { useHistory } from 'react-router';
 
-import { ActionButtonContainer } from '../common/ActionButtonContainer';
-import { ConflictResolver, DiffInfo } from '../common/ConflictResolver';
+import { ActionButtonContainer } from '../components/common/ActionButtonContainer';
+import { ConflictResolver, DiffInfo } from '../components/common/ConflictResolver';
 import {
   ConflictResolutionStrategy,
   SettingsId,
@@ -13,7 +13,7 @@ import {
   UnitsImportWithValidation,
 } from '@user-office-software/shared-types';
 import { useFormattedDateTime } from '../../admin/useFormattedDateTime';
-import useDataApiWithFeedback from '../../useDataApiWithFeedback';
+import useDataApiWithFeedback from '../../utils/useDataApiWithFeedback';
 
 interface UnitMergeReviewProps {
   data: UnitsImportWithValidation;

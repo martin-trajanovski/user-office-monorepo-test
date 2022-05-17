@@ -3,13 +3,13 @@ import { Typography } from '@mui/material';
 import Button from '@mui/material/Button';
 import React, { useContext, useState } from 'react';
 
-import { ActionButtonContainer } from '../common/ActionButtonContainer';
+import { ActionButtonContainer } from '../components/common/ActionButtonContainer';
 import { UserContext } from '../../UserContextProvider';
 import { Role } from '@user-office-software/shared-types';
 import { useRenewToken } from '../../common/useRenewToken';
 import { useUserWithRolesData } from '../../user/useUserWithRoles';
-import { tableIcons } from '../../materialIcons';
-import useDataApiWithFeedback from '../../useDataApiWithFeedback';
+import { tableIcons } from '../../utils/materialIcons';
+import useDataApiWithFeedback from '../../utils/useDataApiWithFeedback';
 
 import RoleModal from './RoleModal';
 

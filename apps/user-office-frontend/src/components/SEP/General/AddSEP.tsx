@@ -8,9 +8,9 @@ import { Checkbox, TextField } from 'formik-mui';
 import PropTypes from 'prop-types';
 import React from 'react';
 
-import UOLoader from '../common/UOLoader';
+import UOLoader from '../components/common/UOLoader';
 import { Sep } from '@user-office-software/shared-types';
-import useDataApiWithFeedback from '../../useDataApiWithFeedback';
+import useDataApiWithFeedback from '../../utils/useDataApiWithFeedback';
 
 const useStyles = makeStyles((theme) => ({
   submit: {

@@ -8,7 +8,7 @@ import { Answer, DataType, Sdk } from '@user-office-software/shared-types';
 import {
   Event,
   QuestionarySubmissionState,
-} from '../../questionary/QuestionarySubmissionState';
+} from '../../models/questionary/QuestionarySubmissionState';
 
 export type SubmitActionDependencyContainer = {
   state: QuestionarySubmissionState;

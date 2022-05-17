@@ -5,13 +5,13 @@ import makeStyles from '@mui/styles/makeStyles';
 import { Form, Formik } from 'formik';
 import React from 'react';
 
-import { ActionButtonContainer } from '../common/ActionButtonContainer';
+import { ActionButtonContainer } from '../components/common/ActionButtonContainer';
 import {
   getQuestionaryComponentDefinition,
   QuestionTemplateRelationFormProps,
 } from '../questionary/QuestionaryComponentRegistry';
 import { FieldDependencyInput, QuestionTemplateRelation } from '@user-office-software/shared-types';
-import useDataApiWithFeedback from '../../useDataApiWithFeedback';
+import useDataApiWithFeedback from '../../utils/useDataApiWithFeedback';
 
 const useStyles = makeStyles((theme) => ({
   container: {

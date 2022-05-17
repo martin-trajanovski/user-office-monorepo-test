@@ -1,6 +1,6 @@
 import React from 'react';
 
-import UOLoader from '../common/UOLoader';
+import UOLoader from '../components/common/UOLoader';
 import { useFeedback } from '../../feedback/useFeedback';
 
 import FeedbackContainer from './FeedbackContainer';

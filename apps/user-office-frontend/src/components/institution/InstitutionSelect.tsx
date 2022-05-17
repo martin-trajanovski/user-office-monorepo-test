@@ -1,7 +1,6 @@
 import { TextField, AutocompleteProps, Autocomplete } from '@mui/material';
-import React from 'react';
-
 import { Institution } from '@user-office-software/shared-types';
+import React from 'react';
 
 interface InstitutionSelectProps
   extends Omit<

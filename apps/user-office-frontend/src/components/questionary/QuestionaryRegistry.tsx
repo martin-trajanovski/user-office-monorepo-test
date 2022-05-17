@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/ban-types */
 import { Sdk, TemplateGroupId } from '@user-office-software/shared-types';
-import { ItemWithQuestionary } from '../../questionary/QuestionarySubmissionState';
 
+import { ItemWithQuestionary } from '../../models/questionary/QuestionarySubmissionState';
 import { StepDisplayElementFactory } from './DefaultStepDisplayElementFactory';
 import { esiQuestionaryDefinition } from './questionaries/esi/EsiQuestionaryDefinition';
 import { feedbackQuestionaryDefinition } from './questionaries/feedback/FeedbackQuestionaryDefinition';

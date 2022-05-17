@@ -5,7 +5,7 @@ import React from 'react';
 import defaultRenderer from '../questionary/DefaultQuestionRenderer';
 import { DataType, IntervalConfig } from '@user-office-software/shared-types';
 
-import { QuestionaryComponentDefinition } from '../../QuestionaryComponentRegistry';
+import { QuestionaryComponentDefinition } from '../../models/questionaryComponentRegistry';
 import { IntervalAnswerRenderer } from './IntervalAnswerRenderer';
 import IntervalSearchCriteriaComponent from './IntervalSearchCriteriaComponent';
 import { QuestionaryComponentInterval } from './QuestionaryComponentInterval';

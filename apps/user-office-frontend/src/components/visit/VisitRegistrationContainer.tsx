@@ -7,14 +7,14 @@ import {
   QuestionaryContextType,
 } from '../questionary/QuestionaryContext';
 import { TemplateGroupId } from '@user-office-software/shared-types';
-import createCustomEventHandlers from '../../questionary/createCustomEventHandlers';
+import createCustomEventHandlers from '../../models/questionary/createCustomEventHandlers';
 import {
   Event,
   QuestionarySubmissionModel,
-} from '../../questionary/QuestionarySubmissionState';
-import useEventHandlers from '../../questionary/useEventHandlers';
-import { VisitRegistrationSubmissionState } from '../../questionary/visit/VisitRegistrationSubmissionState';
-import { RegistrationWithQuestionary } from '../../questionary/visit/VisitRegistrationWithQuestionary';
+} from '../../models/questionary/QuestionarySubmissionState';
+import useEventHandlers from '../../models/questionary/useEventHandlers';
+import { VisitRegistrationSubmissionState } from '../../models/questionary/visit/VisitRegistrationSubmissionState';
+import { RegistrationWithQuestionary } from '../../models/questionary/visit/VisitRegistrationWithQuestionary';
 export interface VisitRegistrationContextType extends QuestionaryContextType {
   state: VisitRegistrationSubmissionState | null;
 }

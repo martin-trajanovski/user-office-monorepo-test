@@ -5,7 +5,7 @@ import { useDataApi } from '../../common/useDataApi';
 import {
   GetScheduledEventsCoreQuery,
   GetScheduledEventsCoreQueryVariables,
-} from '../../generated/sdk';
+} from '@user-office-software/shared-types';
 
 export function useScheduledEvents(
   queryArgs: GetScheduledEventsCoreQueryVariables

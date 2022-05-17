@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 
-import { WizardStep } from '../../questionary/QuestionarySubmissionState';
+import { WizardStep } from '../../models/questionary/QuestionarySubmissionState';
 
 import QuestionaryStepView from './QuestionaryStepView';
 

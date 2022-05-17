@@ -5,9 +5,9 @@ import makeStyles from '@mui/styles/makeStyles';
 import clsx from 'clsx';
 import React, { useState, Dispatch, SetStateAction } from 'react';
 
-import { useCheckAccess } from '../common/Can';
+import { useCheckAccess } from '../components/common/Can';
 import { UserRole } from '@user-office-software/shared-types';
-import { ProposalData } from '../../proposal/useProposalData';
+import { ProposalData } from '../proposal/useProposalData';
 
 import AssignTechnicalReview from './AssignTechnicalReview';
 

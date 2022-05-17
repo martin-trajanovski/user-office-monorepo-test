@@ -4,9 +4,9 @@ import * as Yup from 'yup';
 
 import defaultRenderer from '../questionary/DefaultQuestionRenderer';
 import { DataType, SubTemplateConfig } from '@user-office-software/shared-types';
-import { ProposalSubmissionState } from '../../questionary/proposal/ProposalSubmissionState';
+import { ProposalSubmissionState } from '../../models/questionary/proposal/ProposalSubmissionState';
 
-import { QuestionaryComponentDefinition } from '../../QuestionaryComponentRegistry';
+import { QuestionaryComponentDefinition } from '../../models/questionaryComponentRegistry';
 import QuestionaryComponentGenericTemplate from './QuestionaryComponentGenericTemplate';
 import { QuestionGenericTemplateForm } from './QuestionGenericTemplateForm';
 import { QuestionTemplateRelationGenericTemplateForm } from './QuestionTemplateRelationGenericTemplateForm';

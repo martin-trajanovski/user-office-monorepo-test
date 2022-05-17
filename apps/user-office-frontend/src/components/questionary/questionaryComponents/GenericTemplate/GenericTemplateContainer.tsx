@@ -7,14 +7,14 @@ import {
   QuestionaryContextType,
 } from '../questionary/QuestionaryContext';
 import { TemplateGroupId } from '@user-office-software/shared-types';
-import createCustomEventHandlers from '../../questionary/createCustomEventHandlers';
-import { GenericTemplateSubmissionState } from '../../questionary/genericTemplate/GenericTemplateSubmissionState';
-import { GenericTemplateWithQuestionary } from '../../questionary/genericTemplate/GenericTemplateWithQuestionary';
+import createCustomEventHandlers from '../../models/questionary/createCustomEventHandlers';
+import { GenericTemplateSubmissionState } from '../../models/questionary/genericTemplate/GenericTemplateSubmissionState';
+import { GenericTemplateWithQuestionary } from '../../models/questionary/genericTemplate/GenericTemplateWithQuestionary';
 import {
   Event,
   QuestionarySubmissionModel,
-} from '../../questionary/QuestionarySubmissionState';
-import useEventHandlers from '../../questionary/useEventHandlers';
+} from '../../models/questionary/QuestionarySubmissionState';
+import useEventHandlers from '../../models/questionary/useEventHandlers';
 
 export interface GenericTemplateContextType extends QuestionaryContextType {
   state: GenericTemplateSubmissionState | null;

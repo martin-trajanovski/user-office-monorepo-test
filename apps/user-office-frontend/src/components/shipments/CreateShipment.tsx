@@ -1,9 +1,9 @@
 import React from 'react';
 
-import UOLoader from '../common/UOLoader';
+import UOLoader from '../components/common/UOLoader';
 import { useScheduledEvent } from '../../scheduledEvent/useScheduledEvent';
 import { useBlankShipment } from '../../shipment/useBlankShipment';
-import { ShipmentCore } from '../../questionary/shipment/ShipmentCore';
+import { ShipmentCore } from '../../models/questionary/shipment/ShipmentCore';
 
 import ShipmentContainer from './ShipmentContainer';
 

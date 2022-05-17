@@ -1,11 +1,11 @@
 import { TableProps } from '@mui/material';
 import React, { FunctionComponent } from 'react';
 
-import UOLoader from '../common/UOLoader';
+import UOLoader from '../components/common/UOLoader';
 import ProposalQuestionaryDetails from '../proposal/ProposalQuestionaryDetails';
 import { TableRowData } from '../questionary/QuestionaryDetails';
 import { BasicUserDetails } from '@user-office-software/shared-types';
-import { ProposalWithQuestionary } from '../../questionary/proposal/ProposalWithQuestionary';
+import { ProposalWithQuestionary } from '../../models/questionary/proposal/ProposalWithQuestionary';
 import { getFullUserName } from '../../user';
 
 export default function ProposalQuestionaryReview(

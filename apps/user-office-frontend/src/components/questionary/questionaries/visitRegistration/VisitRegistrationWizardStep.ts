@@ -1,6 +1,6 @@
 import { QuestionaryWizardStep } from '../questionary/DefaultWizardStepFactory';
-import { QuestionarySubmissionState } from '../../questionary/QuestionarySubmissionState';
-import { VisitRegistrationSubmissionState } from '../../questionary/visit/VisitRegistrationSubmissionState';
+import { QuestionarySubmissionState } from '../../models/questionary/QuestionarySubmissionState';
+import { VisitRegistrationSubmissionState } from '../../models/questionary/visit/VisitRegistrationSubmissionState';
 
 export class VisitRegistrationWizardStep extends QuestionaryWizardStep {
   isItemWithQuestionaryEditable(state: QuestionarySubmissionState): boolean {

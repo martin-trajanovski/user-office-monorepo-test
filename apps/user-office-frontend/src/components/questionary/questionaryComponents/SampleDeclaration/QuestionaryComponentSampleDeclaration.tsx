@@ -3,9 +3,9 @@ import makeStyles from '@mui/styles/makeStyles';
 import { Field, FieldProps, FormikProps } from 'formik';
 import React, { useContext, useState } from 'react';
 
-import ErrorMessage from '../common/ErrorMessage';
-import StyledModal from '../common/StyledModal';
-import UOLoader from '../common/UOLoader';
+import ErrorMessage from '../components/common/ErrorMessage';
+import StyledModal from '../components/common/StyledModal';
+import UOLoader from '../components/common/UOLoader';
 import { ProposalContextType } from '../proposal/ProposalContainer';
 import {
   createMissingContextErrorMessage,
@@ -17,10 +17,10 @@ import {
   SampleStatus,
   SubTemplateConfig,
 } from '@user-office-software/shared-types';
-import { SampleCore } from '../../questionary/sample/SampleCore';
-import { SampleWithQuestionary } from '../../questionary/sample/SampleWithQuestionary';
-import useDataApiWithFeedback from '../../useDataApiWithFeedback';
-import withConfirm, { WithConfirmType } from '../../withConfirm';
+import { SampleCore } from '../../models/questionary/sample/SampleCore';
+import { SampleWithQuestionary } from '../../models/questionary/sample/SampleWithQuestionary';
+import useDataApiWithFeedback from '../../utils/useDataApiWithFeedback';
+import withConfirm, { WithConfirmType } from '../../utils/withConfirm';
 import withPrompt, { WithPromptType } from '../../withPrompt';
 
 import {

@@ -1,13 +1,13 @@
 import { Column } from '@material-table/core';
+import { getTranslation, ResourceId } from '@user-office-software/localization';
 import {
-  getTranslation,
-  ResourceId,
-} from '@user-office-software/localization';
+  Proposal,
+  ProposalEndStatus,
+  ProposalStatus,
+} from '@user-office-software/shared-types';
 
-import { SortDirectionType } from '../common/SuperMaterialTable';
-import { Proposal, ProposalEndStatus, ProposalStatus } from '@user-office-software/shared-types';
-import { ProposalViewData } from '../../proposal/useProposalsCoreData';
-
+import { SortDirectionType } from '../components/common/SuperMaterialTable';
+import { ProposalViewData } from '../hooks/proposal/useProposalsCoreData';
 import {
   average,
   getGradesFromReviews,

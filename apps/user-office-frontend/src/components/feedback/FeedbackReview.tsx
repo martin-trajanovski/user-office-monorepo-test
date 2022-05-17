@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 
-import { NavigButton } from '../common/NavigButton';
+import { NavigButton } from '../components/common/NavigButton';
 import NavigationFragment from '../questionary/NavigationFragment';
 import {
   createMissingContextErrorMessage,
@@ -10,9 +10,9 @@ import QuestionaryDetails, {
   TableRowData,
 } from '../questionary/QuestionaryDetails';
 import { FeedbackStatus } from '@user-office-software/shared-types';
-import useDataApiWithFeedback from '../../useDataApiWithFeedback';
+import useDataApiWithFeedback from '../../utils/useDataApiWithFeedback';
 import { FunctionType } from '../../utilTypes';
-import withConfirm, { WithConfirmType } from '../../withConfirm';
+import withConfirm, { WithConfirmType } from '../../utils/withConfirm';
 
 import { FeedbackContextType } from './FeedbackContainer';
 

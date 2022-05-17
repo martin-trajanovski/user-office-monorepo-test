@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 import React, { useContext } from 'react';
 import { NumberParam, useQueryParams } from 'use-query-params';
 
-import { useCheckAccess } from '../common/Can';
+import { useCheckAccess } from '../components/common/Can';
 import ProposalReviewContent, {
   PROPOSAL_MODAL_TAB_NAMES,
 } from '../review/ProposalReviewContent';
@@ -20,7 +20,7 @@ import {
 } from '@user-office-software/shared-types';
 import { useFormattedDateTime } from '../../admin/useFormattedDateTime';
 import { SEPProposalType } from '../../SEP/useSEPProposalsData';
-import { tableIcons } from '../../materialIcons';
+import { tableIcons } from '../../utils/materialIcons';
 
 // NOTE: Some custom styles for row expand table.
 const useStyles = makeStyles(() => ({

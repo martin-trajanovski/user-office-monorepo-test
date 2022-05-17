@@ -1,9 +1,9 @@
 import React from 'react';
 
+import { useGenericTemplate } from '../../hooks/genericTemplate/useGenericTemplate';
 import QuestionaryDetails, {
   TableRowData,
 } from '../questionary/QuestionaryDetails';
-import { useGenericTemplate } from '../../genericTemplate/useGenericTemplate';
 
 interface GenericTemplateDetailsProps {
   genericTemplateId: number;

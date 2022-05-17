@@ -15,8 +15,8 @@ import React, { useContext, useState } from 'react';
 import { useHistory } from 'react-router';
 import { NavLink } from 'react-router-dom';
 
-import EsiIcon from '../common/icons/EsiIcon';
-import Tooltip from '../common/MenuTooltip';
+import EsiIcon from '../components/common/icons/EsiIcon';
+import Tooltip from '../components/common/MenuTooltip';
 import { FeatureContext } from '../../FeatureContextProvider';
 import { FeatureId } from '@user-office-software/shared-types';
 

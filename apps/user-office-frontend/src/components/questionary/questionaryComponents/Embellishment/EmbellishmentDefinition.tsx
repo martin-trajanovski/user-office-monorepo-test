@@ -3,7 +3,7 @@ import React from 'react';
 
 import { DataType } from '@user-office-software/shared-types';
 
-import { QuestionaryComponentDefinition } from '../../QuestionaryComponentRegistry';
+import { QuestionaryComponentDefinition } from '../../models/questionaryComponentRegistry';
 import EmbellishmentQuestionRenderer from './EmbellishmentQuestionRenderer';
 import { QuestionaryComponentEmbellishment } from './QuestionaryComponentEmbellishment';
 import { QuestionEmbellishmentForm } from './QuestionEmbellishmentForm';

@@ -4,11 +4,11 @@ import Switch from '@mui/material/Switch';
 import makeStyles from '@mui/styles/makeStyles';
 import React, { useState } from 'react';
 
-import { useCheckAccess } from '../common/Can';
+import { useCheckAccess } from '../components/common/Can';
 import ProposalQuestionaryReview from '../review/ProposalQuestionaryReview';
 import { UserRole } from '@user-office-software/shared-types';
-import { useDownloadPDFProposal } from '../../proposal/useDownloadPDFProposal';
-import { ProposalWithQuestionary } from '../../questionary/proposal/ProposalWithQuestionary';
+import { useDownloadPDFProposal } from '../proposal/useDownloadPDFProposal';
+import { ProposalWithQuestionary } from '../../models/questionary/proposal/ProposalWithQuestionary';
 
 import ProposalContainer from './ProposalContainer';
 

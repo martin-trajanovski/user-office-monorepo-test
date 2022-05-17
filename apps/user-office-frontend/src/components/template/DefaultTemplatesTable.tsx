@@ -1,8 +1,8 @@
 import { Column } from '@material-table/core';
 import React, { useCallback } from 'react';
 
-import useDataApiWithFeedback from '../../useDataApiWithFeedback';
-import withConfirm from '../../withConfirm';
+import useDataApiWithFeedback from '../../utils/useDataApiWithFeedback';
+import withConfirm from '../../utils/withConfirm';
 
 import TemplatesTable, {
   TemplateRowDataType,

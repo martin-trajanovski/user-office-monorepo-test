@@ -3,7 +3,7 @@ import makeStyles from '@mui/styles/makeStyles';
 import React from 'react';
 import { withRouter } from 'react-router-dom';
 
-import SimpleTabs from '../common/TabPanel';
+import SimpleTabs from '../components/common/TabPanel';
 import EventLogList from '../eventLog/EventLogList';
 import { StyledContainer, StyledPaper } from 'styles/StyledComponents';
 

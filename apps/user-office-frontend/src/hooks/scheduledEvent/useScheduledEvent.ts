@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 
 import { useDataApi } from '../../common/useDataApi';
 
-import { GetScheduledEventCoreQuery } from '../../generated/sdk';
+import { GetScheduledEventCoreQuery } from '@user-office-software/shared-types';
 
 export function useScheduledEvent(scheduledEventId: number) {
   const [scheduledEvent, setScheduledEvent] = useState<

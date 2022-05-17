@@ -33,7 +33,7 @@ import {
   QuestionTemplateRelation,
   TemplateStep,
 } from '@user-office-software/shared-types';
-import { Event, EventType } from '../../questionary/QuestionaryEditorModel';
+import { Event, EventType } from '../../models/questionary/QuestionaryEditorModel';
 
 import TemplateQuestionEditor, {
   TemplateTopicEditorData,

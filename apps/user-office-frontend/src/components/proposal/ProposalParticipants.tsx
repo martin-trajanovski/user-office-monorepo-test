@@ -6,7 +6,7 @@ import makeStyles from '@mui/styles/makeStyles';
 import PropTypes from 'prop-types';
 import React, { useEffect, useState } from 'react';
 
-import { ActionButtonContainer } from '../common/ActionButtonContainer';
+import { ActionButtonContainer } from '../components/common/ActionButtonContainer';
 import PeopleTable from '../user/PeopleTable';
 import { BasicUserDetails, UserRole } from '@user-office-software/shared-types';
 

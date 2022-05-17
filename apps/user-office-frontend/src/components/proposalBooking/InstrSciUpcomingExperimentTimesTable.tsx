@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { useQueryParams, NumberParam } from 'use-query-params';
 
-import InstrumentFilter from '../common/proposalFilters/InstrumentFilter';
+import InstrumentFilter from '../components/common/proposalFilters/InstrumentFilter';
 import { useInstrumentsData } from '../../instrument/useInstrumentsData';
-import { useProposalBookingsScheduledEvents } from '../../proposalBooking/useProposalBookingsScheduledEvents';
+import { useProposalBookingsScheduledEvents } from '../proposalBooking/useProposalBookingsScheduledEvents';
 import { StyledContainer, StyledPaper } from 'styles/StyledComponents';
 
 import ExperimentsTable from './ExperimentTimesTable';

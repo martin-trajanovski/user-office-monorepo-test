@@ -1,18 +1,24 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
+
+import {
+  TemplateGroupId,
+  SampleFragment,
+} from '@user-office-software/shared-types';
+import {
+  Answer,
+  Questionary,
+  QuestionaryStep,
+} from '@user-office-software/shared-types';
 import produce, { Draft } from 'immer';
 import { Reducer } from 'react';
 
-import { getQuestionaryDefinition } from '../questionary/QuestionaryRegistry';
-import { TemplateGroupId } from '@user-office-software/shared-types';
-import { Answer, Questionary, QuestionaryStep } from '@user-office-software/shared-types';
-import { deepClone } from '../../json';
-import { clamp } from '../../Math';
+import { getQuestionaryDefinition } from '../../components/questionary/QuestionaryRegistry';
+import { deepClone } from '../../utils/json';
+import { clamp } from '../../utils/Math';
 import {
   ReducerMiddleware,
   useReducerWithMiddleWares,
-} from '../../useReducerWithMiddleWares';
-
-import { SampleFragment } from './../../generated/sdk';
+} from '../../utils/useReducerWithMiddleWares';
 import { getFieldById } from './QuestionaryFunctions';
 import { SampleEsiWithQuestionary } from './sampleEsi/SampleEsiWithQuestionary';
 import { StepType } from './StepType';

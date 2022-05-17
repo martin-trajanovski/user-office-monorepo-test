@@ -1,9 +1,10 @@
 import { useEffect, useState } from 'react';
 
-import { GetTemplatesQuery } from '@user-office-software/shared-types';
+import {
+  GetTemplatesQuery,
+  TemplatesFilter,
+} from '@user-office-software/shared-types';
 import { useDataApi } from '../../common/useDataApi';
-
-import { TemplatesFilter } from './../../generated/sdk';
 
 type Templates = GetTemplatesQuery['templates'];
 

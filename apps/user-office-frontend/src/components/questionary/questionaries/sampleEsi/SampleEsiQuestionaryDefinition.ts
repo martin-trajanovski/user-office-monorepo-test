@@ -3,9 +3,9 @@ import { DefaultStepDisplayElementFactory } from '../questionary/DefaultStepDisp
 import { DefaultWizardStepFactory } from '../questionary/DefaultWizardStepFactory';
 import SampleEsiReview from '../sampleEsi/SampleEsiReview';
 import { Sdk, TemplateGroupId } from '@user-office-software/shared-types';
-import { ItemWithQuestionary } from '../../questionary/QuestionarySubmissionState';
+import { ItemWithQuestionary } from '../../models/questionary/QuestionarySubmissionState';
 
-import { QuestionaryDefinition } from '../../QuestionaryRegistry';
+import { QuestionaryDefinition } from '../../models/questionaryRegistry';
 import { SampleEsiWizardStep } from './SampleEsiWizardStep';
 
 export const sampleEsiQuestionaryDefinition: QuestionaryDefinition = {

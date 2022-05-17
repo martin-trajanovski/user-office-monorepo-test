@@ -3,12 +3,12 @@ import Link from '@mui/material/Link';
 import makeStyles from '@mui/styles/makeStyles';
 import React, { useState } from 'react';
 
-import { ActionButtonContainer } from '../common/ActionButtonContainer';
-import InputDialog from '../common/InputDialog';
+import { ActionButtonContainer } from '../components/common/ActionButtonContainer';
+import InputDialog from '../components/common/InputDialog';
 import SampleDetails from '../sample/SampleDetails';
 import { Answer } from '@user-office-software/shared-types';
 import { useSamplesWithQuestionaryStatus } from '../../sample/useSamplesWithQuestionaryStatus';
-import { SampleCore } from '../../questionary/sample/SampleCore';
+import { SampleCore } from '../../models/questionary/sample/SampleCore';
 
 const useStyles = makeStyles((theme) => ({
   list: {

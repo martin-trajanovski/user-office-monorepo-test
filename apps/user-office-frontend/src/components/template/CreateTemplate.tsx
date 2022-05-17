@@ -7,7 +7,7 @@ import { useSnackbar } from 'notistack';
 import React from 'react';
 
 import { TemplateGroupId, TemplateMetadataFragment } from '@user-office-software/shared-types';
-import useDataApiWithFeedback from '../../useDataApiWithFeedback';
+import useDataApiWithFeedback from '../../utils/useDataApiWithFeedback';
 
 const CreateTemplate = (props: {
   onComplete: (template: TemplateMetadataFragment) => void;

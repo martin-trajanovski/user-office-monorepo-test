@@ -14,7 +14,7 @@ import {
   Template,
   TemplateFragment,
 } from '@user-office-software/shared-types';
-import { QuestionarySubmissionState } from '../../questionary/QuestionarySubmissionState';
+import { QuestionarySubmissionState } from '../../models/questionary/QuestionarySubmissionState';
 
 import { booleanDefinition } from './questionaryComponents/Boolean/BooleanDefinition';
 import { dateDefinition } from './questionaryComponents/DatePicker/DatePickerDefinition';

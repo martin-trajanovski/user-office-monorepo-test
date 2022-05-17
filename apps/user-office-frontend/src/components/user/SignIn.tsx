@@ -12,7 +12,7 @@ import React, { useContext, useState } from 'react';
 import { useLocation } from 'react-router';
 import { Link, Redirect } from 'react-router-dom';
 
-import UOLoader from '../common/UOLoader';
+import UOLoader from '../components/common/UOLoader';
 import LoginHelpPage from '../pages/LoginHelpPage';
 import { UserContext } from '../../UserContextProvider';
 import ButtonWithDialog from '../../common/ButtonWithDialog';

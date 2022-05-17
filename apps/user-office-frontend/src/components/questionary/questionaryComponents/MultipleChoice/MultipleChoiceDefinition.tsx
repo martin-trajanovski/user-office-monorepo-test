@@ -6,7 +6,7 @@ import defaultRenderer from '../questionary/DefaultQuestionRenderer';
 import MultipleChoiceSearchCriteriaComponent from '../questionary/questionaryComponents/MultipleChoice/MultipleChoiceSearchCriteriaComponent';
 import { DataType } from '@user-office-software/shared-types';
 
-import { QuestionaryComponentDefinition } from '../../QuestionaryComponentRegistry';
+import { QuestionaryComponentDefinition } from '../../models/questionaryComponentRegistry';
 import MultipleChoiceAnswerRenderer from './MultipleChoiceAnswerRenderer';
 import { QuestionaryComponentMultipleChoice } from './QuestionaryComponentMultipleChoice';
 import { QuestionMultipleChoiceForm } from './QuestionMultipleChoiceForm';

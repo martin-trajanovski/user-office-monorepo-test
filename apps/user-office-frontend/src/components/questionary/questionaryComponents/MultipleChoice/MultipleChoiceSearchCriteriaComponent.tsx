@@ -6,7 +6,7 @@ import {
   SelectionFromOptionsConfig,
 } from '@user-office-software/shared-types';
 
-import { SearchCriteriaInputProps } from '../../../proposal/SearchCriteriaInputProps';
+import { SearchCriteriaInputProps } from '../../proposal/SearchCriteriaInputProps';
 
 function MultipleChoiceSearchCriteriaComponent({
   onChange,

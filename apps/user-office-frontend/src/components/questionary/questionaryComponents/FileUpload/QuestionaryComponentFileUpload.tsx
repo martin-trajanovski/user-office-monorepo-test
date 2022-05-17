@@ -6,7 +6,7 @@ import React, { useEffect, useState } from 'react';
 import {
   FileIdWithCaptionAndFigure,
   FileUploadComponent,
-} from '../common/FileUploadComponent';
+} from '../components/common/FileUploadComponent';
 import { BasicComponentProps } from '../proposal/IBasicComponentProps';
 import { FileUploadConfig } from '@user-office-software/shared-types';
 

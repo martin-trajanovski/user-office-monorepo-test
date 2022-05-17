@@ -9,9 +9,9 @@ import { Field, Form, Formik } from 'formik';
 import React, { useState } from 'react';
 import * as Yup from 'yup';
 
-import { ActionButtonContainer } from '../common/ActionButtonContainer';
+import { ActionButtonContainer } from '../components/common/ActionButtonContainer';
 import { Template } from '@user-office-software/shared-types';
-import { Event, EventType } from '../../questionary/QuestionaryEditorModel';
+import { Event, EventType } from '../../models/questionary/QuestionaryEditorModel';
 
 const useStyles = makeStyles((theme) => ({
   container: {

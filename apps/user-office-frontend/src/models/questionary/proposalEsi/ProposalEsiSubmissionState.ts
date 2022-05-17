@@ -1,9 +1,10 @@
+import {
+  Questionary,
+  TemplateGroupId,
+} from '@user-office-software/shared-types';
 import { immerable } from 'immer';
 
-import { Questionary } from '@user-office-software/shared-types';
-
 import { QuestionarySubmissionState } from '../QuestionarySubmissionState';
-import { TemplateGroupId } from './../../../generated/sdk';
 import { ProposalEsiWithQuestionary } from './ProposalEsiWithQuestionary';
 
 export class ProposalEsiSubmissionState extends QuestionarySubmissionState {

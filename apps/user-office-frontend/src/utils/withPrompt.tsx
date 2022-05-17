@@ -4,7 +4,7 @@ import Dialog from '@mui/material/Dialog';
 import DialogActions from '@mui/material/DialogActions';
 import React, { useCallback, useState } from 'react';
 
-import withHandleEnter from '../common/withHandleEnter';
+import withHandleEnter from '../components/common/withHandleEnter';
 
 import { FunctionType } from './utilTypes';
 

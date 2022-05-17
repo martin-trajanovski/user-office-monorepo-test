@@ -16,10 +16,10 @@ import ListItemIcon from '@mui/material/ListItemIcon';
 import { Field, FieldProps } from 'formik';
 import React, { MouseEvent, useContext, useState } from 'react';
 
-import ErrorMessage from '../common/ErrorMessage';
-import BoxIcon from '../common/icons/BoxIcon';
-import StyledModal from '../common/StyledModal';
-import UOLoader from '../common/UOLoader';
+import ErrorMessage from '../components/common/ErrorMessage';
+import BoxIcon from '../components/common/icons/BoxIcon';
+import StyledModal from '../components/common/StyledModal';
+import UOLoader from '../components/common/UOLoader';
 import { BasicComponentProps } from '../proposal/IBasicComponentProps';
 import { ProposalEsiContextType } from '../proposalEsi/ProposalEsiContainer';
 import {
@@ -33,11 +33,11 @@ import {
   SampleDeclarationConfig,
   SampleFragment,
 } from '@user-office-software/shared-types';
-import { getQuestionsByType } from '../../questionary/QuestionaryFunctions';
-import { SampleEsiWithQuestionary } from '../../questionary/sampleEsi/SampleEsiWithQuestionary';
+import { getQuestionsByType } from '../../models/questionary/QuestionaryFunctions';
+import { SampleEsiWithQuestionary } from '../../models/questionary/sampleEsi/SampleEsiWithQuestionary';
 import { StyledButtonContainer } from 'styles/StyledComponents';
-import useDataApiWithFeedback from '../../useDataApiWithFeedback';
-import withConfirm, { WithConfirmType } from '../../withConfirm';
+import useDataApiWithFeedback from '../../utils/useDataApiWithFeedback';
+import withConfirm, { WithConfirmType } from '../../utils/withConfirm';
 import withPrompt, { WithPromptType } from '../../withPrompt';
 
 function QuestionaryComponentProposalEsiBasis(

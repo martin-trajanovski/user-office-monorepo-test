@@ -11,7 +11,7 @@ import { DateTime } from 'luxon';
 import React, { useState } from 'react';
 import { NumberParam, useQueryParams } from 'use-query-params';
 
-import { useCheckAccess } from '../common/Can';
+import { useCheckAccess } from '../components/common/Can';
 import ProposalReviewContent, {
   PROPOSAL_MODAL_TAB_NAMES,
 } from '../review/ProposalReviewContent';
@@ -25,20 +25,20 @@ import {
   SettingsId,
 } from '@user-office-software/shared-types';
 import { useFormattedDateTime } from '../../admin/useFormattedDateTime';
-import { useDownloadPDFProposal } from '../../proposal/useDownloadPDFProposal';
+import { useDownloadPDFProposal } from '../proposal/useDownloadPDFProposal';
 import {
   useSEPProposalsData,
   SEPProposalType,
   SEPProposalAssignmentType,
 } from '../../SEP/useSEPProposalsData';
-import { tableIcons } from '../../materialIcons';
+import { tableIcons } from '../../utils/materialIcons';
 import {
   average,
   getGradesFromReviews,
   standardDeviation,
 } from '../../mathFunctions';
-import useDataApiWithFeedback from '../../useDataApiWithFeedback';
-import withConfirm, { WithConfirmType } from '../../withConfirm';
+import useDataApiWithFeedback from '../../utils/useDataApiWithFeedback';
+import withConfirm, { WithConfirmType } from '../../utils/withConfirm';
 
 import AssignSEPMemberToProposal, {
   SepAssignedMember,

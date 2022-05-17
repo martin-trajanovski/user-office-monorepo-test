@@ -11,7 +11,7 @@ import clsx from 'clsx';
 import React, { useContext, DragEvent, useState, useEffect } from 'react';
 import { NumberParam, useQueryParams } from 'use-query-params';
 
-import { useCheckAccess } from '../common/Can';
+import { useCheckAccess } from '../components/common/Can';
 import { UserContext } from '../../UserContextProvider';
 import {
   SepProposal,
@@ -21,13 +21,13 @@ import {
   Call,
 } from '@user-office-software/shared-types';
 import { useSEPProposalsByInstrument } from '../../SEP/useSEPProposalsByInstrument';
-import { tableIcons } from '../../materialIcons';
+import { tableIcons } from '../../utils/materialIcons';
 import {
   getGradesFromReviews,
   average,
   standardDeviation,
 } from '../../mathFunctions';
-import useDataApiWithFeedback from '../../useDataApiWithFeedback';
+import useDataApiWithFeedback from '../../utils/useDataApiWithFeedback';
 
 import SEPMeetingProposalViewModal from './ProposalViewModal/SEPMeetingProposalViewModal';
 

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { useProposalBookingsScheduledEvents } from '../../proposalBooking/useProposalBookingsScheduledEvents';
+import { useProposalBookingsScheduledEvents } from '../proposalBooking/useProposalBookingsScheduledEvents';
 import { StyledContainer, StyledPaper } from 'styles/StyledComponents';
 
 import ExperimentsTable from './ExperimentTimesTable';

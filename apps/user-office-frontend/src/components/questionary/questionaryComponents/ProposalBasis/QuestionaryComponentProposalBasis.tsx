@@ -3,8 +3,8 @@ import { Field } from 'formik';
 import { TextField } from 'formik-mui';
 import React, { ChangeEvent, useContext, useState } from 'react';
 
-import ErrorMessage from '../common/ErrorMessage';
-import withPreventSubmit from '../common/withPreventSubmit';
+import ErrorMessage from '../components/common/ErrorMessage';
+import withPreventSubmit from '../components/common/withPreventSubmit';
 import { BasicComponentProps } from '../proposal/IBasicComponentProps';
 import { ProposalContextType } from '../proposal/ProposalContainer';
 import ProposalParticipant from '../proposal/ProposalParticipant';
@@ -14,8 +14,8 @@ import {
   QuestionaryContext,
 } from '../questionary/QuestionaryContext';
 import { BasicUserDetails } from '@user-office-software/shared-types';
-import { SubmitActionDependencyContainer } from '../../questionary/useSubmitActions';
-import { ProposalSubmissionState } from '../../questionary/proposal/ProposalSubmissionState';
+import { SubmitActionDependencyContainer } from '../../models/questionary/useSubmitActions';
+import { ProposalSubmissionState } from '../../models/questionary/proposal/ProposalSubmissionState';
 
 const TextFieldNoSubmit = withPreventSubmit(TextField);
 

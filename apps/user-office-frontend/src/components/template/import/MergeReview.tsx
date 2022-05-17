@@ -3,7 +3,7 @@ import produce from 'immer';
 import React, { useCallback, useState } from 'react';
 import { useHistory } from 'react-router';
 
-import { ActionButtonContainer } from '../common/ActionButtonContainer';
+import { ActionButtonContainer } from '../components/common/ActionButtonContainer';
 import {
   ConflictResolutionStrategy,
   QuestionComparison,
@@ -12,7 +12,7 @@ import {
 } from '@user-office-software/shared-types';
 import { useFormattedDateTime } from '../../admin/useFormattedDateTime';
 import { deepEqual } from '../../json';
-import useDataApiWithFeedback from '../../useDataApiWithFeedback';
+import useDataApiWithFeedback from '../../utils/useDataApiWithFeedback';
 
 import { ConflictResolver } from '../../common/ConflictResolver';
 

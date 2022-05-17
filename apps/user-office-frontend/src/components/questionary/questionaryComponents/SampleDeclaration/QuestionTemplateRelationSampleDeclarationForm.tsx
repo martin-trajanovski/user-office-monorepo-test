@@ -5,8 +5,8 @@ import { TextField } from 'formik-mui';
 import { ChangeEvent, default as React, FC, useContext } from 'react';
 import * as Yup from 'yup';
 
-import FormikUIAutocomplete from '../common/FormikUIAutocomplete';
-import TitledContainer from '../common/TitledContainer';
+import FormikUIAutocomplete from '../components/common/FormikUIAutocomplete';
+import TitledContainer from '../components/common/TitledContainer';
 import { QuestionTemplateRelationFormProps } from '../questionary/QuestionaryComponentRegistry';
 import { FeatureContext } from '../../FeatureContextProvider';
 import {

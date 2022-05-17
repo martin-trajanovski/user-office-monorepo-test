@@ -3,7 +3,7 @@ import React from 'react';
 
 import { DataType } from '@user-office-software/shared-types';
 
-import { QuestionaryComponentDefinition } from '../../QuestionaryComponentRegistry';
+import { QuestionaryComponentDefinition } from '../../models/questionaryComponentRegistry';
 import { QuestionaryComponentFeedbackBasis } from './QuestionaryComponentFeedbackBasis';
 import { QuestionFeedbackBasisForm } from './QuestionFeedbackBasisForm';
 import { QuestionTemplateRelationFeedbackBasisForm } from './QuestionTemplateRelationFeedbackBasisForm';

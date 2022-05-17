@@ -4,7 +4,7 @@ import React from 'react';
 
 import { TemplateImportWithValidation } from '@user-office-software/shared-types';
 import { StyledPaper } from 'styles/StyledComponents';
-import useDataApiWithFeedback from '../../useDataApiWithFeedback';
+import useDataApiWithFeedback from '../../utils/useDataApiWithFeedback';
 
 import { SelectImportFile } from '../../common/SelectImportFile';
 import { MergeReview } from './MergeReview';

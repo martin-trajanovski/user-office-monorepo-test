@@ -15,8 +15,8 @@ import {
 import { setSortDirectionOnSortColumn } from '../../utils/helperFunctions';
 import { tableIcons } from '../../utils/materialIcons';
 import { FunctionType } from '../../utils/utilTypes';
-import { ActionButtonContainer } from '../common/ActionButtonContainer';
-import InputDialog from '../common/InputDialog';
+import { ActionButtonContainer } from '../components/common/ActionButtonContainer';
+import InputDialog from '../components/common/InputDialog';
 
 export type UrlQueryParamsType = {
   search: QueryParamConfig<string | null | undefined>;

@@ -1,5 +1,5 @@
 import { QuestionaryStep } from '@user-office-software/shared-types';
-import { WizardStep } from '../../questionary/QuestionarySubmissionState';
+import { WizardStep } from '../../models/questionary/QuestionarySubmissionState';
 
 import { SampleQuestionaryWizardStep } from './SampleQuestionaryWizardStep';
 

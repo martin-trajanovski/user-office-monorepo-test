@@ -2,9 +2,9 @@ import FlightTakeoffIcon from '@mui/icons-material/FlightTakeoff';
 import React from 'react';
 
 import { DataType } from '@user-office-software/shared-types';
-import { VisitRegistrationSubmissionState } from '../../questionary/visit/VisitRegistrationSubmissionState';
+import { VisitRegistrationSubmissionState } from '../../models/questionary/visit/VisitRegistrationSubmissionState';
 
-import { QuestionaryComponentDefinition } from '../../QuestionaryComponentRegistry';
+import { QuestionaryComponentDefinition } from '../../models/questionaryComponentRegistry';
 import { createVisitBasisValidationSchema } from './createVisitBasisValidationSchema';
 import { QuestionaryComponentVisitBasis } from './QuestionaryComponentVisitBasis';
 import { QuestionTemplateRelationVisitBasisForm } from './QuestionTemplateRelationVisitBasisForm';

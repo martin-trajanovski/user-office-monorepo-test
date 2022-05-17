@@ -18,7 +18,7 @@ import {
   withDefault,
 } from 'use-query-params';
 
-import { DefaultQueryParams } from '../common/SuperMaterialTable';
+import { DefaultQueryParams } from '../components/common/SuperMaterialTable';
 import ProposalReviewContent, {
   PROPOSAL_MODAL_TAB_NAMES,
 } from '../review/ProposalReviewContent';
@@ -38,16 +38,16 @@ import {
 import { useInstrumentScientistCallsData } from '../../call/useInstrumentScientistCallsData';
 import { useLocalStorage } from '../../common/useLocalStorage';
 import { useInstrumentsData } from '../../instrument/useInstrumentsData';
-import { useDownloadPDFProposal } from '../../proposal/useDownloadPDFProposal';
+import { useDownloadPDFProposal } from '../proposal/useDownloadPDFProposal';
 import {
   ProposalViewData,
   useProposalsCoreData,
-} from '../../proposal/useProposalsCoreData';
+} from '../proposal/useProposalsCoreData';
 import { useProposalStatusesData } from '../../settings/useProposalStatusesData';
 import { setSortDirectionOnSortColumn } from '../../helperFunctions';
-import { tableIcons } from '../../materialIcons';
-import useDataApiWithFeedback from '../../useDataApiWithFeedback';
-import withConfirm, { WithConfirmType } from '../../withConfirm';
+import { tableIcons } from '../../utils/materialIcons';
+import useDataApiWithFeedback from '../../utils/useDataApiWithFeedback';
+import withConfirm, { WithConfirmType } from '../../utils/withConfirm';
 
 import ProposalFilterBar, {
   questionaryFilterFromUrlQuery,

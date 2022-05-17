@@ -1,6 +1,6 @@
 import { QuestionaryWizardStep } from '../questionary/DefaultWizardStepFactory';
-import { ProposalEsiSubmissionState } from '../../questionary/proposalEsi/ProposalEsiSubmissionState';
-import { QuestionarySubmissionState } from '../../questionary/QuestionarySubmissionState';
+import { ProposalEsiSubmissionState } from '../../models/questionary/proposalEsi/ProposalEsiSubmissionState';
+import { QuestionarySubmissionState } from '../../models/questionary/QuestionarySubmissionState';
 
 export class EsiWizardStep extends QuestionaryWizardStep {
   isItemWithQuestionaryEditable(state: QuestionarySubmissionState): boolean {

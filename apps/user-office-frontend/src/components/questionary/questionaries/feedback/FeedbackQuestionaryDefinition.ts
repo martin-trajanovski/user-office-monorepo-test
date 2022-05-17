@@ -3,10 +3,10 @@ import { DefaultReviewWizardStep } from '../questionary/DefaultReviewWizardStep'
 import { DefaultStepDisplayElementFactory } from '../questionary/DefaultStepDisplayElementFactory';
 import { DefaultWizardStepFactory } from '../questionary/DefaultWizardStepFactory';
 import { FeedbackStatus, Sdk, TemplateGroupId } from '@user-office-software/shared-types';
-import { FeedbackSubmissionState } from '../../questionary/feedback/FeedbackSubmissionState';
-import { ItemWithQuestionary } from '../../questionary/QuestionarySubmissionState';
+import { FeedbackSubmissionState } from '../../models/questionary/feedback/FeedbackSubmissionState';
+import { ItemWithQuestionary } from '../../models/questionary/QuestionarySubmissionState';
 
-import { QuestionaryDefinition } from '../../QuestionaryRegistry';
+import { QuestionaryDefinition } from '../../models/questionaryRegistry';
 import { FeedbackWizardStep } from './FeedbackWizardStep';
 
 export const feedbackQuestionaryDefinition: QuestionaryDefinition = {

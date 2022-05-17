@@ -4,9 +4,9 @@ import React from 'react';
 
 import defaultRenderer from '../questionary/DefaultQuestionRenderer';
 import { DataType } from '@user-office-software/shared-types';
-import { ProposalSubmissionState } from '../../questionary/proposal/ProposalSubmissionState';
+import { ProposalSubmissionState } from '../../models/questionary/proposal/ProposalSubmissionState';
 
-import { QuestionaryComponentDefinition } from '../../QuestionaryComponentRegistry';
+import { QuestionaryComponentDefinition } from '../../models/questionaryComponentRegistry';
 import QuestionaryComponentSampleDeclaration from './QuestionaryComponentSampleDeclaration';
 import { QuestionSampleDeclarationForm } from './QuestionSampleDeclarationForm';
 import { QuestionTemplateRelationSampleDeclarationForm } from './QuestionTemplateRelationSampleDeclarationForm';

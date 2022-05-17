@@ -5,7 +5,7 @@ import { CheckboxWithLabel, TextField } from 'formik-mui';
 import React, { FC, useState } from 'react';
 import * as Yup from 'yup';
 
-import TitledContainer from '../common/TitledContainer';
+import TitledContainer from '../components/common/TitledContainer';
 import { QuestionTemplateRelationFormProps } from '../questionary/QuestionaryComponentRegistry';
 import { QuestionExcerpt } from '../questionary/questionaryComponents/QuestionExcerpt';
 import { IntervalConfig } from '@user-office-software/shared-types';

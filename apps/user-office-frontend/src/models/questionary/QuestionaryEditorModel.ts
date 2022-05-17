@@ -15,11 +15,11 @@ import {
   getFieldById,
   getQuestionaryStepByTopicId,
   getTopicById,
-} from '../../questionary/QuestionaryFunctions';
+} from '../../models/questionary/QuestionaryFunctions';
 import {
   ReducerMiddleware,
   useReducerWithMiddleWares,
-} from '../../useReducerWithMiddleWares';
+} from '../../utils/useReducerWithMiddleWares';
 
 export enum EventType {
   READY,

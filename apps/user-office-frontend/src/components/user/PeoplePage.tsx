@@ -4,7 +4,7 @@ import { useHistory } from 'react-router';
 
 import { BasicUserDetails } from '@user-office-software/shared-types';
 import { StyledContainer, StyledPaper } from 'styles/StyledComponents';
-import useDataApiWithFeedback from '../../useDataApiWithFeedback';
+import useDataApiWithFeedback from '../../utils/useDataApiWithFeedback';
 
 import PeopleTable from './PeopleTable';
 

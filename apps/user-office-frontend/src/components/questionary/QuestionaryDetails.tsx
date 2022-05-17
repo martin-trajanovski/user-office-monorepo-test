@@ -3,10 +3,10 @@ import { TableProps } from '@mui/material/Table';
 import Typography from '@mui/material/Typography';
 import React, { FC } from 'react';
 
-import UOLoader from '../common/UOLoader';
+import UOLoader from '../components/common/UOLoader';
 import { Answer, DataType } from '@user-office-software/shared-types';
-import { useQuestionary } from '../../questionary/useQuestionary';
-import { areDependenciesSatisfied } from '../../questionary/QuestionaryFunctions';
+import { useQuestionary } from '../../models/questionary/useQuestionary';
+import { areDependenciesSatisfied } from '../../models/questionary/QuestionaryFunctions';
 
 import { AnswersTable } from './AnswersTable';
 import { getQuestionaryComponentDefinition } from './QuestionaryComponentRegistry';

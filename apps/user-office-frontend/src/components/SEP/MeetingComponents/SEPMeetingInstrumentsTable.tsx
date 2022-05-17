@@ -4,12 +4,12 @@ import { Typography } from '@mui/material';
 import { useSnackbar } from 'notistack';
 import React from 'react';
 
-import { useCheckAccess } from '../common/Can';
+import { useCheckAccess } from '../components/common/Can';
 import { Call, InstrumentWithAvailabilityTime, UserRole } from '@user-office-software/shared-types';
 import { useInstrumentsBySEPData } from '../../instrument/useInstrumentsBySEPData';
-import { tableIcons } from '../../materialIcons';
-import useDataApiWithFeedback from '../../useDataApiWithFeedback';
-import withConfirm, { WithConfirmType } from '../../withConfirm';
+import { tableIcons } from '../../utils/materialIcons';
+import useDataApiWithFeedback from '../../utils/useDataApiWithFeedback';
+import withConfirm, { WithConfirmType } from '../../utils/withConfirm';
 
 import SEPInstrumentProposalsTable from './SEPInstrumentProposalsTable';
 

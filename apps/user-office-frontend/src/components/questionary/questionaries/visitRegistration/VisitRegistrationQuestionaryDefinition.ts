@@ -3,10 +3,10 @@ import { DefaultStepDisplayElementFactory } from '../questionary/DefaultStepDisp
 import { DefaultWizardStepFactory } from '../questionary/DefaultWizardStepFactory';
 import VisitRegistrationReview from '../visit/VisitRegistrationReview';
 import { Sdk, TemplateGroupId } from '@user-office-software/shared-types';
-import { ItemWithQuestionary } from '../../questionary/QuestionarySubmissionState';
-import { VisitRegistrationSubmissionState } from '../../questionary/visit/VisitRegistrationSubmissionState';
+import { ItemWithQuestionary } from '../../models/questionary/QuestionarySubmissionState';
+import { VisitRegistrationSubmissionState } from '../../models/questionary/visit/VisitRegistrationSubmissionState';
 
-import { QuestionaryDefinition } from '../../QuestionaryRegistry';
+import { QuestionaryDefinition } from '../../models/questionaryRegistry';
 import { VisitRegistrationWizardStep } from './VisitRegistrationWizardStep';
 
 export const visitRegistrationQuestionaryDefinition: QuestionaryDefinition = {

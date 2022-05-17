@@ -2,15 +2,15 @@ import { Field } from 'formik';
 import { TextField } from 'formik-mui';
 import React, { ChangeEvent, useContext, useState } from 'react';
 
-import withPreventSubmit from '../common/withPreventSubmit';
+import withPreventSubmit from '../components/common/withPreventSubmit';
 import { BasicComponentProps } from '../proposal/IBasicComponentProps';
 import {
   createMissingContextErrorMessage,
   QuestionaryContext,
 } from '../questionary/QuestionaryContext';
 import { GenericTemplateBasisConfig } from '@user-office-software/shared-types';
-import { SubmitActionDependencyContainer } from '../../questionary/useSubmitActions';
-import { GenericTemplateSubmissionState } from '../../questionary/genericTemplate/GenericTemplateSubmissionState';
+import { SubmitActionDependencyContainer } from '../../models/questionary/useSubmitActions';
+import { GenericTemplateSubmissionState } from '../../models/questionary/genericTemplate/GenericTemplateSubmissionState';
 
 import { GenericTemplateContextType } from '../GenericTemplate/GenericTemplateContainer';
 

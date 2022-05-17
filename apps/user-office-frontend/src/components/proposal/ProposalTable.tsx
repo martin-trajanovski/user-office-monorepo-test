@@ -13,13 +13,13 @@ import { Redirect } from 'react-router';
 
 import { UserContext } from '../../UserContextProvider';
 import { Call } from '@user-office-software/shared-types';
-import { useDownloadPDFProposal } from '../../proposal/useDownloadPDFProposal';
-import { ProposalData } from '../../proposal/useProposalData';
-import { tableIcons } from '../../materialIcons';
+import { useDownloadPDFProposal } from '../proposal/useDownloadPDFProposal';
+import { ProposalData } from '../proposal/useProposalData';
+import { tableIcons } from '../../utils/materialIcons';
 import { tableLocalization } from '../../materialLocalization';
 import { timeAgo } from '../../Time';
-import useDataApiWithFeedback from '../../useDataApiWithFeedback';
-import withConfirm, { WithConfirmType } from '../../withConfirm';
+import useDataApiWithFeedback from '../../utils/useDataApiWithFeedback';
+import withConfirm, { WithConfirmType } from '../../utils/withConfirm';
 
 import CallSelectModalOnProposalsClone from './CallSelectModalOnProposalClone';
 import {

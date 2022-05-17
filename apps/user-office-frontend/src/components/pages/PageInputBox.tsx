@@ -22,7 +22,7 @@ import React, { useState, useEffect } from 'react';
 
 import { PageName } from '@user-office-software/shared-types';
 import { useGetPageContent } from '../../admin/useGetPageContent';
-import useDataApiWithFeedback from '../../useDataApiWithFeedback';
+import useDataApiWithFeedback from '../../utils/useDataApiWithFeedback';
 
 const useStyles = makeStyles(() => ({
   buttons: {

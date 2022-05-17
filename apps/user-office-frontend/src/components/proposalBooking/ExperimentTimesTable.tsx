@@ -2,8 +2,8 @@ import MaterialTable, { Column, Options } from '@material-table/core';
 import React from 'react';
 
 import { useFormattedDateTime } from '../../admin/useFormattedDateTime';
-import { ProposalScheduledEvent } from '../../proposalBooking/useProposalBookingsScheduledEvents';
-import { tableIcons } from '../../materialIcons';
+import { ProposalScheduledEvent } from '../proposalBooking/useProposalBookingsScheduledEvents';
+import { tableIcons } from '../../utils/materialIcons';
 import { getFullUserName } from '../../user';
 
 type ExperimentTimesTableProps = {

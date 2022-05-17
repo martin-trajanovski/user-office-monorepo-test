@@ -1,7 +1,7 @@
 import makeStyles from '@mui/styles/makeStyles';
 import React from 'react';
 
-import UOLoader from '../common/UOLoader';
+import UOLoader from '../components/common/UOLoader';
 import QuestionaryDetails, {
   TableRowData,
 } from '../questionary/QuestionaryDetails';

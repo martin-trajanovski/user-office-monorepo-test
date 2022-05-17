@@ -7,7 +7,7 @@ import { updateProposalWorkflowValidationSchema } from '@user-office-software/va
 import { Field, Form, Formik } from 'formik';
 import React, { useState } from 'react';
 
-import { ActionButtonContainer } from '../common/ActionButtonContainer';
+import { ActionButtonContainer } from '../components/common/ActionButtonContainer';
 import { ProposalWorkflow } from '@user-office-software/shared-types';
 import { StyledButtonContainer } from 'styles/StyledComponents';
 

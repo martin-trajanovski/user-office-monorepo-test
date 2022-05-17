@@ -2,9 +2,9 @@ import InboxIcon from '@mui/icons-material/Inbox';
 import React from 'react';
 
 import { DataType } from '@user-office-software/shared-types';
-import { SampleSubmissionState } from '../../questionary/sample/SampleSubmissionState';
+import { SampleSubmissionState } from '../../models/questionary/sample/SampleSubmissionState';
 
-import { QuestionaryComponentDefinition } from '../../QuestionaryComponentRegistry';
+import { QuestionaryComponentDefinition } from '../../models/questionaryComponentRegistry';
 import { createSampleBasisValidationSchema } from './createSampleBasisValidationSchema';
 import { QuestionaryComponentSampleBasis } from './QuestionaryComponentSampleBasis';
 import { QuestionSampleBasisForm } from './QuestionSampleBasisForm';

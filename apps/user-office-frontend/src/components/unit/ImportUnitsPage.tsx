@@ -2,10 +2,10 @@ import Typography from '@mui/material/Typography';
 import React from 'react';
 import { UnitMergeReview } from 'units/UnitMergeReview';
 
-import { SelectImportFile } from '../common/SelectImportFile';
+import { SelectImportFile } from '../components/common/SelectImportFile';
 import { UnitsImportWithValidation } from '@user-office-software/shared-types';
 import { StyledContainer, StyledPaper } from 'styles/StyledComponents';
-import useDataApiWithFeedback from '../../useDataApiWithFeedback';
+import useDataApiWithFeedback from '../../utils/useDataApiWithFeedback';
 
 export const getFileContents = async (file: File): Promise<string> => {
   return new Promise((resolve) => {

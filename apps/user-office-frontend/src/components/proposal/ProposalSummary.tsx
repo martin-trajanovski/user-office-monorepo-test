@@ -1,9 +1,9 @@
 import Button from '@mui/material/Button';
 import React, { useContext, useEffect, useState } from 'react';
 
-import { useCheckAccess } from '../common/Can';
-import { NavigButton } from '../common/NavigButton';
-import UOLoader from '../common/UOLoader';
+import { useCheckAccess } from '../components/common/Can';
+import { NavigButton } from '../components/common/NavigButton';
+import UOLoader from '../components/common/UOLoader';
 import NavigationFragment from '../questionary/NavigationFragment';
 import {
   createMissingContextErrorMessage,
@@ -12,8 +12,8 @@ import {
 import ProposalQuestionaryReview from '../review/ProposalQuestionaryReview';
 import { UserRole } from '@user-office-software/shared-types';
 import { useDataApi } from '../../common/useDataApi';
-import { useDownloadPDFProposal } from '../../proposal/useDownloadPDFProposal';
-import withConfirm, { WithConfirmType } from '../../withConfirm';
+import { useDownloadPDFProposal } from '../proposal/useDownloadPDFProposal';
+import withConfirm, { WithConfirmType } from '../../utils/withConfirm';
 
 import { ProposalContextType } from './ProposalContainer';
 

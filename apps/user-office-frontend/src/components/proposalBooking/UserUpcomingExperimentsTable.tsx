@@ -5,13 +5,13 @@ import React, { useState } from 'react';
 import { ReactNode } from 'react';
 
 import { useFormattedDateTime } from '../../admin/useFormattedDateTime';
-import { useActionButtons } from '../../proposalBooking/useActionButtons';
+import { useActionButtons } from '../proposalBooking/useActionButtons';
 import {
   ProposalScheduledEvent,
   useProposalBookingsScheduledEvents,
-} from '../../proposalBooking/useProposalBookingsScheduledEvents';
+} from '../proposalBooking/useProposalBookingsScheduledEvents';
 import { StyledPaper } from 'styles/StyledComponents';
-import { tableIcons } from '../../materialIcons';
+import { tableIcons } from '../../utils/materialIcons';
 import { getFullUserName } from '../../user';
 
 const columns: Column<ProposalScheduledEvent>[] = [

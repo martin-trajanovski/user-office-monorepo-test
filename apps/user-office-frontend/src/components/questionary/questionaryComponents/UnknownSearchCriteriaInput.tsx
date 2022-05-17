@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { SearchCriteriaInputProps } from '../../proposal/SearchCriteriaInputProps';
+import { SearchCriteriaInputProps } from '../proposal/SearchCriteriaInputProps';
 
 function UnknownSearchCriteriaInput({
   questionTemplateRelation,

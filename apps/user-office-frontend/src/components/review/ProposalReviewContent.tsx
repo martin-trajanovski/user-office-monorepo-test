@@ -2,9 +2,9 @@ import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import React, { Fragment, useContext } from 'react';
 
-import { useCheckAccess } from '../common/Can';
-import SimpleTabs from '../common/TabPanel';
-import UOLoader from '../common/UOLoader';
+import { useCheckAccess } from '../components/common/Can';
+import SimpleTabs from '../components/common/TabPanel';
+import UOLoader from '../components/common/UOLoader';
 import EventLogList from '../eventLog/EventLogList';
 import GeneralInformation from '../proposal/GeneralInformation';
 import ProposalAdmin, {
@@ -20,7 +20,7 @@ import {
   TechnicalReview,
   UserRole,
 } from '@user-office-software/shared-types';
-import { useProposalData } from '../../proposal/useProposalData';
+import { useProposalData } from '../proposal/useProposalData';
 import { useReviewData } from '../../review/useReviewData';
 import { StyledPaper } from 'styles/StyledComponents';
 

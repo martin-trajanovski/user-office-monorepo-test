@@ -9,7 +9,7 @@ import {
   NumberValueConstraint,
 } from '@user-office-software/shared-types';
 
-import { QuestionaryComponentDefinition } from '../../QuestionaryComponentRegistry';
+import { QuestionaryComponentDefinition } from '../../models/questionaryComponentRegistry';
 import NumberInputAnswerRenderer from './NumberInputAnswerRenderer';
 import NumberSearchCriteriaComponent from './NumberSearchCriteriaComponent';
 import { QuestionaryComponentNumber } from './QuestionaryComponentNumberInput';

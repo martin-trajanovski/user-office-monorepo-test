@@ -3,12 +3,12 @@ import Link from '@mui/material/Link';
 import makeStyles from '@mui/styles/makeStyles';
 import React, { useState } from 'react';
 
-import { ActionButtonContainer } from '../common/ActionButtonContainer';
-import InputDialog from '../common/InputDialog';
+import { ActionButtonContainer } from '../components/common/ActionButtonContainer';
+import InputDialog from '../components/common/InputDialog';
 import GenericTemplateDetails from '../genericTemplate/GenericTemplateDetails';
 import { Answer } from '@user-office-software/shared-types';
 import { useGenericTemplatesWithQuestionaryStatus } from '../../genericTemplate/useGenericTemplatesWithQuestionaryStatus';
-import { GenericTemplateCore } from '../../questionary/genericTemplate/GenericTemplateCore';
+import { GenericTemplateCore } from '../../models/questionary/genericTemplate/GenericTemplateCore';
 
 const useStyles = makeStyles((theme) => ({
   list: {

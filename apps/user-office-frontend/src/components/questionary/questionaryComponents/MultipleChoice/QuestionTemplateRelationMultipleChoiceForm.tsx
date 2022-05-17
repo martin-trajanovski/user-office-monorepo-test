@@ -8,8 +8,8 @@ import { Checkbox, Select } from 'formik-mui';
 import React, { FC, useState } from 'react';
 import * as Yup from 'yup';
 
-import FormikUICustomTable from '../common/FormikUICustomTable';
-import TitledContainer from '../common/TitledContainer';
+import FormikUICustomTable from '../components/common/FormikUICustomTable';
+import TitledContainer from '../components/common/TitledContainer';
 import { QuestionTemplateRelationFormProps } from '../questionary/QuestionaryComponentRegistry';
 import { SelectionFromOptionsConfig } from '@user-office-software/shared-types';
 

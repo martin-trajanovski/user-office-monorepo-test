@@ -3,7 +3,7 @@ import { CheckboxWithLabel, TextField } from 'formik-mui';
 import React, { FC } from 'react';
 import * as Yup from 'yup';
 
-import FormikUICustomEditor from '../common/FormikUICustomEditor';
+import FormikUICustomEditor from '../components/common/FormikUICustomEditor';
 import { QuestionFormProps } from '../questionary/QuestionaryComponentRegistry';
 import { EmbellishmentConfig } from '@user-office-software/shared-types';
 import { useNaturalKeySchema } from '../../userFieldValidationSchema';

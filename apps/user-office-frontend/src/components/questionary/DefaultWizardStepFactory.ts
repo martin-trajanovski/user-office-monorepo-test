@@ -2,8 +2,8 @@ import { QuestionaryStep } from '@user-office-software/shared-types';
 import {
   QuestionarySubmissionState,
   WizardStep,
-} from '../../questionary/QuestionarySubmissionState';
-import { StepType } from '../../questionary/StepType';
+} from '../../models/questionary/QuestionarySubmissionState';
+import { StepType } from '../../models/questionary/StepType';
 
 /**
  * Default WizardStepsFactory

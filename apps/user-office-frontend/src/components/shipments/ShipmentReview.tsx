@@ -3,8 +3,8 @@ import { Link } from '@mui/material';
 import makeStyles from '@mui/styles/makeStyles';
 import React, { useContext } from 'react';
 
-import { NavigButton } from '../common/NavigButton';
-import UOLoader from '../common/UOLoader';
+import { NavigButton } from '../components/common/NavigButton';
+import UOLoader from '../components/common/UOLoader';
 import NavigationFragment from '../questionary/NavigationFragment';
 import {
   createMissingContextErrorMessage,
@@ -14,10 +14,10 @@ import QuestionaryDetails, {
   TableRowData,
 } from '../questionary/QuestionaryDetails';
 import { ShipmentStatus } from '@user-office-software/shared-types';
-import { useDownloadPDFShipmentLabel } from '../../proposal/useDownloadPDFShipmentLabel';
-import { useProposalData } from '../../proposal/useProposalData';
-import useDataApiWithFeedback from '../../useDataApiWithFeedback';
-import withConfirm, { WithConfirmType } from '../../withConfirm';
+import { useDownloadPDFShipmentLabel } from '../proposal/useDownloadPDFShipmentLabel';
+import { useProposalData } from '../proposal/useProposalData';
+import useDataApiWithFeedback from '../../utils/useDataApiWithFeedback';
+import withConfirm, { WithConfirmType } from '../../utils/withConfirm';
 
 import { ShipmentContextType } from './ShipmentContainer';
 

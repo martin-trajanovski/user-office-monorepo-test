@@ -5,9 +5,9 @@ import { DataType } from '@user-office-software/shared-types';
 import {
   ShipmentBasisFormikData,
   ShipmentSubmissionState,
-} from '../../questionary/shipment/ShipmentSubmissionState';
+} from '../../models/questionary/shipment/ShipmentSubmissionState';
 
-import { QuestionaryComponentDefinition } from '../../QuestionaryComponentRegistry';
+import { QuestionaryComponentDefinition } from '../../models/questionaryComponentRegistry';
 import { createShipmentBasisValidationSchema } from './createShipmentBasisValidationSchema';
 import { QuestionaryComponentShipmentBasis } from './QuestionaryComponentShipmentBasis';
 import { QuestionShipmentBasisForm } from './QuestionShipmentBasisForm';

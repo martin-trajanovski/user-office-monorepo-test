@@ -5,7 +5,7 @@ import Typography from '@mui/material/Typography';
 import parse from 'html-react-parser';
 import React from 'react';
 
-import UOLoader from '../common/UOLoader';
+import UOLoader from '../components/common/UOLoader';
 import { PageName } from '@user-office-software/shared-types';
 import { useGetPageContent } from '../../admin/useGetPageContent';
 import { StyledContainer } from 'styles/StyledComponents';

@@ -9,7 +9,7 @@ import {
 import {
   DefaultQueryParams,
   UrlQueryParamsType,
-} from '../common/SuperMaterialTable';
+} from '../components/common/SuperMaterialTable';
 import { ProposalsFilter } from '@user-office-software/shared-types';
 import { useCallsData } from '../../call/useCallsData';
 import { useInstrumentsData } from '../../instrument/useInstrumentsData';

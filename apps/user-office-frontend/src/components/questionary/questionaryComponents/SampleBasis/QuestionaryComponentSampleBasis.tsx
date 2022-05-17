@@ -2,14 +2,14 @@ import { Field } from 'formik';
 import { TextField } from 'formik-mui';
 import React, { ChangeEvent, useContext, useState } from 'react';
 
-import withPreventSubmit from '../common/withPreventSubmit';
+import withPreventSubmit from '../components/common/withPreventSubmit';
 import { BasicComponentProps } from '../proposal/IBasicComponentProps';
 import {
   createMissingContextErrorMessage,
   QuestionaryContext,
 } from '../questionary/QuestionaryContext';
-import { SubmitActionDependencyContainer } from '../../questionary/useSubmitActions';
-import { SampleSubmissionState } from '../../questionary/sample/SampleSubmissionState';
+import { SubmitActionDependencyContainer } from '../../models/questionary/useSubmitActions';
+import { SampleSubmissionState } from '../../models/questionary/sample/SampleSubmissionState';
 
 import { SampleContextType } from '../SampleDeclaration/SampleDeclarationContainer';
 

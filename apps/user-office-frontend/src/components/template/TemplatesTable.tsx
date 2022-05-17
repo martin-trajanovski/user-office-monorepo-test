@@ -15,13 +15,13 @@ import Button from '@mui/material/Button';
 import React, { useEffect, useState } from 'react';
 import { useHistory } from 'react-router';
 
-import { ActionButtonContainer } from '../common/ActionButtonContainer';
-import InputDialog from '../common/InputDialog';
+import { ActionButtonContainer } from '../components/common/ActionButtonContainer';
+import InputDialog from '../components/common/InputDialog';
 import { GetTemplatesQuery, Template, TemplateGroupId } from '@user-office-software/shared-types';
 import { downloadBlob } from '../../downloadBlob';
-import { tableIcons } from '../../materialIcons';
-import useDataApiWithFeedback from '../../useDataApiWithFeedback';
-import withConfirm, { WithConfirmType } from '../../withConfirm';
+import { tableIcons } from '../../utils/materialIcons';
+import useDataApiWithFeedback from '../../utils/useDataApiWithFeedback';
+import withConfirm, { WithConfirmType } from '../../utils/withConfirm';
 
 import CreateTemplate from './CreateTemplate';
 

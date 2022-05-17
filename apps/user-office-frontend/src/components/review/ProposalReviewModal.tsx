@@ -12,7 +12,7 @@ import makeStyles from '@mui/styles/makeStyles';
 import React from 'react';
 
 import { Proposal } from '@user-office-software/shared-types';
-import useDataApiWithFeedback from '../../useDataApiWithFeedback';
+import useDataApiWithFeedback from '../../utils/useDataApiWithFeedback';
 
 const useStyles = makeStyles((theme) =>
   createStyles({

@@ -5,7 +5,7 @@ import React from 'react';
 import defaultRenderer from '../questionary/DefaultQuestionRenderer';
 import { DataType } from '@user-office-software/shared-types';
 
-import { QuestionaryComponentDefinition } from '../../QuestionaryComponentRegistry';
+import { QuestionaryComponentDefinition } from '../../models/questionaryComponentRegistry';
 import FilesAnswerRenderer from './FilesAnswerRenderer';
 import FileUploadSearchCriteriaInput from './FileUploadSearchCriteriaInput';
 import { QuestionaryComponentFileUpload } from './QuestionaryComponentFileUpload';

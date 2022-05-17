@@ -11,7 +11,7 @@ import Tooltip from '@mui/material/Tooltip';
 import { Field, FieldArray, FormikProps } from 'formik';
 import React, { useCallback, useEffect, useState } from 'react';
 
-import FormikUICustomDependencySelector from '../common/FormikUICustomDependencySelector';
+import FormikUICustomDependencySelector from '../components/common/FormikUICustomDependencySelector';
 import {
   DataType,
   DependenciesLogicOperator,
@@ -19,7 +19,7 @@ import {
   QuestionTemplateRelation,
   Template,
 } from '@user-office-software/shared-types';
-import { getAllFields } from '../../questionary/QuestionaryFunctions';
+import { getAllFields } from '../../models/questionary/QuestionaryFunctions';
 
 type QuestionDependencyListProps = {
   template: Template;

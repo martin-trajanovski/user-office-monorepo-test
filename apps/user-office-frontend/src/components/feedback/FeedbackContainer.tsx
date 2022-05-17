@@ -1,16 +1,17 @@
 /* eslint-disable @typescript-eslint/no-use-before-define */
+
+import { TemplateGroupId } from '@user-office-software/shared-types';
 import { default as React, useState } from 'react';
 
+import { FeedbackSubmissionState } from '../../models/questionary/feedback/FeedbackSubmissionState';
+import { FeedbackWithQuestionary } from '../../models/questionary/feedback/FeedbackWithQuestionary';
+import { QuestionarySubmissionModel } from '../../models/questionary/QuestionarySubmissionState';
+import useEventHandlers from '../../models/questionary/useEventHandlers';
 import Questionary from '../questionary/Questionary';
 import {
   QuestionaryContext,
   QuestionaryContextType,
 } from '../questionary/QuestionaryContext';
-import { TemplateGroupId } from '@user-office-software/shared-types';
-import { FeedbackSubmissionState } from '../../questionary/feedback/FeedbackSubmissionState';
-import { FeedbackWithQuestionary } from '../../questionary/feedback/FeedbackWithQuestionary';
-import { QuestionarySubmissionModel } from '../../questionary/QuestionarySubmissionState';
-import useEventHandlers from '../../questionary/useEventHandlers';
 export interface FeedbackContextType extends QuestionaryContextType {
   state: FeedbackSubmissionState | null;
 }

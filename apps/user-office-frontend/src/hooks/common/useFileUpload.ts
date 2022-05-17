@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import { FileMetaData } from '../../questionary/FileUpload';
+import { FileMetaData } from '../../models/questionary/FileUpload';
 import { FunctionType } from '../../utilTypes';
 
 export enum UPLOAD_STATE {

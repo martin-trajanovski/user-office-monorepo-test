@@ -12,9 +12,9 @@ import { Select, CheckboxWithLabel } from 'formik-mui';
 import React, { useState, useContext } from 'react';
 import { Prompt } from 'react-router';
 
-import { useCheckAccess } from '../common/Can';
-import ErrorMessage from '../common/ErrorMessage';
-import UOLoader from '../common/UOLoader';
+import { useCheckAccess } from '../components/common/Can';
+import ErrorMessage from '../components/common/ErrorMessage';
+import UOLoader from '../components/common/UOLoader';
 import GradeGuidePage from '../pages/GradeGuidePage';
 import NavigationFragment from '../questionary/NavigationFragment';
 import { ReviewAndAssignmentContext } from '../../ReviewAndAssignmentContextProvider';
@@ -25,9 +25,9 @@ import {
   UserRole,
 } from '@user-office-software/shared-types';
 import ButtonWithDialog from '../../common/ButtonWithDialog';
-import useDataApiWithFeedback from '../../useDataApiWithFeedback';
+import useDataApiWithFeedback from '../../utils/useDataApiWithFeedback';
 import { FunctionType } from '../../utilTypes';
-import withConfirm, { WithConfirmType } from '../../withConfirm';
+import withConfirm, { WithConfirmType } from '../../utils/withConfirm';
 
 type ProposalGradeProps = {
   review: Review | null;

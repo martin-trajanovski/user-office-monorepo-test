@@ -18,8 +18,8 @@ import {
   UpdateVisitRegistrationMutationVariables,
 } from '@user-office-software/shared-types';
 import { useFormattedDateTime } from '../../admin/useFormattedDateTime';
-import { SubmitActionDependencyContainer } from '../../questionary/useSubmitActions';
-import { VisitRegistrationSubmissionState } from '../../questionary/visit/VisitRegistrationSubmissionState';
+import { SubmitActionDependencyContainer } from '../../models/questionary/useSubmitActions';
+import { VisitRegistrationSubmissionState } from '../../models/questionary/visit/VisitRegistrationSubmissionState';
 
 function QuestionaryComponentVisitBasis({ answer }: BasicComponentProps) {
   const theme = useTheme();
