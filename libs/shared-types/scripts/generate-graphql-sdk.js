@@ -1,4 +1,4 @@
-require('dotenv').config({ path: './libs/user-office-shared-types/.env' });
+require('dotenv').config({ path: './libs/shared-types/.env' });
 
 const path = require('path');
 

@@ -16,7 +16,7 @@
     "baseUrl": ".",
     "paths": {
       "@user-office/shared-types": [
-        "libs/user-office-shared-types/src/index.ts"
+        "libs/shared-types/src/index.ts"
       ]
     }
   },

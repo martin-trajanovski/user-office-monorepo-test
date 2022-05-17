@@ -8,7 +8,7 @@
     "test": "nx run-many --all --target=test",
     "lint": "nx run-many --all --target=lint",
     "lint:fix": "nx lint --fix",
-    "generate:shared:types": "node ./libs/user-office-shared-types/scripts/generate-graphql-sdk.js"
+    "generate:shared:types": "node ./libs/shared-types/scripts/generate-graphql-sdk.js"
   },
   "eslintConfig": {
     "extends": "react-app"
