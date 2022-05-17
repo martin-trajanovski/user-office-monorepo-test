@@ -1,16 +1,15 @@
 import { Typography } from '@mui/material';
 import React from 'react';
 
-import { SuperMaterialTable } from '../common/SuperMaterialTable';
-import { createQuestionForm } from '../questionary/QuestionaryComponentRegistry';
-import ButtonWithDialog from '../../common/ButtonWithDialog';
-import { useCreatableQuestions } from '../../template/useCreatableQuestions';
-import { QuestionWithUsage } from '../../template/useQuestions';
+import ButtonWithDialog from '../../hooks/common/ButtonWithDialog';
+import { useCreatableQuestions } from '../../hooks/template/useCreatableQuestions';
+import { QuestionWithUsage } from '../../hooks/template/useQuestions';
 import { StyledContainer, StyledPaper } from '../../styles/StyledComponents';
 import { tableIcons } from '../../utils/materialIcons';
 import useDataApiWithFeedback from '../../utils/useDataApiWithFeedback';
-import { FunctionType } from '../../utilTypes';
-
+import { FunctionType } from '../../utils/utilTypes';
+import { SuperMaterialTable } from '../common/SuperMaterialTable';
+import { createQuestionForm } from '../questionary/QuestionaryComponentRegistry';
 import AnswerCountDetails from './AnswerCountDetails';
 import QuestionsTableFilter from './QuestionsTableFilter';
 import TemplateCountDetails from './TemplateCountDetails';

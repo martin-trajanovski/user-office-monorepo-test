@@ -7,16 +7,16 @@ import Switch from '@mui/material/Switch';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import makeStyles from '@mui/styles/makeStyles';
 import useTheme from '@mui/styles/useTheme';
-import React, { useState } from 'react';
-import { DragDropContext, Droppable, DropResult } from 'react-beautiful-dnd';
-
 import {
   Question,
   QuestionaryStep,
   QuestionTemplateRelation,
   Template,
 } from '@user-office-software/shared-types';
-import { usePersistQuestionaryEditorModel } from '../../models/questionary/usePersistQuestionaryEditorModel';
+import React, { useState } from 'react';
+import { DragDropContext, Droppable, DropResult } from 'react-beautiful-dnd';
+
+import { usePersistQuestionaryEditorModel } from '../../hooks/questionary/usePersistQuestionaryEditorModel';
 import QuestionaryEditorModel, {
   Event,
   EventType,
@@ -28,8 +28,7 @@ import {
 import { StyledContainer, StyledPaper } from '../../styles/StyledComponents';
 import useDataApiWithFeedback from '../../utils/useDataApiWithFeedback';
 import { MiddlewareInputParams } from '../../utils/useReducerWithMiddleWares';
-import { FunctionType } from '../../utilTypes';
-
+import { FunctionType } from '../../utils/utilTypes';
 import QuestionEditor from './QuestionEditor';
 import { QuestionPicker } from './QuestionPicker';
 import QuestionTemplateRelationEditor from './QuestionTemplateRelationEditor';

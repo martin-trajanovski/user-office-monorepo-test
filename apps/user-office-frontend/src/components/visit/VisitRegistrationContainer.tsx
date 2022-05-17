@@ -1,12 +1,8 @@
 /* eslint-disable @typescript-eslint/no-use-before-define */
+
+import { TemplateGroupId } from '@user-office-software/shared-types';
 import { default as React, useState } from 'react';
 
-import Questionary from '../questionary/Questionary';
-import {
-  QuestionaryContext,
-  QuestionaryContextType,
-} from '../questionary/QuestionaryContext';
-import { TemplateGroupId } from '@user-office-software/shared-types';
 import createCustomEventHandlers from '../../models/questionary/createCustomEventHandlers';
 import {
   Event,
@@ -15,6 +11,11 @@ import {
 import useEventHandlers from '../../models/questionary/useEventHandlers';
 import { VisitRegistrationSubmissionState } from '../../models/questionary/visit/VisitRegistrationSubmissionState';
 import { RegistrationWithQuestionary } from '../../models/questionary/visit/VisitRegistrationWithQuestionary';
+import Questionary from '../questionary/Questionary';
+import {
+  QuestionaryContext,
+  QuestionaryContextType,
+} from '../questionary/QuestionaryContext';
 export interface VisitRegistrationContextType extends QuestionaryContextType {
   state: VisitRegistrationSubmissionState | null;
 }

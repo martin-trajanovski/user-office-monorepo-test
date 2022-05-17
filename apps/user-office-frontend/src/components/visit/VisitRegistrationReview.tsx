@@ -1,5 +1,9 @@
 import React, { useContext } from 'react';
 
+import { useFormattedDateTime } from '../../hooks/admin/useFormattedDateTime';
+import useDataApiWithFeedback from '../../utils/useDataApiWithFeedback';
+import { FunctionType } from '../../utils/utilTypes';
+import withConfirm, { WithConfirmType } from '../../utils/withConfirm';
 import { NavigButton } from '../common/NavigButton';
 import NavigationFragment from '../questionary/NavigationFragment';
 import {
@@ -9,11 +13,6 @@ import {
 import QuestionaryDetails, {
   TableRowData,
 } from '../questionary/QuestionaryDetails';
-import { useFormattedDateTime } from '../../admin/useFormattedDateTime';
-import useDataApiWithFeedback from '../../utils/useDataApiWithFeedback';
-import { FunctionType } from '../../utilTypes';
-import withConfirm, { WithConfirmType } from '../../utils/withConfirm';
-
 import { VisitRegistrationContextType } from './VisitRegistrationContainer';
 
 type VisitRegistrationReviewProps = {

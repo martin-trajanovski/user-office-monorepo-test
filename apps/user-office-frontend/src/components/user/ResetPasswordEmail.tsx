@@ -5,15 +5,14 @@ import CssBaseline from '@mui/material/CssBaseline';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import makeStyles from '@mui/styles/makeStyles';
-import { resetPasswordByEmailValidationSchema } from '@user-office-software/validation/lib/User';
+import { resetPasswordByEmailValidationSchema } from '@user-office-software/validation';
 import { Field, Form, Formik } from 'formik';
 import { TextField } from 'formik-mui';
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-import { useUnauthorizedApi } from '../../common/useDataApi';
+import { useUnauthorizedApi } from '../../hooks/common/useDataApi';
 import { StyledFormWrapper } from '../../styles/StyledComponents';
-
 import PhotoInSide from './PhotoInSide';
 
 const useStyles = makeStyles((theme) => ({

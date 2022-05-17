@@ -1,18 +1,20 @@
 import { Dialog, DialogContent, Typography, Alert, Stack } from '@mui/material';
 import { makeStyles } from '@mui/styles';
+import {
+  ShipmentFragment,
+  ShipmentStatus,
+} from '@user-office-software/shared-types';
 import React, { useState } from 'react';
 
+import { useScheduledEvent } from '../../hooks/scheduledEvent/useScheduledEvent';
+import { useShipments } from '../../hooks/shipment/useShipments';
+import useDataApiWithFeedback from '../../utils/useDataApiWithFeedback';
+import withConfirm, { WithConfirmProps } from '../../utils/withConfirm';
 import UOLoader from '../common/UOLoader';
 import {
   QuestionnairesList,
   QuestionnairesListRow,
 } from '../questionary/questionaryComponents/QuestionnairesList';
-import { ShipmentFragment, ShipmentStatus } from '@user-office-software/shared-types';
-import { useScheduledEvent } from '../../scheduledEvent/useScheduledEvent';
-import { useShipments } from '../../shipment/useShipments';
-import useDataApiWithFeedback from '../../utils/useDataApiWithFeedback';
-import withConfirm, { WithConfirmProps } from '../../utils/withConfirm';
-
 import CreateUpdateShipment from './CreateUpdateShipment';
 
 interface DeclareShipmentsProps extends WithConfirmProps {

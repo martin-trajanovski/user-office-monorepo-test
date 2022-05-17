@@ -1,7 +1,6 @@
 import React from 'react';
 
 import { VisitRegistrationCore } from '../../models/questionary/visit/VisitRegistrationCore';
-
 import CreateVisitRegistration from './CreateVisitRegistration';
 import UpdateVisitRegistration from './UpdateVisitRegistration';
 

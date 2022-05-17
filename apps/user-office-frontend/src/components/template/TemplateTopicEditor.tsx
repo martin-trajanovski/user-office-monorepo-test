@@ -15,6 +15,11 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import makeStyles from '@mui/styles/makeStyles';
 import useTheme from '@mui/styles/useTheme';
+import {
+  DependenciesLogicOperator,
+  QuestionTemplateRelation,
+  TemplateStep,
+} from '@user-office-software/shared-types';
 import { Field, Form, Formik } from 'formik';
 import { TextField } from 'formik-mui';
 import { useSnackbar } from 'notistack';
@@ -27,14 +32,11 @@ import {
 } from 'react-beautiful-dnd';
 import * as Yup from 'yup';
 
-import { getQuestionaryComponentDefinition } from '../questionary/QuestionaryComponentRegistry';
 import {
-  DependenciesLogicOperator,
-  QuestionTemplateRelation,
-  TemplateStep,
-} from '@user-office-software/shared-types';
-import { Event, EventType } from '../../models/questionary/QuestionaryEditorModel';
-
+  Event,
+  EventType,
+} from '../../models/questionary/QuestionaryEditorModel';
+import { getQuestionaryComponentDefinition } from '../questionary/QuestionaryComponentRegistry';
 import TemplateQuestionEditor, {
   TemplateTopicEditorData,
 } from './TemplateQuestionEditor';

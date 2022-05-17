@@ -1,19 +1,18 @@
 import { Button, Card, CardContent, Typography } from '@mui/material';
-import produce from 'immer';
-import React, { useCallback, useState } from 'react';
-import { useHistory } from 'react-router';
-
-import { ActionButtonContainer } from '../common/ActionButtonContainer';
 import {
   ConflictResolutionStrategy,
   QuestionComparison,
   SettingsId,
   TemplateImportWithValidation,
 } from '@user-office-software/shared-types';
-import { useFormattedDateTime } from '../../admin/useFormattedDateTime';
-import { deepEqual } from '../../json';
-import useDataApiWithFeedback from '../../utils/useDataApiWithFeedback';
+import produce from 'immer';
+import React, { useCallback, useState } from 'react';
+import { useHistory } from 'react-router';
 
+import { useFormattedDateTime } from '../../../hooks/admin/useFormattedDateTime';
+import { deepEqual } from '../../../utils/json';
+import useDataApiWithFeedback from '../../../utils/useDataApiWithFeedback';
+import { ActionButtonContainer } from '../../common/ActionButtonContainer';
 import { ConflictResolver } from '../../common/ConflictResolver';
 
 interface MergeReviewProps {

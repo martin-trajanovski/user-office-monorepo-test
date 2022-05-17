@@ -10,12 +10,6 @@ import {
   Typography,
 } from '@mui/material';
 import makeStyles from '@mui/styles/makeStyles';
-import { Formik } from 'formik';
-import React, { useState, useEffect, useContext } from 'react';
-
-import { ActionButtonContainer } from '../common/ActionButtonContainer';
-import EmailSearchBar from '../common/EmailSearchBar';
-import { FeatureContext } from '../../FeatureContextProvider';
 import {
   BasicUserDetails,
   UserRole,
@@ -23,11 +17,16 @@ import {
   GetUsersQueryVariables,
   FeatureId,
 } from '@user-office-software/shared-types';
-import { useDataApi } from '../../common/useDataApi';
-import { usePrevColabs } from '../../user/usePrevColabs';
-import { tableIcons } from '../../utils/materialIcons';
-import { FunctionType } from '../../utilTypes';
+import { Formik } from 'formik';
+import React, { useState, useEffect, useContext } from 'react';
 
+import { FeatureContext } from '../../context/FeatureContextProvider';
+import { useDataApi } from '../../hooks/common/useDataApi';
+import { usePrevColabs } from '../../hooks/user/usePrevColabs';
+import { tableIcons } from '../../utils/materialIcons';
+import { FunctionType } from '../../utils/utilTypes';
+import { ActionButtonContainer } from '../common/ActionButtonContainer';
+import EmailSearchBar from '../common/EmailSearchBar';
 import InviteUserForm from './InviteUserForm';
 
 // This component is for displaying and picking from a users previous collaborators to work on a proposal.

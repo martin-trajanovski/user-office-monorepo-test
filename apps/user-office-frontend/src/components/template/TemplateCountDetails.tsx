@@ -1,10 +1,10 @@
 import MaterialTable from '@material-table/core';
 import { Link } from '@mui/material';
+import { GetTemplatesQuery } from '@user-office-software/shared-types';
 import React, { useMemo } from 'react';
 
-import { GetTemplatesQuery } from '@user-office-software/shared-types';
-import { QuestionWithUsage } from '../../template/useQuestions';
-import { useTemplates } from '../../template/useTemplates';
+import { QuestionWithUsage } from '../../hooks/template/useQuestions';
+import { useTemplates } from '../../hooks/template/useTemplates';
 import { tableIcons } from '../../utils/materialIcons';
 
 type TemplateTableRowType = NonNullable<GetTemplatesQuery['templates']>[0];

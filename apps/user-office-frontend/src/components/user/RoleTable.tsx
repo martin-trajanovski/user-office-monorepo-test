@@ -1,11 +1,11 @@
 import MaterialTable from '@material-table/core';
 import Button from '@mui/material/Button';
+import { Role } from '@user-office-software/shared-types';
 import React, { useState } from 'react';
 
-import { ActionButtonContainer } from '../common/ActionButtonContainer';
-import { Role } from '@user-office-software/shared-types';
-import { useRolesData } from '../../user/useRolesData';
+import { useRolesData } from '../../hooks/user/useRolesData';
 import { tableIcons } from '../../utils/materialIcons';
+import { ActionButtonContainer } from '../common/ActionButtonContainer';
 
 type RoleTableProps = {
   add: (values: Role[]) => void;

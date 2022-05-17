@@ -1,9 +1,8 @@
 import React from 'react';
 
-import UOLoader from '../common/UOLoader';
-import { useShipment } from '../../shipment/useShipment';
+import { useShipment } from '../../hooks/shipment/useShipment';
 import { ShipmentCore } from '../../models/questionary/shipment/ShipmentCore';
-
+import UOLoader from '../common/UOLoader';
 import ShipmentContainer from './ShipmentContainer';
 
 interface UpdateShipmentProps {

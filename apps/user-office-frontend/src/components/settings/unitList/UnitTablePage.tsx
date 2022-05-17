@@ -1,7 +1,6 @@
 import React from 'react';
 
-import { StyledContainer, StyledPaper } from '../../styles/StyledComponents';
-
+import { StyledContainer, StyledPaper } from '../../../styles/StyledComponents';
 import UnitTable from './UnitTable';
 
 const UnitTablePage: React.FC = () => {

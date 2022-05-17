@@ -1,14 +1,14 @@
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import makeStyles from '@mui/styles/makeStyles';
-import { createUserByEmailInviteValidationSchema } from '@user-office-software/validation/lib/User';
+import { BasicUserDetails, UserRole } from '@user-office-software/shared-types';
+import { createUserByEmailInviteValidationSchema } from '@user-office-software/validation';
 import { Field, Form, Formik } from 'formik';
 import { TextField } from 'formik-mui';
 import React from 'react';
 
-import { BasicUserDetails, UserRole } from '@user-office-software/shared-types';
 import useDataApiWithFeedback from '../../utils/useDataApiWithFeedback';
-import { FunctionType } from '../../utilTypes';
+import { FunctionType } from '../../utils/utilTypes';
 
 type InviteUserFormProps = {
   action: FunctionType<void, [BasicUserDetails]>;

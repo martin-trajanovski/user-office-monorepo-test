@@ -1,18 +1,19 @@
 /* eslint-disable @typescript-eslint/no-use-before-define */
+
+import { TemplateGroupId } from '@user-office-software/shared-types';
 import { default as React, useState } from 'react';
 
-import Questionary from '../questionary/Questionary';
-import {
-  QuestionaryContext,
-  QuestionaryContextType,
-} from '../questionary/QuestionaryContext';
-import { TemplateGroupId } from '@user-office-software/shared-types';
 import createCustomEventHandlers from '../../models/questionary/createCustomEventHandlers';
 import { QuestionarySubmissionModel } from '../../models/questionary/QuestionarySubmissionState';
 import { ShipmentCore } from '../../models/questionary/shipment/ShipmentCore';
 import { ShipmentSubmissionState } from '../../models/questionary/shipment/ShipmentSubmissionState';
 import { ShipmentWithQuestionary } from '../../models/questionary/shipment/ShipmentWithQuestionary';
 import useEventHandlers from '../../models/questionary/useEventHandlers';
+import Questionary from '../questionary/Questionary';
+import {
+  QuestionaryContext,
+  QuestionaryContextType,
+} from '../questionary/QuestionaryContext';
 
 export interface ShipmentContextType extends QuestionaryContextType {
   state: ShipmentSubmissionState | null;

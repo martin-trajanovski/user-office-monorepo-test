@@ -3,14 +3,13 @@ import Button from '@mui/material/Button';
 import Paper from '@mui/material/Paper';
 import TextField from '@mui/material/TextField';
 import makeStyles from '@mui/styles/makeStyles';
-import { updateProposalWorkflowValidationSchema } from '@user-office-software/validation/lib/ProposalWorkflow';
+import { ProposalWorkflow } from '@user-office-software/shared-types';
+import { updateProposalWorkflowValidationSchema } from '@user-office-software/validation';
 import { Field, Form, Formik } from 'formik';
 import React, { useState } from 'react';
 
-import { ActionButtonContainer } from '../common/ActionButtonContainer';
-import { ProposalWorkflow } from '@user-office-software/shared-types';
-import { StyledButtonContainer } from '../../styles/StyledComponents';
-
+import { StyledButtonContainer } from '../../../styles/StyledComponents';
+import { ActionButtonContainer } from '../../common/ActionButtonContainer';
 import { Event, EventType } from './ProposalWorkflowEditorModel';
 
 const useStyles = makeStyles((theme) => ({

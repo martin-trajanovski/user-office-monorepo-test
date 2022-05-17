@@ -1,12 +1,12 @@
+import { SettingsId } from '@user-office-software/shared-types';
 import PropTypes from 'prop-types';
 import queryString from 'query-string';
 import React, { useContext, useEffect, useRef } from 'react';
 import { useLocation } from 'react-router-dom';
 
-import { SettingsContext } from '../../SettingsContextProvider';
-import { UserContext } from '../../UserContextProvider';
-import { SettingsId } from '@user-office-software/shared-types';
-import { useUnauthorizedApi } from '../../common/useDataApi';
+import { SettingsContext } from '../../context/SettingsContextProvider';
+import { UserContext } from '../../context/UserContextProvider';
+import { useUnauthorizedApi } from '../../hooks/common/useDataApi';
 
 const ExternalAuthPropTypes = {
   match: PropTypes.shape({

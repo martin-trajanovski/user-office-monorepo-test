@@ -1,17 +1,17 @@
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import makeStyles from '@mui/styles/makeStyles';
+import { Unit } from '@user-office-software/shared-types';
 import { Field, Form, Formik } from 'formik';
 import { TextField } from 'formik-mui';
 import PropTypes from 'prop-types';
 import React from 'react';
 import * as Yup from 'yup';
 
-import FormikUIAutocomplete from '../common/FormikUIAutocomplete';
-import UOLoader from '../common/UOLoader';
-import { Unit } from '@user-office-software/shared-types';
-import { useQuantities } from '../../admin/useQuantities';
-import useDataApiWithFeedback from '../../utils/useDataApiWithFeedback';
+import { useQuantities } from '../../../hooks/admin/useQuantities';
+import useDataApiWithFeedback from '../../../utils/useDataApiWithFeedback';
+import FormikUIAutocomplete from '../../common/FormikUIAutocomplete';
+import UOLoader from '../../common/UOLoader';
 
 const useStyles = makeStyles((theme) => ({
   submit: {

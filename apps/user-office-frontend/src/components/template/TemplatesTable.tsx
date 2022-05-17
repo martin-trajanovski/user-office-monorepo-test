@@ -12,17 +12,20 @@ import ShareIcon from '@mui/icons-material/Share';
 import UnarchiveIcon from '@mui/icons-material/Unarchive';
 import { Typography } from '@mui/material';
 import Button from '@mui/material/Button';
+import {
+  GetTemplatesQuery,
+  Template,
+  TemplateGroupId,
+} from '@user-office-software/shared-types';
 import React, { useEffect, useState } from 'react';
 import { useHistory } from 'react-router';
 
-import { ActionButtonContainer } from '../common/ActionButtonContainer';
-import InputDialog from '../common/InputDialog';
-import { GetTemplatesQuery, Template, TemplateGroupId } from '@user-office-software/shared-types';
-import { downloadBlob } from '../../downloadBlob';
+import { downloadBlob } from '../../utils/downloadBlob';
 import { tableIcons } from '../../utils/materialIcons';
 import useDataApiWithFeedback from '../../utils/useDataApiWithFeedback';
 import withConfirm, { WithConfirmType } from '../../utils/withConfirm';
-
+import { ActionButtonContainer } from '../common/ActionButtonContainer';
+import InputDialog from '../common/InputDialog';
 import CreateTemplate from './CreateTemplate';
 
 export type TemplateRowDataType = Pick<

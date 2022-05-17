@@ -1,9 +1,8 @@
 import React from 'react';
 
-import UOLoader from '../common/UOLoader';
-import { useVisitRegistration } from '../../visit/useVisitRegistration';
+import { useVisitRegistration } from '../../hooks/visit/useVisitRegistration';
 import { VisitRegistrationCore } from '../../models/questionary/visit/VisitRegistrationCore';
-
+import UOLoader from '../common/UOLoader';
 import VisitRegistrationContainer from './VisitRegistrationContainer';
 
 interface UpdateVisitRegistrationProps {

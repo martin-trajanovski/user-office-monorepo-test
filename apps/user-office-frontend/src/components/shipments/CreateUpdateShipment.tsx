@@ -1,8 +1,7 @@
+import { ShipmentFragment } from '@user-office-software/shared-types';
 import React from 'react';
 
-import { ShipmentFragment } from '@user-office-software/shared-types';
 import { ShipmentCore } from '../../models/questionary/shipment/ShipmentCore';
-
 import CreateShipment from './CreateShipment';
 import UpdateShipment from './UpdateShipment';
 

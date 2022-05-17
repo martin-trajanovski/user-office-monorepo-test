@@ -1,9 +1,8 @@
 import React from 'react';
 
-import SimpleTabs from '../common/TabPanel';
-import { useDataApi } from '../../common/useDataApi';
+import { useDataApi } from '../../hooks/common/useDataApi';
 import { StyledContainer, StyledPaper } from '../../styles/StyledComponents';
-
+import SimpleTabs from '../common/TabPanel';
 import ProposalTemplatesTable from './ProposalTemplatesTable';
 
 export default function ProposalTemplatesPage() {

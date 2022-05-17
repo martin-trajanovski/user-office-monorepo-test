@@ -2,18 +2,6 @@ import LockIcon from '@mui/icons-material/Lock';
 import Grid from '@mui/material/Grid';
 import makeStyles from '@mui/styles/makeStyles';
 import useTheme from '@mui/styles/useTheme';
-import React, { useState } from 'react';
-import {
-  Draggable,
-  DraggingStyle,
-  NotDraggingStyle,
-} from 'react-beautiful-dnd';
-
-import defaultRenderer from '../questionary/DefaultQuestionRenderer';
-import {
-  getQuestionaryComponentDefinition,
-  getTemplateFieldIcon,
-} from '../questionary/QuestionaryComponentRegistry';
 import {
   DataType,
   DependenciesLogicOperator,
@@ -21,7 +9,22 @@ import {
   FieldDependency,
   TemplateCategoryId,
 } from '@user-office-software/shared-types';
-import { Event, EventType } from '../../models/questionary/QuestionaryEditorModel';
+import React, { useState } from 'react';
+import {
+  Draggable,
+  DraggingStyle,
+  NotDraggingStyle,
+} from 'react-beautiful-dnd';
+
+import {
+  Event,
+  EventType,
+} from '../../models/questionary/QuestionaryEditorModel';
+import defaultRenderer from '../questionary/DefaultQuestionRenderer';
+import {
+  getQuestionaryComponentDefinition,
+  getTemplateFieldIcon,
+} from '../questionary/QuestionaryComponentRegistry';
 
 const useStyles = makeStyles((theme) => ({
   icon: {

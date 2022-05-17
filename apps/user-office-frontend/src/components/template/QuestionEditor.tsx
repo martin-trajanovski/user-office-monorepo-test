@@ -1,9 +1,12 @@
+import { Question, Template } from '@user-office-software/shared-types';
 import React from 'react';
 
+import {
+  Event,
+  EventType,
+} from '../../models/questionary/QuestionaryEditorModel';
 import StyledModal from '../common/StyledModal';
 import { createQuestionForm } from '../questionary/QuestionaryComponentRegistry';
-import { Question, Template } from '@user-office-software/shared-types';
-import { Event, EventType } from '../../models/questionary/QuestionaryEditorModel';
 
 export default function QuestionEditor(props: {
   field: Question | null;

@@ -1,14 +1,17 @@
 import MaterialTable from '@material-table/core';
 import Link from '@mui/material/Link';
+import {
+  ProposalFragment,
+  TemplateCategoryId,
+} from '@user-office-software/shared-types';
 import React, { useMemo } from 'react';
 
-import CopyToClipboard from '../common/CopyToClipboard';
-import { ProposalFragment, TemplateCategoryId } from '@user-office-software/shared-types';
-import { useProposalsData } from '../proposal/useProposalsData';
-import { useSamplesWithQuestionaryStatus } from '../../sample/useSamplesWithQuestionaryStatus';
-import { useShipments } from '../../shipment/useShipments';
-import { QuestionWithUsage } from '../../template/useQuestions';
+import { useProposalsData } from '../../hooks/proposal/useProposalsData';
+import { useSamplesWithQuestionaryStatus } from '../../hooks/sample/useSamplesWithQuestionaryStatus';
+import { useShipments } from '../../hooks/shipment/useShipments';
+import { QuestionWithUsage } from '../../hooks/template/useQuestions';
 import { tableIcons } from '../../utils/materialIcons';
+import CopyToClipboard from '../common/CopyToClipboard';
 
 const proposalListColumns = [
   {

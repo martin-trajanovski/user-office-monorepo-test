@@ -3,7 +3,6 @@ import React, { useCallback } from 'react';
 
 import useDataApiWithFeedback from '../../utils/useDataApiWithFeedback';
 import withConfirm from '../../utils/withConfirm';
-
 import TemplatesTable, {
   TemplateRowDataType,
   TemplatesTableProps,

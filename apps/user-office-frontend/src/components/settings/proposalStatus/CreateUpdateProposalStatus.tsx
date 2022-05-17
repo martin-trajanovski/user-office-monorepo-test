@@ -1,18 +1,18 @@
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import makeStyles from '@mui/styles/makeStyles';
+import { ProposalStatus } from '@user-office-software/shared-types';
 import {
   createProposalStatusValidationSchema,
   updateProposalStatusValidationSchema,
-} from '@user-office-software/validation/lib/ProposalStatuses';
+} from '@user-office-software/validation';
 import { Field, Form, Formik } from 'formik';
 import { TextField } from 'formik-mui';
 import PropTypes from 'prop-types';
 import React from 'react';
 
-import UOLoader from '../common/UOLoader';
-import { ProposalStatus } from '@user-office-software/shared-types';
-import useDataApiWithFeedback from '../../utils/useDataApiWithFeedback';
+import useDataApiWithFeedback from '../../../utils/useDataApiWithFeedback';
+import UOLoader from '../../common/UOLoader';
 
 const useStyles = makeStyles((theme) => ({
   submit: {

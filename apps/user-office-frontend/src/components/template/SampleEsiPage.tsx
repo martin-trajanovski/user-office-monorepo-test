@@ -1,9 +1,8 @@
+import { TemplateGroupId } from '@user-office-software/shared-types';
 import React from 'react';
 
-import SimpleTabs from '../common/TabPanel';
-import { TemplateGroupId } from '@user-office-software/shared-types';
 import { StyledContainer, StyledPaper } from '../../styles/StyledComponents';
-
+import SimpleTabs from '../common/TabPanel';
 import DefaultTemplatesTable from './DefaultTemplatesTable';
 
 export default function SampleEsiPage() {

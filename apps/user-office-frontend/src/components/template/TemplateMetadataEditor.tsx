@@ -4,14 +4,17 @@ import { IconButton } from '@mui/material';
 import Paper from '@mui/material/Paper';
 import TextField from '@mui/material/TextField';
 import makeStyles from '@mui/styles/makeStyles';
+import { Template } from '@user-office-software/shared-types';
 import clsx from 'clsx';
 import { Field, Form, Formik } from 'formik';
 import React, { useState } from 'react';
 import * as Yup from 'yup';
 
+import {
+  Event,
+  EventType,
+} from '../../models/questionary/QuestionaryEditorModel';
 import { ActionButtonContainer } from '../common/ActionButtonContainer';
-import { Template } from '@user-office-software/shared-types';
-import { Event, EventType } from '../../models/questionary/QuestionaryEditorModel';
 
 const useStyles = makeStyles((theme) => ({
   container: {

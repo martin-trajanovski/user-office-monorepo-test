@@ -1,15 +1,17 @@
 import MaterialTable, { Column } from '@material-table/core';
 import Button from '@mui/material/Button';
 import Link from '@mui/material/Link';
+import {
+  ProposalTemplate,
+  TemplateGroupId,
+} from '@user-office-software/shared-types';
 import React, { useCallback, useState } from 'react';
 
+import { useFormattedDateTime } from '../../hooks/admin/useFormattedDateTime';
+import { useCallsData } from '../../hooks/call/useCallsData';
+import { tableIcons } from '../../utils/materialIcons';
 import { ActionButtonContainer } from '../common/ActionButtonContainer';
 import InputDialog from '../common/InputDialog';
-import { ProposalTemplate, TemplateGroupId } from '@user-office-software/shared-types';
-import { useFormattedDateTime } from '../../admin/useFormattedDateTime';
-import { useCallsData } from '../../call/useCallsData';
-import { tableIcons } from '../../utils/materialIcons';
-
 import TemplatesTable, { TemplateRowDataType } from './TemplatesTable';
 
 function CallsList(props: { filterTemplateId: number }) {

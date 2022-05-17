@@ -12,7 +12,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import * as yup from 'yup';
 
-import FormikUIAutocomplete from '../common/FormikUIAutocomplete';
+import FormikUIAutocomplete from '../../common/FormikUIAutocomplete';
 
 const addNewWorkflowConnectionsRowValidationSchema = yup.object().shape({
   selectedParentDroppableId: yup

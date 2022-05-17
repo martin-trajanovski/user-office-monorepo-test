@@ -7,11 +7,10 @@ import {
   TextField,
 } from '@mui/material';
 import makeStyles from '@mui/styles/makeStyles';
+import { DataType } from '@user-office-software/shared-types';
 import React, { ChangeEvent, useEffect, useState } from 'react';
 
 import { getQuestionaryComponentDefinitions } from '../questionary/QuestionaryComponentRegistry';
-import { DataType } from '@user-office-software/shared-types';
-
 import { QuestionFilter } from './QuestionPicker';
 
 interface QuestionPickerProps {

@@ -1,11 +1,11 @@
 import Typography from '@mui/material/Typography';
-import React from 'react';
-import { UnitMergeReview } from 'units/UnitMergeReview';
-
-import { SelectImportFile } from '../common/SelectImportFile';
 import { UnitsImportWithValidation } from '@user-office-software/shared-types';
+import React from 'react';
+
 import { StyledContainer, StyledPaper } from '../../styles/StyledComponents';
+import { UnitMergeReview } from '../../units/UnitMergeReview';
 import useDataApiWithFeedback from '../../utils/useDataApiWithFeedback';
+import { SelectImportFile } from '../common/SelectImportFile';
 
 export const getFileContents = async (file: File): Promise<string> => {
   return new Promise((resolve) => {

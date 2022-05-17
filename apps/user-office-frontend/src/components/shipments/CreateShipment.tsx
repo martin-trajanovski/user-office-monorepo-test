@@ -1,10 +1,9 @@
 import React from 'react';
 
-import UOLoader from '../common/UOLoader';
-import { useScheduledEvent } from '../../scheduledEvent/useScheduledEvent';
-import { useBlankShipment } from '../../shipment/useBlankShipment';
+import { useScheduledEvent } from '../../hooks/scheduledEvent/useScheduledEvent';
+import { useBlankShipment } from '../../hooks/shipment/useBlankShipment';
 import { ShipmentCore } from '../../models/questionary/shipment/ShipmentCore';
-
+import UOLoader from '../common/UOLoader';
 import ShipmentContainer from './ShipmentContainer';
 
 interface CreateShipmentProps {

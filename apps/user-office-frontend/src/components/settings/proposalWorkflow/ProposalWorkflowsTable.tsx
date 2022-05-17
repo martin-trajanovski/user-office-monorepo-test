@@ -1,20 +1,19 @@
 import Edit from '@mui/icons-material/Edit';
 import { Typography } from '@mui/material';
+import { UserRole, ProposalWorkflow } from '@user-office-software/shared-types';
 import React from 'react';
 import { useHistory } from 'react-router';
 import { useQueryParams } from 'use-query-params';
 
-import { useCheckAccess } from '../common/Can';
+import { useProposalWorkflowsData } from '../../../hooks/settings/useProposalWorkflowsData';
+import { tableIcons } from '../../../utils/materialIcons';
+import useDataApiWithFeedback from '../../../utils/useDataApiWithFeedback';
+import { FunctionType } from '../../../utils/utilTypes';
+import { useCheckAccess } from '../../common/Can';
 import SuperMaterialTable, {
   DefaultQueryParams,
   UrlQueryParamsType,
-} from '../common/SuperMaterialTable';
-import { UserRole, ProposalWorkflow } from '@user-office-software/shared-types';
-import { useProposalWorkflowsData } from '../../settings/useProposalWorkflowsData';
-import { tableIcons } from '../../utils/materialIcons';
-import useDataApiWithFeedback from '../../utils/useDataApiWithFeedback';
-import { FunctionType } from '../../utilTypes';
-
+} from '../../common/SuperMaterialTable';
 import CreateProposalWorkflow from './CreateProposalWorkflow';
 
 const columns = [

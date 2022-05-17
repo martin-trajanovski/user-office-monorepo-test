@@ -1,18 +1,20 @@
 import { Typography } from '@mui/material';
+import {
+  UserRole,
+  PermissionsWithAccessToken,
+} from '@user-office-software/shared-types';
 import React from 'react';
 import { useQueryParams } from 'use-query-params';
 
-import { useCheckAccess } from '../common/Can';
+import { useApiAccessTokensData } from '../../../hooks/admin/useApiAccessTokensData';
+import { tableIcons } from '../../../utils/materialIcons';
+import useDataApiWithFeedback from '../../../utils/useDataApiWithFeedback';
+import { FunctionType } from '../../../utils/utilTypes';
+import { useCheckAccess } from '../../common/Can';
 import SuperMaterialTable, {
   DefaultQueryParams,
   UrlQueryParamsType,
-} from '../common/SuperMaterialTable';
-import { UserRole, PermissionsWithAccessToken } from '@user-office-software/shared-types';
-import { useApiAccessTokensData } from '../../admin/useApiAccessTokensData';
-import { tableIcons } from '../../utils/materialIcons';
-import useDataApiWithFeedback from '../../utils/useDataApiWithFeedback';
-import { FunctionType } from '../../utilTypes';
-
+} from '../../common/SuperMaterialTable';
 import CreateUpdateApiAccessToken from './CreateUpdateApiAccessToken';
 
 const columns = [{ title: 'Name', field: 'name' }];

@@ -15,6 +15,12 @@ import MenuItem from '@mui/material/MenuItem';
 import useTheme from '@mui/material/styles/useTheme';
 import Typography from '@mui/material/Typography';
 import makeStyles from '@mui/styles/makeStyles';
+import {
+  PageName,
+  CreateUserMutationVariables,
+  SettingsId,
+  Maybe,
+} from '@user-office-software/shared-types';
 import { createUserValidationSchema } from '@user-office-software/validation';
 import clsx from 'clsx';
 import { Field, Form, Formik } from 'formik';
@@ -27,25 +33,20 @@ import queryString from 'query-string';
 import React, { useContext, useState } from 'react';
 import { Link, useHistory } from 'react-router-dom';
 
+import orcid from 'images/orcid.png';
+
+import { UserContext } from '../../context/UserContextProvider';
+import { useFormattedDateTime } from '../../hooks/admin/useFormattedDateTime';
+import { useGetPageContent } from '../../hooks/admin/useGetPageContent';
+import { useInstitutionsData } from '../../hooks/admin/useInstitutionData';
+import { useUnauthorizedApi } from '../../hooks/common/useDataApi';
+import { useGetFields } from '../../hooks/user/useGetFields';
+import { useOrcIDInformation } from '../../hooks/user/useOrcIDInformation';
+import { Option } from '../../utils/utilTypes';
 import { ErrorFocus } from '../common/ErrorFocus';
 import FormikUIAutocomplete from '../common/FormikUIAutocomplete';
 import UOLoader from '../common/UOLoader';
 import InformationModal from '../pages/InformationModal';
-import { UserContext } from '../../UserContextProvider';
-import {
-  PageName,
-  CreateUserMutationVariables,
-  SettingsId,
-  Maybe,
-} from '@user-office-software/shared-types';
-import { useFormattedDateTime } from '../../admin/useFormattedDateTime';
-import { useGetPageContent } from '../../admin/useGetPageContent';
-import { useInstitutionsData } from '../../admin/useInstitutionData';
-import { useUnauthorizedApi } from '../../common/useDataApi';
-import { useGetFields } from '../../user/useGetFields';
-import { useOrcIDInformation } from '../../user/useOrcIDInformation';
-import orcid from 'images/orcid.png';
-import { Option } from '../../utilTypes';
 
 const useStyles = makeStyles((theme) => ({
   '@global': {

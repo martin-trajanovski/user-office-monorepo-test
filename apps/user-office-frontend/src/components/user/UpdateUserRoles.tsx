@@ -1,16 +1,15 @@
 import MaterialTable from '@material-table/core';
 import { Typography } from '@mui/material';
 import Button from '@mui/material/Button';
+import { Role } from '@user-office-software/shared-types';
 import React, { useContext, useState } from 'react';
 
-import { ActionButtonContainer } from '../common/ActionButtonContainer';
-import { UserContext } from '../../UserContextProvider';
-import { Role } from '@user-office-software/shared-types';
-import { useRenewToken } from '../../common/useRenewToken';
-import { useUserWithRolesData } from '../../user/useUserWithRoles';
+import { UserContext } from '../../context/UserContextProvider';
+import { useRenewToken } from '../../hooks/common/useRenewToken';
+import { useUserWithRolesData } from '../../hooks/user/useUserWithRoles';
 import { tableIcons } from '../../utils/materialIcons';
 import useDataApiWithFeedback from '../../utils/useDataApiWithFeedback';
-
+import { ActionButtonContainer } from '../common/ActionButtonContainer';
 import RoleModal from './RoleModal';
 
 const columns = [{ title: 'Name', field: 'title' }];

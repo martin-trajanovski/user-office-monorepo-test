@@ -1,19 +1,19 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import produce from 'immer';
-import { Reducer, useCallback, useEffect } from 'react';
-import { useParams } from 'react-router';
-
 import {
   StatusChangingEvent,
   ProposalWorkflow,
   ProposalWorkflowConnection,
   ProposalWorkflowConnectionGroup,
 } from '@user-office-software/shared-types';
-import { useDataApi } from '../../common/useDataApi';
+import produce from 'immer';
+import { Reducer, useCallback, useEffect } from 'react';
+import { useParams } from 'react-router';
+
+import { useDataApi } from '../../../hooks/common/useDataApi';
 import {
   useReducerWithMiddleWares,
   ReducerMiddleware,
-} from '../../utils/useReducerWithMiddleWares';
+} from '../../../utils/useReducerWithMiddleWares';
 
 export enum EventType {
   READY,

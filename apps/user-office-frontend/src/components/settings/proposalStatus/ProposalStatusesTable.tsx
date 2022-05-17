@@ -1,20 +1,19 @@
 import Delete from '@mui/icons-material/DeleteOutline';
 import { Typography } from '@mui/material';
+import { UserRole, ProposalStatus } from '@user-office-software/shared-types';
 import React from 'react';
 import { useQueryParams } from 'use-query-params';
 
-import { useCheckAccess } from '../common/Can';
+import { useProposalStatusesData } from '../../../hooks/settings/useProposalStatusesData';
+import { tableIcons } from '../../../utils/materialIcons';
+import useDataApiWithFeedback from '../../../utils/useDataApiWithFeedback';
+import { FunctionType } from '../../../utils/utilTypes';
+import withConfirm, { WithConfirmType } from '../../../utils/withConfirm';
+import { useCheckAccess } from '../../common/Can';
 import SuperMaterialTable, {
   DefaultQueryParams,
   UrlQueryParamsType,
-} from '../common/SuperMaterialTable';
-import { UserRole, ProposalStatus } from '@user-office-software/shared-types';
-import { useProposalStatusesData } from '../../settings/useProposalStatusesData';
-import { tableIcons } from '../../utils/materialIcons';
-import useDataApiWithFeedback from '../../utils/useDataApiWithFeedback';
-import { FunctionType } from '../../utilTypes';
-import withConfirm, { WithConfirmType } from '../../utils/withConfirm';
-
+} from '../../common/SuperMaterialTable';
 import CreateUpdateProposalStatus from './CreateUpdateProposalStatus';
 
 const columns = [

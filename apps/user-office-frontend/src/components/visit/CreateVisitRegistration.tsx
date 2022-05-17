@@ -1,12 +1,14 @@
+import {
+  QuestionaryStep,
+  TemplateGroupId,
+} from '@user-office-software/shared-types';
 import React, { useContext, useEffect, useState } from 'react';
 
-import UOLoader from '../common/UOLoader';
-import { UserContext } from '../../UserContextProvider';
-import { QuestionaryStep, TemplateGroupId } from '@user-office-software/shared-types';
+import { UserContext } from '../../context/UserContextProvider';
 import { VisitRegistrationCore } from '../../models/questionary/visit/VisitRegistrationCore';
 import { RegistrationWithQuestionary } from '../../models/questionary/visit/VisitRegistrationWithQuestionary';
 import useDataApiWithFeedback from '../../utils/useDataApiWithFeedback';
-
+import UOLoader from '../common/UOLoader';
 import VisitRegistrationContainer from './VisitRegistrationContainer';
 
 function createRegistrationStub(

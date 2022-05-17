@@ -5,21 +5,21 @@ import CssBaseline from '@mui/material/CssBaseline';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import makeStyles from '@mui/styles/makeStyles';
-import { signInValidationSchema } from '@user-office-software/validation/lib/User';
+import { signInValidationSchema } from '@user-office-software/validation';
 import { Field, Form, Formik } from 'formik';
 import { TextField } from 'formik-mui';
 import React, { useContext, useState } from 'react';
 import { useLocation } from 'react-router';
 import { Link, Redirect } from 'react-router-dom';
 
+import orcid from 'images/orcid.png';
+
+import { UserContext } from '../../context/UserContextProvider';
+import ButtonWithDialog from '../../hooks/common/ButtonWithDialog';
+import { useUnauthorizedApi } from '../../hooks/common/useDataApi';
+import { StyledFormWrapper } from '../../styles/StyledComponents';
 import UOLoader from '../common/UOLoader';
 import LoginHelpPage from '../pages/LoginHelpPage';
-import { UserContext } from '../../UserContextProvider';
-import ButtonWithDialog from '../../common/ButtonWithDialog';
-import { useUnauthorizedApi } from '../../common/useDataApi';
-import orcid from 'images/orcid.png';
-import { StyledFormWrapper } from '../../styles/StyledComponents';
-
 import PhotoInSide from './PhotoInSide';
 
 const useStyles = makeStyles((theme) => ({

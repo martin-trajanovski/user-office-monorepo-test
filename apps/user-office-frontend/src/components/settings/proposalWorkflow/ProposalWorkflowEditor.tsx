@@ -1,5 +1,10 @@
 import Grid from '@mui/material/Grid';
 import LinearProgress from '@mui/material/LinearProgress';
+import {
+  ProposalStatus,
+  ProposalWorkflowConnection,
+  ProposalWorkflowConnectionGroup,
+} from '@user-office-software/shared-types';
 import { useSnackbar } from 'notistack';
 import React from 'react';
 import {
@@ -8,16 +13,10 @@ import {
   DropResult,
 } from 'react-beautiful-dnd';
 
-import {
-  ProposalStatus,
-  ProposalWorkflowConnection,
-  ProposalWorkflowConnectionGroup,
-} from '@user-office-software/shared-types';
-import { usePersistProposalWorkflowEditorModel } from '../../settings/usePersistProposalWorkflowEditorModel';
-import { useProposalStatusesData } from '../../settings/useProposalStatusesData';
-import { StyledContainer, StyledPaper } from '../../styles/StyledComponents';
-import { FunctionType } from '../../utilTypes';
-
+import { usePersistProposalWorkflowEditorModel } from '../../../hooks/settings/usePersistProposalWorkflowEditorModel';
+import { useProposalStatusesData } from '../../../hooks/settings/useProposalStatusesData';
+import { StyledContainer, StyledPaper } from '../../../styles/StyledComponents';
+import { FunctionType } from '../../../utils/utilTypes';
 import ProposalStatusPicker from './ProposalStatusPicker';
 import ProposalWorkflowConnectionsEditor from './ProposalWorkflowConnectionsEditor';
 import ProposalWorkflowEditorModel, {
