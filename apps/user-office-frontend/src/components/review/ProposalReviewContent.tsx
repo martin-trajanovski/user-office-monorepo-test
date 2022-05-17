@@ -1,7 +1,18 @@
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
+import {
+  CoreTechnicalReviewFragment,
+  Proposal,
+  Review,
+  TechnicalReview,
+  UserRole,
+} from '@user-office-software/shared-types';
 import React, { Fragment, useContext } from 'react';
 
+import { UserContext } from '../../context/UserContextProvider';
+import { useProposalData } from '../../hooks/proposal/useProposalData';
+import { useReviewData } from '../../hooks/review/useReviewData';
+import { StyledPaper } from '../../styles/StyledComponents';
 import { useCheckAccess } from '../common/Can';
 import SimpleTabs from '../common/TabPanel';
 import UOLoader from '../common/UOLoader';
@@ -12,18 +23,6 @@ import ProposalAdmin, {
 } from '../proposal/ProposalAdmin';
 import ExternalReviews from '../SEP/MeetingComponents/ProposalViewModal/ExternalReviews';
 import SEPMeetingDecision from '../SEP/MeetingComponents/ProposalViewModal/SEPMeetingDecision';
-import { UserContext } from '../../UserContextProvider';
-import {
-  CoreTechnicalReviewFragment,
-  Proposal,
-  Review,
-  TechnicalReview,
-  UserRole,
-} from '@user-office-software/shared-types';
-import { useProposalData } from '../proposal/useProposalData';
-import { useReviewData } from '../../review/useReviewData';
-import { StyledPaper } from '../../styles/StyledComponents';
-
 import ProposalGrade from './ProposalGrade';
 import ProposalTechnicalReview from './ProposalTechnicalReview';
 import ProposalTechnicalReviewerAssignment from './ProposalTechnicalReviewerAssignment';

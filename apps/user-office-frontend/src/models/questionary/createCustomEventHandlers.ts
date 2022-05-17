@@ -1,6 +1,5 @@
 import { MiddlewareInputParams } from '../../utils/useReducerWithMiddleWares';
-import { FunctionType } from '../../utilTypes';
-
+import { FunctionType } from '../../utils/utilTypes';
 import {
   Event,
   QuestionarySubmissionState,

@@ -1,6 +1,6 @@
+import { GetProposalQuery } from '@user-office-software/shared-types';
 import { useEffect, useState } from 'react';
 
-import { GetProposalQuery } from '@user-office-software/shared-types';
 import { useDataApi } from '../common/useDataApi';
 
 export type ProposalData = NonNullable<GetProposalQuery['proposal']>;

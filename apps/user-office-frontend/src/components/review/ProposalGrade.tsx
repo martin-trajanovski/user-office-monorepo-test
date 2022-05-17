@@ -6,28 +6,28 @@ import CssBaseline from '@mui/material/CssBaseline';
 import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import { Editor } from '@tinymce/tinymce-react';
-import { proposalGradeValidationSchema } from '@user-office-software/validation/lib/Review';
-import { Field, Form, Formik, useFormikContext } from 'formik';
-import { Select, CheckboxWithLabel } from 'formik-mui';
-import React, { useState, useContext } from 'react';
-import { Prompt } from 'react-router';
-
-import { useCheckAccess } from '../common/Can';
-import ErrorMessage from '../common/ErrorMessage';
-import UOLoader from '../common/UOLoader';
-import GradeGuidePage from '../pages/GradeGuidePage';
-import NavigationFragment from '../questionary/NavigationFragment';
-import { ReviewAndAssignmentContext } from '../../ReviewAndAssignmentContextProvider';
 import {
   ReviewStatus,
   ReviewWithNextProposalStatus,
   Review,
   UserRole,
 } from '@user-office-software/shared-types';
-import ButtonWithDialog from '../../common/ButtonWithDialog';
+import { proposalGradeValidationSchema } from '@user-office-software/validation';
+import { Field, Form, Formik, useFormikContext } from 'formik';
+import { Select, CheckboxWithLabel } from 'formik-mui';
+import React, { useState, useContext } from 'react';
+import { Prompt } from 'react-router';
+
+import { ReviewAndAssignmentContext } from '../../context/ReviewAndAssignmentContextProvider';
+import ButtonWithDialog from '../../hooks/common/ButtonWithDialog';
 import useDataApiWithFeedback from '../../utils/useDataApiWithFeedback';
-import { FunctionType } from '../../utilTypes';
+import { FunctionType } from '../../utils/utilTypes';
 import withConfirm, { WithConfirmType } from '../../utils/withConfirm';
+import { useCheckAccess } from '../common/Can';
+import ErrorMessage from '../common/ErrorMessage';
+import UOLoader from '../common/UOLoader';
+import GradeGuidePage from '../pages/GradeGuidePage';
+import NavigationFragment from '../questionary/NavigationFragment';
 
 type ProposalGradeProps = {
   review: Review | null;

@@ -1,13 +1,13 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
+import { getSdk, SettingsId } from '@user-office-software/shared-types';
 import { GraphQLClient } from 'graphql-request';
 import { Variables } from 'graphql-request/dist/types';
 import jwtDecode from 'jwt-decode';
 import { useSnackbar, WithSnackbarProps } from 'notistack';
 import { useCallback, useContext } from 'react';
 
-import { SettingsContext } from '../../SettingsContextProvider';
-import { UserContext } from '../../UserContextProvider';
-import { getSdk, SettingsId } from '@user-office-software/shared-types';
+import { SettingsContext } from '../../context/SettingsContextProvider';
+import { UserContext } from '../../context/UserContextProvider';
 
 const endpoint = '/graphql';
 

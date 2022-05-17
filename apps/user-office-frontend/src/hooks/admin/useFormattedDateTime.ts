@@ -1,8 +1,8 @@
+import { SettingsId } from '@user-office-software/shared-types';
 import { DateTime } from 'luxon';
 import { useContext } from 'react';
 
-import { SettingsContext } from '../../SettingsContextProvider';
-import { SettingsId } from '@user-office-software/shared-types';
+import { SettingsContext } from '../../context/SettingsContextProvider';
 
 export function useFormattedDateTime(params?: {
   settingsFormatToUse?: SettingsId;

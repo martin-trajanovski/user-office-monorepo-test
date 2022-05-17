@@ -1,6 +1,6 @@
+import { PermissionsWithAccessToken } from '@user-office-software/shared-types';
 import { useEffect, useState, SetStateAction, Dispatch } from 'react';
 
-import { PermissionsWithAccessToken } from '@user-office-software/shared-types';
 import { useDataApi } from '../common/useDataApi';
 
 export function useApiAccessTokensData(): {

@@ -10,18 +10,17 @@ import { TransitionProps } from '@mui/material/transitions/transition';
 import Typography from '@mui/material/Typography';
 import createStyles from '@mui/styles/createStyles';
 import makeStyles from '@mui/styles/makeStyles';
-import React from 'react';
-
-import { useCheckAccess } from '../common/Can';
-import UOLoader from '../common/UOLoader';
 import {
   TechnicalReview,
   Review,
   UserRole,
   SepMeetingDecision,
 } from '@user-office-software/shared-types';
-import { useSEPProposalData } from '../../SEP/useSEPProposalData';
+import React from 'react';
 
+import { useSEPProposalData } from '../../../../hooks/SEP/useSEPProposalData';
+import { useCheckAccess } from '../../../common/Can';
+import UOLoader from '../../../common/UOLoader';
 import ExternalReviews from './ExternalReviews';
 import FinalRankingForm from './FinalRankingForm';
 import ProposalDetails from './ProposalDetails';

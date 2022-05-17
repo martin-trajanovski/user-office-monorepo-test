@@ -1,6 +1,6 @@
+import { Institution } from '@user-office-software/shared-types';
 import { useEffect, useState, SetStateAction } from 'react';
 
-import { Institution } from '@user-office-software/shared-types';
 import { useDataApi } from '../common/useDataApi';
 
 export function useInstitutionsData(

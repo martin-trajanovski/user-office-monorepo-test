@@ -1,10 +1,4 @@
 /* eslint-disable @typescript-eslint/ban-types */
-import { FormikProps } from 'formik';
-import React, { FC, ReactNode } from 'react';
-import * as Yup from 'yup';
-
-import { BasicComponentProps } from '../proposal/IBasicComponentProps';
-import { SearchCriteriaInputProps } from '../proposal/SearchCriteriaInputProps';
 import {
   Answer,
   DataType,
@@ -14,8 +8,13 @@ import {
   Template,
   TemplateFragment,
 } from '@user-office-software/shared-types';
-import { QuestionarySubmissionState } from '../../models/questionary/QuestionarySubmissionState';
+import { FormikProps } from 'formik';
+import React, { FC, ReactNode } from 'react';
+import * as Yup from 'yup';
 
+import { QuestionarySubmissionState } from '../../models/questionary/QuestionarySubmissionState';
+import { BasicComponentProps } from '../proposal/IBasicComponentProps';
+import { SearchCriteriaInputProps } from '../proposal/SearchCriteriaInputProps';
 import { booleanDefinition } from './questionaryComponents/Boolean/BooleanDefinition';
 import { dateDefinition } from './questionaryComponents/DatePicker/DatePickerDefinition';
 import { embellishmentDefinition } from './questionaryComponents/Embellishment/EmbellishmentDefinition';

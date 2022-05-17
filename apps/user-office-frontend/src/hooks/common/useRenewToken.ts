@@ -1,6 +1,6 @@
 import { useState, useContext } from 'react';
 
-import { UserContext } from '../../UserContextProvider';
+import { UserContext } from '../../context/UserContextProvider';
 import useDataApiWithFeedback from '../../utils/useDataApiWithFeedback';
 
 export function useRenewToken() {

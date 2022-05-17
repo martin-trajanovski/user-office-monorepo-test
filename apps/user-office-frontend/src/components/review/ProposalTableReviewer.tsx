@@ -5,32 +5,31 @@ import RateReviewIcon from '@mui/icons-material/RateReview';
 import Visibility from '@mui/icons-material/Visibility';
 import IconButton from '@mui/material/IconButton';
 import Tooltip from '@mui/material/Tooltip';
-import { proposalGradeValidationSchema } from '@user-office-software/validation';
-import React, { useState, useContext, useEffect } from 'react';
-import { useQueryParams, NumberParam } from 'use-query-params';
-
-import CallFilter from '../common/proposalFilters/CallFilter';
-import InstrumentFilter from '../common/proposalFilters/InstrumentFilter';
-import { DefaultQueryParams } from '../common/SuperMaterialTable';
-import { ReviewAndAssignmentContext } from '../../ReviewAndAssignmentContextProvider';
 import {
   ReviewerFilter,
   ReviewStatus,
   SepAssignment,
   UserWithReviewsQuery,
 } from '@user-office-software/shared-types';
-import { useCallsData } from '../../call/useCallsData';
-import { useInstrumentsData } from '../../instrument/useInstrumentsData';
-import { useDownloadPDFProposal } from '../proposal/useDownloadPDFProposal';
-import { useUserWithReviewsData } from '../../user/useUserData';
+import { proposalGradeValidationSchema } from '@user-office-software/validation';
+import React, { useState, useContext, useEffect } from 'react';
+import { useQueryParams, NumberParam } from 'use-query-params';
+
+import { ReviewAndAssignmentContext } from '../../context/ReviewAndAssignmentContextProvider';
+import { useCallsData } from '../../hooks/call/useCallsData';
+import { useInstrumentsData } from '../../hooks/instrument/useInstrumentsData';
+import { useDownloadPDFProposal } from '../../hooks/proposal/useDownloadPDFProposal';
+import { useUserWithReviewsData } from '../../hooks/user/useUserData';
 import {
   capitalize,
   setSortDirectionOnSortColumn,
-} from '../../helperFunctions';
+} from '../../utils/helperFunctions';
 import { tableIcons } from '../../utils/materialIcons';
 import useDataApiWithFeedback from '../../utils/useDataApiWithFeedback';
 import withConfirm, { WithConfirmType } from '../../utils/withConfirm';
-
+import CallFilter from '../common/proposalFilters/CallFilter';
+import InstrumentFilter from '../common/proposalFilters/InstrumentFilter';
+import { DefaultQueryParams } from '../common/SuperMaterialTable';
 import ProposalReviewContent, {
   PROPOSAL_MODAL_TAB_NAMES,
 } from './ProposalReviewContent';

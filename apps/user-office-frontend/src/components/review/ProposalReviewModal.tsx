@@ -9,9 +9,9 @@ import { TransitionProps } from '@mui/material/transitions/transition';
 import Typography from '@mui/material/Typography';
 import createStyles from '@mui/styles/createStyles';
 import makeStyles from '@mui/styles/makeStyles';
+import { Proposal } from '@user-office-software/shared-types';
 import React from 'react';
 
-import { Proposal } from '@user-office-software/shared-types';
 import useDataApiWithFeedback from '../../utils/useDataApiWithFeedback';
 
 const useStyles = makeStyles((theme) =>

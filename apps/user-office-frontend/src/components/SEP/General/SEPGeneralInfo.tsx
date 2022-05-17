@@ -5,15 +5,15 @@ import Grid from '@mui/material/Grid';
 import TextField from '@mui/material/TextField';
 import Typography from '@mui/material/Typography';
 import makeStyles from '@mui/styles/makeStyles';
-import { updateSEPValidationSchema } from '@user-office-software/validation/lib/SEP';
+import { Sep, UserRole } from '@user-office-software/shared-types';
+import { updateSEPValidationSchema } from '@user-office-software/validation';
 import { Formik, Form, Field } from 'formik';
 import React from 'react';
 
-import { useCheckAccess } from '../common/Can';
-import UOLoader from '../common/UOLoader';
-import { Sep, UserRole } from '@user-office-software/shared-types';
-import { StyledButtonContainer } from '../../styles/StyledComponents';
-import useDataApiWithFeedback from '../../utils/useDataApiWithFeedback';
+import { StyledButtonContainer } from '../../../styles/StyledComponents';
+import useDataApiWithFeedback from '../../../utils/useDataApiWithFeedback';
+import { useCheckAccess } from '../../common/Can';
+import UOLoader from '../../common/UOLoader';
 
 type SEPPageProps = {
   /** SEP data to be shown */

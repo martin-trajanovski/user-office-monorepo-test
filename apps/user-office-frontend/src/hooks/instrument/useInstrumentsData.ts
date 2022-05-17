@@ -1,4 +1,8 @@
 import {
+  InstrumentFragment,
+  UserRole,
+} from '@user-office-software/shared-types';
+import {
   useEffect,
   useState,
   SetStateAction,
@@ -6,8 +10,7 @@ import {
   useContext,
 } from 'react';
 
-import { UserContext } from '../../UserContextProvider';
-import { InstrumentFragment, UserRole } from '@user-office-software/shared-types';
+import { UserContext } from '../../context/UserContextProvider';
 import { useDataApi } from '../common/useDataApi';
 
 export function useInstrumentsData(callIds?: number[]): {

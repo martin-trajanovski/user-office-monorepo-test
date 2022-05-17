@@ -1,6 +1,3 @@
-import { useContext, useEffect, useState } from 'react';
-
-import { UserContext } from '../../UserContextProvider';
 import {
   GetBasicUserDetailsQuery,
   GetUserMeQuery,
@@ -9,7 +6,13 @@ import {
   GetUserQueryVariables,
   ReviewerFilter,
 } from '@user-office-software/shared-types';
-import { UserWithReviewsQuery, ReviewStatus } from '@user-office-software/shared-types';
+import {
+  UserWithReviewsQuery,
+  ReviewStatus,
+} from '@user-office-software/shared-types';
+import { useContext, useEffect, useState } from 'react';
+
+import { UserContext } from '../../context/UserContextProvider';
 import { useDataApi } from '../common/useDataApi';
 
 export function useUserData({

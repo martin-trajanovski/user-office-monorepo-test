@@ -1,6 +1,3 @@
-import { DateTime } from 'luxon';
-import { useEffect, useState } from 'react';
-
 import {
   BasicUserDetailsFragment,
   EsiFragment,
@@ -14,8 +11,11 @@ import {
   Visit,
   VisitFragment,
 } from '@user-office-software/shared-types';
-import { useDataApi } from '../common/useDataApi';
+import { DateTime } from 'luxon';
+import { useEffect, useState } from 'react';
+
 import { VisitRegistrationCore } from '../../models/questionary/visit/VisitRegistrationCore';
+import { useDataApi } from '../common/useDataApi';
 
 export type ProposalScheduledEvent = Pick<
   ScheduledEventCore,

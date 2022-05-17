@@ -1,8 +1,4 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import produce from 'immer';
-import { Reducer, useCallback, useEffect } from 'react';
-import { useParams } from 'react-router';
-
 import {
   Question,
   Template,
@@ -10,7 +6,11 @@ import {
   TemplateGroupId,
   TemplateStep,
 } from '@user-office-software/shared-types';
-import { useDataApi } from '../../common/useDataApi';
+import produce from 'immer';
+import { Reducer, useCallback, useEffect } from 'react';
+import { useParams } from 'react-router';
+
+import { useDataApi } from '../../hooks/common/useDataApi';
 import {
   getFieldById,
   getQuestionaryStepByTopicId,

@@ -1,6 +1,6 @@
+import { Review } from '@user-office-software/shared-types';
 import { useEffect, useState } from 'react';
 
-import { Review } from '@user-office-software/shared-types';
 import { useDataApi } from '../common/useDataApi';
 
 export function useReviewData(reviewId?: number | null, sepId?: number | null) {

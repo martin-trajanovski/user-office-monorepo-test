@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react';
 
-import { useDataApi } from '../common/useDataApi';
-
+import { useDataApi } from '../../hooks/common/useDataApi';
 import { SampleFragment } from './../../generated/sdk';
 
 export function useSample(sampleId: number) {

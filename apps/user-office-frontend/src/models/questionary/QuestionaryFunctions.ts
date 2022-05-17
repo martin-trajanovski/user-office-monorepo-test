@@ -1,4 +1,3 @@
-import { getQuestionaryComponentDefinition } from '../questionary/QuestionaryComponentRegistry';
 import {
   Answer,
   AnswerInput,
@@ -10,6 +9,7 @@ import {
   TemplateStep,
 } from '@user-office-software/shared-types';
 
+import { getQuestionaryComponentDefinition } from '../../components/questionary/QuestionaryComponentRegistry';
 import { ConditionEvaluator } from './ConditionEvaluator';
 
 export type AbstractField = QuestionTemplateRelation | Answer;

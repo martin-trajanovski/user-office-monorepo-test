@@ -1,5 +1,3 @@
-import { useState } from 'react';
-
 import {
   DataType,
   QuestionTemplateRelation,
@@ -7,10 +5,15 @@ import {
   Template,
   TemplateCategoryId,
 } from '@user-office-software/shared-types';
-import { Event, EventType } from '../../models/questionary/QuestionaryEditorModel';
+import { useState } from 'react';
+
+import {
+  Event,
+  EventType,
+} from '../../models/questionary/QuestionaryEditorModel';
 import useDataApiWithFeedback from '../../utils/useDataApiWithFeedback';
 import { MiddlewareInputParams } from '../../utils/useReducerWithMiddleWares';
-import { FunctionType } from '../../utilTypes';
+import { FunctionType } from '../../utils/utilTypes';
 
 export function usePersistQuestionaryEditorModel() {
   const [isLoading, setIsLoading] = useState<boolean>(false);

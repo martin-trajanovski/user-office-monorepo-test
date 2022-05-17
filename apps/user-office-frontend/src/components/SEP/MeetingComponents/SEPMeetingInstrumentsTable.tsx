@@ -1,16 +1,19 @@
 import MaterialTable, { Options } from '@material-table/core';
 import DoneAll from '@mui/icons-material/DoneAll';
 import { Typography } from '@mui/material';
+import {
+  Call,
+  InstrumentWithAvailabilityTime,
+  UserRole,
+} from '@user-office-software/shared-types';
 import { useSnackbar } from 'notistack';
 import React from 'react';
 
-import { useCheckAccess } from '../common/Can';
-import { Call, InstrumentWithAvailabilityTime, UserRole } from '@user-office-software/shared-types';
-import { useInstrumentsBySEPData } from '../../instrument/useInstrumentsBySEPData';
-import { tableIcons } from '../../utils/materialIcons';
-import useDataApiWithFeedback from '../../utils/useDataApiWithFeedback';
-import withConfirm, { WithConfirmType } from '../../utils/withConfirm';
-
+import { useInstrumentsBySEPData } from '../../../hooks/instrument/useInstrumentsBySEPData';
+import { tableIcons } from '../../../utils/materialIcons';
+import useDataApiWithFeedback from '../../../utils/useDataApiWithFeedback';
+import withConfirm, { WithConfirmType } from '../../../utils/withConfirm';
+import { useCheckAccess } from '../../common/Can';
 import SEPInstrumentProposalsTable from './SEPInstrumentProposalsTable';
 
 type SEPMeetingInstrumentsTableProps = {

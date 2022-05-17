@@ -1,6 +1,6 @@
+import { GetFileMetadataQuery } from '@user-office-software/shared-types';
 import { useEffect, useState } from 'react';
 
-import { GetFileMetadataQuery } from '@user-office-software/shared-types';
 import { useDataApi } from '../common/useDataApi';
 
 export function useFileMetadata(ids: string[]) {

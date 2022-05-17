@@ -1,9 +1,9 @@
 import React from 'react';
 
+import { useSample } from '../../hooks/sample/useSample';
 import QuestionaryDetails, {
   TableRowData,
 } from '../questionary/QuestionaryDetails';
-import { useSample } from '../../sample/useSample';
 
 interface SampleDetailsProps {
   sampleId: number;

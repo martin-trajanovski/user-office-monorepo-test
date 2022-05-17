@@ -8,10 +8,9 @@ import PropTypes from 'prop-types';
 import React, { useEffect } from 'react';
 import { NumberParam, useQueryParams, withDefault } from 'use-query-params';
 
-import CallFilter from '../common/proposalFilters/CallFilter';
-import { useCallsData } from '../../call/useCallsData';
-import { useDownloadXLSXSEP } from '../../SEP/useDownloadXLSXSEP';
-
+import { useCallsData } from '../../../hooks/call/useCallsData';
+import { useDownloadXLSXSEP } from '../../../hooks/SEP/useDownloadXLSXSEP';
+import CallFilter from '../../common/proposalFilters/CallFilter';
 import SEPMeetingInstrumentsTable from './SEPMeetingInstrumentsTable';
 
 type SEPMeetingComponentsViewProps = {

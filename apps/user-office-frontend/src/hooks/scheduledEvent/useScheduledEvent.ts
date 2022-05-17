@@ -1,8 +1,7 @@
+import { GetScheduledEventCoreQuery } from '@user-office-software/shared-types';
 import { useEffect, useState } from 'react';
 
 import { useDataApi } from '../common/useDataApi';
-
-import { GetScheduledEventCoreQuery } from '@user-office-software/shared-types';
 
 export function useScheduledEvent(scheduledEventId: number) {
   const [scheduledEvent, setScheduledEvent] = useState<

@@ -1,8 +1,7 @@
+import { GetScheduledEventWithShipmentsQuery } from '@user-office-software/shared-types';
 import { useEffect, useState } from 'react';
 
 import { useDataApi } from '../common/useDataApi';
-
-import { GetScheduledEventWithShipmentsQuery } from './../../generated/sdk';
 
 export function useScheduledEventWithShipments(scheduledEventId: number) {
   const [scheduledEvent, setScheduledEvent] = useState<

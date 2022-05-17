@@ -1,9 +1,8 @@
+import { SamplesFilter } from '@user-office-software/shared-types';
 import { useEffect, useState } from 'react';
 
-import { SamplesFilter } from '@user-office-software/shared-types';
-import { useDataApi } from '../common/useDataApi';
-
 import { SampleCore } from '../../models/questionary/sample/SampleCore';
+import { useDataApi } from '../common/useDataApi';
 
 export function useSamplesWithQuestionaryStatus(filter?: SamplesFilter) {
   const [samples, setSamples] = useState<SampleCore[]>([]);

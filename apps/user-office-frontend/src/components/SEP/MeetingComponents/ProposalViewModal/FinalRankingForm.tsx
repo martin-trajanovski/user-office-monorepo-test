@@ -7,15 +7,6 @@ import MenuItem from '@mui/material/MenuItem';
 import Typography from '@mui/material/Typography';
 import makeStyles from '@mui/styles/makeStyles';
 import { Editor } from '@tinymce/tinymce-react';
-import { saveSepMeetingDecisionValidationSchema } from '@user-office-software/validation';
-import { Formik, Form, Field, useFormikContext } from 'formik';
-import { CheckboxWithLabel, Select } from 'formik-mui';
-import PropTypes from 'prop-types';
-import React, { useState } from 'react';
-import { Prompt } from 'react-router';
-
-import { useCheckAccess } from '../common/Can';
-import UOLoader from '../common/UOLoader';
 import {
   Proposal,
   ProposalEndStatus,
@@ -23,10 +14,22 @@ import {
   SepMeetingDecision,
   UserRole,
 } from '@user-office-software/shared-types';
-import { StyledPaper, StyledButtonContainer } from '../../styles/StyledComponents';
-import useDataApiWithFeedback from '../../utils/useDataApiWithFeedback';
-import { Option } from '../../utilTypes';
-import withConfirm, { WithConfirmType } from '../../utils/withConfirm';
+import { saveSepMeetingDecisionValidationSchema } from '@user-office-software/validation';
+import { Formik, Form, Field, useFormikContext } from 'formik';
+import { CheckboxWithLabel, Select } from 'formik-mui';
+import PropTypes from 'prop-types';
+import React, { useState } from 'react';
+import { Prompt } from 'react-router';
+
+import {
+  StyledPaper,
+  StyledButtonContainer,
+} from '../../../../styles/StyledComponents';
+import useDataApiWithFeedback from '../../../../utils/useDataApiWithFeedback';
+import { Option } from '../../../../utils/utilTypes';
+import withConfirm, { WithConfirmType } from '../../../../utils/withConfirm';
+import { useCheckAccess } from '../../../common/Can';
+import UOLoader from '../../../common/UOLoader';
 
 const useStyles = makeStyles((theme) => ({
   button: {

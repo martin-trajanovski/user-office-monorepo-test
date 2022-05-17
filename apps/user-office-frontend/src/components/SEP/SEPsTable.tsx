@@ -1,21 +1,20 @@
 import Edit from '@mui/icons-material/Edit';
 import { Typography } from '@mui/material';
+import { Sep, UserRole } from '@user-office-software/shared-types';
 import React, { useContext, useState } from 'react';
 import { Redirect, useHistory } from 'react-router';
 import { useQueryParams } from 'use-query-params';
 
+import { UserContext } from '../../context/UserContextProvider';
+import { useSEPsData } from '../../hooks/SEP/useSEPsData';
+import { tableIcons } from '../../utils/materialIcons';
+import useDataApiWithFeedback from '../../utils/useDataApiWithFeedback';
+import { FunctionType } from '../../utils/utilTypes';
 import { useCheckAccess } from '../common/Can';
 import SuperMaterialTable, {
   DefaultQueryParams,
   UrlQueryParamsType,
 } from '../common/SuperMaterialTable';
-import { UserContext } from '../../UserContextProvider';
-import { Sep, UserRole } from '@user-office-software/shared-types';
-import { useSEPsData } from '../../SEP/useSEPsData';
-import { tableIcons } from '../../utils/materialIcons';
-import useDataApiWithFeedback from '../../utils/useDataApiWithFeedback';
-import { FunctionType } from '../../utilTypes';
-
 import AddSEP from './General/AddSEP';
 import SEPStatusFilter, {
   SEPStatusQueryFilter,

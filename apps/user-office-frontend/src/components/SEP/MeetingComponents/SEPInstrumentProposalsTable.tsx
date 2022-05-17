@@ -7,12 +7,6 @@ import IconButton from '@mui/material/IconButton';
 import Tooltip from '@mui/material/Tooltip';
 import makeStyles from '@mui/styles/makeStyles';
 import useTheme from '@mui/styles/useTheme';
-import clsx from 'clsx';
-import React, { useContext, DragEvent, useState, useEffect } from 'react';
-import { NumberParam, useQueryParams } from 'use-query-params';
-
-import { useCheckAccess } from '../common/Can';
-import { UserContext } from '../../UserContextProvider';
 import {
   SepProposal,
   InstrumentWithAvailabilityTime,
@@ -20,15 +14,20 @@ import {
   SepMeetingDecision,
   Call,
 } from '@user-office-software/shared-types';
-import { useSEPProposalsByInstrument } from '../../SEP/useSEPProposalsByInstrument';
-import { tableIcons } from '../../utils/materialIcons';
+import clsx from 'clsx';
+import React, { useContext, DragEvent, useState, useEffect } from 'react';
+import { NumberParam, useQueryParams } from 'use-query-params';
+
+import { UserContext } from '../../../context/UserContextProvider';
+import { useSEPProposalsByInstrument } from '../../../hooks/SEP/useSEPProposalsByInstrument';
+import { tableIcons } from '../../../utils/materialIcons';
 import {
   getGradesFromReviews,
   average,
   standardDeviation,
-} from '../../mathFunctions';
-import useDataApiWithFeedback from '../../utils/useDataApiWithFeedback';
-
+} from '../../../utils/mathFunctions';
+import useDataApiWithFeedback from '../../../utils/useDataApiWithFeedback';
+import { useCheckAccess } from '../../common/Can';
 import SEPMeetingProposalViewModal from './ProposalViewModal/SEPMeetingProposalViewModal';
 
 type SepProposalWithAverageScoreAndAvailabilityZone = SepProposal & {

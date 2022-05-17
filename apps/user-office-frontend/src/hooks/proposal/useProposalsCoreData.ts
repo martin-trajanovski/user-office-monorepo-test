@@ -1,14 +1,14 @@
+import { getTranslation, ResourceId } from '@user-office-software/localization';
 import {
-  getTranslation,
-  ResourceId,
-} from '@user-office-software/localization';
+  ProposalsFilter,
+  ProposalView,
+  UserRole,
+} from '@user-office-software/shared-types';
 import { useContext, useEffect, useState } from 'react';
 
-import { UserContext } from '../../UserContextProvider';
-import { ProposalsFilter, ProposalView, UserRole } from '@user-office-software/shared-types';
-import { useDataApi } from '../common/useDataApi';
-
 import { QueryParameters } from '../../components/proposal/ProposalTableOfficer';
+import { UserContext } from '../../context/UserContextProvider';
+import { useDataApi } from '../../hooks/common/useDataApi';
 
 export function useProposalsCoreData(
   filter: ProposalsFilter,

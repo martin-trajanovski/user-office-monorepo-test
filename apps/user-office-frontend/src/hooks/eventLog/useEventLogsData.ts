@@ -1,6 +1,6 @@
+import { EventLog, User } from '@user-office-software/shared-types';
 import { useEffect, useState } from 'react';
 
-import { EventLog, User } from '@user-office-software/shared-types';
 import { useDataApi } from '../common/useDataApi';
 
 export function useEventLogsData(eventType: string, changedObjectId: string) {

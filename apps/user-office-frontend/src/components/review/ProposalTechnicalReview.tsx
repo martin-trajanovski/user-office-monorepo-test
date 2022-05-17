@@ -6,29 +6,29 @@ import MenuItem from '@mui/material/MenuItem';
 import Typography from '@mui/material/Typography';
 import makeStyles from '@mui/styles/makeStyles';
 import { Editor } from '@tinymce/tinymce-react';
-import { proposalTechnicalReviewValidationSchema } from '@user-office-software/validation/lib/Review';
-import { Formik, Form, Field, useFormikContext } from 'formik';
-import { CheckboxWithLabel, Select, TextField } from 'formik-mui';
-import React, { useContext, useEffect, useState } from 'react';
-import { Prompt } from 'react-router';
-
-import { useCheckAccess } from '../common/Can';
-import {
-  FileIdWithCaptionAndFigure,
-  FileUploadComponent,
-} from '../common/FileUploadComponent';
-import { UserContext } from '../../UserContextProvider';
 import {
   TechnicalReviewStatus,
   CoreTechnicalReviewFragment,
   UserRole,
   Proposal,
 } from '@user-office-software/shared-types';
+import { proposalTechnicalReviewValidationSchema } from '@user-office-software/validation';
+import { Formik, Form, Field, useFormikContext } from 'formik';
+import { CheckboxWithLabel, Select, TextField } from 'formik-mui';
+import React, { useContext, useEffect, useState } from 'react';
+import { Prompt } from 'react-router';
+
+import { UserContext } from '../../context/UserContextProvider';
 import { StyledButtonContainer } from '../../styles/StyledComponents';
 import useDataApiWithFeedback from '../../utils/useDataApiWithFeedback';
-import { getFullUserName } from '../../user';
-import { Option } from '../../utilTypes';
+import { getFullUserName } from '../../utils/user';
+import { Option } from '../../utils/utilTypes';
 import withConfirm, { WithConfirmType } from '../../utils/withConfirm';
+import { useCheckAccess } from '../common/Can';
+import {
+  FileIdWithCaptionAndFigure,
+  FileUploadComponent,
+} from '../common/FileUploadComponent';
 
 const useStyles = makeStyles((theme) => ({
   submitButton: {

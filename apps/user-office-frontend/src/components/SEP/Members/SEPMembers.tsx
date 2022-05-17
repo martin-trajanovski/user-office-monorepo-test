@@ -8,20 +8,24 @@ import IconButton from '@mui/material/IconButton';
 import TextField from '@mui/material/TextField';
 import Tooltip from '@mui/material/Tooltip';
 import Typography from '@mui/material/Typography';
+import {
+  BasicUserDetails,
+  UserRole,
+  Sep,
+} from '@user-office-software/shared-types';
 import React, { useState, useContext } from 'react';
 
-import { ActionButtonContainer } from '../common/ActionButtonContainer';
-import { useCheckAccess } from '../common/Can';
-import UOLoader from '../common/UOLoader';
-import ParticipantModal from '../proposal/ParticipantModal';
-import { UserContext } from '../../UserContextProvider';
-import { BasicUserDetails, UserRole, Sep } from '@user-office-software/shared-types';
-import { useRenewToken } from '../../common/useRenewToken';
-import { useSEPReviewersData } from '../../SEP/useSEPReviewersData';
-import { tableIcons } from '../../utils/materialIcons';
-import useDataApiWithFeedback from '../../utils/useDataApiWithFeedback';
-import { getFullUserName } from '../../user';
-import withConfirm, { WithConfirmType } from '../../utils/withConfirm';
+import { UserContext } from '../../../context/UserContextProvider';
+import { useRenewToken } from '../../../hooks/common/useRenewToken';
+import { useSEPReviewersData } from '../../../hooks/SEP/useSEPReviewersData';
+import { tableIcons } from '../../../utils/materialIcons';
+import useDataApiWithFeedback from '../../../utils/useDataApiWithFeedback';
+import { getFullUserName } from '../../../utils/user';
+import withConfirm, { WithConfirmType } from '../../../utils/withConfirm';
+import { ActionButtonContainer } from '../../common/ActionButtonContainer';
+import { useCheckAccess } from '../../common/Can';
+import UOLoader from '../../common/UOLoader';
+import ParticipantModal from '../../proposal/ParticipantModal';
 
 type BasicUserDetailsWithRole = BasicUserDetails & { roleId: UserRole };
 

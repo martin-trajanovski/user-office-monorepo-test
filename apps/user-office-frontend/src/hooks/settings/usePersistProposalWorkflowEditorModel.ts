@@ -1,13 +1,17 @@
+import {
+  IndexWithGroupId,
+  ProposalWorkflow,
+  Rejection,
+} from '@user-office-software/shared-types';
 import { useState } from 'react';
 
 import {
   Event,
   EventType,
-} from '../settings/proposalWorkflow/ProposalWorkflowEditorModel';
-import { IndexWithGroupId, ProposalWorkflow, Rejection } from '@user-office-software/shared-types';
+} from '../../components/settings/proposalWorkflow/ProposalWorkflowEditorModel';
 import useDataApiWithFeedback from '../../utils/useDataApiWithFeedback';
 import { MiddlewareInputParams } from '../../utils/useReducerWithMiddleWares';
-import { FunctionType } from '../../utilTypes';
+import { FunctionType } from '../../utils/utilTypes';
 
 export function usePersistProposalWorkflowEditorModel() {
   const [isLoading, setIsLoading] = useState<boolean>(false);

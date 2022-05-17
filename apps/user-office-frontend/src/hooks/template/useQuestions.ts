@@ -1,6 +1,9 @@
+import {
+  GetQuestionsQuery,
+  QuestionsFilter,
+} from '@user-office-software/shared-types';
 import { useEffect, useState } from 'react';
 
-import { GetQuestionsQuery, QuestionsFilter } from '@user-office-software/shared-types';
 import { useDataApi } from '../common/useDataApi';
 
 export type QuestionWithUsage = GetQuestionsQuery['questions'][number];

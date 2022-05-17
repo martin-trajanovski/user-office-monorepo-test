@@ -2,8 +2,8 @@ import Button, { ButtonProps } from '@mui/material/Button';
 import makeStyles from '@mui/styles/makeStyles';
 import React from 'react';
 
-import { ActionButtonContainer } from '../common/ActionButtonContainer';
-import InputDialog from '../common/InputDialog';
+import { ActionButtonContainer } from '../../components/common/ActionButtonContainer';
+import InputDialog from '../../components/common/InputDialog';
 
 interface ButtonWithDialogProps extends ButtonProps {
   children: JSX.Element;

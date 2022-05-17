@@ -3,7 +3,7 @@ import { useCallback, useContext } from 'react';
 import {
   DownloadContext,
   PREPARE_DOWNLOAD_TYPE,
-} from '../../DownloadContextProvider';
+} from '../../context/DownloadContextProvider';
 
 export function useDownloadPDFShipmentLabel() {
   const { prepareDownload } = useContext(DownloadContext);

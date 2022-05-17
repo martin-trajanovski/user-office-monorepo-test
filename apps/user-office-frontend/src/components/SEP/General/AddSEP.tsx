@@ -2,15 +2,15 @@ import Button from '@mui/material/Button';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Typography from '@mui/material/Typography';
 import makeStyles from '@mui/styles/makeStyles';
-import { createSEPValidationSchema } from '@user-office-software/validation/lib/SEP';
+import { Sep } from '@user-office-software/shared-types';
+import { createSEPValidationSchema } from '@user-office-software/validation';
 import { Field, Form, Formik } from 'formik';
 import { Checkbox, TextField } from 'formik-mui';
 import PropTypes from 'prop-types';
 import React from 'react';
 
-import UOLoader from '../common/UOLoader';
-import { Sep } from '@user-office-software/shared-types';
-import useDataApiWithFeedback from '../../utils/useDataApiWithFeedback';
+import useDataApiWithFeedback from '../../../utils/useDataApiWithFeedback';
+import UOLoader from '../../common/UOLoader';
 
 const useStyles = makeStyles((theme) => ({
   submit: {

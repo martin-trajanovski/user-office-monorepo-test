@@ -3,24 +3,23 @@ import FeedbackIcon from '@mui/icons-material/Feedback';
 import FlightTakeoffIcon from '@mui/icons-material/FlightTakeoff';
 import GroupIcon from '@mui/icons-material/Group';
 import SchoolIcon from '@mui/icons-material/School';
-import { DateTime } from 'luxon';
-import React, { ReactNode, useContext } from 'react';
-import { useHistory } from 'react-router';
-
-import BoxIcon from '../common/icons/BoxIcon';
-import EsiIcon from '../common/icons/EsiIcon';
-import ActionButton, {
-  ActionButtonState,
-} from '../proposalBooking/ActionButton';
-import CreateUpdateVisit from '../proposalBooking/CreateUpdateVisit';
-import CreateUpdateVisitRegistration from '../visit/CreateUpdateVisitRegistration';
-import { UserContext, BasicUser } from '../../UserContextProvider';
 import {
   FeedbackStatus,
   ProposalBookingStatusCore,
   ProposalEndStatus,
 } from '@user-office-software/shared-types';
+import { DateTime } from 'luxon';
+import React, { ReactNode, useContext } from 'react';
+import { useHistory } from 'react-router';
 
+import BoxIcon from '../../components/common/icons/BoxIcon';
+import EsiIcon from '../../components/common/icons/EsiIcon';
+import ActionButton, {
+  ActionButtonState,
+} from '../../components/proposalBooking/ActionButton';
+import CreateUpdateVisit from '../../components/proposalBooking/CreateUpdateVisit';
+import CreateUpdateVisitRegistration from '../../components/visit/CreateUpdateVisitRegistration';
+import { UserContext, BasicUser } from '../../context/UserContextProvider';
 import { ProposalScheduledEvent } from './useProposalBookingsScheduledEvents';
 
 const getParticipationRole = (

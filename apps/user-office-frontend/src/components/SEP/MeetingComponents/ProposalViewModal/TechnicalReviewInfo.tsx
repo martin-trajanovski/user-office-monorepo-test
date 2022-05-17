@@ -15,6 +15,7 @@ import TableContainer from '@mui/material/TableContainer';
 import TableRow from '@mui/material/TableRow';
 import Typography from '@mui/material/Typography';
 import makeStyles from '@mui/styles/makeStyles';
+import { Proposal, TechnicalReview } from '@user-office-software/shared-types';
 import { updateTimeAllocationValidationSchema } from '@user-office-software/validation';
 import clsx from 'clsx';
 import { Formik, Form, Field } from 'formik';
@@ -22,11 +23,10 @@ import { TextField } from 'formik-mui';
 import PropTypes from 'prop-types';
 import React, { useState } from 'react';
 
-import UOLoader from '../common/UOLoader';
-import { Proposal, TechnicalReview } from '@user-office-software/shared-types';
-import { StyledPaper } from '../../styles/StyledComponents';
-import useDataApiWithFeedback from '../../utils/useDataApiWithFeedback';
-import { getFullUserName } from '../../user';
+import { StyledPaper } from '../../../../styles/StyledComponents';
+import useDataApiWithFeedback from '../../../../utils/useDataApiWithFeedback';
+import { getFullUserName } from '../../../../utils/user';
+import UOLoader from '../../../common/UOLoader';
 
 type SEPProposalProps = {
   sepId: number;

@@ -5,12 +5,12 @@ import TableContainer from '@mui/material/TableContainer';
 import TableRow from '@mui/material/TableRow';
 import Typography from '@mui/material/Typography';
 import makeStyles from '@mui/styles/makeStyles';
+import { Review } from '@user-office-software/shared-types';
 import PropTypes from 'prop-types';
 import React from 'react';
 
-import { Review } from '@user-office-software/shared-types';
-import { StyledPaper } from '../../styles/StyledComponents';
-import { getFullUserName } from '../../user';
+import { StyledPaper } from '../../../../styles/StyledComponents';
+import { getFullUserName } from '../../../../utils/user';
 
 const useStyles = makeStyles((theme) => ({
   heading: {

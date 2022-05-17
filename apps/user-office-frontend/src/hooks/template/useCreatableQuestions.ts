@@ -1,6 +1,6 @@
-import { nonCreatableQuestions } from '../questionary/QuestionaryComponentRegistry';
 import { QuestionsFilter } from '@user-office-software/shared-types';
 
+import { nonCreatableQuestions } from '../../components/questionary/QuestionaryComponentRegistry';
 import { useQuestions } from './useQuestions';
 
 const nonCreateableQuestionsDataTypes = nonCreatableQuestions.map(

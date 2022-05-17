@@ -3,9 +3,8 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import { NumberParam, useQueryParams, withDefault } from 'use-query-params';
 
-import CallFilter from '../common/proposalFilters/CallFilter';
-import { useCallsData } from '../../call/useCallsData';
-
+import { useCallsData } from '../../../hooks/call/useCallsData';
+import CallFilter from '../../common/proposalFilters/CallFilter';
 import SEPProposalsAndAssignmentsTable from './SEPProposalsAndAssignmentsTable';
 
 type SEPProposalsAndAssignmentsProps = {

@@ -1,6 +1,10 @@
+import {
+  SepReviewer,
+  Role,
+  BasicUserDetails,
+} from '@user-office-software/shared-types';
 import { useEffect, useState, Dispatch, SetStateAction } from 'react';
 
-import { SepReviewer, Role, BasicUserDetails } from '@user-office-software/shared-types';
 import { useDataApi } from '../common/useDataApi';
 
 export type SepMember = Pick<SepReviewer, 'userId' | 'sepId'> & {

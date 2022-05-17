@@ -2,25 +2,25 @@ import MaterialTable from '@material-table/core';
 import RateReviewIcon from '@mui/icons-material/RateReview';
 import Visibility from '@mui/icons-material/Visibility';
 import makeStyles from '@mui/styles/makeStyles';
-import PropTypes from 'prop-types';
-import React, { useContext } from 'react';
-import { NumberParam, useQueryParams } from 'use-query-params';
-
-import { useCheckAccess } from '../common/Can';
-import ProposalReviewContent, {
-  PROPOSAL_MODAL_TAB_NAMES,
-} from '../review/ProposalReviewContent';
-import ProposalReviewModal from '../review/ProposalReviewModal';
-import { ReviewAndAssignmentContext } from '../../ReviewAndAssignmentContextProvider';
 import {
   SepAssignment,
   ReviewStatus,
   UserRole,
   SettingsId,
 } from '@user-office-software/shared-types';
-import { useFormattedDateTime } from '../../admin/useFormattedDateTime';
-import { SEPProposalType } from '../../SEP/useSEPProposalsData';
-import { tableIcons } from '../../utils/materialIcons';
+import PropTypes from 'prop-types';
+import React, { useContext } from 'react';
+import { NumberParam, useQueryParams } from 'use-query-params';
+
+import { ReviewAndAssignmentContext } from '../../../context/ReviewAndAssignmentContextProvider';
+import { useFormattedDateTime } from '../../../hooks/admin/useFormattedDateTime';
+import { SEPProposalType } from '../../../hooks/SEP/useSEPProposalsData';
+import { tableIcons } from '../../../utils/materialIcons';
+import { useCheckAccess } from '../../common/Can';
+import ProposalReviewContent, {
+  PROPOSAL_MODAL_TAB_NAMES,
+} from '../../review/ProposalReviewContent';
+import ProposalReviewModal from '../../review/ProposalReviewModal';
 
 // NOTE: Some custom styles for row expand table.
 const useStyles = makeStyles(() => ({

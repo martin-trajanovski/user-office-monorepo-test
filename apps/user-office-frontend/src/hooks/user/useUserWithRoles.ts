@@ -1,9 +1,9 @@
-import { useEffect, useState } from 'react';
-
 import {
   GetUserWithRolesQuery,
   GetUserWithRolesQueryVariables,
 } from '@user-office-software/shared-types';
+import { useEffect, useState } from 'react';
+
 import { useDataApi } from '../common/useDataApi';
 
 export function useUserWithRolesData({ id }: GetUserWithRolesQueryVariables) {

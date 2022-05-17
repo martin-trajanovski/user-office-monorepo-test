@@ -7,15 +7,6 @@ import { IconButton, Tooltip, Typography } from '@mui/material';
 import Dialog from '@mui/material/Dialog';
 import DialogContent from '@mui/material/DialogContent';
 import Grid from '@mui/material/Grid';
-import { DateTime } from 'luxon';
-import React, { useState } from 'react';
-import { NumberParam, useQueryParams } from 'use-query-params';
-
-import { useCheckAccess } from '../common/Can';
-import ProposalReviewContent, {
-  PROPOSAL_MODAL_TAB_NAMES,
-} from '../review/ProposalReviewContent';
-import ProposalReviewModal from '../review/ProposalReviewModal';
 import {
   SepAssignment,
   UserRole,
@@ -24,22 +15,30 @@ import {
   Review,
   SettingsId,
 } from '@user-office-software/shared-types';
-import { useFormattedDateTime } from '../../admin/useFormattedDateTime';
-import { useDownloadPDFProposal } from '../proposal/useDownloadPDFProposal';
+import { DateTime } from 'luxon';
+import React, { useState } from 'react';
+import { NumberParam, useQueryParams } from 'use-query-params';
+
+import { useFormattedDateTime } from '../../../hooks/admin/useFormattedDateTime';
+import { useDownloadPDFProposal } from '../../../hooks/proposal/useDownloadPDFProposal';
 import {
   useSEPProposalsData,
   SEPProposalType,
   SEPProposalAssignmentType,
-} from '../../SEP/useSEPProposalsData';
-import { tableIcons } from '../../utils/materialIcons';
+} from '../../../hooks/SEP/useSEPProposalsData';
+import { tableIcons } from '../../../utils/materialIcons';
 import {
   average,
   getGradesFromReviews,
   standardDeviation,
-} from '../../mathFunctions';
-import useDataApiWithFeedback from '../../utils/useDataApiWithFeedback';
-import withConfirm, { WithConfirmType } from '../../utils/withConfirm';
-
+} from '../../../utils/mathFunctions';
+import useDataApiWithFeedback from '../../../utils/useDataApiWithFeedback';
+import withConfirm, { WithConfirmType } from '../../../utils/withConfirm';
+import { useCheckAccess } from '../../common/Can';
+import ProposalReviewContent, {
+  PROPOSAL_MODAL_TAB_NAMES,
+} from '../../review/ProposalReviewContent';
+import ProposalReviewModal from '../../review/ProposalReviewModal';
 import AssignSEPMemberToProposal, {
   SepAssignedMember,
 } from './AssignSEPMemberToProposal';

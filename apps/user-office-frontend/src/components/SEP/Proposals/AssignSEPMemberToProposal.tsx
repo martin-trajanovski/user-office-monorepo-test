@@ -1,8 +1,12 @@
+import {
+  BasicUserDetails,
+  Maybe,
+  Role,
+} from '@user-office-software/shared-types';
 import React from 'react';
 
-import PeopleTable from '../user/PeopleTable';
-import { BasicUserDetails, Maybe, Role } from '@user-office-software/shared-types';
-import { useSEPMembersData } from '../../SEP/useSEPMembersData';
+import { useSEPMembersData } from '../../../hooks/SEP/useSEPMembersData';
+import PeopleTable from '../../user/PeopleTable';
 
 export type SepAssignedMember = BasicUserDetails & { role?: Maybe<Role> };
 

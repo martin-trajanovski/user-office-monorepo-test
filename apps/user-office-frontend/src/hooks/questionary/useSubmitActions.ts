@@ -1,10 +1,11 @@
-import { feedbackBasisPreSubmit } from '../questionary/questionaryComponents/FeedbackBasis/QuestionaryComponentFeedbackBasis';
-import { genericTemplateBasisPreSubmit } from '../questionary/questionaryComponents/GenericTemplateBasis/QuestionaryComponentGenericTemplateBasis';
-import { proposalBasisPreSubmit } from '../questionary/questionaryComponents/ProposalBasis/QuestionaryComponentProposalBasis';
-import { sampleBasisPreSubmit } from '../questionary/questionaryComponents/SampleBasis/QuestionaryComponentSampleBasis';
-import { shipmentBasisPreSubmit } from '../questionary/questionaryComponents/ShipmentBasis/QuestionaryComponentShipmentBasis';
-import { visitBasisPreSubmit } from '../questionary/questionaryComponents/VisitBasis/QuestionaryComponentVisitBasis';
 import { Answer, DataType, Sdk } from '@user-office-software/shared-types';
+
+import { feedbackBasisPreSubmit } from '../../components/questionary/questionaryComponents/FeedbackBasis/QuestionaryComponentFeedbackBasis';
+import { genericTemplateBasisPreSubmit } from '../../components/questionary/questionaryComponents/GenericTemplateBasis/QuestionaryComponentGenericTemplateBasis';
+import { proposalBasisPreSubmit } from '../../components/questionary/questionaryComponents/ProposalBasis/QuestionaryComponentProposalBasis';
+import { sampleBasisPreSubmit } from '../../components/questionary/questionaryComponents/SampleBasis/QuestionaryComponentSampleBasis';
+import { shipmentBasisPreSubmit } from '../../components/questionary/questionaryComponents/ShipmentBasis/QuestionaryComponentShipmentBasis';
+import { visitBasisPreSubmit } from '../../components/questionary/questionaryComponents/VisitBasis/QuestionaryComponentVisitBasis';
 import {
   Event,
   QuestionarySubmissionState,

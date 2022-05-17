@@ -1,6 +1,5 @@
-import { StringParam, useQueryParams } from 'use-query-params';
-
 import { QuestionFilterInput } from '@user-office-software/shared-types';
+import { StringParam, useQueryParams } from 'use-query-params';
 
 export const useQuestionFilterQueryParams = () => {
   const [query, setQuery] = useQueryParams({

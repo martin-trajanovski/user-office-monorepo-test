@@ -1,11 +1,10 @@
-import { useEffect, useState } from 'react';
-
-import { useDataApi } from '../common/useDataApi';
-
 import {
   GetScheduledEventsCoreQuery,
   GetScheduledEventsCoreQueryVariables,
 } from '@user-office-software/shared-types';
+import { useEffect, useState } from 'react';
+
+import { useDataApi } from '../common/useDataApi';
 
 export function useScheduledEvents(
   queryArgs: GetScheduledEventsCoreQueryVariables

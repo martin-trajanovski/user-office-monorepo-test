@@ -1,12 +1,11 @@
-import { useEffect, useState } from 'react';
-
 import {
   BasicUserDetailsFragment,
   GetUsersQueryVariables,
 } from '@user-office-software/shared-types';
-import { useDataApi } from '../common/useDataApi';
+import { useEffect, useState } from 'react';
 
 import { getCurrentUser } from '../../context/UserContextProvider';
+import { useDataApi } from '../common/useDataApi';
 
 export function usePrevColabs(
   usersFilter: GetUsersQueryVariables & { refreshData?: boolean }

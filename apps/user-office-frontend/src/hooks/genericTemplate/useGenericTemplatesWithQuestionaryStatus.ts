@@ -1,9 +1,8 @@
+import { GenericTemplatesFilter } from '@user-office-software/shared-types';
 import { useEffect, useState } from 'react';
 
-import { GenericTemplatesFilter } from '@user-office-software/shared-types';
-import { useDataApi } from '../common/useDataApi';
-
 import { GenericTemplateCore } from '../../models/questionary/genericTemplate/GenericTemplateCore';
+import { useDataApi } from '../common/useDataApi';
 
 export function useGenericTemplatesWithQuestionaryStatus(
   filter?: GenericTemplatesFilter
