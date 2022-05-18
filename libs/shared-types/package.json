@@ -1,0 +1,11 @@
+{
+  "name": "@user-office-software-libs/shared-tyes",
+  "version": "1.0.0",
+  "type": "commonjs",
+  "scripts": {
+    "clean": "rm -rf ./lib",
+    "build": "npm run clean && tsc -p ./tsconfig.build.json"
+  },
+  "author": "SWAP",
+  "license": "ISC"
+}

@@ -5,6 +5,10 @@
   "type": "commonjs",
   "author": "SWAP",
   "license": "ISC",
+  "scripts": {
+    "clean": "rm -rf ./lib",
+    "build": "npm run clean && tsc -p ./tsconfig.build.json"
+  },
   "keywords": [
     "duo",
     "validation",

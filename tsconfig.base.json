@@ -21,9 +21,9 @@
         "libs/message-broker/src/index.ts"
       ],
       "@user-office-software-libs/shared-types": [
-        "libs/shared-types/src/index.ts"
+        "libs/shared-types/lib"
       ],
-      "@user-office-software-libs/validation": ["libs/validation/src/index.ts"]
+      "@user-office-software-libs/validation": ["libs/validation/lib"]
     }
   },
   "exclude": ["node_modules", "tmp"]

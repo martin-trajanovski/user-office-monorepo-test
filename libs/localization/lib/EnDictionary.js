@@ -1,10 +1,10 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.EnDictionary = void 0;
-const StringResources_1 = require("./StringResources");
-class EnDictionary {
-    constructor() {
-        this.map = StringResources_1.JSDict.Create();
+var _1 = require("./");
+var EnDictionary = /** @class */ (function () {
+    function EnDictionary() {
+        this.map = _1.JSDict.Create();
         this.map.put('ACCOUNT_EXIST', 'Account already exists');
         this.map.put('BAD_TOKEN', 'Bad token');
         this.map.put('COULD_NOT_FIND_USER_BY_EMAIL', 'Could not find user by email');
@@ -39,5 +39,6 @@ class EnDictionary {
         // Scheduler
         this.map.put('SCHEDULED_EVENT_OVERLAP', 'There is already a scheduled event in the selected range');
     }
-}
+    return EnDictionary;
+}());
 exports.EnDictionary = EnDictionary;

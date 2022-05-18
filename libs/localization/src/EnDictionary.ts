@@ -1,4 +1,4 @@
-import { JSDict, ResourceId } from './StringResources';
+import { JSDict, ResourceId } from './';
 export class EnDictionary {
   public map = JSDict.Create<ResourceId, string>();
   constructor() {

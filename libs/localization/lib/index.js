@@ -1,18 +1,51 @@
 "use strict";
-var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
-    if (k2 === undefined) k2 = k;
-    var desc = Object.getOwnPropertyDescriptor(m, k);
-    if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) {
-      desc = { enumerable: true, get: function() { return m[k]; } };
-    }
-    Object.defineProperty(o, k2, desc);
-}) : (function(o, m, k, k2) {
-    if (k2 === undefined) k2 = k;
-    o[k2] = m[k];
-}));
-var __exportStar = (this && this.__exportStar) || function(m, exports) {
-    for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
-};
 Object.defineProperty(exports, "__esModule", { value: true });
-__exportStar(require("./EnDictionary"), exports);
-__exportStar(require("./StringResources"), exports);
+exports.getTranslation = exports.JSDict = void 0;
+var EnDictionary_1 = require("./EnDictionary");
+var JSDict = /** @class */ (function () {
+    function JSDict() {
+        this.dict = {};
+    }
+    JSDict.Create = function () {
+        return new JSDict();
+    };
+    JSDict.prototype.getKeys = function () {
+        var keys = [];
+        for (var key in this.dict) {
+            if (this.dict.hasOwnProperty(key)) {
+                keys.push(key);
+            }
+        }
+        return keys;
+    };
+    JSDict.prototype.getValues = function () {
+        var vals = [];
+        for (var key in this.dict) {
+            if (this.dict.hasOwnProperty(key)) {
+                var v = this.dict[key];
+                if (this.exists(v)) {
+                    vals.push(v);
+                }
+            }
+        }
+        return vals;
+    };
+    JSDict.prototype.get = function (key) {
+        var v = this.dict[key];
+        return this.exists(v) ? v : null;
+    };
+    JSDict.prototype.put = function (key, val) {
+        this.dict[key] = val;
+    };
+    // Type predicate to ensure v exists
+    JSDict.prototype.exists = function (v) {
+        return v != null && typeof v !== 'undefined';
+    };
+    return JSDict;
+}());
+exports.JSDict = JSDict;
+var dictionary = new EnDictionary_1.EnDictionary();
+function getTranslation(id) {
+    return dictionary.map.get(id) || id;
+}
+exports.getTranslation = getTranslation;

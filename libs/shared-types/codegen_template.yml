@@ -2,7 +2,7 @@ overwrite: true
 schema: "${SCHEMA_URL}"
 documents: "libs/shared-types/graphql/**/*.graphql"
 generates:
-  libs/shared-types/src/lib/generated/sdk.ts:
+  libs/shared-types/src/index.ts:
     config:
       skipTypename: true
       namingConvention:
