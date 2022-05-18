@@ -18,7 +18,7 @@ import Divider from '@mui/material/Divider';
 import Typography from '@mui/material/Typography';
 import makeStyles from '@mui/styles/makeStyles';
 import { Editor } from '@tinymce/tinymce-react';
-import { PageName } from '@user-office-software/shared-types';
+import { PageName } from '@user-office-software-libs/shared-types';
 import React, { useState, useEffect } from 'react';
 
 import { useGetPageContent } from '../../hooks/admin/useGetPageContent';

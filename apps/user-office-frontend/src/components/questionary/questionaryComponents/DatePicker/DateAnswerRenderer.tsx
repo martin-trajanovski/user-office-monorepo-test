@@ -1,4 +1,4 @@
-import { DateConfig, SettingsId } from '@user-office-software/shared-types';
+import { DateConfig, SettingsId } from '@user-office-software-libs/shared-types';
 import React from 'react';
 
 import { useFormattedDateTime } from '../../../../hooks/admin/useFormattedDateTime';

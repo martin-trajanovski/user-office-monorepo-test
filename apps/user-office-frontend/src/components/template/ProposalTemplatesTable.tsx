@@ -4,7 +4,7 @@ import Link from '@mui/material/Link';
 import {
   ProposalTemplate,
   TemplateGroupId,
-} from '@user-office-software/shared-types';
+} from '@user-office-software-libs/shared-types';
 import React, { useCallback, useState } from 'react';
 
 import { useFormattedDateTime } from '../../hooks/admin/useFormattedDateTime';

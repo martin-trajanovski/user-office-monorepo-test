@@ -11,7 +11,7 @@ import {
   QuestionTemplateRelation,
   SelectionFromOptionsConfig,
   Template,
-} from '@user-office-software/shared-types';
+} from '@user-office-software-libs/shared-types';
 import { FormikHelpers, FormikValues } from 'formik';
 import React, { useCallback, useEffect, useState, useMemo } from 'react';
 

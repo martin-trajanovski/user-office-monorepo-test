@@ -2,7 +2,7 @@ import { DatePicker, LocalizationProvider } from '@mui/lab';
 import DateAdapter from '@mui/lab/AdapterLuxon';
 import { Stack, TextField } from '@mui/material';
 import { makeStyles } from '@mui/styles';
-import { SettingsId } from '@user-office-software/shared-types';
+import { SettingsId } from '@user-office-software-libs/shared-types';
 import { DateTime } from 'luxon';
 import React from 'react';
 import { DateParam, useQueryParams } from 'use-query-params';

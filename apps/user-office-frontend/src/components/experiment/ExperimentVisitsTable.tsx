@@ -3,7 +3,7 @@ import { makeStyles } from '@mui/styles';
 import {
   GetScheduledEventsCoreQuery,
   TrainingStatus,
-} from '@user-office-software/shared-types';
+} from '@user-office-software-libs/shared-types';
 import React from 'react';
 
 import { useFormattedDateTime } from '../../hooks/admin/useFormattedDateTime';

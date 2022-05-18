@@ -1,5 +1,5 @@
 import makeStyles from '@mui/styles/makeStyles';
-import { Settings, SettingsId } from '@user-office-software/shared-types';
+import { Settings, SettingsId } from '@user-office-software-libs/shared-types';
 import React from 'react';
 
 import { useSettings } from '../hooks/admin/useSettings';

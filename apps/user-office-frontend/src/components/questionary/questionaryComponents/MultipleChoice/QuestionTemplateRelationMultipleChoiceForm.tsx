@@ -3,7 +3,7 @@ import FormControlLabel from '@mui/material/FormControlLabel';
 import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import { SelectChangeEvent } from '@mui/material/Select';
-import { SelectionFromOptionsConfig } from '@user-office-software/shared-types';
+import { SelectionFromOptionsConfig } from '@user-office-software-libs/shared-types';
 import { Field } from 'formik';
 import { Checkbox, Select } from 'formik-mui';
 import React, { FC, useState } from 'react';

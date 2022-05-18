@@ -1,5 +1,5 @@
 import DynamicFeedIcon from '@mui/icons-material/DynamicFeed';
-import { DataType } from '@user-office-software/shared-types';
+import { DataType } from '@user-office-software-libs/shared-types';
 import React from 'react';
 
 import { GenericTemplateSubmissionState } from '../../../../models/questionary/genericTemplate/GenericTemplateSubmissionState';

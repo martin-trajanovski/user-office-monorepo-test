@@ -1,4 +1,4 @@
-import { QueriesAndMutations } from '@user-office-software/shared-types';
+import { QueriesAndMutations } from '@user-office-software-libs/shared-types';
 import { useEffect, useState } from 'react';
 
 import { useDataApi } from '../common/useDataApi';

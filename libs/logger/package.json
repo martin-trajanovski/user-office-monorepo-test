@@ -3,6 +3,10 @@
   "version": "2.0.2",
   "type": "commonjs",
   "description": "Logger implementation",
+  "scripts": {
+    "clean": "rm -rf ./lib",
+    "build": "npm run clean && tsc -p ./tsconfig.build.json"
+  },
   "author": "SWAP",
   "license": "ISC"
 }

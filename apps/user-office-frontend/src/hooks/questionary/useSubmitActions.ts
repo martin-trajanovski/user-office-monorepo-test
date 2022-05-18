@@ -1,4 +1,4 @@
-import { Answer, DataType, Sdk } from '@user-office-software/shared-types';
+import { Answer, DataType, Sdk } from '@user-office-software-libs/shared-types';
 
 import { feedbackBasisPreSubmit } from '../../components/questionary/questionaryComponents/FeedbackBasis/QuestionaryComponentFeedbackBasis';
 import { genericTemplateBasisPreSubmit } from '../../components/questionary/questionaryComponents/GenericTemplateBasis/QuestionaryComponentGenericTemplateBasis';

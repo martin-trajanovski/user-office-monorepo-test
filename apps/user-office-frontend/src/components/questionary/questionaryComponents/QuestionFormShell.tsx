@@ -1,7 +1,7 @@
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import makeStyles from '@mui/styles/makeStyles';
-import { Question } from '@user-office-software/shared-types';
+import { Question } from '@user-office-software-libs/shared-types';
 import { Form, Formik } from 'formik';
 import React from 'react';
 

@@ -1,7 +1,7 @@
 import { promises as fs } from 'fs';
 import path from 'path';
 
-import { logger } from '@user-office-software/logger';
+import { logger } from '@user-office-software/duo-logger';
 import { injectable } from 'tsyringe';
 
 import { Page } from '../../models/Admin';

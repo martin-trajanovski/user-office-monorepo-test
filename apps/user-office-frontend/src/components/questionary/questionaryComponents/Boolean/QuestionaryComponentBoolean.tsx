@@ -3,7 +3,7 @@ import FormControl from '@mui/material/FormControl';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import FormHelperText from '@mui/material/FormHelperText';
 import makeStyles from '@mui/styles/makeStyles';
-import { BooleanConfig } from '@user-office-software/shared-types';
+import { BooleanConfig } from '@user-office-software-libs/shared-types';
 import { getIn } from 'formik';
 import React, { ChangeEvent, useEffect, useState } from 'react';
 

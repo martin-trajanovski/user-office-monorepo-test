@@ -1,4 +1,4 @@
-import { Rejection, getSdk } from '@user-office-software/shared-types';
+import { Rejection, getSdk } from '@user-office-software-libs/shared-types';
 import { SnackbarAction, useSnackbar, VariantType } from 'notistack';
 import { useCallback, useContext, useState } from 'react';
 

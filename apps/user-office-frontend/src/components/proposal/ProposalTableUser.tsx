@@ -3,7 +3,7 @@ import {
   Maybe,
   ProposalPublicStatus,
   ProposalStatus,
-} from '@user-office-software/shared-types';
+} from '@user-office-software-libs/shared-types';
 import React, { useCallback, useState } from 'react';
 
 import { useDataApi } from '../../hooks/common/useDataApi';

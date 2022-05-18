@@ -7,7 +7,7 @@ import MenuItem from '@mui/material/MenuItem';
 import Select from '@mui/material/Select';
 import TextField from '@mui/material/TextField';
 import makeStyles from '@mui/styles/makeStyles';
-import { IntervalConfig, Unit } from '@user-office-software/shared-types';
+import { IntervalConfig, Unit } from '@user-office-software-libs/shared-types';
 import { Field, getIn } from 'formik';
 import React, { useState } from 'react';
 

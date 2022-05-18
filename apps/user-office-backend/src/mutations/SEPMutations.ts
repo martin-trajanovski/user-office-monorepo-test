@@ -7,7 +7,7 @@ import {
   assignSEPMemberToProposalValidationSchema,
   updateTimeAllocationValidationSchema,
   saveSepMeetingDecisionValidationSchema,
-} from '@user-office-software/validation';
+} from '@user-office-software/duo-validation';
 import { container, inject, injectable } from 'tsyringe';
 
 import { ProposalAuthorization } from '../auth/ProposalAuthorization';

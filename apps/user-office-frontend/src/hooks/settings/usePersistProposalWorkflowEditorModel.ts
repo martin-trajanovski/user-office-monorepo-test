@@ -2,7 +2,7 @@ import {
   IndexWithGroupId,
   ProposalWorkflow,
   Rejection,
-} from '@user-office-software/shared-types';
+} from '@user-office-software-libs/shared-types';
 import { useState } from 'react';
 
 import {

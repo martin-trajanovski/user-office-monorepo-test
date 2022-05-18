@@ -9,7 +9,7 @@ import {
   ProposalStatus,
   QuestionFilterCompareOperator,
   QuestionFilterInput,
-} from '@user-office-software/shared-types';
+} from '@user-office-software-libs/shared-types';
 import PropTypes from 'prop-types';
 import React, { useState } from 'react';
 import { DecodedValueMap } from 'use-query-params';

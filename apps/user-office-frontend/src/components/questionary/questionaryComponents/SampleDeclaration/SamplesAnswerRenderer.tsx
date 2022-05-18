@@ -1,7 +1,7 @@
 import Button from '@mui/material/Button';
 import Link from '@mui/material/Link';
 import makeStyles from '@mui/styles/makeStyles';
-import { Answer } from '@user-office-software/shared-types';
+import { Answer } from '@user-office-software-libs/shared-types';
 import React, { useState } from 'react';
 
 import { useSamplesWithQuestionaryStatus } from '../../../../hooks/sample/useSamplesWithQuestionaryStatus';

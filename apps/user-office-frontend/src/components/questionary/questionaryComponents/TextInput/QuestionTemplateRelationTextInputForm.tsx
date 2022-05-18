@@ -1,6 +1,6 @@
 import Box from '@mui/material/Box';
 import Collapse from '@mui/material/Collapse';
-import { TextInputConfig } from '@user-office-software/shared-types';
+import { TextInputConfig } from '@user-office-software-libs/shared-types';
 import { Field } from 'formik';
 import { CheckboxWithLabel, TextField } from 'formik-mui';
 import React, { FC } from 'react';

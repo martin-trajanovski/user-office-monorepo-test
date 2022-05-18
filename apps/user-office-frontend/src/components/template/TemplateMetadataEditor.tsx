@@ -4,7 +4,7 @@ import { IconButton } from '@mui/material';
 import Paper from '@mui/material/Paper';
 import TextField from '@mui/material/TextField';
 import makeStyles from '@mui/styles/makeStyles';
-import { Template } from '@user-office-software/shared-types';
+import { Template } from '@user-office-software-libs/shared-types';
 import clsx from 'clsx';
 import { Field, Form, Formik } from 'formik';
 import React, { useState } from 'react';

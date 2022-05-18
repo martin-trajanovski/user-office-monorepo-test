@@ -1,4 +1,4 @@
-import { Sep } from '@user-office-software/shared-types';
+import { Sep } from '@user-office-software-libs/shared-types';
 import { useState, useEffect } from 'react';
 
 import { useDataApi } from '../common/useDataApi';

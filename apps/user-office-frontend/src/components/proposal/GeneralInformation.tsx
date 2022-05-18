@@ -2,7 +2,7 @@ import Button from '@mui/material/Button';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Switch from '@mui/material/Switch';
 import makeStyles from '@mui/styles/makeStyles';
-import { UserRole } from '@user-office-software/shared-types';
+import { UserRole } from '@user-office-software-libs/shared-types';
 import React, { useState } from 'react';
 
 import { useDownloadPDFProposal } from '../../hooks/proposal/useDownloadPDFProposal';

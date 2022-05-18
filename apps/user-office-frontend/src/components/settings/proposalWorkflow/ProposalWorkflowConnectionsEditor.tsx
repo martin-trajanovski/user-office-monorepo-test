@@ -12,8 +12,8 @@ import useTheme from '@mui/styles/useTheme';
 import {
   ProposalWorkflowConnection,
   ProposalWorkflowConnectionGroup,
-} from '@user-office-software/shared-types';
-import { Event as ProposalEvent } from '@user-office-software/shared-types';
+} from '@user-office-software-libs/shared-types';
+import { Event as ProposalEvent } from '@user-office-software-libs/shared-types';
 import PropTypes from 'prop-types';
 import React, { useState } from 'react';
 import {

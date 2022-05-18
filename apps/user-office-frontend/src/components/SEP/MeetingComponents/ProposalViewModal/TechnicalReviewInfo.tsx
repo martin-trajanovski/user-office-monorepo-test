@@ -15,7 +15,7 @@ import TableContainer from '@mui/material/TableContainer';
 import TableRow from '@mui/material/TableRow';
 import Typography from '@mui/material/Typography';
 import makeStyles from '@mui/styles/makeStyles';
-import { Proposal, TechnicalReview } from '@user-office-software/shared-types';
+import { Proposal, TechnicalReview } from '@user-office-software-libs/shared-types';
 import { updateTimeAllocationValidationSchema } from '@user-office-software/validation';
 import clsx from 'clsx';
 import { Formik, Form, Field } from 'formik';

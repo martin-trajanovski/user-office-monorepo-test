@@ -1,4 +1,4 @@
-import { Proposal, ProposalsFilter } from '@user-office-software/shared-types';
+import { Proposal, ProposalsFilter } from '@user-office-software-libs/shared-types';
 import { useContext, useEffect, useState } from 'react';
 
 import { UserContext } from '../../context/UserContextProvider';

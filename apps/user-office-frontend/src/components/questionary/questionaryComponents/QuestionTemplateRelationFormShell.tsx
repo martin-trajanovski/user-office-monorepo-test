@@ -5,7 +5,7 @@ import makeStyles from '@mui/styles/makeStyles';
 import {
   FieldDependencyInput,
   QuestionTemplateRelation,
-} from '@user-office-software/shared-types';
+} from '@user-office-software-libs/shared-types';
 import { Form, Formik } from 'formik';
 import React from 'react';
 

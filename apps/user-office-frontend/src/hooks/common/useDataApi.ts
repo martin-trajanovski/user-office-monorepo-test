@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { getSdk, SettingsId } from '@user-office-software/shared-types';
+import { getSdk, SettingsId } from '@user-office-software-libs/shared-types';
 import { GraphQLClient } from 'graphql-request';
 import { Variables } from 'graphql-request/dist/types';
 import jwtDecode from 'jwt-decode';

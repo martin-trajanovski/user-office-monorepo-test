@@ -2,7 +2,7 @@ import FormControl from '@mui/material/FormControl';
 import InputLabel from '@mui/material/InputLabel';
 import Link from '@mui/material/Link';
 import MenuItem from '@mui/material/MenuItem';
-import { TemplateGroupId } from '@user-office-software/shared-types';
+import { TemplateGroupId } from '@user-office-software-libs/shared-types';
 import { Field } from 'formik';
 import { Select, TextField } from 'formik-mui';
 import React, { FC } from 'react';

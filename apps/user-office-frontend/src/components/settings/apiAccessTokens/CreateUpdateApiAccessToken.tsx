@@ -7,7 +7,7 @@ import IconButton from '@mui/material/IconButton';
 import Tooltip from '@mui/material/Tooltip';
 import Typography from '@mui/material/Typography';
 import makeStyles from '@mui/styles/makeStyles';
-import { PermissionsWithAccessToken } from '@user-office-software/shared-types';
+import { PermissionsWithAccessToken } from '@user-office-software-libs/shared-types';
 import {
   createApiAccessTokenValidationSchema,
   updateApiAccessTokenValidationSchema,

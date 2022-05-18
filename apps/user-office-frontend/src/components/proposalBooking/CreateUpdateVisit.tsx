@@ -1,5 +1,5 @@
 import { Button, Typography } from '@mui/material';
-import { BasicUserDetails } from '@user-office-software/shared-types';
+import { BasicUserDetails } from '@user-office-software-libs/shared-types';
 import { Form, Formik } from 'formik';
 import React from 'react';
 import * as Yup from 'yup';

@@ -5,7 +5,7 @@ import {
   CreateCallMutationVariables,
   SettingsId,
   UpdateCallMutationVariables,
-} from '@user-office-software/shared-types';
+} from '@user-office-software-libs/shared-types';
 import { Field, useFormikContext } from 'formik';
 import { TextField } from 'formik-mui';
 import { DatePicker } from 'formik-mui-lab';

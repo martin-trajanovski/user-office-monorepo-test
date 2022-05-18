@@ -7,7 +7,7 @@ import Visibility from '@mui/icons-material/Visibility';
 import { Typography } from '@mui/material';
 import Dialog from '@mui/material/Dialog';
 import DialogContent from '@mui/material/DialogContent';
-import { Call } from '@user-office-software/shared-types';
+import { Call } from '@user-office-software-libs/shared-types';
 import PropTypes from 'prop-types';
 import React, { useContext, useEffect, useState } from 'react';
 import { Redirect } from 'react-router';

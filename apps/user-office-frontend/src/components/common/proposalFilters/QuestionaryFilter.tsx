@@ -7,7 +7,7 @@ import {
   QuestionFilterInput,
   QuestionTemplateRelation,
   QuestionTemplateRelationFragment,
-} from '@user-office-software/shared-types';
+} from '@user-office-software-libs/shared-types';
 import React, { FC, useEffect, useState } from 'react';
 
 import { useQuestionFilterQueryParams } from '../../../hooks/proposal/useQuestionFilterQueryParams';

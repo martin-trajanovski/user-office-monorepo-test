@@ -21,7 +21,7 @@ import ListItemText from '@mui/material/ListItemText';
 import TextField from '@mui/material/TextField';
 import Tooltip from '@mui/material/Tooltip';
 import makeStyles from '@mui/styles/makeStyles';
-import { Maybe } from '@user-office-software/shared-types';
+import { Maybe } from '@user-office-software-libs/shared-types';
 import { getType } from 'mime';
 import React, { ChangeEvent, useState } from 'react';
 

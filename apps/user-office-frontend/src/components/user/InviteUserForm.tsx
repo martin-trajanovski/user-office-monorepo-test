@@ -1,7 +1,7 @@
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import makeStyles from '@mui/styles/makeStyles';
-import { BasicUserDetails, UserRole } from '@user-office-software/shared-types';
+import { BasicUserDetails, UserRole } from '@user-office-software-libs/shared-types';
 import { createUserByEmailInviteValidationSchema } from '@user-office-software/validation';
 import { Field, Form, Formik } from 'formik';
 import { TextField } from 'formik-mui';

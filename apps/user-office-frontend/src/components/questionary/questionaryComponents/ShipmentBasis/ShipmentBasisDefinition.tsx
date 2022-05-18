@@ -1,5 +1,5 @@
 import LocalShippingIcon from '@mui/icons-material/LocalShipping';
-import { DataType } from '@user-office-software/shared-types';
+import { DataType } from '@user-office-software-libs/shared-types';
 import React from 'react';
 
 import {

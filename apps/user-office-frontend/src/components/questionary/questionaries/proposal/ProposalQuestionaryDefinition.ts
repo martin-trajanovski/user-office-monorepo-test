@@ -1,4 +1,4 @@
-import { Sdk, TemplateGroupId } from '@user-office-software/shared-types';
+import { Sdk, TemplateGroupId } from '@user-office-software-libs/shared-types';
 
 import { ProposalSubmissionState } from '../../../../models/questionary/proposal/ProposalSubmissionState';
 import { ItemWithQuestionary } from '../../../../models/questionary/QuestionarySubmissionState';

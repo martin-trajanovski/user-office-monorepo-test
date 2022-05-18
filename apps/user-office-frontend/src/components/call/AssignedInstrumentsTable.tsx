@@ -4,7 +4,7 @@ import makeStyles from '@mui/styles/makeStyles';
 import {
   Call,
   InstrumentWithAvailabilityTime,
-} from '@user-office-software/shared-types';
+} from '@user-office-software-libs/shared-types';
 import { useSnackbar } from 'notistack';
 import PropTypes from 'prop-types';
 import React, { ChangeEvent } from 'react';

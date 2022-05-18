@@ -13,7 +13,7 @@ import {
 import {
   QuestionFilterCompareOperator,
   SettingsId,
-} from '@user-office-software/shared-types';
+} from '@user-office-software-libs/shared-types';
 import { DateTime } from 'luxon';
 import React, { useState, useEffect } from 'react';
 

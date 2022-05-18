@@ -18,7 +18,7 @@ import {
   GetSampleEsiQuery,
   SampleDeclarationConfig,
   SampleFragment,
-} from '@user-office-software/shared-types';
+} from '@user-office-software-libs/shared-types';
 import { Field, FieldProps } from 'formik';
 import React, { MouseEvent, useContext, useState } from 'react';
 

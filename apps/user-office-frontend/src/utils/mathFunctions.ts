@@ -1,4 +1,4 @@
-import { Review } from '@user-office-software/shared-types';
+import { Review } from '@user-office-software-libs/shared-types';
 
 export const average = (numbers: number[]) => {
   const sum = numbers.reduce(function (sum, value) {

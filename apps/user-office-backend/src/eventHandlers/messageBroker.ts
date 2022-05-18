@@ -1,8 +1,8 @@
-import { logger } from '@user-office-software/logger';
+import { logger } from '@user-office-software/duo-logger';
 import {
   Queue,
   RabbitMQMessageBroker,
-} from '@user-office-software/message-broker';
+} from '@user-office-software/duo-message-broker';
 import { container } from 'tsyringe';
 
 import { Tokens } from '../config/Tokens';

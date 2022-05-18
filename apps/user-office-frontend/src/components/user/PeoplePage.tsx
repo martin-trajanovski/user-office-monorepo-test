@@ -1,5 +1,5 @@
 import Edit from '@mui/icons-material/Edit';
-import { BasicUserDetails } from '@user-office-software/shared-types';
+import { BasicUserDetails } from '@user-office-software-libs/shared-types';
 import React, { useState } from 'react';
 import { useHistory } from 'react-router';
 

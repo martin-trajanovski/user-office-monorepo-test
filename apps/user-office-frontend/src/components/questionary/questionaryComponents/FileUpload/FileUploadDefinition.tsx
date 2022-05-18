@@ -1,5 +1,5 @@
 import AttachFileIcon from '@mui/icons-material/AttachFile';
-import { DataType } from '@user-office-software/shared-types';
+import { DataType } from '@user-office-software-libs/shared-types';
 import { fileUploadQuestionValidationSchema } from '@user-office-software/validation';
 import React from 'react';
 

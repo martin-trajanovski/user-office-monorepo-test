@@ -1,6 +1,6 @@
 import Delete from '@mui/icons-material/DeleteOutline';
 import { Typography } from '@mui/material';
-import { UserRole, ProposalStatus } from '@user-office-software/shared-types';
+import { UserRole, ProposalStatus } from '@user-office-software-libs/shared-types';
 import React from 'react';
 import { useQueryParams } from 'use-query-params';
 

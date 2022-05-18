@@ -2,7 +2,7 @@ import {
   FeedbackStatus,
   Sdk,
   TemplateGroupId,
-} from '@user-office-software/shared-types';
+} from '@user-office-software-libs/shared-types';
 
 import { FeedbackSubmissionState } from '../../../../models/questionary/feedback/FeedbackSubmissionState';
 import { ItemWithQuestionary } from '../../../../models/questionary/QuestionarySubmissionState';

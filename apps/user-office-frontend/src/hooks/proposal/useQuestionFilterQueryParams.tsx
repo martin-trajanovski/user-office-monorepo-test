@@ -1,4 +1,4 @@
-import { QuestionFilterInput } from '@user-office-software/shared-types';
+import { QuestionFilterInput } from '@user-office-software-libs/shared-types';
 import { StringParam, useQueryParams } from 'use-query-params';
 
 export const useQuestionFilterQueryParams = () => {

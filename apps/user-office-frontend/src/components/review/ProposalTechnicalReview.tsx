@@ -11,7 +11,7 @@ import {
   CoreTechnicalReviewFragment,
   UserRole,
   Proposal,
-} from '@user-office-software/shared-types';
+} from '@user-office-software-libs/shared-types';
 import { proposalTechnicalReviewValidationSchema } from '@user-office-software/validation';
 import { Formik, Form, Field, useFormikContext } from 'formik';
 import { CheckboxWithLabel, Select, TextField } from 'formik-mui';

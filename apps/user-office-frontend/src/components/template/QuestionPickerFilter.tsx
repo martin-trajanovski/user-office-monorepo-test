@@ -7,7 +7,7 @@ import {
   TextField,
 } from '@mui/material';
 import makeStyles from '@mui/styles/makeStyles';
-import { DataType } from '@user-office-software/shared-types';
+import { DataType } from '@user-office-software-libs/shared-types';
 import React, { ChangeEvent, useEffect, useState } from 'react';
 
 import { getQuestionaryComponentDefinitions } from '../questionary/QuestionaryComponentRegistry';

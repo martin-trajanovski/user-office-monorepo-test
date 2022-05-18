@@ -3,7 +3,7 @@ import { makeStyles } from '@mui/styles';
 import {
   ShipmentFragment,
   ShipmentStatus,
-} from '@user-office-software/shared-types';
+} from '@user-office-software-libs/shared-types';
 import React, { useState } from 'react';
 
 import { useScheduledEvent } from '../../hooks/scheduledEvent/useScheduledEvent';

@@ -2,7 +2,7 @@ import {
   BasicUserDetails,
   Maybe,
   Role,
-} from '@user-office-software/shared-types';
+} from '@user-office-software-libs/shared-types';
 import React from 'react';
 
 import { useSEPMembersData } from '../../../hooks/SEP/useSEPMembersData';

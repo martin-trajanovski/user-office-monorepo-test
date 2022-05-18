@@ -1,4 +1,4 @@
-import { ProposalWorkflow } from '@user-office-software/shared-types';
+import { ProposalWorkflow } from '@user-office-software-libs/shared-types';
 import { useEffect, useState, SetStateAction, Dispatch } from 'react';
 
 import { useDataApi } from '../common/useDataApi';

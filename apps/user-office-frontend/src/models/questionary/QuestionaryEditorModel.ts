@@ -5,7 +5,7 @@ import {
   TemplateCategoryId,
   TemplateGroupId,
   TemplateStep,
-} from '@user-office-software/shared-types';
+} from '@user-office-software-libs/shared-types';
 import produce from 'immer';
 import { Reducer, useCallback, useEffect } from 'react';
 import { useParams } from 'react-router';

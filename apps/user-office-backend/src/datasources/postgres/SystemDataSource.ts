@@ -1,4 +1,4 @@
-import { logger } from '@user-office-software/logger';
+import { logger } from '@user-office-software/duo-logger';
 
 import { SystemDataSource } from '../SystemDataSource';
 import database from './database';

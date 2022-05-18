@@ -5,7 +5,7 @@ import {
   Sdk,
   SettingsId,
   UpdateVisitRegistrationMutationVariables,
-} from '@user-office-software/shared-types';
+} from '@user-office-software-libs/shared-types';
 import { Field } from 'formik';
 import { DatePicker } from 'formik-mui-lab';
 import { useContext } from 'react';

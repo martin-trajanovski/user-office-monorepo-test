@@ -1,5 +1,5 @@
 import Button from '@mui/material/Button';
-import { UserRole } from '@user-office-software/shared-types';
+import { UserRole } from '@user-office-software-libs/shared-types';
 import React, { useContext, useEffect, useState } from 'react';
 
 import { useDataApi } from '../../hooks/common/useDataApi';

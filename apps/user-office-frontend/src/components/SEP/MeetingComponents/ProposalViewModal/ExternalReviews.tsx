@@ -5,7 +5,7 @@ import TableContainer from '@mui/material/TableContainer';
 import TableRow from '@mui/material/TableRow';
 import Typography from '@mui/material/Typography';
 import makeStyles from '@mui/styles/makeStyles';
-import { Review } from '@user-office-software/shared-types';
+import { Review } from '@user-office-software-libs/shared-types';
 import PropTypes from 'prop-types';
 import React from 'react';
 

@@ -1,7 +1,7 @@
 import {
   Questionary,
   TemplateGroupId,
-} from '@user-office-software/shared-types';
+} from '@user-office-software-libs/shared-types';
 import { immerable } from 'immer';
 
 import { QuestionarySubmissionState } from '../QuestionarySubmissionState';

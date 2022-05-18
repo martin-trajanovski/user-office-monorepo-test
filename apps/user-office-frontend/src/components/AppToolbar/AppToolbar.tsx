@@ -7,7 +7,7 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import makeStyles from '@mui/styles/makeStyles';
-import { SettingsId } from '@user-office-software/shared-types';
+import { SettingsId } from '@user-office-software-libs/shared-types';
 import clsx from 'clsx';
 import PropTypes from 'prop-types';
 import React, { useContext, useMemo, useEffect, useState } from 'react';
@@ -44,7 +44,7 @@ const AppToolbar: React.FC<AppToolbarProps> = ({
 
   useEffect(() => {
     async function fetchData() {
-      const importedLogo = await import('images/' + logoFilename);
+      const importedLogo = await import('../../images/' + logoFilename);
       setLogo(importedLogo.default);
     }
     fetchData();

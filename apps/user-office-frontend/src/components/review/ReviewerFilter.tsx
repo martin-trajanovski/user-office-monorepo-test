@@ -3,7 +3,7 @@ import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import Select from '@mui/material/Select';
 import makeStyles from '@mui/styles/makeStyles';
-import { ReviewerFilter } from '@user-office-software/shared-types';
+import { ReviewerFilter } from '@user-office-software-libs/shared-types';
 import React from 'react';
 import { StringParam, useQueryParams, withDefault } from 'use-query-params';
 

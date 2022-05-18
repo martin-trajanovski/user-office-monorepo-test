@@ -40,13 +40,6 @@
           ["parent", "sibling"],
           "index"
         ],
-        "pathGroups": [
-          {
-            "pattern": "+(components|context|generated|graphql|hooks|images|models|styles|utils)/**",
-            "group": "internal",
-            "position": "after"
-          }
-        ],
         "pathGroupsExcludedImportTypes": ["builtin"],
         "newlines-between": "always",
         "alphabetize": {

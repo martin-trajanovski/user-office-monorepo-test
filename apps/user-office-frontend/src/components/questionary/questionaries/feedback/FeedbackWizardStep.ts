@@ -1,4 +1,4 @@
-import { FeedbackStatus } from '@user-office-software/shared-types';
+import { FeedbackStatus } from '@user-office-software-libs/shared-types';
 
 import { FeedbackSubmissionState } from '../../../../models/questionary/feedback/FeedbackSubmissionState';
 import { QuestionarySubmissionState } from '../../../../models/questionary/QuestionarySubmissionState';

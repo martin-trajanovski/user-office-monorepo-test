@@ -1,6 +1,6 @@
 import { Typography } from '@mui/material';
 import Container from '@mui/material/Container';
-import { TemplateImportWithValidation } from '@user-office-software/shared-types';
+import { TemplateImportWithValidation } from '@user-office-software-libs/shared-types';
 import React from 'react';
 
 import { StyledPaper } from '../../../styles/StyledComponents';

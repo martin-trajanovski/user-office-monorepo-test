@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-empty-function */
-import { setLogger, ConsoleLogger } from '@user-office-software/logger';
+import { setLogger, ConsoleLogger } from '@user-office-software/duo-logger';
 
 import { UserAuthorizationMock } from '../auth/mockups/UserAuthorization';
 import 'reflect-metadata';

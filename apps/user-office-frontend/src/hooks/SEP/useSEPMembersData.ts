@@ -2,7 +2,7 @@ import {
   SepReviewer,
   Role,
   BasicUserDetails,
-} from '@user-office-software/shared-types';
+} from '@user-office-software-libs/shared-types';
 import { useEffect, useState, Dispatch, SetStateAction } from 'react';
 
 import { useDataApi } from '../common/useDataApi';

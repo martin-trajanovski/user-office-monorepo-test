@@ -20,7 +20,7 @@ import {
   Sep,
   InstrumentFragment,
   FeatureId,
-} from '@user-office-software/shared-types';
+} from '@user-office-software-libs/shared-types';
 import React, { useContext, useEffect, useState } from 'react';
 import isEqual from 'react-fast-compare';
 import { DecodedValueMap, SetQuery } from 'use-query-params';

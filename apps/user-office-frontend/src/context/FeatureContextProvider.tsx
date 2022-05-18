@@ -1,5 +1,5 @@
 import makeStyles from '@mui/styles/makeStyles';
-import { Feature, FeatureId } from '@user-office-software/shared-types';
+import { Feature, FeatureId } from '@user-office-software-libs/shared-types';
 import React from 'react';
 
 import { useFeatures } from '../hooks/admin/useFeatures';

@@ -2,7 +2,7 @@ import PublishIcon from '@mui/icons-material/Publish';
 import ShareIcon from '@mui/icons-material/Share';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
-import { UserRole, Unit, SettingsId } from '@user-office-software/shared-types';
+import { UserRole, Unit, SettingsId } from '@user-office-software-libs/shared-types';
 import React from 'react';
 import { useHistory } from 'react-router';
 import { useQueryParams } from 'use-query-params';

@@ -2,7 +2,7 @@ import DateAdapter from '@mui/lab/AdapterLuxon';
 import LocalizationProvider from '@mui/lab/LocalizationProvider';
 import FormControl from '@mui/material/FormControl';
 import useTheme from '@mui/material/styles/useTheme';
-import { DateConfig, SettingsId } from '@user-office-software/shared-types';
+import { DateConfig, SettingsId } from '@user-office-software-libs/shared-types';
 import { Field } from 'formik';
 import { DatePicker, DateTimePicker } from 'formik-mui-lab';
 import { DateTime } from 'luxon';

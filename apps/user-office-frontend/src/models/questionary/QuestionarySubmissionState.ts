@@ -3,12 +3,12 @@
 import {
   TemplateGroupId,
   SampleFragment,
-} from '@user-office-software/shared-types';
+} from '@user-office-software-libs/shared-types';
 import {
   Answer,
   Questionary,
   QuestionaryStep,
-} from '@user-office-software/shared-types';
+} from '@user-office-software-libs/shared-types';
 import produce, { Draft } from 'immer';
 import { Reducer } from 'react';
 

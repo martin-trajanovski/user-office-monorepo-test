@@ -10,7 +10,7 @@ import {
   ReviewStatus,
   SepAssignment,
   UserWithReviewsQuery,
-} from '@user-office-software/shared-types';
+} from '@user-office-software-libs/shared-types';
 import { proposalGradeValidationSchema } from '@user-office-software/validation';
 import React, { useState, useContext, useEffect } from 'react';
 import { useQueryParams, NumberParam } from 'use-query-params';

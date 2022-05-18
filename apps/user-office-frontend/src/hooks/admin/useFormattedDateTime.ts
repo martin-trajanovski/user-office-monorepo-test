@@ -1,4 +1,4 @@
-import { SettingsId } from '@user-office-software/shared-types';
+import { SettingsId } from '@user-office-software-libs/shared-types';
 import { DateTime } from 'luxon';
 import { useContext } from 'react';
 

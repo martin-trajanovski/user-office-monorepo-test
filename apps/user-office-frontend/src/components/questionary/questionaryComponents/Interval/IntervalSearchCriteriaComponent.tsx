@@ -10,7 +10,7 @@ import {
   IntervalConfig,
   QuestionFilterCompareOperator,
   Unit,
-} from '@user-office-software/shared-types';
+} from '@user-office-software-libs/shared-types';
 import React, { useState } from 'react';
 
 import { convertToSi } from '../../../../utils/expressionToFunction';

@@ -7,7 +7,7 @@ import {
   ReviewStatus,
   UserRole,
   SettingsId,
-} from '@user-office-software/shared-types';
+} from '@user-office-software-libs/shared-types';
 import PropTypes from 'prop-types';
 import React, { useContext } from 'react';
 import { NumberParam, useQueryParams } from 'use-query-params';

@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-use-before-define */
 
-import { TemplateGroupId } from '@user-office-software/shared-types';
+import { TemplateGroupId } from '@user-office-software-libs/shared-types';
 import { default as React, useState } from 'react';
 
 import { FeedbackSubmissionState } from '../../models/questionary/feedback/FeedbackSubmissionState';

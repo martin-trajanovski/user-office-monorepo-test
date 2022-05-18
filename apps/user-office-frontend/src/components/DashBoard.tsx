@@ -12,7 +12,7 @@ import {
   FeatureId,
   PageName,
   UserRole,
-} from '@user-office-software/shared-types';
+} from '@user-office-software-libs/shared-types';
 import clsx from 'clsx';
 import parse from 'html-react-parser';
 import PropTypes from 'prop-types';

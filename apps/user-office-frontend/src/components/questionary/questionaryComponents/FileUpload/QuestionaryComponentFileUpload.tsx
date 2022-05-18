@@ -1,7 +1,7 @@
 import FormControl from '@mui/material/FormControl';
 import FormHelperText from '@mui/material/FormHelperText';
 import FormLabel from '@mui/material/FormLabel';
-import { FileUploadConfig } from '@user-office-software/shared-types';
+import { FileUploadConfig } from '@user-office-software-libs/shared-types';
 import React, { useEffect, useState } from 'react';
 
 import {

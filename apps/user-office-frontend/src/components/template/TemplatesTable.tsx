@@ -16,7 +16,7 @@ import {
   GetTemplatesQuery,
   Template,
   TemplateGroupId,
-} from '@user-office-software/shared-types';
+} from '@user-office-software-libs/shared-types';
 import React, { useEffect, useState } from 'react';
 import { useHistory } from 'react-router';
 

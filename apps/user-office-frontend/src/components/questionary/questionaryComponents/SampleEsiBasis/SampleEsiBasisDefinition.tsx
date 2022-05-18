@@ -1,4 +1,4 @@
-import { DataType } from '@user-office-software/shared-types';
+import { DataType } from '@user-office-software-libs/shared-types';
 import React from 'react';
 
 import { SampleEsiSubmissionState } from '../../../../models/questionary/sampleEsi/SampleEsiSubmissionState';

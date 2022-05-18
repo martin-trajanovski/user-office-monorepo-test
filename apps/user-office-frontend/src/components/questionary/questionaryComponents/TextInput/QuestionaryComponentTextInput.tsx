@@ -1,4 +1,4 @@
-import { TextInputConfig } from '@user-office-software/shared-types';
+import { TextInputConfig } from '@user-office-software-libs/shared-types';
 import { getIn } from 'formik';
 import React, { ChangeEvent, KeyboardEvent, useEffect, useState } from 'react';
 

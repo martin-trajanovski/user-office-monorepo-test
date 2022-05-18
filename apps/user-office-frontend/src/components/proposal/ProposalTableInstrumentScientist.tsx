@@ -5,14 +5,14 @@ import GetAppIcon from '@mui/icons-material/GetApp';
 import Visibility from '@mui/icons-material/Visibility';
 import IconButton from '@mui/material/IconButton';
 import Tooltip from '@mui/material/Tooltip';
-import { getTranslation, ResourceId } from '@user-office-software/localization';
+import { getTranslation, ResourceId } from '@user-office-software-libs/localization';
 import {
   FeatureId,
   Proposal,
   ProposalsFilter,
   ReviewerFilter,
   SubmitTechnicalReviewInput,
-} from '@user-office-software/shared-types';
+} from '@user-office-software-libs/shared-types';
 import { proposalTechnicalReviewValidationSchema } from '@user-office-software/validation';
 import React, { useContext, useState, useEffect } from 'react';
 import {

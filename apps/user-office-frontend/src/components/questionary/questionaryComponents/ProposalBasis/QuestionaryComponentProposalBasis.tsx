@@ -1,5 +1,5 @@
 import makeStyles from '@mui/styles/makeStyles';
-import { BasicUserDetails } from '@user-office-software/shared-types';
+import { BasicUserDetails } from '@user-office-software-libs/shared-types';
 import { Field } from 'formik';
 import { TextField } from 'formik-mui';
 import React, { ChangeEvent, useContext, useState } from 'react';

@@ -13,7 +13,7 @@ import {
   UserRole,
   SepMeetingDecision,
   Call,
-} from '@user-office-software/shared-types';
+} from '@user-office-software-libs/shared-types';
 import clsx from 'clsx';
 import React, { useContext, DragEvent, useState, useEffect } from 'react';
 import { NumberParam, useQueryParams } from 'use-query-params';

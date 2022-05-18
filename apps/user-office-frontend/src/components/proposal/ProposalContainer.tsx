@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-use-before-define */
 import { PaperProps, Typography } from '@mui/material';
-import { TemplateGroupId } from '@user-office-software/shared-types';
+import { TemplateGroupId } from '@user-office-software-libs/shared-types';
 import { default as React, useState } from 'react';
 
 import createCustomEventHandlers from '../../models/questionary/createCustomEventHandlers';

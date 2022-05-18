@@ -1,5 +1,5 @@
 import AssignmentIcon from '@mui/icons-material/Assignment';
-import { DataType } from '@user-office-software/shared-types';
+import { DataType } from '@user-office-software-libs/shared-types';
 import { sampleDeclarationValidationSchema } from '@user-office-software/validation';
 import React from 'react';
 

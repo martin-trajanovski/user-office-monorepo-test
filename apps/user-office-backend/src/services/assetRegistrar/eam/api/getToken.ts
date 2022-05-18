@@ -1,4 +1,4 @@
-import { logger } from '@user-office-software/logger';
+import { logger } from '@user-office-software/duo-logger';
 import { ModuleOptions, ResourceOwnerPassword } from 'simple-oauth2';
 
 import { getEnvOrThrow } from '../utils/getEnvOrThrow';

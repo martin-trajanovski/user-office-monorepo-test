@@ -2,7 +2,7 @@ import {
   BasicUserDetails,
   Call,
   QuestionaryStep,
-} from '@user-office-software/shared-types';
+} from '@user-office-software-libs/shared-types';
 import React, { useContext } from 'react';
 import { useParams } from 'react-router';
 

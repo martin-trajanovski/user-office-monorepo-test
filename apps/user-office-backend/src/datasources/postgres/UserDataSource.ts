@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/naming-convention */
-import { logger } from '@user-office-software/logger';
+import { logger } from '@user-office-software/duo-logger';
 import { Knex } from 'knex';
 
 import { Role, Roles } from '../../models/Role';

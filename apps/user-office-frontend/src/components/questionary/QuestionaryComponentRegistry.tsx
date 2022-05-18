@@ -7,7 +7,7 @@ import {
   Sdk,
   Template,
   TemplateFragment,
-} from '@user-office-software/shared-types';
+} from '@user-office-software-libs/shared-types';
 import { FormikProps } from 'formik';
 import React, { FC, ReactNode } from 'react';
 import * as Yup from 'yup';

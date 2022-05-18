@@ -1,4 +1,4 @@
-import { logger } from '@user-office-software/logger';
+import { logger } from '@user-office-software/duo-logger';
 import { AuthenticationError } from 'apollo-server-core';
 
 import { Rejection, rejection } from '../models/Rejection';

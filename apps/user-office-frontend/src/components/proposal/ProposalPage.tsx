@@ -1,4 +1,4 @@
-import { ProposalsFilter } from '@user-office-software/shared-types';
+import { ProposalsFilter } from '@user-office-software-libs/shared-types';
 import React from 'react';
 import {
   NumberParam,

@@ -1,5 +1,5 @@
 import { TableProps } from '@mui/material';
-import { BasicUserDetails } from '@user-office-software/shared-types';
+import { BasicUserDetails } from '@user-office-software-libs/shared-types';
 import React, { FunctionComponent } from 'react';
 
 import { ProposalWithQuestionary } from '../../models/questionary/proposal/ProposalWithQuestionary';

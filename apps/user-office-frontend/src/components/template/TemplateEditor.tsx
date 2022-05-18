@@ -12,7 +12,7 @@ import {
   QuestionaryStep,
   QuestionTemplateRelation,
   Template,
-} from '@user-office-software/shared-types';
+} from '@user-office-software-libs/shared-types';
 import React, { useState } from 'react';
 import { DragDropContext, Droppable, DropResult } from 'react-beautiful-dnd';
 

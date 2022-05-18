@@ -1,4 +1,4 @@
-import { Question } from '@user-office-software/shared-types';
+import { Question } from '@user-office-software-libs/shared-types';
 import React from 'react';
 
 import TitledContainer from '../../common/TitledContainer';

@@ -1,4 +1,4 @@
-import { Question, Template } from '@user-office-software/shared-types';
+import { Question, Template } from '@user-office-software-libs/shared-types';
 import React from 'react';
 
 import {

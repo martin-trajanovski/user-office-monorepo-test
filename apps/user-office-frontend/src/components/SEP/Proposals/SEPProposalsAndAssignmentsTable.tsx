@@ -14,7 +14,7 @@ import {
   ProposalStatus,
   Review,
   SettingsId,
-} from '@user-office-software/shared-types';
+} from '@user-office-software-libs/shared-types';
 import { DateTime } from 'luxon';
 import React, { useState } from 'react';
 import { NumberParam, useQueryParams } from 'use-query-params';

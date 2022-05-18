@@ -3,7 +3,7 @@ import Typography from '@mui/material/Typography';
 import {
   TemplateGroupId,
   TemplateMetadataFragment,
-} from '@user-office-software/shared-types';
+} from '@user-office-software-libs/shared-types';
 import { createTemplateValidationSchema } from '@user-office-software/validation';
 import { Field, Form, Formik } from 'formik';
 import { TextField } from 'formik-mui';

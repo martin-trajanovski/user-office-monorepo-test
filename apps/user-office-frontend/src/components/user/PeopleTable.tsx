@@ -18,7 +18,7 @@ import {
   UserRole,
   Maybe,
   getSdk,
-} from '@user-office-software/shared-types';
+} from '@user-office-software-libs/shared-types';
 import { Formik } from 'formik';
 import React, { useState, useEffect, useContext } from 'react';
 

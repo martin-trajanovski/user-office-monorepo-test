@@ -1,7 +1,7 @@
 import { promises } from 'fs';
 import { join } from 'path';
 
-import { logger } from '@user-office-software/logger';
+import { logger } from '@user-office-software/duo-logger';
 import rp from 'request-promise';
 import { Resolver, Query } from 'type-graphql';
 

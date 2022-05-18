@@ -7,7 +7,7 @@ import ListItemIcon from '@mui/material/ListItemIcon';
 import MenuItem from '@mui/material/MenuItem';
 import Tooltip from '@mui/material/Tooltip';
 import Typography from '@mui/material/Typography';
-import { Maybe, SampleStatus } from '@user-office-software/shared-types';
+import { Maybe, SampleStatus } from '@user-office-software-libs/shared-types';
 import { Field, Form, Formik } from 'formik';
 import { TextField } from 'formik-mui';
 import React, { useEffect, useState } from 'react';

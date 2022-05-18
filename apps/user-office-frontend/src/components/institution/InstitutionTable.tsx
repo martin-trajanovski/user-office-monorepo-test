@@ -1,5 +1,5 @@
 import { Typography } from '@mui/material';
-import { Institution } from '@user-office-software/shared-types';
+import { Institution } from '@user-office-software-libs/shared-types';
 import React from 'react';
 import { useQueryParams } from 'use-query-params';
 

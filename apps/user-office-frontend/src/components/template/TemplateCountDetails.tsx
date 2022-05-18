@@ -1,6 +1,6 @@
 import MaterialTable from '@material-table/core';
 import { Link } from '@mui/material';
-import { GetTemplatesQuery } from '@user-office-software/shared-types';
+import { GetTemplatesQuery } from '@user-office-software-libs/shared-types';
 import React, { useMemo } from 'react';
 
 import { QuestionWithUsage } from '../../hooks/template/useQuestions';

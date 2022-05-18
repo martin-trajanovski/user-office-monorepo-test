@@ -1,4 +1,4 @@
-import { SettingsId } from '@user-office-software/shared-types';
+import { SettingsId } from '@user-office-software-libs/shared-types';
 import PropTypes from 'prop-types';
 import queryString from 'query-string';
 import React, { useContext, useEffect, useRef } from 'react';

@@ -1,9 +1,9 @@
-import { getTranslation, ResourceId } from '@user-office-software/localization';
+import { getTranslation, ResourceId } from '@user-office-software-libs/localization';
 import {
   ProposalsFilter,
   ProposalView,
   UserRole,
-} from '@user-office-software/shared-types';
+} from '@user-office-software-libs/shared-types';
 import { useContext, useEffect, useState } from 'react';
 
 import { QueryParameters } from '../../components/proposal/ProposalTableOfficer';

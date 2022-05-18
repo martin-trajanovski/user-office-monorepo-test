@@ -19,7 +19,7 @@ import {
   DependenciesLogicOperator,
   QuestionTemplateRelation,
   TemplateStep,
-} from '@user-office-software/shared-types';
+} from '@user-office-software-libs/shared-types';
 import { Field, Form, Formik } from 'formik';
 import { TextField } from 'formik-mui';
 import { useSnackbar } from 'notistack';

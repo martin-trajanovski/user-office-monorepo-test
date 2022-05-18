@@ -1,4 +1,4 @@
-import { Quantity } from '@user-office-software/shared-types';
+import { Quantity } from '@user-office-software-libs/shared-types';
 import { useEffect, useState } from 'react';
 
 import { useDataApi } from '../common/useDataApi';

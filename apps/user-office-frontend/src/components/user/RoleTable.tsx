@@ -1,6 +1,6 @@
 import MaterialTable from '@material-table/core';
 import Button from '@mui/material/Button';
-import { Role } from '@user-office-software/shared-types';
+import { Role } from '@user-office-software-libs/shared-types';
 import React, { useState } from 'react';
 
 import { useRolesData } from '../../hooks/user/useRolesData';

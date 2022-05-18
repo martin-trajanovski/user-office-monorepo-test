@@ -14,7 +14,7 @@ import {
   EvaluatorOperator,
   QuestionTemplateRelation,
   Template,
-} from '@user-office-software/shared-types';
+} from '@user-office-software-libs/shared-types';
 import { Field, FieldArray, FormikProps } from 'formik';
 import React, { useCallback, useEffect, useState } from 'react';
 

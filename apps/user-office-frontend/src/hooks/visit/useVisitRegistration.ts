@@ -1,4 +1,4 @@
-import { GetVisitRegistrationQuery } from '@user-office-software/shared-types';
+import { GetVisitRegistrationQuery } from '@user-office-software-libs/shared-types';
 import { useEffect, useState } from 'react';
 
 import { useDataApi } from '../../hooks/common/useDataApi';

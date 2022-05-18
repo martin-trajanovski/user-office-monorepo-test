@@ -18,7 +18,7 @@ import {
   SettingsId,
   UpdateUserMutationVariables,
   UserRole,
-} from '@user-office-software/shared-types';
+} from '@user-office-software-libs/shared-types';
 import { updateUserValidationSchema } from '@user-office-software/validation';
 import { Field, Form, Formik } from 'formik';
 import { Select, TextField } from 'formik-mui';
@@ -26,13 +26,12 @@ import { DatePicker } from 'formik-mui-lab';
 import { DateTime } from 'luxon';
 import React, { useState, useContext } from 'react';
 
-import orcid from 'images/orcid.png';
-
 import { UserContext } from '../../context/UserContextProvider';
 import { useFormattedDateTime } from '../../hooks/admin/useFormattedDateTime';
 import { useInstitutionsData } from '../../hooks/admin/useInstitutionData';
 import { useGetFields } from '../../hooks/user/useGetFields';
 import { useUserData } from '../../hooks/user/useUserData';
+import orcid from '../../images/orcid.png';
 import { StyledButtonContainer } from '../../styles/StyledComponents';
 import useDataApiWithFeedback from '../../utils/useDataApiWithFeedback';
 import { Option } from '../../utils/utilTypes';

@@ -2,7 +2,7 @@ import ListAltIcon from '@mui/icons-material/ListAlt';
 import {
   DataType,
   SubTemplateConfig,
-} from '@user-office-software/shared-types';
+} from '@user-office-software-libs/shared-types';
 import React from 'react';
 import * as Yup from 'yup';
 

@@ -1,6 +1,6 @@
 import MaterialTable from '@material-table/core';
 import { Typography } from '@mui/material';
-import { EventLog } from '@user-office-software/shared-types';
+import { EventLog } from '@user-office-software-libs/shared-types';
 import PropTypes from 'prop-types';
 import React from 'react';
 

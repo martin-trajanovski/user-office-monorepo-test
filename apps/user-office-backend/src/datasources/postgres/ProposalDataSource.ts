@@ -1,4 +1,4 @@
-import { logger } from '@user-office-software/logger';
+import { logger } from '@user-office-software/duo-logger';
 import BluePromise from 'bluebird';
 import { Knex } from 'knex';
 import { injectable } from 'tsyringe';

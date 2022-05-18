@@ -1,4 +1,4 @@
-import { DateConfig, Scalars } from '@user-office-software/shared-types';
+import { DateConfig, Scalars } from '@user-office-software-libs/shared-types';
 import { DateTime } from 'luxon';
 
 function paddZero(num: number): string {

@@ -1,6 +1,6 @@
 import { Button, TextField, Autocomplete, Grid } from '@mui/material';
 import makeStyles from '@mui/styles/makeStyles';
-import { UserRole } from '@user-office-software/shared-types';
+import { UserRole } from '@user-office-software-libs/shared-types';
 import React, { useState } from 'react';
 
 import { ProposalData } from '../../hooks/proposal/useProposalData';

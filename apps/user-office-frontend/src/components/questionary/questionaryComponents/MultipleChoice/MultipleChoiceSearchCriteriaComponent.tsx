@@ -2,7 +2,7 @@ import { Grid, TextField, Autocomplete } from '@mui/material';
 import {
   QuestionFilterCompareOperator,
   SelectionFromOptionsConfig,
-} from '@user-office-software/shared-types';
+} from '@user-office-software-libs/shared-types';
 import React, { useState } from 'react';
 
 import { SearchCriteriaInputProps } from '../../../proposal/SearchCriteriaInputProps';

@@ -3,7 +3,7 @@ import Grid from '@mui/material/Grid';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import makeStyles from '@mui/styles/makeStyles';
 import useTheme from '@mui/styles/useTheme';
-import { ProposalStatus } from '@user-office-software/shared-types';
+import { ProposalStatus } from '@user-office-software-libs/shared-types';
 import React from 'react';
 import {
   Draggable,

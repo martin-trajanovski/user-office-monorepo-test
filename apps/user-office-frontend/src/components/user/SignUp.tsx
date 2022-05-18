@@ -20,7 +20,7 @@ import {
   CreateUserMutationVariables,
   SettingsId,
   Maybe,
-} from '@user-office-software/shared-types';
+} from '@user-office-software-libs/shared-types';
 import { createUserValidationSchema } from '@user-office-software/validation';
 import clsx from 'clsx';
 import { Field, Form, Formik } from 'formik';
@@ -33,8 +33,6 @@ import queryString from 'query-string';
 import React, { useContext, useState } from 'react';
 import { Link, useHistory } from 'react-router-dom';
 
-import orcid from 'images/orcid.png';
-
 import { UserContext } from '../../context/UserContextProvider';
 import { useFormattedDateTime } from '../../hooks/admin/useFormattedDateTime';
 import { useGetPageContent } from '../../hooks/admin/useGetPageContent';
@@ -42,6 +40,7 @@ import { useInstitutionsData } from '../../hooks/admin/useInstitutionData';
 import { useUnauthorizedApi } from '../../hooks/common/useDataApi';
 import { useGetFields } from '../../hooks/user/useGetFields';
 import { useOrcIDInformation } from '../../hooks/user/useOrcIDInformation';
+import orcid from '../../images/orcid.png';
 import { Option } from '../../utils/utilTypes';
 import { ErrorFocus } from '../common/ErrorFocus';
 import FormikUIAutocomplete from '../common/FormikUIAutocomplete';

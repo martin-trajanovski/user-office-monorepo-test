@@ -2,7 +2,7 @@ import {
   PageName,
   UserRole,
   FeatureId,
-} from '@user-office-software/shared-types';
+} from '@user-office-software-libs/shared-types';
 import parse from 'html-react-parser';
 import React, { useContext } from 'react';
 

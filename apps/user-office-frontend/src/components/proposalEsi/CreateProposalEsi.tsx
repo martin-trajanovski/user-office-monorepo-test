@@ -1,4 +1,4 @@
-import { CreateEsiMutation } from '@user-office-software/shared-types';
+import { CreateEsiMutation } from '@user-office-software-libs/shared-types';
 import React, { useEffect, useState } from 'react';
 
 import useDataApiWithFeedback from '../../utils/useDataApiWithFeedback';

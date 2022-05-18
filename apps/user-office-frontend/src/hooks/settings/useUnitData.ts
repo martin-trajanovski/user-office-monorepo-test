@@ -1,4 +1,4 @@
-import { Unit } from '@user-office-software/shared-types';
+import { Unit } from '@user-office-software-libs/shared-types';
 import { useEffect, useState, SetStateAction, Dispatch } from 'react';
 
 import { useDataApi } from '../common/useDataApi';

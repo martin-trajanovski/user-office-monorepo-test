@@ -4,7 +4,7 @@ import {
   QuestionComparison,
   SettingsId,
   TemplateImportWithValidation,
-} from '@user-office-software/shared-types';
+} from '@user-office-software-libs/shared-types';
 import produce from 'immer';
 import React, { useCallback, useState } from 'react';
 import { useHistory } from 'react-router';

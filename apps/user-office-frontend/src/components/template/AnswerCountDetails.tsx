@@ -3,7 +3,7 @@ import Link from '@mui/material/Link';
 import {
   ProposalFragment,
   TemplateCategoryId,
-} from '@user-office-software/shared-types';
+} from '@user-office-software-libs/shared-types';
 import React, { useMemo } from 'react';
 
 import { useProposalsData } from '../../hooks/proposal/useProposalsData';

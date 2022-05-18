@@ -1,6 +1,6 @@
 import Autocomplete from '@mui/lab/Autocomplete';
 import MaterialTextField from '@mui/material/TextField';
-import { IntervalConfig } from '@user-office-software/shared-types';
+import { IntervalConfig } from '@user-office-software-libs/shared-types';
 import { Field } from 'formik';
 import { CheckboxWithLabel, TextField } from 'formik-mui';
 import React, { FC, useState } from 'react';

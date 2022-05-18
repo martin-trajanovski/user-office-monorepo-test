@@ -1,4 +1,4 @@
-import { logger } from '@user-office-software/logger';
+import { logger } from '@user-office-software/duo-logger';
 import { DateTime } from 'luxon';
 import request from 'request';
 

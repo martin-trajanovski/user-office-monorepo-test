@@ -3,7 +3,7 @@ import {
   Answer,
   QuestionaryStep,
   SubTemplateConfig,
-} from '@user-office-software/shared-types';
+} from '@user-office-software-libs/shared-types';
 import { Field, FieldProps, FormikProps } from 'formik';
 import React, { useContext, useState } from 'react';
 

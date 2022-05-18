@@ -9,7 +9,7 @@ import { TransitionProps } from '@mui/material/transitions/transition';
 import Typography from '@mui/material/Typography';
 import createStyles from '@mui/styles/createStyles';
 import makeStyles from '@mui/styles/makeStyles';
-import { Proposal } from '@user-office-software/shared-types';
+import { Proposal } from '@user-office-software-libs/shared-types';
 import React from 'react';
 
 import useDataApiWithFeedback from '../../utils/useDataApiWithFeedback';

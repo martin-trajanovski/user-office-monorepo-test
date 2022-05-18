@@ -4,7 +4,7 @@ import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import makeStyles from '@mui/styles/makeStyles';
-import { UserRole, Sep } from '@user-office-software/shared-types';
+import { UserRole, Sep } from '@user-office-software-libs/shared-types';
 import { Form, Formik } from 'formik';
 import PropTypes from 'prop-types';
 import React, { useContext } from 'react';

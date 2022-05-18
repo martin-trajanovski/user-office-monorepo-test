@@ -22,7 +22,7 @@ import {
   Template,
   TemplateGroupId,
   Topic,
-} from '@user-office-software/shared-types';
+} from '@user-office-software-libs/shared-types';
 import clsx from 'clsx';
 import React, { useState } from 'react';
 import { Droppable } from 'react-beautiful-dnd';

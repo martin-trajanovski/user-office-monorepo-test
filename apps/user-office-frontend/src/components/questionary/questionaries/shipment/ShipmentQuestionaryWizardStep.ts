@@ -1,4 +1,4 @@
-import { ShipmentStatus } from '@user-office-software/shared-types';
+import { ShipmentStatus } from '@user-office-software-libs/shared-types';
 
 import { QuestionarySubmissionState } from '../../../../models/questionary/QuestionarySubmissionState';
 import { ShipmentSubmissionState } from '../../../../models/questionary/shipment/ShipmentSubmissionState';

@@ -1,4 +1,4 @@
-import { EmbellishmentConfig } from '@user-office-software/shared-types';
+import { EmbellishmentConfig } from '@user-office-software-libs/shared-types';
 import { Field } from 'formik';
 import { CheckboxWithLabel, TextField } from 'formik-mui';
 import React, { FC } from 'react';

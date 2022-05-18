@@ -1,4 +1,4 @@
-import { Sep, UserRole } from '@user-office-software/shared-types';
+import { Sep, UserRole } from '@user-office-software-libs/shared-types';
 import React from 'react';
 import { useParams } from 'react-router';
 

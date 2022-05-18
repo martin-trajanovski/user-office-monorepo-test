@@ -2,7 +2,7 @@ import {
   Sdk,
   ShipmentStatus,
   TemplateGroupId,
-} from '@user-office-software/shared-types';
+} from '@user-office-software-libs/shared-types';
 
 import { ItemWithQuestionary } from '../../../../models/questionary/QuestionarySubmissionState';
 import { ShipmentSubmissionState } from '../../../../models/questionary/shipment/ShipmentSubmissionState';

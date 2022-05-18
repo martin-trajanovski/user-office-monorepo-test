@@ -1,4 +1,4 @@
-import { DateConfig } from '@user-office-software/shared-types';
+import { DateConfig } from '@user-office-software-libs/shared-types';
 import { DateTime } from 'luxon';
 
 import { QuestionaryComponentDefinition } from '../../QuestionaryComponentRegistry';

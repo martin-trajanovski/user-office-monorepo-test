@@ -1,7 +1,7 @@
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import makeStyles from '@mui/styles/makeStyles';
-import { ProposalStatus } from '@user-office-software/shared-types';
+import { ProposalStatus } from '@user-office-software-libs/shared-types';
 import {
   createProposalStatusValidationSchema,
   updateProposalStatusValidationSchema,

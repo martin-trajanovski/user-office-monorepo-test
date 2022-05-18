@@ -1,4 +1,4 @@
-import { GetOrcIdInformationQuery } from '@user-office-software/shared-types';
+import { GetOrcIdInformationQuery } from '@user-office-software-libs/shared-types';
 import { useEffect, useState } from 'react';
 
 import { getUnauthorizedApi } from '../common/useDataApi';

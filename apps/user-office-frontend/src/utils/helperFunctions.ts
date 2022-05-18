@@ -1,10 +1,10 @@
 import { Column } from '@material-table/core';
-import { getTranslation, ResourceId } from '@user-office-software/localization';
+import { getTranslation, ResourceId } from '@user-office-software-libs/localization';
 import {
   Proposal,
   ProposalEndStatus,
   ProposalStatus,
-} from '@user-office-software/shared-types';
+} from '@user-office-software-libs/shared-types';
 
 import { SortDirectionType } from '../components/common/SuperMaterialTable';
 import { ProposalViewData } from '../hooks/proposal/useProposalsCoreData';

@@ -11,7 +11,7 @@ import {
   ReviewWithNextProposalStatus,
   Review,
   UserRole,
-} from '@user-office-software/shared-types';
+} from '@user-office-software-libs/shared-types';
 import { proposalGradeValidationSchema } from '@user-office-software/validation';
 import { Field, Form, Formik, useFormikContext } from 'formik';
 import { Select, CheckboxWithLabel } from 'formik-mui';

@@ -1,4 +1,4 @@
-import { SamplesFilter } from '@user-office-software/shared-types';
+import { SamplesFilter } from '@user-office-software-libs/shared-types';
 import { useEffect, useState } from 'react';
 
 import { SampleCore } from '../../models/questionary/sample/SampleCore';

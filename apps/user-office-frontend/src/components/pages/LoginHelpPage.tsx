@@ -1,4 +1,4 @@
-import { PageName } from '@user-office-software/shared-types';
+import { PageName } from '@user-office-software-libs/shared-types';
 import parse from 'html-react-parser';
 import React from 'react';
 

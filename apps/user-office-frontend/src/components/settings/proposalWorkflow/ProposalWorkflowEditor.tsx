@@ -4,7 +4,7 @@ import {
   ProposalStatus,
   ProposalWorkflowConnection,
   ProposalWorkflowConnectionGroup,
-} from '@user-office-software/shared-types';
+} from '@user-office-software-libs/shared-types';
 import { useSnackbar } from 'notistack';
 import React from 'react';
 import {

@@ -4,7 +4,7 @@ import {
   ShipmentStatus,
   TemplateGroupId,
   User,
-} from '@user-office-software/shared-types';
+} from '@user-office-software-libs/shared-types';
 import { useContext, useEffect, useState } from 'react';
 
 import { UserContext } from '../../context/UserContextProvider';

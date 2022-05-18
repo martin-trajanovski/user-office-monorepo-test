@@ -1,4 +1,4 @@
-import { TemplateGroupId } from '@user-office-software/shared-types';
+import { TemplateGroupId } from '@user-office-software-libs/shared-types';
 import React from 'react';
 
 import { StyledContainer, StyledPaper } from '../../styles/StyledComponents';

@@ -1,7 +1,7 @@
 import Box from '@mui/material/Box';
 import { TableProps } from '@mui/material/Table';
 import Typography from '@mui/material/Typography';
-import { Answer, DataType } from '@user-office-software/shared-types';
+import { Answer, DataType } from '@user-office-software-libs/shared-types';
 import React, { FC } from 'react';
 
 import { useQuestionary } from '../../hooks/questionary/useQuestionary';

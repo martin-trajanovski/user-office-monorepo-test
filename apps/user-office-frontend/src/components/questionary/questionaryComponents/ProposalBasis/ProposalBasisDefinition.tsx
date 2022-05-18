@@ -1,5 +1,5 @@
 import DescriptionIcon from '@mui/icons-material/Description';
-import { DataType } from '@user-office-software/shared-types';
+import { DataType } from '@user-office-software-libs/shared-types';
 import React from 'react';
 
 import { ProposalSubmissionState } from '../../../../models/questionary/proposal/ProposalSubmissionState';

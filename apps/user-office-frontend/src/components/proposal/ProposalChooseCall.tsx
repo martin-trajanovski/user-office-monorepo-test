@@ -6,7 +6,7 @@ import ListItemSecondaryAction from '@mui/material/ListItemSecondaryAction';
 import ListItemText from '@mui/material/ListItemText';
 import Typography from '@mui/material/Typography';
 import makeStyles from '@mui/styles/makeStyles';
-import { Call } from '@user-office-software/shared-types';
+import { Call } from '@user-office-software-libs/shared-types';
 import PropTypes from 'prop-types';
 import React from 'react';
 import { useHistory } from 'react-router';

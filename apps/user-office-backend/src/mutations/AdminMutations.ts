@@ -1,9 +1,9 @@
-import { logger } from '@user-office-software/logger';
+import { logger } from '@user-office-software/duo-logger';
 import {
   setPageTextValidationSchema,
   createApiAccessTokenValidationSchema,
   updateApiAccessTokenValidationSchema,
-} from '@user-office-software/validation';
+} from '@user-office-software/duo-validation';
 import { container, inject, injectable } from 'tsyringe';
 
 import { Tokens } from '../config/Tokens';

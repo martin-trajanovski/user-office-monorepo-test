@@ -5,7 +5,7 @@ import MenuItem from '@mui/material/MenuItem';
 import {
   SubTemplateConfig,
   TemplateGroupId,
-} from '@user-office-software/shared-types';
+} from '@user-office-software-libs/shared-types';
 import { Field } from 'formik';
 import { Select, TextField } from 'formik-mui';
 import { default as React, FC } from 'react';

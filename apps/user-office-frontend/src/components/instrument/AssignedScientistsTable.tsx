@@ -4,7 +4,7 @@ import {
   Instrument,
   BasicUserDetails,
   UserRole,
-} from '@user-office-software/shared-types';
+} from '@user-office-software-libs/shared-types';
 import PropTypes from 'prop-types';
 import React from 'react';
 

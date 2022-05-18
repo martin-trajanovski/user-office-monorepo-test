@@ -1,4 +1,4 @@
-import { Call, CallsFilter } from '@user-office-software/shared-types';
+import { Call, CallsFilter } from '@user-office-software-libs/shared-types';
 import { useEffect, useState, SetStateAction } from 'react';
 
 import { useDataApi } from '../common/useDataApi';

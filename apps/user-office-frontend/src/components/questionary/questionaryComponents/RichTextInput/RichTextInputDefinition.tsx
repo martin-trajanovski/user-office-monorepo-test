@@ -1,5 +1,5 @@
 import TextFormatIcon from '@mui/icons-material/TextFormat';
-import { DataType } from '@user-office-software/shared-types';
+import { DataType } from '@user-office-software-libs/shared-types';
 import { richTextInputQuestionValidationSchema } from '@user-office-software/validation';
 import React from 'react';
 

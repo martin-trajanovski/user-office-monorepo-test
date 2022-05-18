@@ -3,7 +3,7 @@ import { Tooltip } from '@mui/material';
 import Button from '@mui/material/Button';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Typography from '@mui/material/Typography';
-import { Institution } from '@user-office-software/shared-types';
+import { Institution } from '@user-office-software-libs/shared-types';
 import { Field, Form, Formik } from 'formik';
 import { Checkbox, TextField } from 'formik-mui';
 import PropTypes from 'prop-types';

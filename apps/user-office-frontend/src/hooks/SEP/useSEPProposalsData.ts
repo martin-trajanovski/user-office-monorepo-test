@@ -1,4 +1,4 @@
-import { GetSepProposalsQuery } from '@user-office-software/shared-types';
+import { GetSepProposalsQuery } from '@user-office-software-libs/shared-types';
 import { useEffect, useState, Dispatch, SetStateAction } from 'react';
 
 import { Unpacked } from '../../utils/utilTypes';

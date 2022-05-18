@@ -19,7 +19,7 @@ import makeStyles from '@mui/styles/makeStyles';
 import {
   ConflictResolutionStrategy,
   QuestionComparisonStatus,
-} from '@user-office-software/shared-types';
+} from '@user-office-software-libs/shared-types';
 import clsx from 'clsx';
 import React, { useEffect } from 'react';
 

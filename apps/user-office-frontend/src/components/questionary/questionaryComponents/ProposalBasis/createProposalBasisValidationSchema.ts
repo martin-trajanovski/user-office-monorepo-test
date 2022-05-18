@@ -1,4 +1,4 @@
-import { UserRole } from '@user-office-software/shared-types';
+import { UserRole } from '@user-office-software-libs/shared-types';
 import * as Yup from 'yup';
 
 import { getCurrentUser } from '../../../../context/UserContextProvider';

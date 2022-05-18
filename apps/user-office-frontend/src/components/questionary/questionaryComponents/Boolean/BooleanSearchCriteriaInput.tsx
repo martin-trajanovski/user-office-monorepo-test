@@ -1,5 +1,5 @@
 import { FormControl, Grid, InputLabel, MenuItem, Select } from '@mui/material';
-import { QuestionFilterCompareOperator } from '@user-office-software/shared-types';
+import { QuestionFilterCompareOperator } from '@user-office-software-libs/shared-types';
 import React, { useState } from 'react';
 
 import { SearchCriteriaInputProps } from '../../../proposal/SearchCriteriaInputProps';

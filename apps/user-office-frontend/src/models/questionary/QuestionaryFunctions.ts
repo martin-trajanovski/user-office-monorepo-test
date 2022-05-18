@@ -7,7 +7,7 @@ import {
   QuestionaryStep,
   QuestionTemplateRelation,
   TemplateStep,
-} from '@user-office-software/shared-types';
+} from '@user-office-software-libs/shared-types';
 
 import { getQuestionaryComponentDefinition } from '../../components/questionary/QuestionaryComponentRegistry';
 import { ConditionEvaluator } from './ConditionEvaluator';

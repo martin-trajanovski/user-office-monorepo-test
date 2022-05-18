@@ -12,7 +12,7 @@ import {
   BasicUserDetails,
   UserRole,
   Sep,
-} from '@user-office-software/shared-types';
+} from '@user-office-software-libs/shared-types';
 import React, { useState, useContext } from 'react';
 
 import { UserContext } from '../../../context/UserContextProvider';

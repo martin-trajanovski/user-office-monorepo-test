@@ -1,5 +1,5 @@
 import { Typography } from '@mui/material';
-import { GetScheduledEventsCoreQuery } from '@user-office-software/shared-types';
+import { GetScheduledEventsCoreQuery } from '@user-office-software-libs/shared-types';
 import React, { useEffect } from 'react';
 import { useQueryParams, NumberParam, DateParam } from 'use-query-params';
 

@@ -3,7 +3,7 @@ import Button from '@mui/material/Button';
 import Grid from '@mui/material/Grid';
 import TextField from '@mui/material/TextField';
 import makeStyles from '@mui/styles/makeStyles';
-import { Institution } from '@user-office-software/shared-types';
+import { Institution } from '@user-office-software-libs/shared-types';
 import React, { useEffect } from 'react';
 import { useParams } from 'react-router';
 

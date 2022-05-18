@@ -6,7 +6,7 @@ import {
   Review,
   TechnicalReview,
   UserRole,
-} from '@user-office-software/shared-types';
+} from '@user-office-software-libs/shared-types';
 import React, { Fragment, useContext } from 'react';
 
 import { UserContext } from '../../context/UserContextProvider';

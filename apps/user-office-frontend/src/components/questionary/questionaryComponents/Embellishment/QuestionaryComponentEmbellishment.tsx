@@ -1,4 +1,4 @@
-import { EmbellishmentConfig } from '@user-office-software/shared-types';
+import { EmbellishmentConfig } from '@user-office-software-libs/shared-types';
 import React from 'react';
 
 import { BasicComponentProps } from '../../../proposal/IBasicComponentProps';

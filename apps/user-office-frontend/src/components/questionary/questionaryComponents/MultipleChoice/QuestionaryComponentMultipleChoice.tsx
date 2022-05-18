@@ -8,7 +8,7 @@ import Radio from '@mui/material/Radio';
 import RadioGroup from '@mui/material/RadioGroup';
 import Select, { SelectChangeEvent } from '@mui/material/Select';
 import makeStyles from '@mui/styles/makeStyles';
-import { SelectionFromOptionsConfig } from '@user-office-software/shared-types';
+import { SelectionFromOptionsConfig } from '@user-office-software-libs/shared-types';
 import { getIn } from 'formik';
 import React, { useEffect, useState } from 'react';
 

@@ -1,5 +1,5 @@
 {
-  "name": "@user-office-software/localization",
+  "name": "@user-office-software-libs/localization",
   "description": "Contains resources for localising UO project NB. Currently only British English is supported",
   "version": "1.2.0",
   "type": "commonjs",

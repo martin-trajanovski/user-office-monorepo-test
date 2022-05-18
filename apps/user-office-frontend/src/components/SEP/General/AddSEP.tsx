@@ -2,7 +2,7 @@ import Button from '@mui/material/Button';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Typography from '@mui/material/Typography';
 import makeStyles from '@mui/styles/makeStyles';
-import { Sep } from '@user-office-software/shared-types';
+import { Sep } from '@user-office-software-libs/shared-types';
 import { createSEPValidationSchema } from '@user-office-software/validation';
 import { Field, Form, Formik } from 'formik';
 import { Checkbox, TextField } from 'formik-mui';

@@ -1,4 +1,4 @@
-import { FeedbackStatus } from '@user-office-software/shared-types';
+import { FeedbackStatus } from '@user-office-software-libs/shared-types';
 import React, { useContext } from 'react';
 
 import useDataApiWithFeedback from '../../utils/useDataApiWithFeedback';

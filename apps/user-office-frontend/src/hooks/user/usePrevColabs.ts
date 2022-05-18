@@ -1,7 +1,7 @@
 import {
   BasicUserDetailsFragment,
   GetUsersQueryVariables,
-} from '@user-office-software/shared-types';
+} from '@user-office-software-libs/shared-types';
 import { useEffect, useState } from 'react';
 
 import { getCurrentUser } from '../../context/UserContextProvider';

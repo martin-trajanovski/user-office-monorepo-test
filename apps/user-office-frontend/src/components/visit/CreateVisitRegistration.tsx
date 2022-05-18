@@ -1,7 +1,7 @@
 import {
   QuestionaryStep,
   TemplateGroupId,
-} from '@user-office-software/shared-types';
+} from '@user-office-software-libs/shared-types';
 import React, { useContext, useEffect, useState } from 'react';
 
 import { UserContext } from '../../context/UserContextProvider';

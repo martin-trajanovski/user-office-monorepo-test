@@ -2,7 +2,7 @@ import MenuBookIcon from '@mui/icons-material/MenuBook';
 import Box from '@mui/material/Box';
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
-import { PageName } from '@user-office-software/shared-types';
+import { PageName } from '@user-office-software-libs/shared-types';
 import parse from 'html-react-parser';
 import React from 'react';
 

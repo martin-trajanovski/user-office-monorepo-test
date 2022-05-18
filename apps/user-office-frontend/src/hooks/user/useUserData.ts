@@ -5,11 +5,11 @@ import {
   GetUserQuery,
   GetUserQueryVariables,
   ReviewerFilter,
-} from '@user-office-software/shared-types';
+} from '@user-office-software-libs/shared-types';
 import {
   UserWithReviewsQuery,
   ReviewStatus,
-} from '@user-office-software/shared-types';
+} from '@user-office-software-libs/shared-types';
 import { useContext, useEffect, useState } from 'react';
 
 import { UserContext } from '../../context/UserContextProvider';

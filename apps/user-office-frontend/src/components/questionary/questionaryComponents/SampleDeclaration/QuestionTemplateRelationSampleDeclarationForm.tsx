@@ -4,7 +4,7 @@ import {
   FeatureId,
   SampleDeclarationConfig,
   TemplateGroupId,
-} from '@user-office-software/shared-types';
+} from '@user-office-software-libs/shared-types';
 import { Field } from 'formik';
 import { TextField } from 'formik-mui';
 import { ChangeEvent, default as React, FC, useContext } from 'react';

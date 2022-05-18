@@ -1,5 +1,5 @@
 import { TextField, AutocompleteProps, Autocomplete } from '@mui/material';
-import { Institution } from '@user-office-software/shared-types';
+import { Institution } from '@user-office-software-libs/shared-types';
 import React from 'react';
 
 interface InstitutionSelectProps

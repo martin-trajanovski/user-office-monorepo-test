@@ -1,5 +1,5 @@
 import Typography from '@mui/material/Typography';
-import { UnitsImportWithValidation } from '@user-office-software/shared-types';
+import { UnitsImportWithValidation } from '@user-office-software-libs/shared-types';
 import React from 'react';
 
 import { StyledContainer, StyledPaper } from '../../styles/StyledComponents';

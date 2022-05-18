@@ -3,7 +3,7 @@ import {
   DataType,
   NumberInputConfig,
   NumberValueConstraint,
-} from '@user-office-software/shared-types';
+} from '@user-office-software-libs/shared-types';
 import { numberInputQuestionValidationSchema } from '@user-office-software/validation';
 import React from 'react';
 

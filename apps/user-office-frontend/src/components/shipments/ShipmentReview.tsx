@@ -1,7 +1,7 @@
 import GetAppIcon from '@mui/icons-material/GetApp';
 import { Link } from '@mui/material';
 import makeStyles from '@mui/styles/makeStyles';
-import { ShipmentStatus } from '@user-office-software/shared-types';
+import { ShipmentStatus } from '@user-office-software-libs/shared-types';
 import React, { useContext } from 'react';
 
 import { useDownloadPDFShipmentLabel } from '../../hooks/proposal/useDownloadPDFShipmentLabel';

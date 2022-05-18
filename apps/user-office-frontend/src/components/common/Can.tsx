@@ -1,4 +1,4 @@
-import { UserRole } from '@user-office-software/shared-types';
+import { UserRole } from '@user-office-software-libs/shared-types';
 import { useContext } from 'react';
 
 import { UserContext } from '../../context/UserContextProvider';

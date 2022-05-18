@@ -1,5 +1,5 @@
 import TodayIcon from '@mui/icons-material/Today';
-import { DataType } from '@user-office-software/shared-types';
+import { DataType } from '@user-office-software-libs/shared-types';
 import { dateQuestionValidationSchema } from '@user-office-software/validation';
 import React from 'react';
 

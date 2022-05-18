@@ -5,7 +5,7 @@ import {
   responsiveFontSizes,
   useTheme,
 } from '@mui/material/styles';
-import { SettingsId } from '@user-office-software/shared-types';
+import { SettingsId } from '@user-office-software-libs/shared-types';
 import React, { useCallback, useContext } from 'react';
 import { useEffect } from 'react';
 

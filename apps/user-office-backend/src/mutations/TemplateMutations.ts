@@ -12,7 +12,7 @@ import {
   updateQuestionValidationSchema,
   updateTemplateValidationSchema,
   updateTopicValidationSchema,
-} from '@user-office-software/validation';
+} from '@user-office-software/duo-validation';
 import { inject, injectable } from 'tsyringe';
 
 import { Tokens } from '../config/Tokens';

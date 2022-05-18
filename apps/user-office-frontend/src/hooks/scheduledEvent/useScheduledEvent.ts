@@ -1,4 +1,4 @@
-import { GetScheduledEventCoreQuery } from '@user-office-software/shared-types';
+import { GetScheduledEventCoreQuery } from '@user-office-software-libs/shared-types';
 import { useEffect, useState } from 'react';
 
 import { useDataApi } from '../common/useDataApi';
