@@ -1,4 +1,4 @@
-import { logger } from '@user-office-software/logger';
+import { logger } from '@user-office-software-libs/logger';
 import amqp, { Connection, Channel, MessageProperties, Options } from 'amqplib';
 
 type Message = {

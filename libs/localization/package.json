@@ -5,6 +5,11 @@
   "type": "commonjs",
   "author": "SWAP",
   "license": "ISC",
+  "scripts": {
+    "test": "jest --config jestconfig.json",
+    "clean": "rm -rf ./lib",
+    "build": "npm run clean && tsc -p ./tsconfig.build.json"
+  },
   "keywords": [
     "duo",
     "swap",

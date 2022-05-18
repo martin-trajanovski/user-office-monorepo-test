@@ -1,5 +1,5 @@
 {
-  "name": "@user-office-software/logger",
+  "name": "@user-office-software-libs/logger",
   "version": "2.0.2",
   "type": "commonjs",
   "description": "Logger implementation",

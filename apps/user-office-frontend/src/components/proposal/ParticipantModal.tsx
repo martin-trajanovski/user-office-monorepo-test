@@ -1,7 +1,10 @@
 import AddBox from '@mui/icons-material/AddBox';
 import Dialog from '@mui/material/Dialog';
 import DialogContent from '@mui/material/DialogContent';
-import { UserRole, BasicUserDetails } from '@user-office-software-libs/shared-types';
+import {
+  UserRole,
+  BasicUserDetails,
+} from '@user-office-software-libs/shared-types';
 import React from 'react';
 
 import { useCheckAccess } from '../common/Can';

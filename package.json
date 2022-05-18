@@ -4,7 +4,7 @@
   "license": "MIT",
   "scripts": {
     "start": "nx run-many --all --target=dev",
-    "build": "nx run-many --all --target=build",
+    "build": "nx run-many --all --target=build --buildLibsFromSource",
     "test": "nx run-many --all --target=test",
     "lint": "nx run-many --all --target=lint",
     "lint:fix": "nx lint --fix",

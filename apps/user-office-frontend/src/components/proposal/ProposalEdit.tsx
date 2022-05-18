@@ -1,4 +1,7 @@
-import { getTranslation, ResourceId } from '@user-office-software-libs/localization';
+import {
+  getTranslation,
+  ResourceId,
+} from '@user-office-software-libs/localization';
 import React from 'react';
 import { useParams } from 'react-router';
 

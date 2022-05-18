@@ -1,5 +1,8 @@
 import { Column } from '@material-table/core';
-import { getTranslation, ResourceId } from '@user-office-software-libs/localization';
+import {
+  getTranslation,
+  ResourceId,
+} from '@user-office-software-libs/localization';
 import {
   Proposal,
   ProposalEndStatus,

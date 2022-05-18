@@ -1,6 +1,9 @@
 import Edit from '@mui/icons-material/Edit';
 import { Typography } from '@mui/material';
-import { UserRole, ProposalWorkflow } from '@user-office-software-libs/shared-types';
+import {
+  UserRole,
+  ProposalWorkflow,
+} from '@user-office-software-libs/shared-types';
 import React from 'react';
 import { useHistory } from 'react-router';
 import { useQueryParams } from 'use-query-params';

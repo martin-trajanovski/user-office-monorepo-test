@@ -1,6 +1,6 @@
 import RadioButtonCheckedIcon from '@mui/icons-material/RadioButtonChecked';
 import { DataType } from '@user-office-software-libs/shared-types';
-import { multipleChoiceValidationSchema } from '@user-office-software/validation';
+import { multipleChoiceValidationSchema } from '@user-office-software-libs/validation';
 import React from 'react';
 
 import defaultRenderer from '../../DefaultQuestionRenderer';

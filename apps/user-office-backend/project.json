@@ -8,7 +8,7 @@
       "outputs": ["{options.outputPath}"],
       "options": {
         "outputPath": "dist/apps/user-office-backend",
-        "main": "apps/user-office-backend/src/main.ts",
+        "main": "apps/user-office-backend/index.ts",
         "tsConfig": "apps/user-office-backend/tsconfig.app.json",
         "assets": ["apps/user-office-backend/src/assets"]
       },
