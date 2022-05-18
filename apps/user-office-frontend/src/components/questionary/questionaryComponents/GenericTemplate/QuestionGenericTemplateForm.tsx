@@ -2,17 +2,16 @@ import FormControl from '@mui/material/FormControl';
 import InputLabel from '@mui/material/InputLabel';
 import Link from '@mui/material/Link';
 import MenuItem from '@mui/material/MenuItem';
+import { TemplateGroupId } from '@user-office-software/shared-types';
 import { Field } from 'formik';
 import { Select, TextField } from 'formik-mui';
 import React, { FC } from 'react';
 import * as Yup from 'yup';
 
-import TitledContainer from '../common/TitledContainer';
-import { QuestionFormProps } from '../questionary/QuestionaryComponentRegistry';
-import { TemplateGroupId } from '@user-office-software/shared-types';
-import { useActiveTemplates } from '../../call/useCallTemplates';
-import { useNaturalKeySchema } from '../../userFieldValidationSchema';
-
+import { useActiveTemplates } from '../../../../hooks/call/useCallTemplates';
+import { useNaturalKeySchema } from '../../../../utils/userFieldValidationSchema';
+import TitledContainer from '../../../common/TitledContainer';
+import { QuestionFormProps } from '../../QuestionaryComponentRegistry';
 import { QuestionFormShell } from '../QuestionFormShell';
 
 export const QuestionGenericTemplateForm: FC<QuestionFormProps> = (props) => {

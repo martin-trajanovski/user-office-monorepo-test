@@ -1,22 +1,25 @@
 import makeStyles from '@mui/styles/makeStyles';
+import {
+  Answer,
+  QuestionaryStep,
+  SubTemplateConfig,
+} from '@user-office-software/shared-types';
 import { Field, FieldProps, FormikProps } from 'formik';
 import React, { useContext, useState } from 'react';
 
-import ErrorMessage from '../common/ErrorMessage';
-import StyledModal from '../common/StyledModal';
-import UOLoader from '../common/UOLoader';
-import { ProposalContextType } from '../proposal/ProposalContainer';
+import { GenericTemplateCore } from '../../../../models/questionary/genericTemplate/GenericTemplateCore';
+import { GenericTemplateWithQuestionary } from '../../../../models/questionary/genericTemplate/GenericTemplateWithQuestionary';
+import useDataApiWithFeedback from '../../../../utils/useDataApiWithFeedback';
+import withConfirm, { WithConfirmType } from '../../../../utils/withConfirm';
+import withPrompt, { WithPromptType } from '../../../../utils/withPrompt';
+import ErrorMessage from '../../../common/ErrorMessage';
+import StyledModal from '../../../common/StyledModal';
+import UOLoader from '../../../common/UOLoader';
+import { ProposalContextType } from '../../../proposal/ProposalContainer';
 import {
   createMissingContextErrorMessage,
   QuestionaryContext,
-} from '../questionary/QuestionaryContext';
-import { Answer, QuestionaryStep, SubTemplateConfig } from '@user-office-software/shared-types';
-import { GenericTemplateCore } from '../../models/questionary/genericTemplate/GenericTemplateCore';
-import { GenericTemplateWithQuestionary } from '../../models/questionary/genericTemplate/GenericTemplateWithQuestionary';
-import useDataApiWithFeedback from '../../utils/useDataApiWithFeedback';
-import withConfirm, { WithConfirmType } from '../../utils/withConfirm';
-import withPrompt, { WithPromptType } from '../../withPrompt';
-
+} from '../../QuestionaryContext';
 import {
   QuestionnairesList,
   QuestionnairesListRow,

@@ -3,9 +3,8 @@ import { TextField } from 'formik-mui';
 import React, { FC } from 'react';
 import * as Yup from 'yup';
 
-import { QuestionFormProps } from '../questionary/QuestionaryComponentRegistry';
-import { useNaturalKeySchema } from '../../userFieldValidationSchema';
-
+import { useNaturalKeySchema } from '../../../../utils/userFieldValidationSchema';
+import { QuestionFormProps } from '../../QuestionaryComponentRegistry';
 import { QuestionFormShell } from '../QuestionFormShell';
 
 export const QuestionFeedbackBasisForm: FC<QuestionFormProps> = (props) => {

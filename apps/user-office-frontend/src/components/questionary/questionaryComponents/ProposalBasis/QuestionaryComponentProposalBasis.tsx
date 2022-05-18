@@ -1,21 +1,21 @@
 import makeStyles from '@mui/styles/makeStyles';
+import { BasicUserDetails } from '@user-office-software/shared-types';
 import { Field } from 'formik';
 import { TextField } from 'formik-mui';
 import React, { ChangeEvent, useContext, useState } from 'react';
 
-import ErrorMessage from '../common/ErrorMessage';
-import withPreventSubmit from '../common/withPreventSubmit';
-import { BasicComponentProps } from '../proposal/IBasicComponentProps';
-import { ProposalContextType } from '../proposal/ProposalContainer';
-import ProposalParticipant from '../proposal/ProposalParticipant';
-import Participants from '../proposal/ProposalParticipants';
+import { SubmitActionDependencyContainer } from '../../../../hooks/questionary/useSubmitActions';
+import { ProposalSubmissionState } from '../../../../models/questionary/proposal/ProposalSubmissionState';
+import ErrorMessage from '../../../common/ErrorMessage';
+import withPreventSubmit from '../../../common/withPreventSubmit';
+import { BasicComponentProps } from '../../../proposal/IBasicComponentProps';
+import { ProposalContextType } from '../../../proposal/ProposalContainer';
+import ProposalParticipant from '../../../proposal/ProposalParticipant';
+import Participants from '../../../proposal/ProposalParticipants';
 import {
   createMissingContextErrorMessage,
   QuestionaryContext,
-} from '../questionary/QuestionaryContext';
-import { BasicUserDetails } from '@user-office-software/shared-types';
-import { SubmitActionDependencyContainer } from '../../models/questionary/useSubmitActions';
-import { ProposalSubmissionState } from '../../models/questionary/proposal/ProposalSubmissionState';
+} from '../../QuestionaryContext';
 
 const TextFieldNoSubmit = withPreventSubmit(TextField);
 

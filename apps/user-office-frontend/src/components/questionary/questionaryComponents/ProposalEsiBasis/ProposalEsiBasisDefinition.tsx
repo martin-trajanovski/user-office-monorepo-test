@@ -1,10 +1,9 @@
+import { DataType } from '@user-office-software/shared-types';
 import React from 'react';
 
-import EsiIcon from '../common/icons/EsiIcon';
-import { DataType } from '@user-office-software/shared-types';
-import { ProposalEsiSubmissionState } from '../../models/questionary/proposalEsi/ProposalEsiSubmissionState';
-
-import { QuestionaryComponentDefinition } from '../../models/questionaryComponentRegistry';
+import { ProposalEsiSubmissionState } from '../../../../models/questionary/proposalEsi/ProposalEsiSubmissionState';
+import EsiIcon from '../../../common/icons/EsiIcon';
+import { QuestionaryComponentDefinition } from '../../QuestionaryComponentRegistry';
 import { createProposalEsiBasisValidationSchema } from './createProposalEsiValidationSchema';
 import QuestionaryComponentProposalEsiBasis from './QuestionaryComponentProposalEsiBasis';
 import { QuestionProposalEsiBasisForm } from './QuestionProposalEsiBasisForm';

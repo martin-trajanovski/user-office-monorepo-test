@@ -1,12 +1,12 @@
-import ProposalSummary from '../proposal/ProposalSummary';
-import { DefaultReviewWizardStep } from '../questionary/DefaultReviewWizardStep';
-import { DefaultStepDisplayElementFactory } from '../questionary/DefaultStepDisplayElementFactory';
-import { DefaultWizardStepFactory } from '../questionary/DefaultWizardStepFactory';
 import { Sdk, TemplateGroupId } from '@user-office-software/shared-types';
-import { ProposalSubmissionState } from '../../models/questionary/proposal/ProposalSubmissionState';
-import { ItemWithQuestionary } from '../../models/questionary/QuestionarySubmissionState';
 
-import { QuestionaryDefinition } from '../../models/questionaryRegistry';
+import { ProposalSubmissionState } from '../../../../models/questionary/proposal/ProposalSubmissionState';
+import { ItemWithQuestionary } from '../../../../models/questionary/QuestionarySubmissionState';
+import ProposalSummary from '../../../proposal/ProposalSummary';
+import { DefaultReviewWizardStep } from '../../DefaultReviewWizardStep';
+import { DefaultStepDisplayElementFactory } from '../../DefaultStepDisplayElementFactory';
+import { DefaultWizardStepFactory } from '../../DefaultWizardStepFactory';
+import { QuestionaryDefinition } from '../../QuestionaryRegistry';
 import { ProposalQuestionaryWizardStep } from './ProposalQuestionaryWizardStep';
 
 export const proposalQuestionaryDefinition: QuestionaryDefinition = {

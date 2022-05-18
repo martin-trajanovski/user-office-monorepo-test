@@ -2,15 +2,14 @@ import { Field } from 'formik';
 import { TextField } from 'formik-mui';
 import React, { ChangeEvent, useContext, useState } from 'react';
 
-import withPreventSubmit from '../common/withPreventSubmit';
-import { BasicComponentProps } from '../proposal/IBasicComponentProps';
+import { SubmitActionDependencyContainer } from '../../../../hooks/questionary/useSubmitActions';
+import { SampleSubmissionState } from '../../../../models/questionary/sample/SampleSubmissionState';
+import withPreventSubmit from '../../../common/withPreventSubmit';
+import { BasicComponentProps } from '../../../proposal/IBasicComponentProps';
 import {
   createMissingContextErrorMessage,
   QuestionaryContext,
-} from '../questionary/QuestionaryContext';
-import { SubmitActionDependencyContainer } from '../../models/questionary/useSubmitActions';
-import { SampleSubmissionState } from '../../models/questionary/sample/SampleSubmissionState';
-
+} from '../../QuestionaryContext';
 import { SampleContextType } from '../SampleDeclaration/SampleDeclarationContainer';
 
 const TextFieldNoSubmit = withPreventSubmit(TextField);

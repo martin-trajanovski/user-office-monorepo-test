@@ -1,28 +1,27 @@
 import { Paper } from '@mui/material';
 import makeStyles from '@mui/styles/makeStyles';
-import { Field, FieldProps, FormikProps } from 'formik';
-import React, { useContext, useState } from 'react';
-
-import ErrorMessage from '../common/ErrorMessage';
-import StyledModal from '../common/StyledModal';
-import UOLoader from '../common/UOLoader';
-import { ProposalContextType } from '../proposal/ProposalContainer';
-import {
-  createMissingContextErrorMessage,
-  QuestionaryContext,
-} from '../questionary/QuestionaryContext';
 import {
   Answer,
   QuestionaryStep,
   SampleStatus,
   SubTemplateConfig,
 } from '@user-office-software/shared-types';
-import { SampleCore } from '../../models/questionary/sample/SampleCore';
-import { SampleWithQuestionary } from '../../models/questionary/sample/SampleWithQuestionary';
-import useDataApiWithFeedback from '../../utils/useDataApiWithFeedback';
-import withConfirm, { WithConfirmType } from '../../utils/withConfirm';
-import withPrompt, { WithPromptType } from '../../withPrompt';
+import { Field, FieldProps, FormikProps } from 'formik';
+import React, { useContext, useState } from 'react';
 
+import { SampleCore } from '../../../../models/questionary/sample/SampleCore';
+import { SampleWithQuestionary } from '../../../../models/questionary/sample/SampleWithQuestionary';
+import useDataApiWithFeedback from '../../../../utils/useDataApiWithFeedback';
+import withConfirm, { WithConfirmType } from '../../../../utils/withConfirm';
+import withPrompt, { WithPromptType } from '../../../../utils/withPrompt';
+import ErrorMessage from '../../../common/ErrorMessage';
+import StyledModal from '../../../common/StyledModal';
+import UOLoader from '../../../common/UOLoader';
+import { ProposalContextType } from '../../../proposal/ProposalContainer';
+import {
+  createMissingContextErrorMessage,
+  QuestionaryContext,
+} from '../../QuestionaryContext';
 import {
   QuestionnairesList,
   QuestionnairesListRow,

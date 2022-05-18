@@ -1,11 +1,10 @@
 import TodayIcon from '@mui/icons-material/Today';
+import { DataType } from '@user-office-software/shared-types';
 import { dateQuestionValidationSchema } from '@user-office-software/validation';
 import React from 'react';
 
-import defaultRenderer from '../questionary/DefaultQuestionRenderer';
-import { DataType } from '@user-office-software/shared-types';
-
-import { QuestionaryComponentDefinition } from '../../models/questionaryComponentRegistry';
+import defaultRenderer from '../../DefaultQuestionRenderer';
+import { QuestionaryComponentDefinition } from '../../QuestionaryComponentRegistry';
 import DateAnswerRenderer from './DateAnswerRenderer';
 import DateSearchCriteriaInput from './DateSearchCriteriaInput';
 import { preSubmitDateTransform } from './preSubmitDateTransform';

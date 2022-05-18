@@ -1,11 +1,10 @@
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+import { DataType, IntervalConfig } from '@user-office-software/shared-types';
 import { intervalQuestionValidationSchema } from '@user-office-software/validation';
 import React from 'react';
 
-import defaultRenderer from '../questionary/DefaultQuestionRenderer';
-import { DataType, IntervalConfig } from '@user-office-software/shared-types';
-
-import { QuestionaryComponentDefinition } from '../../models/questionaryComponentRegistry';
+import defaultRenderer from '../../DefaultQuestionRenderer';
+import { QuestionaryComponentDefinition } from '../../QuestionaryComponentRegistry';
 import { IntervalAnswerRenderer } from './IntervalAnswerRenderer';
 import IntervalSearchCriteriaComponent from './IntervalSearchCriteriaComponent';
 import { QuestionaryComponentInterval } from './QuestionaryComponentInterval';

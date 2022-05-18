@@ -1,11 +1,10 @@
 import CheckBoxOutlineBlankIcon from '@mui/icons-material/CheckBoxOutlineBlank';
+import { DataType } from '@user-office-software/shared-types';
 import { booleanQuestionValidationSchema } from '@user-office-software/validation';
 import React from 'react';
 
-import defaultRenderer from '../questionary/DefaultQuestionRenderer';
-import { DataType } from '@user-office-software/shared-types';
-
-import { QuestionaryComponentDefinition } from '../../models/questionaryComponentRegistry';
+import defaultRenderer from '../../DefaultQuestionRenderer';
+import { QuestionaryComponentDefinition } from '../../QuestionaryComponentRegistry';
 import BooleanAnswerRenderer from './BooleanAnswerRenderer';
 import BooleanSearchCriteriaInput from './BooleanSearchCriteriaInput';
 import { QuestionaryComponentBoolean } from './QuestionaryComponentBoolean';

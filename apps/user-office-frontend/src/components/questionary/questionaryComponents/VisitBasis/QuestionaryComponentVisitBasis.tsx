@@ -1,25 +1,25 @@
 import DateAdapter from '@mui/lab/AdapterLuxon';
 import LocalizationProvider from '@mui/lab/LocalizationProvider';
 import useTheme from '@mui/material/styles/useTheme';
-import { Field } from 'formik';
-import { DatePicker } from 'formik-mui-lab';
-import { useContext } from 'react';
-import React from 'react';
-
-import { BasicComponentProps } from '../proposal/IBasicComponentProps';
-import {
-  createMissingContextErrorMessage,
-  QuestionaryContext,
-} from '../questionary/QuestionaryContext';
-import { VisitRegistrationContextType } from '../visit/VisitRegistrationContainer';
 import {
   Sdk,
   SettingsId,
   UpdateVisitRegistrationMutationVariables,
 } from '@user-office-software/shared-types';
-import { useFormattedDateTime } from '../../admin/useFormattedDateTime';
-import { SubmitActionDependencyContainer } from '../../models/questionary/useSubmitActions';
-import { VisitRegistrationSubmissionState } from '../../models/questionary/visit/VisitRegistrationSubmissionState';
+import { Field } from 'formik';
+import { DatePicker } from 'formik-mui-lab';
+import { useContext } from 'react';
+import React from 'react';
+
+import { useFormattedDateTime } from '../../../../hooks/admin/useFormattedDateTime';
+import { SubmitActionDependencyContainer } from '../../../../hooks/questionary/useSubmitActions';
+import { VisitRegistrationSubmissionState } from '../../../../models/questionary/visit/VisitRegistrationSubmissionState';
+import { BasicComponentProps } from '../../../proposal/IBasicComponentProps';
+import { VisitRegistrationContextType } from '../../../visit/VisitRegistrationContainer';
+import {
+  createMissingContextErrorMessage,
+  QuestionaryContext,
+} from '../../QuestionaryContext';
 
 function QuestionaryComponentVisitBasis({ answer }: BasicComponentProps) {
   const theme = useTheme();

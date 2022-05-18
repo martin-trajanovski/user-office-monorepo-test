@@ -1,14 +1,14 @@
 import FormControl from '@mui/material/FormControl';
 import FormHelperText from '@mui/material/FormHelperText';
 import FormLabel from '@mui/material/FormLabel';
+import { FileUploadConfig } from '@user-office-software/shared-types';
 import React, { useEffect, useState } from 'react';
 
 import {
   FileIdWithCaptionAndFigure,
   FileUploadComponent,
-} from '../common/FileUploadComponent';
-import { BasicComponentProps } from '../proposal/IBasicComponentProps';
-import { FileUploadConfig } from '@user-office-software/shared-types';
+} from '../../../common/FileUploadComponent';
+import { BasicComponentProps } from '../../../proposal/IBasicComponentProps';
 
 export function QuestionaryComponentFileUpload(
   props: BasicComponentProps & { files?: string[] }

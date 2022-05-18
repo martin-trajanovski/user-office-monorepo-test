@@ -1,16 +1,16 @@
 import Autocomplete from '@mui/lab/Autocomplete';
 import MaterialTextField from '@mui/material/TextField';
+import { IntervalConfig } from '@user-office-software/shared-types';
 import { Field } from 'formik';
 import { CheckboxWithLabel, TextField } from 'formik-mui';
 import React, { FC, useState } from 'react';
 import * as Yup from 'yup';
 
-import TitledContainer from '../common/TitledContainer';
-import { QuestionFormProps } from '../questionary/QuestionaryComponentRegistry';
-import { QuestionFormShell } from '../questionary/questionaryComponents/QuestionFormShell';
-import { IntervalConfig } from '@user-office-software/shared-types';
-import { useUnitsData } from '../../settings/useUnitData';
-import { useNaturalKeySchema } from '../../userFieldValidationSchema';
+import { useUnitsData } from '../../../../hooks/settings/useUnitData';
+import { useNaturalKeySchema } from '../../../../utils/userFieldValidationSchema';
+import TitledContainer from '../../../common/TitledContainer';
+import { QuestionFormProps } from '../../QuestionaryComponentRegistry';
+import { QuestionFormShell } from '../../questionaryComponents/QuestionFormShell';
 
 export const QuestionIntervalForm: FC<QuestionFormProps> = (props) => {
   const field = props.question;

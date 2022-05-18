@@ -2,16 +2,19 @@ import Button from '@mui/material/Button';
 import Link from '@mui/material/Link';
 import Typography from '@mui/material/Typography';
 import makeStyles from '@mui/styles/makeStyles';
+import {
+  FieldDependencyInput,
+  QuestionTemplateRelation,
+} from '@user-office-software/shared-types';
 import { Form, Formik } from 'formik';
 import React from 'react';
 
-import { ActionButtonContainer } from '../common/ActionButtonContainer';
+import useDataApiWithFeedback from '../../../utils/useDataApiWithFeedback';
+import { ActionButtonContainer } from '../../common/ActionButtonContainer';
 import {
   getQuestionaryComponentDefinition,
   QuestionTemplateRelationFormProps,
-} from '../questionary/QuestionaryComponentRegistry';
-import { FieldDependencyInput, QuestionTemplateRelation } from '@user-office-software/shared-types';
-import useDataApiWithFeedback from '../../utils/useDataApiWithFeedback';
+} from '../QuestionaryComponentRegistry';
 
 const useStyles = makeStyles((theme) => ({
   container: {

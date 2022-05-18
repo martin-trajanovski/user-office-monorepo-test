@@ -4,11 +4,10 @@ import { CheckboxWithLabel, Select, TextField } from 'formik-mui';
 import React, { FC } from 'react';
 import * as Yup from 'yup';
 
-import MultiMenuItem from '../common/MultiMenuItem';
-import TitledContainer from '../common/TitledContainer';
-import { QuestionFormProps } from '../questionary/QuestionaryComponentRegistry';
-import { useNaturalKeySchema } from '../../userFieldValidationSchema';
-
+import { useNaturalKeySchema } from '../../../../utils/userFieldValidationSchema';
+import MultiMenuItem from '../../../common/MultiMenuItem';
+import TitledContainer from '../../../common/TitledContainer';
+import { QuestionFormProps } from '../../QuestionaryComponentRegistry';
 import { QuestionFormShell } from '../QuestionFormShell';
 
 export const QuestionFileUploadForm: FC<QuestionFormProps> = (props) => {

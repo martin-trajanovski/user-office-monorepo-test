@@ -1,12 +1,12 @@
-import ProposalEsiReview from '../proposalEsi/ProposalEsiReview';
-import { DefaultReviewWizardStep } from '../questionary/DefaultReviewWizardStep';
-import { DefaultStepDisplayElementFactory } from '../questionary/DefaultStepDisplayElementFactory';
-import { DefaultWizardStepFactory } from '../questionary/DefaultWizardStepFactory';
 import { Sdk, TemplateGroupId } from '@user-office-software/shared-types';
-import { ProposalEsiSubmissionState } from '../../models/questionary/proposalEsi/ProposalEsiSubmissionState';
-import { ItemWithQuestionary } from '../../models/questionary/QuestionarySubmissionState';
 
-import { QuestionaryDefinition } from '../../models/questionaryRegistry';
+import { ProposalEsiSubmissionState } from '../../../../models/questionary/proposalEsi/ProposalEsiSubmissionState';
+import { ItemWithQuestionary } from '../../../../models/questionary/QuestionarySubmissionState';
+import ProposalEsiReview from '../../../proposalEsi/ProposalEsiReview';
+import { DefaultReviewWizardStep } from '../../DefaultReviewWizardStep';
+import { DefaultStepDisplayElementFactory } from '../../DefaultStepDisplayElementFactory';
+import { DefaultWizardStepFactory } from '../../DefaultWizardStepFactory';
+import { QuestionaryDefinition } from '../../QuestionaryRegistry';
 import { EsiWizardStep } from './EsiWizardStep';
 
 export const esiQuestionaryDefinition: QuestionaryDefinition = {

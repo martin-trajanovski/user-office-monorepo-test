@@ -1,7 +1,7 @@
 import { Sdk, TemplateGroupId } from '@user-office-software/shared-types';
-import { ItemWithQuestionary } from '../../models/questionary/QuestionarySubmissionState';
 
-import { QuestionaryDefinition } from '../../models/questionaryRegistry';
+import { ItemWithQuestionary } from '../../../../models/questionary/QuestionarySubmissionState';
+import { QuestionaryDefinition } from '../../QuestionaryRegistry';
 import { GenericTemplateStepDisplayElementFactory } from './GenericTemplateStepDisplayElementFactory';
 import { GenericTemplateWizardStepFactory } from './GenericTemplateWizardStepFactory';
 

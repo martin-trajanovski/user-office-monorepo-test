@@ -1,20 +1,21 @@
 /* eslint-disable @typescript-eslint/no-use-before-define */
+
+import { TemplateGroupId } from '@user-office-software/shared-types';
 import { default as React, useState } from 'react';
 
-import Questionary from '../questionary/Questionary';
-import {
-  QuestionaryContext,
-  QuestionaryContextType,
-} from '../questionary/QuestionaryContext';
-import { TemplateGroupId } from '@user-office-software/shared-types';
-import createCustomEventHandlers from '../../models/questionary/createCustomEventHandlers';
+import createCustomEventHandlers from '../../../../models/questionary/createCustomEventHandlers';
 import {
   Event,
   QuestionarySubmissionModel,
-} from '../../models/questionary/QuestionarySubmissionState';
-import { SampleSubmissionState } from '../../models/questionary/sample/SampleSubmissionState';
-import { SampleWithQuestionary } from '../../models/questionary/sample/SampleWithQuestionary';
-import useEventHandlers from '../../models/questionary/useEventHandlers';
+} from '../../../../models/questionary/QuestionarySubmissionState';
+import { SampleSubmissionState } from '../../../../models/questionary/sample/SampleSubmissionState';
+import { SampleWithQuestionary } from '../../../../models/questionary/sample/SampleWithQuestionary';
+import useEventHandlers from '../../../../models/questionary/useEventHandlers';
+import Questionary from '../../Questionary';
+import {
+  QuestionaryContext,
+  QuestionaryContextType,
+} from '../../QuestionaryContext';
 
 export interface SampleContextType extends QuestionaryContextType {
   state: SampleSubmissionState | null;

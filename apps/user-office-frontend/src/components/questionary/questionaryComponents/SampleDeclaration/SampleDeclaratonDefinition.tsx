@@ -1,12 +1,11 @@
 import AssignmentIcon from '@mui/icons-material/Assignment';
+import { DataType } from '@user-office-software/shared-types';
 import { sampleDeclarationValidationSchema } from '@user-office-software/validation';
 import React from 'react';
 
-import defaultRenderer from '../questionary/DefaultQuestionRenderer';
-import { DataType } from '@user-office-software/shared-types';
-import { ProposalSubmissionState } from '../../models/questionary/proposal/ProposalSubmissionState';
-
-import { QuestionaryComponentDefinition } from '../../models/questionaryComponentRegistry';
+import { ProposalSubmissionState } from '../../../../models/questionary/proposal/ProposalSubmissionState';
+import defaultRenderer from '../../DefaultQuestionRenderer';
+import { QuestionaryComponentDefinition } from '../../QuestionaryComponentRegistry';
 import QuestionaryComponentSampleDeclaration from './QuestionaryComponentSampleDeclaration';
 import { QuestionSampleDeclarationForm } from './QuestionSampleDeclarationForm';
 import { QuestionTemplateRelationSampleDeclarationForm } from './QuestionTemplateRelationSampleDeclarationForm';

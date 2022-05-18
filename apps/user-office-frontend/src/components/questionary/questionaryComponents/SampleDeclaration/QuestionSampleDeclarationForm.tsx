@@ -1,22 +1,21 @@
 import FormControl from '@mui/material/FormControl';
 import Link from '@mui/material/Link';
-import { Field } from 'formik';
-import { TextField } from 'formik-mui';
-import React, { FC, useContext, ChangeEvent } from 'react';
-import * as Yup from 'yup';
-
-import FormikUIAutocomplete from '../common/FormikUIAutocomplete';
-import TitledContainer from '../common/TitledContainer';
-import { QuestionFormProps } from '../questionary/QuestionaryComponentRegistry';
-import { FeatureContext } from '../../FeatureContextProvider';
 import {
   FeatureId,
   SampleDeclarationConfig,
   TemplateGroupId,
 } from '@user-office-software/shared-types';
-import { useActiveTemplates } from '../../call/useCallTemplates';
-import { useNaturalKeySchema } from '../../userFieldValidationSchema';
+import { Field } from 'formik';
+import { TextField } from 'formik-mui';
+import React, { FC, useContext, ChangeEvent } from 'react';
+import * as Yup from 'yup';
 
+import { FeatureContext } from '../../../../context/FeatureContextProvider';
+import { useActiveTemplates } from '../../../../hooks/call/useCallTemplates';
+import { useNaturalKeySchema } from '../../../../utils/userFieldValidationSchema';
+import FormikUIAutocomplete from '../../../common/FormikUIAutocomplete';
+import TitledContainer from '../../../common/TitledContainer';
+import { QuestionFormProps } from '../../QuestionaryComponentRegistry';
 import { QuestionFormShell } from '../QuestionFormShell';
 
 export const QuestionSampleDeclarationForm: FC<QuestionFormProps> = (props) => {

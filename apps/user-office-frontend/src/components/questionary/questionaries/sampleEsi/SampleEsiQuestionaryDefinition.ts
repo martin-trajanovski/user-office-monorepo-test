@@ -1,11 +1,11 @@
-import { DefaultReviewWizardStep } from '../questionary/DefaultReviewWizardStep';
-import { DefaultStepDisplayElementFactory } from '../questionary/DefaultStepDisplayElementFactory';
-import { DefaultWizardStepFactory } from '../questionary/DefaultWizardStepFactory';
-import SampleEsiReview from '../sampleEsi/SampleEsiReview';
 import { Sdk, TemplateGroupId } from '@user-office-software/shared-types';
-import { ItemWithQuestionary } from '../../models/questionary/QuestionarySubmissionState';
 
-import { QuestionaryDefinition } from '../../models/questionaryRegistry';
+import { ItemWithQuestionary } from '../../../../models/questionary/QuestionarySubmissionState';
+import SampleEsiReview from '../../../sampleEsi/SampleEsiReview';
+import { DefaultReviewWizardStep } from '../../DefaultReviewWizardStep';
+import { DefaultStepDisplayElementFactory } from '../../DefaultStepDisplayElementFactory';
+import { DefaultWizardStepFactory } from '../../DefaultWizardStepFactory';
+import { QuestionaryDefinition } from '../../QuestionaryRegistry';
 import { SampleEsiWizardStep } from './SampleEsiWizardStep';
 
 export const sampleEsiQuestionaryDefinition: QuestionaryDefinition = {

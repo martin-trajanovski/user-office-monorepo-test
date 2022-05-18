@@ -1,6 +1,6 @@
 import * as Yup from 'yup';
 
-import { QuestionaryComponentDefinition } from '../questionary/QuestionaryComponentRegistry';
+import { QuestionaryComponentDefinition } from '../../QuestionaryComponentRegistry';
 
 export const createShipmentBasisValidationSchema: QuestionaryComponentDefinition['createYupValidationSchema'] =
   () => {

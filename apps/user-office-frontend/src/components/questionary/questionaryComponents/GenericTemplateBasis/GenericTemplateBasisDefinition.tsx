@@ -1,10 +1,9 @@
 import DynamicFeedIcon from '@mui/icons-material/DynamicFeed';
+import { DataType } from '@user-office-software/shared-types';
 import React from 'react';
 
-import { DataType } from '@user-office-software/shared-types';
-import { GenericTemplateSubmissionState } from '../../models/questionary/genericTemplate/GenericTemplateSubmissionState';
-
-import { QuestionaryComponentDefinition } from '../../models/questionaryComponentRegistry';
+import { GenericTemplateSubmissionState } from '../../../../models/questionary/genericTemplate/GenericTemplateSubmissionState';
+import { QuestionaryComponentDefinition } from '../../QuestionaryComponentRegistry';
 import { createGenericTemplateBasisValidationSchema } from './createGenericTemplateBasisValidationSchema';
 import { QuestionaryComponentGenericTemplateBasis } from './QuestionaryComponentGenericTemplateBasis';
 import { QuestionGenericTemplateBasisForm } from './QuestionGenericTemplateBasisForm';

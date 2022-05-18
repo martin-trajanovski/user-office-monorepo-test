@@ -1,12 +1,14 @@
 import ListAltIcon from '@mui/icons-material/ListAlt';
+import {
+  DataType,
+  SubTemplateConfig,
+} from '@user-office-software/shared-types';
 import React from 'react';
 import * as Yup from 'yup';
 
-import defaultRenderer from '../questionary/DefaultQuestionRenderer';
-import { DataType, SubTemplateConfig } from '@user-office-software/shared-types';
-import { ProposalSubmissionState } from '../../models/questionary/proposal/ProposalSubmissionState';
-
-import { QuestionaryComponentDefinition } from '../../models/questionaryComponentRegistry';
+import { ProposalSubmissionState } from '../../../../models/questionary/proposal/ProposalSubmissionState';
+import defaultRenderer from '../../DefaultQuestionRenderer';
+import { QuestionaryComponentDefinition } from '../../QuestionaryComponentRegistry';
 import QuestionaryComponentGenericTemplate from './QuestionaryComponentGenericTemplate';
 import { QuestionGenericTemplateForm } from './QuestionGenericTemplateForm';
 import { QuestionTemplateRelationGenericTemplateForm } from './QuestionTemplateRelationGenericTemplateForm';

@@ -4,9 +4,8 @@ import { TextField } from 'formik-mui';
 import React, { FC } from 'react';
 import * as Yup from 'yup';
 
-import TitledContainer from '../common/TitledContainer';
-import { QuestionTemplateRelationFormProps } from '../questionary/QuestionaryComponentRegistry';
-
+import TitledContainer from '../../../common/TitledContainer';
+import { QuestionTemplateRelationFormProps } from '../../QuestionaryComponentRegistry';
 import { QuestionTemplateRelationFormShell } from '../QuestionTemplateRelationFormShell';
 
 export const QuestionTemplateRelationGenericTemplateBasisForm: FC<

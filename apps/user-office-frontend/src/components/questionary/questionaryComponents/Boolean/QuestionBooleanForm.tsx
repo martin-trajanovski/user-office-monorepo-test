@@ -3,10 +3,10 @@ import { CheckboxWithLabel, TextField } from 'formik-mui';
 import React, { FC } from 'react';
 import * as Yup from 'yup';
 
-import TitledContainer from '../common/TitledContainer';
-import { QuestionFormProps } from '../questionary/QuestionaryComponentRegistry';
-import { QuestionFormShell } from '../questionary/questionaryComponents/QuestionFormShell';
-import { useNaturalKeySchema } from '../../userFieldValidationSchema';
+import { useNaturalKeySchema } from '../../../../utils/userFieldValidationSchema';
+import TitledContainer from '../../../common/TitledContainer';
+import { QuestionFormProps } from '../../QuestionaryComponentRegistry';
+import { QuestionFormShell } from '../../questionaryComponents/QuestionFormShell';
 
 export const QuestionBooleanForm: FC<QuestionFormProps> = (props) => {
   const field = props.question;

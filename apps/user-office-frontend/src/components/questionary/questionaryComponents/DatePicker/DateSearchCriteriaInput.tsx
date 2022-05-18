@@ -10,12 +10,15 @@ import {
   TextField,
   useTheme,
 } from '@mui/material';
+import {
+  QuestionFilterCompareOperator,
+  SettingsId,
+} from '@user-office-software/shared-types';
 import { DateTime } from 'luxon';
 import React, { useState, useEffect } from 'react';
 
-import { SearchCriteriaInputProps } from '../proposal/SearchCriteriaInputProps';
-import { QuestionFilterCompareOperator, SettingsId } from '@user-office-software/shared-types';
-import { useFormattedDateTime } from '../../admin/useFormattedDateTime';
+import { useFormattedDateTime } from '../../../../hooks/admin/useFormattedDateTime';
+import { SearchCriteriaInputProps } from '../../../proposal/SearchCriteriaInputProps';
 
 function DateSearchCriteriaInput({
   onChange,

@@ -1,7 +1,7 @@
+import { Unit } from '@user-office-software/shared-types';
 import React from 'react';
 
-import { AnswerRenderer } from '../questionary/QuestionaryComponentRegistry';
-import { Unit } from '@user-office-software/shared-types';
+import { AnswerRenderer } from '../../QuestionaryComponentRegistry';
 
 export const IntervalAnswerRenderer: AnswerRenderer = (answer) => {
   const isMinAnswered = typeof answer.value.min === 'number';

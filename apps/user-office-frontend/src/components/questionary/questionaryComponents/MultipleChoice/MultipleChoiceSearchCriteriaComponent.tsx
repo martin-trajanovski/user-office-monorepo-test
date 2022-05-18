@@ -1,12 +1,11 @@
 import { Grid, TextField, Autocomplete } from '@mui/material';
-import React, { useState } from 'react';
-
 import {
   QuestionFilterCompareOperator,
   SelectionFromOptionsConfig,
 } from '@user-office-software/shared-types';
+import React, { useState } from 'react';
 
-import { SearchCriteriaInputProps } from '../../proposal/SearchCriteriaInputProps';
+import { SearchCriteriaInputProps } from '../../../proposal/SearchCriteriaInputProps';
 
 function MultipleChoiceSearchCriteriaComponent({
   onChange,

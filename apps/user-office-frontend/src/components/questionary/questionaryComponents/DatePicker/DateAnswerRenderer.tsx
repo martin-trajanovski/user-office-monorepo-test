@@ -1,8 +1,8 @@
+import { DateConfig, SettingsId } from '@user-office-software/shared-types';
 import React from 'react';
 
-import { AnswerRenderer } from '../questionary/QuestionaryComponentRegistry';
-import { DateConfig, SettingsId } from '@user-office-software/shared-types';
-import { useFormattedDateTime } from '../../admin/useFormattedDateTime';
+import { useFormattedDateTime } from '../../../../hooks/admin/useFormattedDateTime';
+import { AnswerRenderer } from '../../QuestionaryComponentRegistry';
 
 const DateAnswerRenderer: AnswerRenderer = ({ config, value }) => {
   const settingsFormatToUse = (config as DateConfig).includeTime

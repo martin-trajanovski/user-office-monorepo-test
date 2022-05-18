@@ -1,6 +1,8 @@
+import {
+  Questionary,
+  TemplateGroupId,
+} from '@user-office-software/shared-types';
 import { immerable } from 'immer';
-
-import { Questionary, TemplateGroupId } from '@user-office-software/shared-types';
 
 import { QuestionarySubmissionState } from '../QuestionarySubmissionState';
 import { SampleEsiWithQuestionary } from './SampleEsiWithQuestionary';

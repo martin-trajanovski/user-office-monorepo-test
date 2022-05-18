@@ -1,11 +1,10 @@
 import AttachFileIcon from '@mui/icons-material/AttachFile';
+import { DataType } from '@user-office-software/shared-types';
 import { fileUploadQuestionValidationSchema } from '@user-office-software/validation';
 import React from 'react';
 
-import defaultRenderer from '../questionary/DefaultQuestionRenderer';
-import { DataType } from '@user-office-software/shared-types';
-
-import { QuestionaryComponentDefinition } from '../../models/questionaryComponentRegistry';
+import defaultRenderer from '../../DefaultQuestionRenderer';
+import { QuestionaryComponentDefinition } from '../../QuestionaryComponentRegistry';
 import FilesAnswerRenderer from './FilesAnswerRenderer';
 import FileUploadSearchCriteriaInput from './FileUploadSearchCriteriaInput';
 import { QuestionaryComponentFileUpload } from './QuestionaryComponentFileUpload';

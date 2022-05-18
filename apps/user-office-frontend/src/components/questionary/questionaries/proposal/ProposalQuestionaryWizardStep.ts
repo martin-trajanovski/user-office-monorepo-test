@@ -1,7 +1,6 @@
-import { ProposalSubmissionState } from '../../models/questionary/proposal/ProposalSubmissionState';
-import { ProposalWithQuestionary } from '../../models/questionary/proposal/ProposalWithQuestionary';
-import { QuestionarySubmissionState } from '../../models/questionary/QuestionarySubmissionState';
-
+import { ProposalSubmissionState } from '../../../../models/questionary/proposal/ProposalSubmissionState';
+import { ProposalWithQuestionary } from '../../../../models/questionary/proposal/ProposalWithQuestionary';
+import { QuestionarySubmissionState } from '../../../../models/questionary/QuestionarySubmissionState';
 import { QuestionaryWizardStep } from '../../DefaultWizardStepFactory';
 
 export class ProposalQuestionaryWizardStep extends QuestionaryWizardStep {

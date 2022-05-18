@@ -1,6 +1,6 @@
 import { QuestionaryStep } from '@user-office-software/shared-types';
-import { WizardStep } from '../../models/questionary/QuestionarySubmissionState';
 
+import { WizardStep } from '../../../../models/questionary/QuestionarySubmissionState';
 import { GenericTemplateQuestionaryWizardStep } from './GenericTemplateQuestionaryWizardStep';
 
 export class GenericTemplateWizardStepFactory {

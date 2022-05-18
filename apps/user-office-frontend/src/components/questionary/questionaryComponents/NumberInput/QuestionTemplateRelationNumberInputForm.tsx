@@ -1,18 +1,20 @@
 import Autocomplete from '@mui/lab/Autocomplete';
 import MaterialTextField from '@mui/material/TextField';
+import {
+  NumberInputConfig,
+  NumberValueConstraint,
+} from '@user-office-software/shared-types';
 import { Field, getIn } from 'formik';
 import { CheckboxWithLabel, TextField } from 'formik-mui';
 import React, { FC, useState } from 'react';
 import * as Yup from 'yup';
 
-import FormikUIAutocomplete from '../common/FormikUIAutocomplete';
-import TitledContainer from '../common/TitledContainer';
-import { QuestionTemplateRelationFormProps } from '../questionary/QuestionaryComponentRegistry';
-import { QuestionExcerpt } from '../questionary/questionaryComponents/QuestionExcerpt';
-import { NumberInputConfig, NumberValueConstraint } from '@user-office-software/shared-types';
-import { useUnitsData } from '../../settings/useUnitData';
-
+import { useUnitsData } from '../../../../hooks/settings/useUnitData';
+import FormikUIAutocomplete from '../../../common/FormikUIAutocomplete';
+import TitledContainer from '../../../common/TitledContainer';
+import { QuestionTemplateRelationFormProps } from '../../QuestionaryComponentRegistry';
 import QuestionDependencyList from '../QuestionDependencyList';
+import { QuestionExcerpt } from '../QuestionExcerpt';
 import { QuestionTemplateRelationFormShell } from '../QuestionTemplateRelationFormShell';
 
 export const QuestionTemplateRelationNumberForm: FC<

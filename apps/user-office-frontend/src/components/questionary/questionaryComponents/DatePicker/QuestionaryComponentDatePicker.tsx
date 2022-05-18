@@ -2,15 +2,14 @@ import DateAdapter from '@mui/lab/AdapterLuxon';
 import LocalizationProvider from '@mui/lab/LocalizationProvider';
 import FormControl from '@mui/material/FormControl';
 import useTheme from '@mui/material/styles/useTheme';
+import { DateConfig, SettingsId } from '@user-office-software/shared-types';
 import { Field } from 'formik';
 import { DatePicker, DateTimePicker } from 'formik-mui-lab';
 import { DateTime } from 'luxon';
 import React from 'react';
 
-import { BasicComponentProps } from '../proposal/IBasicComponentProps';
-import { DateConfig, SettingsId } from '@user-office-software/shared-types';
-import { useFormattedDateTime } from '../../admin/useFormattedDateTime';
-
+import { useFormattedDateTime } from '../../../../hooks/admin/useFormattedDateTime';
+import { BasicComponentProps } from '../../../proposal/IBasicComponentProps';
 import Hint from '../Hint';
 
 export function QuestionaryComponentDatePicker(props: BasicComponentProps) {

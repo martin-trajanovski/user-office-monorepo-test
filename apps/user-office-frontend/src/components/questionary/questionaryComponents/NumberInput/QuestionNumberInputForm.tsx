@@ -1,17 +1,20 @@
 import Autocomplete from '@mui/lab/Autocomplete';
 import MaterialTextField from '@mui/material/TextField';
+import {
+  NumberInputConfig,
+  NumberValueConstraint,
+} from '@user-office-software/shared-types';
 import { Field } from 'formik';
 import { CheckboxWithLabel, TextField } from 'formik-mui';
 import React, { FC, useState } from 'react';
 import * as Yup from 'yup';
 
-import FormikUIAutocomplete from '../common/FormikUIAutocomplete';
-import TitledContainer from '../common/TitledContainer';
-import { QuestionFormProps } from '../questionary/QuestionaryComponentRegistry';
-import { QuestionFormShell } from '../questionary/questionaryComponents/QuestionFormShell';
-import { NumberInputConfig, NumberValueConstraint } from '@user-office-software/shared-types';
-import { useUnitsData } from '../../settings/useUnitData';
-import { useNaturalKeySchema } from '../../userFieldValidationSchema';
+import { useUnitsData } from '../../../../hooks/settings/useUnitData';
+import { useNaturalKeySchema } from '../../../../utils/userFieldValidationSchema';
+import FormikUIAutocomplete from '../../../common/FormikUIAutocomplete';
+import TitledContainer from '../../../common/TitledContainer';
+import { QuestionFormProps } from '../../QuestionaryComponentRegistry';
+import { QuestionFormShell } from '../QuestionFormShell';
 
 export const QuestionNumberForm: FC<QuestionFormProps> = (props) => {
   const field = props.question;

@@ -1,10 +1,9 @@
 import TextFormatIcon from '@mui/icons-material/TextFormat';
+import { DataType } from '@user-office-software/shared-types';
 import { richTextInputQuestionValidationSchema } from '@user-office-software/validation';
 import React from 'react';
 
-import { QuestionaryComponentDefinition } from '../questionary/QuestionaryComponentRegistry';
-import { DataType } from '@user-office-software/shared-types';
-
+import { QuestionaryComponentDefinition } from '../../QuestionaryComponentRegistry';
 import { QuestionaryComponentRichTextInput } from './QuestionaryComponentRichTextInput';
 import { QuestionRichTextInputForm } from './QuestionRichTextInputForm';
 import { QuestionTemplateRelationRichTextInputForm } from './QuestionTemplateRelationRichTextInputForm';

@@ -1,15 +1,14 @@
 import NumberOneIcon from '@mui/icons-material/LooksOneOutlined';
-import { numberInputQuestionValidationSchema } from '@user-office-software/validation';
-import React from 'react';
-
-import defaultRenderer from '../questionary/DefaultQuestionRenderer';
 import {
   DataType,
   NumberInputConfig,
   NumberValueConstraint,
 } from '@user-office-software/shared-types';
+import { numberInputQuestionValidationSchema } from '@user-office-software/validation';
+import React from 'react';
 
-import { QuestionaryComponentDefinition } from '../../models/questionaryComponentRegistry';
+import defaultRenderer from '../../DefaultQuestionRenderer';
+import { QuestionaryComponentDefinition } from '../../QuestionaryComponentRegistry';
 import NumberInputAnswerRenderer from './NumberInputAnswerRenderer';
 import NumberSearchCriteriaComponent from './NumberSearchCriteriaComponent';
 import { QuestionaryComponentNumber } from './QuestionaryComponentNumberInput';

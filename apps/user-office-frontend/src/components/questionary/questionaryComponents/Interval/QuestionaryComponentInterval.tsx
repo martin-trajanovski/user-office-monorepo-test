@@ -7,12 +7,12 @@ import MenuItem from '@mui/material/MenuItem';
 import Select from '@mui/material/Select';
 import TextField from '@mui/material/TextField';
 import makeStyles from '@mui/styles/makeStyles';
+import { IntervalConfig, Unit } from '@user-office-software/shared-types';
 import { Field, getIn } from 'formik';
 import React, { useState } from 'react';
 
-import { BasicComponentProps } from '../proposal/IBasicComponentProps';
-import { IntervalConfig, Unit } from '@user-office-software/shared-types';
-import expressionToFunction from '../../expressionToFunction';
+import expressionToFunction from '../../../../utils/expressionToFunction';
+import { BasicComponentProps } from '../../../proposal/IBasicComponentProps';
 
 const useStyles = makeStyles((theme) => ({
   unitField: {

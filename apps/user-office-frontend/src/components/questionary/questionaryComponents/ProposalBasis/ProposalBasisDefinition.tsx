@@ -1,10 +1,9 @@
 import DescriptionIcon from '@mui/icons-material/Description';
+import { DataType } from '@user-office-software/shared-types';
 import React from 'react';
 
-import { DataType } from '@user-office-software/shared-types';
-import { ProposalSubmissionState } from '../../models/questionary/proposal/ProposalSubmissionState';
-
-import { QuestionaryComponentDefinition } from '../../models/questionaryComponentRegistry';
+import { ProposalSubmissionState } from '../../../../models/questionary/proposal/ProposalSubmissionState';
+import { QuestionaryComponentDefinition } from '../../QuestionaryComponentRegistry';
 import { createProposalBasisValidationSchema } from './createProposalBasisValidationSchema';
 import { QuestionaryComponentProposalBasis } from './QuestionaryComponentProposalBasis';
 import { QuestionProposalBasisForm } from './QuestionProposalBasisForm';

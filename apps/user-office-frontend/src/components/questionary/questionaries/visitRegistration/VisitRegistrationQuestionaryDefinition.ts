@@ -1,12 +1,12 @@
-import { DefaultReviewWizardStep } from '../questionary/DefaultReviewWizardStep';
-import { DefaultStepDisplayElementFactory } from '../questionary/DefaultStepDisplayElementFactory';
-import { DefaultWizardStepFactory } from '../questionary/DefaultWizardStepFactory';
-import VisitRegistrationReview from '../visit/VisitRegistrationReview';
 import { Sdk, TemplateGroupId } from '@user-office-software/shared-types';
-import { ItemWithQuestionary } from '../../models/questionary/QuestionarySubmissionState';
-import { VisitRegistrationSubmissionState } from '../../models/questionary/visit/VisitRegistrationSubmissionState';
 
-import { QuestionaryDefinition } from '../../models/questionaryRegistry';
+import { ItemWithQuestionary } from '../../../../models/questionary/QuestionarySubmissionState';
+import { VisitRegistrationSubmissionState } from '../../../../models/questionary/visit/VisitRegistrationSubmissionState';
+import VisitRegistrationReview from '../../../visit/VisitRegistrationReview';
+import { DefaultReviewWizardStep } from '../../DefaultReviewWizardStep';
+import { DefaultStepDisplayElementFactory } from '../../DefaultStepDisplayElementFactory';
+import { DefaultWizardStepFactory } from '../../DefaultWizardStepFactory';
+import { QuestionaryDefinition } from '../../QuestionaryRegistry';
 import { VisitRegistrationWizardStep } from './VisitRegistrationWizardStep';
 
 export const visitRegistrationQuestionaryDefinition: QuestionaryDefinition = {

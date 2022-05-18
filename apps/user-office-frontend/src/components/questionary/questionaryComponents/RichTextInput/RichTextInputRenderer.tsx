@@ -6,13 +6,12 @@ import DialogContent from '@mui/material/DialogContent';
 import DialogTitle from '@mui/material/DialogTitle';
 import React, { useState } from 'react';
 
+import stripHtml from '../../../../utils/stripHtml';
+import { truncateString } from '../../../../utils/truncateString';
 import {
   AnswerRenderer,
   QuestionRenderer,
-} from '../questionary/QuestionaryComponentRegistry';
-import stripHtml from '../../stripHtml';
-
-import { truncateString } from '../../../../utils/truncateString';
+} from '../../QuestionaryComponentRegistry';
 
 export const RichTextInputRendererComponent: React.FC<{
   id: string;

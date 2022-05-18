@@ -1,27 +1,27 @@
 import { FormControl, InputLabel, Select, TextField } from '@mui/material';
 import MenuItem from '@mui/material/MenuItem';
 import makeStyles from '@mui/styles/makeStyles';
+import { Sample, UserRole } from '@user-office-software/shared-types';
 import { FormikErrors } from 'formik';
 import React, { useContext, useState } from 'react';
 
-import MultiMenuItem from '../common/MultiMenuItem';
-import withPreventSubmit from '../common/withPreventSubmit';
-import { BasicComponentProps } from '../proposal/IBasicComponentProps';
-import ProposalErrorLabel from '../proposal/ProposalErrorLabel';
-import {
-  createMissingContextErrorMessage,
-  QuestionaryContext,
-} from '../questionary/QuestionaryContext';
-import { ShipmentContextType } from '../shipments/ShipmentContainer';
-import { UserContext } from '../../UserContextProvider';
-import { Sample, UserRole } from '@user-office-software/shared-types';
-import { useUserProposals } from '../proposal/useUserProposals';
-import { SubmitActionDependencyContainer } from '../../models/questionary/useSubmitActions';
-import { useProposalSamples } from '../../sample/useProposalSamples';
+import { UserContext } from '../../../../context/UserContextProvider';
+import { useUserProposals } from '../../../../hooks/proposal/useUserProposals';
+import { SubmitActionDependencyContainer } from '../../../../hooks/questionary/useSubmitActions';
+import { useProposalSamples } from '../../../../hooks/sample/useProposalSamples';
 import {
   ShipmentBasisFormikData,
   ShipmentSubmissionState,
-} from '../../models/questionary/shipment/ShipmentSubmissionState';
+} from '../../../../models/questionary/shipment/ShipmentSubmissionState';
+import MultiMenuItem from '../../../common/MultiMenuItem';
+import withPreventSubmit from '../../../common/withPreventSubmit';
+import { BasicComponentProps } from '../../../proposal/IBasicComponentProps';
+import ProposalErrorLabel from '../../../proposal/ProposalErrorLabel';
+import { ShipmentContextType } from '../../../shipments/ShipmentContainer';
+import {
+  createMissingContextErrorMessage,
+  QuestionaryContext,
+} from '../../QuestionaryContext';
 
 const useStyles = makeStyles((theme) => ({
   formControl: {

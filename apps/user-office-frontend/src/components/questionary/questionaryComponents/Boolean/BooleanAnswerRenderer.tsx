@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { AnswerRenderer } from '../questionary/QuestionaryComponentRegistry';
+import { AnswerRenderer } from '../../QuestionaryComponentRegistry';
 
 const BooleanAnswerRenderer: AnswerRenderer = ({ value }) => {
   if (value === null || value === undefined) {

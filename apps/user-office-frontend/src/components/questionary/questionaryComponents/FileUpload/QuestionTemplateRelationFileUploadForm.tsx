@@ -4,10 +4,9 @@ import { CheckboxWithLabel, Select, TextField } from 'formik-mui';
 import React, { FC } from 'react';
 import * as Yup from 'yup';
 
-import MultiMenuItem from '../common/MultiMenuItem';
-import TitledContainer from '../common/TitledContainer';
-import { QuestionTemplateRelationFormProps } from '../questionary/QuestionaryComponentRegistry';
-
+import MultiMenuItem from '../../../common/MultiMenuItem';
+import TitledContainer from '../../../common/TitledContainer';
+import { QuestionTemplateRelationFormProps } from '../../QuestionaryComponentRegistry';
 import QuestionDependencyList from '../QuestionDependencyList';
 import { QuestionExcerpt } from '../QuestionExcerpt';
 import { QuestionTemplateRelationFormShell } from '../QuestionTemplateRelationFormShell';

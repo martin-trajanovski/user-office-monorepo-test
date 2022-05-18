@@ -3,17 +3,16 @@ import FormControlLabel from '@mui/material/FormControlLabel';
 import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import { SelectChangeEvent } from '@mui/material/Select';
+import { SelectionFromOptionsConfig } from '@user-office-software/shared-types';
 import { Field } from 'formik';
 import { Checkbox, Select, TextField } from 'formik-mui';
 import React, { FC, useState } from 'react';
 import * as Yup from 'yup';
 
-import FormikUICustomTable from '../common/FormikUICustomTable';
-import TitledContainer from '../common/TitledContainer';
-import { QuestionFormProps } from '../questionary/QuestionaryComponentRegistry';
-import { SelectionFromOptionsConfig } from '@user-office-software/shared-types';
-import { useNaturalKeySchema } from '../../userFieldValidationSchema';
-
+import { useNaturalKeySchema } from '../../../../utils/userFieldValidationSchema';
+import FormikUICustomTable from '../../../common/FormikUICustomTable';
+import TitledContainer from '../../../common/TitledContainer';
+import { QuestionFormProps } from '../../QuestionaryComponentRegistry';
 import { QuestionFormShell } from '../QuestionFormShell';
 
 const columns = [{ title: 'Answer', field: 'answer' }];

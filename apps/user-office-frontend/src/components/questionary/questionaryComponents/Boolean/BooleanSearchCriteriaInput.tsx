@@ -1,8 +1,8 @@
 import { FormControl, Grid, InputLabel, MenuItem, Select } from '@mui/material';
+import { QuestionFilterCompareOperator } from '@user-office-software/shared-types';
 import React, { useState } from 'react';
 
-import { SearchCriteriaInputProps } from '../proposal/SearchCriteriaInputProps';
-import { QuestionFilterCompareOperator } from '@user-office-software/shared-types';
+import { SearchCriteriaInputProps } from '../../../proposal/SearchCriteriaInputProps';
 
 function BooleanSearchCriteriaInput({
   onChange,

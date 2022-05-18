@@ -1,14 +1,14 @@
 import Button from '@mui/material/Button';
 import Link from '@mui/material/Link';
 import makeStyles from '@mui/styles/makeStyles';
+import { Answer } from '@user-office-software/shared-types';
 import React, { useState } from 'react';
 
-import { ActionButtonContainer } from '../common/ActionButtonContainer';
-import InputDialog from '../common/InputDialog';
-import SampleDetails from '../sample/SampleDetails';
-import { Answer } from '@user-office-software/shared-types';
-import { useSamplesWithQuestionaryStatus } from '../../sample/useSamplesWithQuestionaryStatus';
-import { SampleCore } from '../../models/questionary/sample/SampleCore';
+import { useSamplesWithQuestionaryStatus } from '../../../../hooks/sample/useSamplesWithQuestionaryStatus';
+import { SampleCore } from '../../../../models/questionary/sample/SampleCore';
+import { ActionButtonContainer } from '../../../common/ActionButtonContainer';
+import InputDialog from '../../../common/InputDialog';
+import SampleDetails from '../../../sample/SampleDetails';
 
 const useStyles = makeStyles((theme) => ({
   list: {

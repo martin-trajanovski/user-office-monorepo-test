@@ -1,17 +1,17 @@
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import makeStyles from '@mui/styles/makeStyles';
+import { Question } from '@user-office-software/shared-types';
 import { Form, Formik } from 'formik';
 import React from 'react';
 
-import { ActionButtonContainer } from '../common/ActionButtonContainer';
+import useDataApiWithFeedback from '../../../utils/useDataApiWithFeedback';
+import withConfirm, { WithConfirmType } from '../../../utils/withConfirm';
+import { ActionButtonContainer } from '../../common/ActionButtonContainer';
 import {
   getQuestionaryComponentDefinition,
   QuestionFormProps,
-} from '../questionary/QuestionaryComponentRegistry';
-import { Question } from '@user-office-software/shared-types';
-import useDataApiWithFeedback from '../../utils/useDataApiWithFeedback';
-import withConfirm, { WithConfirmType } from '../../utils/withConfirm';
+} from '../QuestionaryComponentRegistry';
 
 const useStyles = makeStyles((theme) => ({
   container: {

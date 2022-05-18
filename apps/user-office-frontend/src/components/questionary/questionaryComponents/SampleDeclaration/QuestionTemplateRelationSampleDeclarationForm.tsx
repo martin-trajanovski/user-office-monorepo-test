@@ -1,21 +1,20 @@
 import FormControl from '@mui/material/FormControl';
 import Link from '@mui/material/Link';
-import { Field } from 'formik';
-import { TextField } from 'formik-mui';
-import { ChangeEvent, default as React, FC, useContext } from 'react';
-import * as Yup from 'yup';
-
-import FormikUIAutocomplete from '../common/FormikUIAutocomplete';
-import TitledContainer from '../common/TitledContainer';
-import { QuestionTemplateRelationFormProps } from '../questionary/QuestionaryComponentRegistry';
-import { FeatureContext } from '../../FeatureContextProvider';
 import {
   FeatureId,
   SampleDeclarationConfig,
   TemplateGroupId,
 } from '@user-office-software/shared-types';
-import { useActiveTemplates } from '../../call/useCallTemplates';
+import { Field } from 'formik';
+import { TextField } from 'formik-mui';
+import { ChangeEvent, default as React, FC, useContext } from 'react';
+import * as Yup from 'yup';
 
+import { FeatureContext } from '../../../../context/FeatureContextProvider';
+import { useActiveTemplates } from '../../../../hooks/call/useCallTemplates';
+import FormikUIAutocomplete from '../../../common/FormikUIAutocomplete';
+import TitledContainer from '../../../common/TitledContainer';
+import { QuestionTemplateRelationFormProps } from '../../QuestionaryComponentRegistry';
 import QuestionDependencyList from '../QuestionDependencyList';
 import { QuestionExcerpt } from '../QuestionExcerpt';
 import { QuestionTemplateRelationFormShell } from '../QuestionTemplateRelationFormShell';

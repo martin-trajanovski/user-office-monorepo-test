@@ -1,6 +1,6 @@
 import * as Yup from 'yup';
 
-import { CreateYupValidation } from '../questionary/QuestionaryComponentRegistry';
+import { CreateYupValidation } from '../../QuestionaryComponentRegistry';
 
 export const createVisitBasisValidationSchema: CreateYupValidation = () => {
   const schema = Yup.object().shape({

@@ -7,13 +7,13 @@ import MenuItem from '@mui/material/MenuItem';
 import Select from '@mui/material/Select';
 import TextField from '@mui/material/TextField';
 import makeStyles from '@mui/styles/makeStyles';
+import { NumberInputConfig, Unit } from '@user-office-software/shared-types';
 import { getIn } from 'formik';
 import React, { useState } from 'react';
 
-import { BasicComponentProps } from '../proposal/IBasicComponentProps';
-import { NumberInputConfig, Unit } from '@user-office-software/shared-types';
-import expressionToFunction from '../../expressionToFunction';
-import isEventFromAutoComplete from '../../isEventFromAutoComplete';
+import expressionToFunction from '../../../../utils/expressionToFunction';
+import isEventFromAutoComplete from '../../../../utils/isEventFromAutoComplete';
+import { BasicComponentProps } from '../../../proposal/IBasicComponentProps';
 
 const useStyles = makeStyles((theme) => ({
   unitField: {

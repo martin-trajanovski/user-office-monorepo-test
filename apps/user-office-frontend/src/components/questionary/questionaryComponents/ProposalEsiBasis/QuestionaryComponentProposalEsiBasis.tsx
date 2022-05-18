@@ -13,32 +13,32 @@ import {
   Typography,
 } from '@mui/material';
 import ListItemIcon from '@mui/material/ListItemIcon';
-import { Field, FieldProps } from 'formik';
-import React, { MouseEvent, useContext, useState } from 'react';
-
-import ErrorMessage from '../common/ErrorMessage';
-import BoxIcon from '../common/icons/BoxIcon';
-import StyledModal from '../common/StyledModal';
-import UOLoader from '../common/UOLoader';
-import { BasicComponentProps } from '../proposal/IBasicComponentProps';
-import { ProposalEsiContextType } from '../proposalEsi/ProposalEsiContainer';
-import {
-  createMissingContextErrorMessage,
-  QuestionaryContext,
-} from '../questionary/QuestionaryContext';
-import SampleEsiContainer from '../sampleEsi/SampleEsiContainer';
 import {
   DataType,
   GetSampleEsiQuery,
   SampleDeclarationConfig,
   SampleFragment,
 } from '@user-office-software/shared-types';
-import { getQuestionsByType } from '../../models/questionary/QuestionaryFunctions';
-import { SampleEsiWithQuestionary } from '../../models/questionary/sampleEsi/SampleEsiWithQuestionary';
-import { StyledButtonContainer } from '../../styles/StyledComponents';
-import useDataApiWithFeedback from '../../utils/useDataApiWithFeedback';
-import withConfirm, { WithConfirmType } from '../../utils/withConfirm';
-import withPrompt, { WithPromptType } from '../../withPrompt';
+import { Field, FieldProps } from 'formik';
+import React, { MouseEvent, useContext, useState } from 'react';
+
+import { getQuestionsByType } from '../../../../models/questionary/QuestionaryFunctions';
+import { SampleEsiWithQuestionary } from '../../../../models/questionary/sampleEsi/SampleEsiWithQuestionary';
+import { StyledButtonContainer } from '../../../../styles/StyledComponents';
+import useDataApiWithFeedback from '../../../../utils/useDataApiWithFeedback';
+import withConfirm, { WithConfirmType } from '../../../../utils/withConfirm';
+import withPrompt, { WithPromptType } from '../../../../utils/withPrompt';
+import ErrorMessage from '../../../common/ErrorMessage';
+import BoxIcon from '../../../common/icons/BoxIcon';
+import StyledModal from '../../../common/StyledModal';
+import UOLoader from '../../../common/UOLoader';
+import { BasicComponentProps } from '../../../proposal/IBasicComponentProps';
+import { ProposalEsiContextType } from '../../../proposalEsi/ProposalEsiContainer';
+import SampleEsiContainer from '../../../sampleEsi/SampleEsiContainer';
+import {
+  createMissingContextErrorMessage,
+  QuestionaryContext,
+} from '../../QuestionaryContext';
 
 function QuestionaryComponentProposalEsiBasis(
   props: BasicComponentProps & { prompt: WithPromptType } & {

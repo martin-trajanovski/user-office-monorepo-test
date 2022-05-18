@@ -1,13 +1,12 @@
 import LocalShippingIcon from '@mui/icons-material/LocalShipping';
+import { DataType } from '@user-office-software/shared-types';
 import React from 'react';
 
-import { DataType } from '@user-office-software/shared-types';
 import {
   ShipmentBasisFormikData,
   ShipmentSubmissionState,
-} from '../../models/questionary/shipment/ShipmentSubmissionState';
-
-import { QuestionaryComponentDefinition } from '../../models/questionaryComponentRegistry';
+} from '../../../../models/questionary/shipment/ShipmentSubmissionState';
+import { QuestionaryComponentDefinition } from '../../QuestionaryComponentRegistry';
 import { createShipmentBasisValidationSchema } from './createShipmentBasisValidationSchema';
 import { QuestionaryComponentShipmentBasis } from './QuestionaryComponentShipmentBasis';
 import { QuestionShipmentBasisForm } from './QuestionShipmentBasisForm';

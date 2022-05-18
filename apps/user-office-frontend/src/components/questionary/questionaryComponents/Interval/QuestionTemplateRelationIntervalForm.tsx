@@ -1,16 +1,15 @@
 import Autocomplete from '@mui/lab/Autocomplete';
 import MaterialTextField from '@mui/material/TextField';
+import { IntervalConfig } from '@user-office-software/shared-types';
 import { Field } from 'formik';
 import { CheckboxWithLabel, TextField } from 'formik-mui';
 import React, { FC, useState } from 'react';
 import * as Yup from 'yup';
 
-import TitledContainer from '../common/TitledContainer';
-import { QuestionTemplateRelationFormProps } from '../questionary/QuestionaryComponentRegistry';
-import { QuestionExcerpt } from '../questionary/questionaryComponents/QuestionExcerpt';
-import { IntervalConfig } from '@user-office-software/shared-types';
-import { useUnitsData } from '../../settings/useUnitData';
-
+import { useUnitsData } from '../../../../hooks/settings/useUnitData';
+import TitledContainer from '../../../common/TitledContainer';
+import { QuestionTemplateRelationFormProps } from '../../QuestionaryComponentRegistry';
+import { QuestionExcerpt } from '../../questionaryComponents/QuestionExcerpt';
 import QuestionDependencyList from '../QuestionDependencyList';
 import { QuestionTemplateRelationFormShell } from '../QuestionTemplateRelationFormShell';
 

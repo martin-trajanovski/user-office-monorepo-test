@@ -1,19 +1,18 @@
 import DateAdapter from '@mui/lab/AdapterLuxon';
 import LocalizationProvider from '@mui/lab/LocalizationProvider';
 import useTheme from '@mui/material/styles/useTheme';
+import { DateConfig, SettingsId } from '@user-office-software/shared-types';
 import { Field } from 'formik';
 import { CheckboxWithLabel, TextField } from 'formik-mui';
 import { DatePicker, DateTimePicker } from 'formik-mui-lab';
 import React, { FC, useContext } from 'react';
 import * as Yup from 'yup';
 
-import TitledContainer from '../common/TitledContainer';
-import { QuestionFormProps } from '../questionary/QuestionaryComponentRegistry';
-import { SettingsContext } from '../../SettingsContextProvider';
-import { DateConfig, SettingsId } from '@user-office-software/shared-types';
-import { minMaxDateTimeCalculations } from '../../Time';
-import { useNaturalKeySchema } from '../../userFieldValidationSchema';
-
+import { SettingsContext } from '../../../../context/SettingsContextProvider';
+import { minMaxDateTimeCalculations } from '../../../../utils/Time';
+import { useNaturalKeySchema } from '../../../../utils/userFieldValidationSchema';
+import TitledContainer from '../../../common/TitledContainer';
+import { QuestionFormProps } from '../../QuestionaryComponentRegistry';
 import { QuestionFormShell } from '../QuestionFormShell';
 
 export const QuestionDateForm: FC<QuestionFormProps> = (props) => {

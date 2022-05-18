@@ -1,7 +1,6 @@
 import * as Yup from 'yup';
 
-import { CreateYupValidation } from '../questionary/QuestionaryComponentRegistry';
-
+import { CreateYupValidation } from '../../QuestionaryComponentRegistry';
 import { SampleEsiWithQuestionary } from './../../../../models/questionary/sampleEsi/SampleEsiWithQuestionary';
 
 export const createProposalEsiBasisValidationSchema: CreateYupValidation =

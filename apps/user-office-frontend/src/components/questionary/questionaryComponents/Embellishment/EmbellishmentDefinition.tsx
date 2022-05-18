@@ -1,9 +1,8 @@
 import TextFieldsIcon from '@mui/icons-material/TextFields';
+import { DataType } from '@user-office-software/shared-types';
 import React from 'react';
 
-import { DataType } from '@user-office-software/shared-types';
-
-import { QuestionaryComponentDefinition } from '../../models/questionaryComponentRegistry';
+import { QuestionaryComponentDefinition } from '../../QuestionaryComponentRegistry';
 import EmbellishmentQuestionRenderer from './EmbellishmentQuestionRenderer';
 import { QuestionaryComponentEmbellishment } from './QuestionaryComponentEmbellishment';
 import { QuestionEmbellishmentForm } from './QuestionEmbellishmentForm';
