@@ -1,3 +1,10 @@
+# Investigation conclusion
+- Nx is a nice tool in general but it needs lot of configuration
+- If we want to continue this way we need to learn and investigate a bit more about Nx confituration
+- From here we can continue making the libs work in the backend as well. For example backend should use @user-office-software-libs/validation instead of npm package. This will require maybe bootstraping new express server app and see how it is configurated to be able to use the local libs
+- Also the frontend needs some modification of the webpack configuration to use all libs from source not only few of them like it is at the moment. We use package called `craco` to overwrite create-react-app webpack configuration on the go. This also needs some more investigation how it should be done because now `shared-types` lib uses build version instead of source one which shouldn't be the case.
+- Here are some examples of nx workspaces that are using libs and are configured well (they might be a bit old and nx configs might have changed a bit since then): https://blog.nrwl.io/using-apollo-graphql-with-react-in-an-nx-workspace-99db8d69cebe, https://vitaterna.ca/using-apollo-prisma-and-nexus-with-react-in-an-nx-workspace
+
 # TempWorkspace
 
 This project was generated using [Nx](https://nx.dev).
